@@ -11,7 +11,8 @@ This demo is a good tool for testing purposes on platform Windows XP/Vista/7/8/8
 ## Installation
 1. Please make sure that you have installed the corresponding navigation on your computer.
 1. Please make sure that you have copied the “ApplicationApi.dll” and “sdkdriver.dll” into this folder on your computer: C:\Windows\
-1. Please use MS visual studio 2015 and run the project under X86 platform.
+1. Please use MS Visual Studio 2015 and run the project under X86 platform.
+1. More information can be found https://www.sygic.com/developers/professional-navigation-sdk/windows
 
 ## Quick tutorial
 1. After building and launching the “WindowsDemo” application, please set the path to the *.exe navigation.
