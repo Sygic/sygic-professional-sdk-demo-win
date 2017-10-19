@@ -9,8 +9,10 @@ This demo is a good tool for testing purposes on platform Windows XP/Vista/7/8/8
 *	Detect not correct waypoints – the ones when the navigation fails.
 
 ## Installation
+1. Download required dlls and navigation example https://www.sygic.com/developers/professional-navigation-sdk/windows/downloads
 1. Please make sure that you have installed the corresponding navigation on your computer.
 1. Please make sure that you have copied the “ApplicationApi.dll” and “sdkdriver.dll” into this folder on your computer: C:\Windows\
+1. Add ApplicationAPI.NET.dll as a reference to WindowsDemo project
 1. Please use MS Visual Studio 2015 and run the project under X86 platform.
 1. More information can be found https://www.sygic.com/developers/professional-navigation-sdk/windows
 
