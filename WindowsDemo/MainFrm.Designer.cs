@@ -5405,6 +5405,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             "EVENT_RESTRICTED_ROAD",
             "EVENT_BORDER_CROSSING",
             "EVENT_SPEED_EXCEEDING",
+            "EVENT_SPEED_LIMIT_CHANGED",
             "EVENT_BITMAP_CLICK",
             "EVENT_POI_CLICK"});
             this.EventsChLB.Location = new System.Drawing.Point(8, 73);

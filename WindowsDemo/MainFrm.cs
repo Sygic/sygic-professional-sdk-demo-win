@@ -293,8 +293,16 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                         if (EventsChLB.GetItemChecked(17))
                             O("EVENT_SPEED_EXCEEDING has been invoked.");
                         break;
-                    case ApplicationEvents.EVENT_BITMAP_CLICK:
+                    case ApplicationEvents.EVENT_SPEED_LIMIT_CHANGED:
                         if (EventsChLB.GetItemChecked(18))
+                        {
+                            O("EVENT_SPEED_LIMIT_CHANGED has been invoked.");
+                            string s = parse2(strData);
+                            O("Speed limit changed to: " + s);
+                        }
+                    break;
+                    case ApplicationEvents.EVENT_BITMAP_CLICK:
+                        if (EventsChLB.GetItemChecked(19))
                         {
                             O("EVENT_BITMAP_CLICK has been invoked.");
                             string s = parse2(strData);
@@ -302,7 +310,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                         }
                         break;
                     case ApplicationEvents.EVENT_POI_CLICK:
-                        if (EventsChLB.GetItemChecked(19))
+                        if (EventsChLB.GetItemChecked(20))
                         {
                             O("EVENT_POI_CLICK has been invoked.");
                             StringBuilder[] arr = parse3(strData);
