@@ -77,7 +77,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ApplicationAPI.NET, Version=1.0.5406.21598, Culture=neutral, PublicKeyToken=9a17c373a306e67f, processorArchitecture=MSIL">
+    <Reference Include="ApplicationAPI.NET">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\ApplicationAPI.NET.dll</HintPath>
     </Reference>
