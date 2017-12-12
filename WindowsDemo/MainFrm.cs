@@ -1,14 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Threading;
 using ApplicationAPI;
-
+using Newtonsoft.Json.Linq;
 
 namespace SYGIC_PROFESSINAL_SDK_DEMO
 {
@@ -620,12 +619,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
 
         private void ShowChangeOptionBtn_Click(object sender, EventArgs e)
         {
-            SChangeOption option;
-            SChangeOptionExt optionExt = new SChangeOptionExt(); ;
+            string option;
             DriveHandler.GetChangeOption((int)ShowChangeOption_MaxTimeNum.Value, out option);
-            optionExt.CopyFrom(option);
-            ShowChangeOptionPropertyGrid.SelectedObject = optionExt;
-            ShowChangeOptionPropertyGrid.Refresh();
+            JObject json = JObject.Parse(option);
+            ApplicationChangeOptionsTextbox.Text = json.ToString();
+            ApplicationChangeOptionsTextbox.Refresh();
         }
 
         private void AddTMCEventBtn_Click(object sender, EventArgs e)
@@ -831,11 +829,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                 (int)GetActualGpsPosition_MaxTimeNum.Value);
         }
 
-        private void DissableMenuBtn_Click(object sender, EventArgs e)
-        {
-            DriveHandler.Custom_DissableMenu();
-        }
-
         private void AutomaticRemoteActivationBtn_Click(object sender, EventArgs e)
         {
             DriveHandler.AutomaticRemoteActivation(
@@ -846,13 +839,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
 
         private void ShowChangeOption_SetChangeOptionBtn_Click(object sender, EventArgs e)
         {
-            SChangeOptionExt optionExt = (SChangeOptionExt)ShowChangeOptionPropertyGrid.SelectedObject;
-
-            SChangeOption option = new SChangeOption();
-            optionExt.CopyTo(ref option);
-            DriveHandler.SetChangeOption(
-                (int)ShowChangeOption_MaxTimeNum.Value,
-                option);
+            DriveHandler.SetChangeOption((int)ShowChangeOption_MaxTimeNum.Value, (string)ApplicationChangeOptionsTextbox.Text);
         }
 
         private void LoadExternalFileBtn_Click(object sender, EventArgs e)

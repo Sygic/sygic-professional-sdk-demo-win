@@ -3,12 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using ApplicationAPI;
 using System.IO;
-using System.Threading;
-using System.Timers;
 using System.Diagnostics;
 using System.Net;
-using System.ComponentModel; 
-using System.Data; 
 
 
 namespace SYGIC_PROFESSINAL_SDK_DEMO
@@ -374,84 +370,17 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             int ret = CApplicationAPI.LoadComputedRoute(out _mySError, inRoutePath, inMaxValue);
             O("LoadComputedRoute returns: " + ret);
         }
-        public static void ShowChangeOption(int inMaxTime) 
+
+        public static void GetChangeOption(int inMaxTime, out string outOption) 
         {
-            SChangeOption option = new SChangeOption();
-            int ret = CApplicationAPI.ChangeApplicationOptions(out _mySError, ref option, inMaxTime);
-            O("ChangeApplicationOptions returns: " + ret.ToString());
-            O("bAllowClosedRoads:" + option.bAllowClosedRoads.ToString());
-            O("bAvoidFerries:" + option.bAvoidFerries.ToString());
-            O("bAvoidUTurns:" + option.bAvoidUTurns.ToString());
-            O("bDisableMainMenu:" + option.bDisableMainMenu.ToString());
-            O("bDisableRecompute:" + option.bDisableRecompute.ToString());
-            O("bMaxSpeedWarn:" + option.bMaxSpeedWarn.ToString());
-            O("bOperateRightHanded:" + option.bOperateRightHanded.ToString());
-            O("bRadarsVisible:" + option.bRadarsVisible.ToString());
-            O("bRadarsWarnOn:" + option.bRadarsWarnOn.ToString());
-            O("bSnapToEveryRoad:" + option.bSnapToEveryRoad.ToString());
-            O("bSoundEnabled:" + option.bSoundEnabled.ToString());
-            O("bTruckInMap:" + option.bTruckInMap.ToString());
-            O("bTTSEnabled:" + option.bTTSEnabled.ToString());
-            O("bUseTruckAtt:" + option.bUseTruckAtt.ToString());
-            O("ClockFormat:" + option.ClockFormat.ToString());
-            O("DistanceUnit:" + option.DistanceUnit.ToString());
-            O("GPSUnits:" + option.GPSUnits.ToString());
-            O("HomePosition X,Y: " + option.HomePosition.lX +", "+ option.HomePosition.ToString());
-            O("KeyboardType:" + option.KeyboardType.ToString());
-            O("Language:" + option.Language.ToString());
-            O("MaxSpeedSound:" + option.MaxSpeedSound.ToString());
-            O("nAvoidTollRoads:" + option.nAvoidTollRoads.ToString());
-            O("nETAMaximumSpeed:" + option.nETAMaximumSpeed.ToString());
-            O("nETAPercentageChange:" + option.nETAPercentageChange.ToString());
-            O("nInvisiblePointReachDistance:" + option.nInvisiblePointReachDistance.ToString());
-            O("nKingpinEndTrailer:" + option.nKingpinEndTrailer.ToString());
-            O("nKingpinLastAxle:" + option.nKingpinLastAxle.ToString());
-            O("nKingpinLastTandem:" + option.nKingpinLastTandem.ToString());
-            O("nLoadRestrictions:" + option.nLoadRestrictions.ToString());
-            O("nPlanningSettings:" + option.nPlanningSettings.ToString());
-            O("nPlanningSettingsLimitedSpeed:" + option.nPlanningSettingsLimitedSpeed.ToString());
-            O("nRadarDistance:" + option.nRadarDistance.ToString());
-            O("nRadarDistanceInCity:" + option.nRadarDistanceInCity.ToString());
-            O("nSignpostDirection:" + option.nSignpostDirection.ToString());
-            O("nSignpostSize:" + option.nSignpostSize.ToString());
-            O("nSkin:" + option.nSkin.ToString());
-            O("nSpeedExceed:" + option.nSpeedExceed.ToString());
-            O("nSpeedExceedInCity:" + option.nSpeedExceedInCity.ToString());
-            O("nTimeZone:" + option.nTimeZone.ToString());
-            O("nTractorLength:" + option.nTractorLength.ToString());
-            O("nTrailerLength:" + option.nTrailerLength.ToString());
-            O("nTruckAxleLength:" + option.nTruckAxleLength.ToString());
-            O("nTruckHeight:" + option.nTruckHeight.ToString());
-            O("nTruckLenght:" + option.nTruckLenght.ToString());
-            O("nTruckMaxSpeed:" + option.nTruckMaxSpeed.ToString());
-            O("nTruckOtherLength:" + option.nTruckOtherLength.ToString());
-            O("nTruckOtherWeight:" + option.nTruckOtherWeight.ToString());
-            O("nTruckTandemWeight:" + option.nTruckTandemWeight.ToString());
-            O("nTruckTridemWeight:" + option.nTruckTridemWeight.ToString());
-            O("nTruckUnladenWeight:" + option.nTruckUnladenWeight.ToString());
-            O("nTruckWeightAxle:" + option.nTruckWeightAxle.ToString());
-            O("nTruckWeightTotal:" + option.nTruckWeightTotal.ToString());
-            O("nTruckWidth:" + option.nTruckWidth.ToString());
-            O("nView:" + option.nView.ToString());
-            O("nVisiblePointReachDistance:" + option.nVisiblePointReachDistance.ToString());
-            O("nVolumeMax:" + option.nVolumeMax.ToString());
-            O("nVolumeMin:" + option.nVolumeMin.ToString());
-            O("Voice:" + option.Voice.ToString());
-            O("VoicePerson:" + option.VoicePerson.ToString());
+            int ret = CApplicationAPI.GetApplicationOptions(out _mySError, out outOption, inMaxTime);
+            O("GetApplicationOptions returns: " + ret.ToString());
         }
 
-        public static void GetChangeOption(int inMaxTime, out SChangeOption outOption) 
+        public static void SetChangeOption(int inMaxTime, string inOption)
         {
-            SChangeOption option = new SChangeOption();
-            int ret = CApplicationAPI.ChangeApplicationOptions(out _mySError, ref option, inMaxTime);
-            O("ChangeApplicationOptions returns: " + ret.ToString());
-            outOption = option;
-        }
-
-        public static void SetChangeOption(int inMaxTime, SChangeOption inOption)
-        {
-            int ret = CApplicationAPI.ChangeApplicationOptions(out _mySError, ref inOption, inMaxTime);
-            O("ChangeApplicationOptions returns: " + ret.ToString());
+            int ret = CApplicationAPI.SetApplicationOptions(out _mySError, inOption, inMaxTime);
+            O("SetApplicationOptions returns: " + ret.ToString());
         }
 
         public static void AddTMCEvent(
@@ -739,14 +668,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             int nSpeedLimit=0;
             int ret = CApplicationAPI.GetCurrentSpeedLimit(out _mySError, out nSpeedLimit, inMaxTime);
             O("GetCurrentSpeedLimit returns: " + ret.ToString() + ", nSpeedLimit= " + nSpeedLimit.ToString());
-        }
-
-        public static void Custom_DissableMenu()
-        {
-            SChangeOption option = new SChangeOption();
-            option.bDisableMainMenu = 1;
-            int ret = CApplicationAPI.ChangeApplicationOptions(out _mySError, ref option, 0);
-            O("Custom_DissableMenu returns: " + ret.ToString());
         }
 
         public static void AutomaticRemoteActivation(string inActivateExePath, string inMlmPath, string inSdPassword) 

@@ -203,9 +203,8 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LoadComputedRouteBtn = new System.Windows.Forms.Button();
             this.T10 = new System.Windows.Forms.TabPage();
             this.ShowChangeOptionGB = new System.Windows.Forms.GroupBox();
-            this.ShowChangeOptionPropertyGrid = new System.Windows.Forms.PropertyGrid();
+            this.ApplicationChangeOptionsTextbox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.DissableMenuBtn = new System.Windows.Forms.Button();
             this.label44 = new System.Windows.Forms.Label();
             this.ShowChangeOption_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
             this.ShowChangeOptionBtn = new System.Windows.Forms.Button();
@@ -950,11 +949,10 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.TC.Controls.Add(this.T37);
             this.TC.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.TC.ItemSize = new System.Drawing.Size(30, 15);
-            this.TC.Location = new System.Drawing.Point(0, 32);
-            this.TC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TC.Location = new System.Drawing.Point(0, 26);
             this.TC.Name = "TC";
             this.TC.SelectedIndex = 0;
-            this.TC.Size = new System.Drawing.Size(763, 641);
+            this.TC.Size = new System.Drawing.Size(572, 521);
             this.TC.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.TC.TabIndex = 1;
             // 
@@ -962,10 +960,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T1.Controls.Add(this.ScreenResolutionGB);
             this.T1.Location = new System.Drawing.Point(4, 19);
-            this.T1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T1.Name = "T1";
-            this.T1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T1.Size = new System.Drawing.Size(755, 618);
+            this.T1.Padding = new System.Windows.Forms.Padding(3);
+            this.T1.Size = new System.Drawing.Size(564, 498);
             this.T1.TabIndex = 0;
             this.T1.Text = "T1";
             this.T1.UseVisualStyleBackColor = true;
@@ -973,11 +970,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // ScreenResolutionGB
             // 
             this.ScreenResolutionGB.Controls.Add(this.InitApiTlp);
-            this.ScreenResolutionGB.Location = new System.Drawing.Point(0, 7);
-            this.ScreenResolutionGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ScreenResolutionGB.Location = new System.Drawing.Point(0, 6);
             this.ScreenResolutionGB.Name = "ScreenResolutionGB";
-            this.ScreenResolutionGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ScreenResolutionGB.Size = new System.Drawing.Size(752, 470);
+            this.ScreenResolutionGB.Size = new System.Drawing.Size(564, 382);
             this.ScreenResolutionGB.TabIndex = 3;
             this.ScreenResolutionGB.TabStop = false;
             this.ScreenResolutionGB.Text = "InitApi:";
@@ -999,8 +994,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.InitApiTlp.Controls.Add(this.MyDrivePathCB, 1, 0);
             this.InitApiTlp.Controls.Add(this.InitApi_chooseAnotherPathBtn, 1, 1);
             this.InitApiTlp.Controls.Add(this.tableLayoutPanel19, 1, 7);
-            this.InitApiTlp.Location = new System.Drawing.Point(4, 23);
-            this.InitApiTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.InitApiTlp.Location = new System.Drawing.Point(3, 19);
             this.InitApiTlp.Name = "InitApiTlp";
             this.InitApiTlp.RowCount = 8;
             this.InitApiTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.303371F));
@@ -1011,16 +1005,15 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.InitApiTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.988981F));
             this.InitApiTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.92179F));
             this.InitApiTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.49162F));
-            this.InitApiTlp.Size = new System.Drawing.Size(744, 438);
+            this.InitApiTlp.Size = new System.Drawing.Size(558, 356);
             this.InitApiTlp.TabIndex = 14;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 17);
+            this.label1.Size = new System.Drawing.Size(58, 26);
             this.label1.TabIndex = 16;
             this.label1.Text = "Path to Truck.exe:";
             // 
@@ -1028,10 +1021,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.ScreenResolutionR1_RBtn.AutoSize = true;
             this.ScreenResolutionR1_RBtn.Checked = true;
-            this.ScreenResolutionR1_RBtn.Location = new System.Drawing.Point(133, 80);
-            this.ScreenResolutionR1_RBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ScreenResolutionR1_RBtn.Location = new System.Drawing.Point(99, 65);
             this.ScreenResolutionR1_RBtn.Name = "ScreenResolutionR1_RBtn";
-            this.ScreenResolutionR1_RBtn.Size = new System.Drawing.Size(301, 21);
+            this.ScreenResolutionR1_RBtn.Size = new System.Drawing.Size(230, 17);
             this.ScreenResolutionR1_RBtn.TabIndex = 0;
             this.ScreenResolutionR1_RBtn.TabStop = true;
             this.ScreenResolutionR1_RBtn.Text = "Navigation is running in embedded window.";
@@ -1043,30 +1035,27 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.StartCustom_bNoCaptionChB.AutoSize = true;
             this.StartCustom_bNoCaptionChB.Checked = true;
             this.StartCustom_bNoCaptionChB.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.StartCustom_bNoCaptionChB.Location = new System.Drawing.Point(133, 245);
-            this.StartCustom_bNoCaptionChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartCustom_bNoCaptionChB.Location = new System.Drawing.Point(99, 198);
             this.StartCustom_bNoCaptionChB.Name = "StartCustom_bNoCaptionChB";
-            this.StartCustom_bNoCaptionChB.Size = new System.Drawing.Size(18, 17);
+            this.StartCustom_bNoCaptionChB.Size = new System.Drawing.Size(15, 14);
             this.StartCustom_bNoCaptionChB.TabIndex = 13;
             this.StartCustom_bNoCaptionChB.UseVisualStyleBackColor = true;
             // 
             // label75
             // 
             this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(4, 206);
-            this.label75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label75.Location = new System.Drawing.Point(3, 167);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(119, 17);
+            this.label75.Size = new System.Drawing.Size(90, 13);
             this.label75.TabIndex = 9;
             this.label75.Text = "RunInForeground";
             // 
             // ScreenResolutionR2_RBtn
             // 
             this.ScreenResolutionR2_RBtn.AutoSize = true;
-            this.ScreenResolutionR2_RBtn.Location = new System.Drawing.Point(133, 114);
-            this.ScreenResolutionR2_RBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ScreenResolutionR2_RBtn.Location = new System.Drawing.Point(99, 92);
             this.ScreenResolutionR2_RBtn.Name = "ScreenResolutionR2_RBtn";
-            this.ScreenResolutionR2_RBtn.Size = new System.Drawing.Size(286, 21);
+            this.ScreenResolutionR2_RBtn.Size = new System.Drawing.Size(218, 17);
             this.ScreenResolutionR2_RBtn.TabIndex = 1;
             this.ScreenResolutionR2_RBtn.TabStop = true;
             this.ScreenResolutionR2_RBtn.Text = "Navigation is running in separate window";
@@ -1078,30 +1067,28 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.StartCustom_bRunInForegroundChb.AutoSize = true;
             this.StartCustom_bRunInForegroundChb.Checked = true;
             this.StartCustom_bRunInForegroundChb.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.StartCustom_bRunInForegroundChb.Location = new System.Drawing.Point(133, 210);
-            this.StartCustom_bRunInForegroundChb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartCustom_bRunInForegroundChb.Location = new System.Drawing.Point(99, 170);
             this.StartCustom_bRunInForegroundChb.Name = "StartCustom_bRunInForegroundChb";
-            this.StartCustom_bRunInForegroundChb.Size = new System.Drawing.Size(18, 17);
+            this.StartCustom_bRunInForegroundChb.Size = new System.Drawing.Size(15, 14);
             this.StartCustom_bRunInForegroundChb.TabIndex = 11;
             this.StartCustom_bRunInForegroundChb.UseVisualStyleBackColor = true;
             // 
             // label76
             // 
             this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(4, 241);
-            this.label76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label76.Location = new System.Drawing.Point(3, 195);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(74, 17);
+            this.label76.Size = new System.Drawing.Size(57, 13);
             this.label76.TabIndex = 12;
             this.label76.Text = "NoCaption";
             // 
             // label120
             // 
             this.label120.AutoSize = true;
-            this.label120.Location = new System.Drawing.Point(4, 85);
-            this.label120.Margin = new System.Windows.Forms.Padding(4, 9, 4, 0);
+            this.label120.Location = new System.Drawing.Point(3, 69);
+            this.label120.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
             this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(78, 17);
+            this.label120.Size = new System.Drawing.Size(60, 13);
             this.label120.TabIndex = 15;
             this.label120.Text = "Select mod";
             // 
@@ -1120,41 +1107,37 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ResolutionTlp.Controls.Add(this.HeightNum, 3, 1);
             this.ResolutionTlp.Controls.Add(this.LeftNum, 0, 1);
             this.ResolutionTlp.Controls.Add(this.label26, 1, 0);
-            this.ResolutionTlp.Location = new System.Drawing.Point(133, 151);
-            this.ResolutionTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ResolutionTlp.Location = new System.Drawing.Point(99, 122);
             this.ResolutionTlp.Name = "ResolutionTlp";
-            this.ResolutionTlp.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
+            this.ResolutionTlp.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
             this.ResolutionTlp.RowCount = 2;
             this.ResolutionTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
             this.ResolutionTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
-            this.ResolutionTlp.Size = new System.Drawing.Size(419, 51);
+            this.ResolutionTlp.Size = new System.Drawing.Size(314, 41);
             this.ResolutionTlp.TabIndex = 2;
             this.ResolutionTlp.Visible = false;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(225, 0);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label28.Location = new System.Drawing.Point(168, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(44, 17);
+            this.label28.Size = new System.Drawing.Size(35, 13);
             this.label28.TabIndex = 2;
             this.label28.Text = "Width";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(27, 0);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Location = new System.Drawing.Point(20, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(32, 17);
+            this.label27.Size = new System.Drawing.Size(25, 13);
             this.label27.TabIndex = 1;
             this.label27.Text = "Left";
             // 
             // TopNum
             // 
-            this.TopNum.Location = new System.Drawing.Point(126, 22);
-            this.TopNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TopNum.Location = new System.Drawing.Point(94, 17);
             this.TopNum.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -1166,23 +1149,21 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.TopNum.Name = "TopNum";
-            this.TopNum.Size = new System.Drawing.Size(91, 22);
+            this.TopNum.Size = new System.Drawing.Size(68, 20);
             this.TopNum.TabIndex = 4;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(324, 0);
-            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label29.Location = new System.Drawing.Point(242, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(49, 17);
+            this.label29.Size = new System.Drawing.Size(38, 13);
             this.label29.TabIndex = 3;
             this.label29.Text = "Height";
             // 
             // WidthNum
             // 
-            this.WidthNum.Location = new System.Drawing.Point(225, 22);
-            this.WidthNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WidthNum.Location = new System.Drawing.Point(168, 17);
             this.WidthNum.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -1194,7 +1175,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.WidthNum.Name = "WidthNum";
-            this.WidthNum.Size = new System.Drawing.Size(91, 22);
+            this.WidthNum.Size = new System.Drawing.Size(68, 20);
             this.WidthNum.TabIndex = 6;
             this.WidthNum.Value = new decimal(new int[] {
             800,
@@ -1204,8 +1185,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // HeightNum
             // 
-            this.HeightNum.Location = new System.Drawing.Point(324, 22);
-            this.HeightNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HeightNum.Location = new System.Drawing.Point(242, 17);
             this.HeightNum.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -1217,7 +1197,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.HeightNum.Name = "HeightNum";
-            this.HeightNum.Size = new System.Drawing.Size(91, 22);
+            this.HeightNum.Size = new System.Drawing.Size(68, 20);
             this.HeightNum.TabIndex = 7;
             this.HeightNum.Value = new decimal(new int[] {
             600,
@@ -1227,8 +1207,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // LeftNum
             // 
-            this.LeftNum.Location = new System.Drawing.Point(27, 22);
-            this.LeftNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LeftNum.Location = new System.Drawing.Point(20, 17);
             this.LeftNum.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -1240,26 +1219,24 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.LeftNum.Name = "LeftNum";
-            this.LeftNum.Size = new System.Drawing.Size(91, 22);
+            this.LeftNum.Size = new System.Drawing.Size(68, 20);
             this.LeftNum.TabIndex = 5;
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(126, 0);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Location = new System.Drawing.Point(94, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(33, 17);
+            this.label26.Size = new System.Drawing.Size(26, 13);
             this.label26.TabIndex = 0;
             this.label26.Text = "Top";
             // 
             // MyDrivePathCB
             // 
             this.MyDrivePathCB.FormattingEnabled = true;
-            this.MyDrivePathCB.Location = new System.Drawing.Point(133, 4);
-            this.MyDrivePathCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MyDrivePathCB.Location = new System.Drawing.Point(99, 3);
             this.MyDrivePathCB.Name = "MyDrivePathCB";
-            this.MyDrivePathCB.Size = new System.Drawing.Size(607, 24);
+            this.MyDrivePathCB.Size = new System.Drawing.Size(456, 21);
             this.MyDrivePathCB.TabIndex = 6;
             this.MyDrivePathCB.Text = "C:\\Program Files (x86)\\Sygic\\Sygic Truck Navigation\\bin\\Truck.exe";
             // 
@@ -1268,10 +1245,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.InitApi_chooseAnotherPathBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.InitApi_chooseAnotherPathBtn.BackgroundImage = global::WindowsDemo.Properties.Resources.open;
             this.InitApi_chooseAnotherPathBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.InitApi_chooseAnotherPathBtn.Location = new System.Drawing.Point(685, 36);
-            this.InitApi_chooseAnotherPathBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.InitApi_chooseAnotherPathBtn.Location = new System.Drawing.Point(514, 29);
             this.InitApi_chooseAnotherPathBtn.Name = "InitApi_chooseAnotherPathBtn";
-            this.InitApi_chooseAnotherPathBtn.Size = new System.Drawing.Size(55, 36);
+            this.InitApi_chooseAnotherPathBtn.Size = new System.Drawing.Size(41, 29);
             this.InitApi_chooseAnotherPathBtn.TabIndex = 17;
             this.InitApi_chooseAnotherPathBtn.UseVisualStyleBackColor = true;
             this.InitApi_chooseAnotherPathBtn.Click += new System.EventHandler(this.InitApi_chooseAnotherPathBtn_Click);
@@ -1283,12 +1259,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel19.Controls.Add(this.StartDriveBtn, 0, 0);
             this.tableLayoutPanel19.Controls.Add(this.StopDriveBtn, 1, 0);
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(133, 315);
-            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(99, 254);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 1;
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(607, 114);
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(455, 93);
             this.tableLayoutPanel19.TabIndex = 19;
             // 
             // StartDriveBtn
@@ -1300,10 +1275,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.StartDriveBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.StartDriveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.StartDriveBtn.Image = global::WindowsDemo.Properties.Resources.start_icon;
-            this.StartDriveBtn.Location = new System.Drawing.Point(4, 4);
-            this.StartDriveBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartDriveBtn.Location = new System.Drawing.Point(3, 3);
             this.StartDriveBtn.Name = "StartDriveBtn";
-            this.StartDriveBtn.Size = new System.Drawing.Size(295, 106);
+            this.StartDriveBtn.Size = new System.Drawing.Size(221, 87);
             this.StartDriveBtn.TabIndex = 14;
             this.StartDriveBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.StartDriveBtn.UseVisualStyleBackColor = false;
@@ -1317,10 +1291,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.StopDriveBtn.BackColor = System.Drawing.Color.WhiteSmoke;
             this.StopDriveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.StopDriveBtn.Image = global::WindowsDemo.Properties.Resources.stop_red_icon;
-            this.StopDriveBtn.Location = new System.Drawing.Point(307, 4);
-            this.StopDriveBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StopDriveBtn.Location = new System.Drawing.Point(230, 3);
             this.StopDriveBtn.Name = "StopDriveBtn";
-            this.StopDriveBtn.Size = new System.Drawing.Size(296, 106);
+            this.StopDriveBtn.Size = new System.Drawing.Size(222, 87);
             this.StopDriveBtn.TabIndex = 18;
             this.StopDriveBtn.UseVisualStyleBackColor = false;
             this.StopDriveBtn.Click += new System.EventHandler(this.StopDriveBtn_Click);
@@ -1329,10 +1302,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T2.Controls.Add(this.ItineraryGeneratorGB);
             this.T2.Location = new System.Drawing.Point(4, 19);
-            this.T2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T2.Name = "T2";
-            this.T2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T2.Size = new System.Drawing.Size(755, 618);
+            this.T2.Padding = new System.Windows.Forms.Padding(3);
+            this.T2.Size = new System.Drawing.Size(564, 498);
             this.T2.TabIndex = 1;
             this.T2.Text = "T2";
             this.T2.UseVisualStyleBackColor = true;
@@ -1340,11 +1312,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // ItineraryGeneratorGB
             // 
             this.ItineraryGeneratorGB.Controls.Add(this.tableLayoutPanel21);
-            this.ItineraryGeneratorGB.Location = new System.Drawing.Point(8, 7);
-            this.ItineraryGeneratorGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItineraryGeneratorGB.Location = new System.Drawing.Point(6, 6);
             this.ItineraryGeneratorGB.Name = "ItineraryGeneratorGB";
-            this.ItineraryGeneratorGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ItineraryGeneratorGB.Size = new System.Drawing.Size(736, 428);
+            this.ItineraryGeneratorGB.Size = new System.Drawing.Size(552, 348);
             this.ItineraryGeneratorGB.TabIndex = 20;
             this.ItineraryGeneratorGB.TabStop = false;
             this.ItineraryGeneratorGB.Text = "Itinerary generator:";
@@ -1370,8 +1340,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel21.Controls.Add(this.ItineraryGenerator_YmaxNum, 1, 7);
             this.tableLayoutPanel21.Controls.Add(this.ItineraryGeneratorBtn, 1, 8);
             this.tableLayoutPanel21.Controls.Add(this.ItineraryGenerator_prefixTBox, 1, 2);
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(8, 18);
-            this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel21.Location = new System.Drawing.Point(6, 15);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
             this.tableLayoutPanel21.RowCount = 9;
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.26126F));
@@ -1383,101 +1352,92 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.26126F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.26126F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.90991F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(720, 402);
+            this.tableLayoutPanel21.Size = new System.Drawing.Size(540, 327);
             this.tableLayoutPanel21.TabIndex = 0;
             // 
             // label144
             // 
             this.label144.AutoSize = true;
-            this.label144.Location = new System.Drawing.Point(4, 0);
-            this.label144.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label144.Location = new System.Drawing.Point(3, 0);
             this.label144.Name = "label144";
-            this.label144.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.label144.Size = new System.Drawing.Size(135, 26);
+            this.label144.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this.label144.Size = new System.Drawing.Size(100, 20);
             this.label144.TabIndex = 0;
             this.label144.Text = "Number of itinearies";
             // 
             // label145
             // 
             this.label145.AutoSize = true;
-            this.label145.Location = new System.Drawing.Point(4, 45);
-            this.label145.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label145.Location = new System.Drawing.Point(3, 36);
             this.label145.Name = "label145";
-            this.label145.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.label145.Size = new System.Drawing.Size(245, 26);
+            this.label145.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this.label145.Size = new System.Drawing.Size(183, 20);
             this.label145.TabIndex = 1;
             this.label145.Text = "Number of waypoints in each itinerary";
             // 
             // label146
             // 
             this.label146.AutoSize = true;
-            this.label146.Location = new System.Drawing.Point(4, 90);
-            this.label146.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label146.Location = new System.Drawing.Point(3, 72);
             this.label146.Name = "label146";
-            this.label146.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.label146.Size = new System.Drawing.Size(43, 26);
+            this.label146.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this.label146.Size = new System.Drawing.Size(33, 20);
             this.label146.TabIndex = 2;
             this.label146.Text = "Prefix";
             // 
             // label147
             // 
             this.label147.AutoSize = true;
-            this.label147.Location = new System.Drawing.Point(4, 135);
-            this.label147.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label147.Location = new System.Drawing.Point(3, 108);
             this.label147.Name = "label147";
-            this.label147.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.label147.Size = new System.Drawing.Size(247, 43);
+            this.label147.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this.label147.Size = new System.Drawing.Size(185, 33);
             this.label147.TabIndex = 3;
             this.label147.Text = "Coordinates of rectangle (where the waypoints located are) in Sygic format";
             // 
             // label148
             // 
             this.label148.AutoSize = true;
-            this.label148.Location = new System.Drawing.Point(4, 180);
-            this.label148.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label148.Location = new System.Drawing.Point(3, 144);
             this.label148.Name = "label148";
-            this.label148.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.label148.Size = new System.Drawing.Size(64, 26);
+            this.label148.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this.label148.Size = new System.Drawing.Size(48, 20);
             this.label148.TabIndex = 4;
             this.label148.Text = "  -  X min";
             // 
             // label149
             // 
             this.label149.AutoSize = true;
-            this.label149.Location = new System.Drawing.Point(4, 225);
-            this.label149.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label149.Location = new System.Drawing.Point(3, 180);
             this.label149.Name = "label149";
-            this.label149.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.label149.Size = new System.Drawing.Size(67, 26);
+            this.label149.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this.label149.Size = new System.Drawing.Size(51, 20);
             this.label149.TabIndex = 5;
             this.label149.Text = "  -  X max";
             // 
             // label150
             // 
             this.label150.AutoSize = true;
-            this.label150.Location = new System.Drawing.Point(4, 270);
-            this.label150.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label150.Location = new System.Drawing.Point(3, 216);
             this.label150.Name = "label150";
-            this.label150.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.label150.Size = new System.Drawing.Size(64, 26);
+            this.label150.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this.label150.Size = new System.Drawing.Size(48, 20);
             this.label150.TabIndex = 6;
             this.label150.Text = "  -  Y min";
             // 
             // label151
             // 
             this.label151.AutoSize = true;
-            this.label151.Location = new System.Drawing.Point(4, 315);
-            this.label151.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label151.Location = new System.Drawing.Point(3, 252);
             this.label151.Name = "label151";
-            this.label151.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.label151.Size = new System.Drawing.Size(67, 26);
+            this.label151.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this.label151.Size = new System.Drawing.Size(51, 20);
             this.label151.TabIndex = 7;
             this.label151.Text = "  -  Y max";
             // 
             // ItineraryGenerator_NumberOfItinerariesNum
             // 
-            this.ItineraryGenerator_NumberOfItinerariesNum.Location = new System.Drawing.Point(265, 4);
-            this.ItineraryGenerator_NumberOfItinerariesNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItineraryGenerator_NumberOfItinerariesNum.Location = new System.Drawing.Point(199, 3);
             this.ItineraryGenerator_NumberOfItinerariesNum.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -1489,7 +1449,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             0});
             this.ItineraryGenerator_NumberOfItinerariesNum.Name = "ItineraryGenerator_NumberOfItinerariesNum";
-            this.ItineraryGenerator_NumberOfItinerariesNum.Size = new System.Drawing.Size(85, 22);
+            this.ItineraryGenerator_NumberOfItinerariesNum.Size = new System.Drawing.Size(64, 20);
             this.ItineraryGenerator_NumberOfItinerariesNum.TabIndex = 8;
             this.ItineraryGenerator_NumberOfItinerariesNum.Value = new decimal(new int[] {
             1,
@@ -1499,8 +1459,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ItineraryGenerator_NumberOfWaypointsNum
             // 
-            this.ItineraryGenerator_NumberOfWaypointsNum.Location = new System.Drawing.Point(265, 49);
-            this.ItineraryGenerator_NumberOfWaypointsNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItineraryGenerator_NumberOfWaypointsNum.Location = new System.Drawing.Point(199, 39);
             this.ItineraryGenerator_NumberOfWaypointsNum.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -1512,7 +1471,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             0});
             this.ItineraryGenerator_NumberOfWaypointsNum.Name = "ItineraryGenerator_NumberOfWaypointsNum";
-            this.ItineraryGenerator_NumberOfWaypointsNum.Size = new System.Drawing.Size(85, 22);
+            this.ItineraryGenerator_NumberOfWaypointsNum.Size = new System.Drawing.Size(64, 20);
             this.ItineraryGenerator_NumberOfWaypointsNum.TabIndex = 9;
             this.ItineraryGenerator_NumberOfWaypointsNum.Value = new decimal(new int[] {
             2,
@@ -1522,8 +1481,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ItineraryGenerator_XminNum
             // 
-            this.ItineraryGenerator_XminNum.Location = new System.Drawing.Point(265, 184);
-            this.ItineraryGenerator_XminNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItineraryGenerator_XminNum.Location = new System.Drawing.Point(199, 147);
             this.ItineraryGenerator_XminNum.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -1535,7 +1493,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.ItineraryGenerator_XminNum.Name = "ItineraryGenerator_XminNum";
-            this.ItineraryGenerator_XminNum.Size = new System.Drawing.Size(160, 22);
+            this.ItineraryGenerator_XminNum.Size = new System.Drawing.Size(120, 20);
             this.ItineraryGenerator_XminNum.TabIndex = 11;
             this.ItineraryGenerator_XminNum.Value = new decimal(new int[] {
             500000,
@@ -1545,8 +1503,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ItineraryGenerator_XmaxNum
             // 
-            this.ItineraryGenerator_XmaxNum.Location = new System.Drawing.Point(265, 229);
-            this.ItineraryGenerator_XmaxNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItineraryGenerator_XmaxNum.Location = new System.Drawing.Point(199, 183);
             this.ItineraryGenerator_XmaxNum.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -1558,7 +1515,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.ItineraryGenerator_XmaxNum.Name = "ItineraryGenerator_XmaxNum";
-            this.ItineraryGenerator_XmaxNum.Size = new System.Drawing.Size(160, 22);
+            this.ItineraryGenerator_XmaxNum.Size = new System.Drawing.Size(120, 20);
             this.ItineraryGenerator_XmaxNum.TabIndex = 12;
             this.ItineraryGenerator_XmaxNum.Value = new decimal(new int[] {
             2300000,
@@ -1568,8 +1525,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ItineraryGenerator_YminNum
             // 
-            this.ItineraryGenerator_YminNum.Location = new System.Drawing.Point(265, 274);
-            this.ItineraryGenerator_YminNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItineraryGenerator_YminNum.Location = new System.Drawing.Point(199, 219);
             this.ItineraryGenerator_YminNum.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -1581,7 +1537,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.ItineraryGenerator_YminNum.Name = "ItineraryGenerator_YminNum";
-            this.ItineraryGenerator_YminNum.Size = new System.Drawing.Size(160, 22);
+            this.ItineraryGenerator_YminNum.Size = new System.Drawing.Size(120, 20);
             this.ItineraryGenerator_YminNum.TabIndex = 13;
             this.ItineraryGenerator_YminNum.Value = new decimal(new int[] {
             4600000,
@@ -1591,8 +1547,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ItineraryGenerator_YmaxNum
             // 
-            this.ItineraryGenerator_YmaxNum.Location = new System.Drawing.Point(265, 319);
-            this.ItineraryGenerator_YmaxNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItineraryGenerator_YmaxNum.Location = new System.Drawing.Point(199, 255);
             this.ItineraryGenerator_YmaxNum.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -1604,7 +1559,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.ItineraryGenerator_YmaxNum.Name = "ItineraryGenerator_YmaxNum";
-            this.ItineraryGenerator_YmaxNum.Size = new System.Drawing.Size(160, 22);
+            this.ItineraryGenerator_YmaxNum.Size = new System.Drawing.Size(120, 20);
             this.ItineraryGenerator_YmaxNum.TabIndex = 14;
             this.ItineraryGenerator_YmaxNum.Value = new decimal(new int[] {
             5200000,
@@ -1617,10 +1572,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ItineraryGeneratorBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ItineraryGeneratorBtn.Location = new System.Drawing.Point(265, 364);
-            this.ItineraryGeneratorBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItineraryGeneratorBtn.Location = new System.Drawing.Point(199, 291);
             this.ItineraryGeneratorBtn.Name = "ItineraryGeneratorBtn";
-            this.ItineraryGeneratorBtn.Size = new System.Drawing.Size(451, 34);
+            this.ItineraryGeneratorBtn.Size = new System.Drawing.Size(338, 33);
             this.ItineraryGeneratorBtn.TabIndex = 15;
             this.ItineraryGeneratorBtn.Text = "Generate";
             this.ItineraryGeneratorBtn.UseVisualStyleBackColor = true;
@@ -1628,10 +1582,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ItineraryGenerator_prefixTBox
             // 
-            this.ItineraryGenerator_prefixTBox.Location = new System.Drawing.Point(265, 94);
-            this.ItineraryGenerator_prefixTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ItineraryGenerator_prefixTBox.Location = new System.Drawing.Point(199, 75);
             this.ItineraryGenerator_prefixTBox.Name = "ItineraryGenerator_prefixTBox";
-            this.ItineraryGenerator_prefixTBox.Size = new System.Drawing.Size(159, 22);
+            this.ItineraryGenerator_prefixTBox.Size = new System.Drawing.Size(120, 20);
             this.ItineraryGenerator_prefixTBox.TabIndex = 16;
             this.ItineraryGenerator_prefixTBox.Text = "MyItin";
             // 
@@ -1640,9 +1593,8 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T3.Controls.Add(this.LocationFromAddressGB);
             this.T3.Controls.Add(this.LocationFromAddressExGB);
             this.T3.Location = new System.Drawing.Point(4, 19);
-            this.T3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T3.Name = "T3";
-            this.T3.Size = new System.Drawing.Size(755, 618);
+            this.T3.Size = new System.Drawing.Size(564, 498);
             this.T3.TabIndex = 2;
             this.T3.Text = "T3";
             this.T3.UseVisualStyleBackColor = true;
@@ -1650,11 +1602,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // LocationFromAddressGB
             // 
             this.LocationFromAddressGB.Controls.Add(this.tableLayoutPanel6);
-            this.LocationFromAddressGB.Location = new System.Drawing.Point(4, 4);
-            this.LocationFromAddressGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LocationFromAddressGB.Location = new System.Drawing.Point(3, 3);
             this.LocationFromAddressGB.Name = "LocationFromAddressGB";
-            this.LocationFromAddressGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.LocationFromAddressGB.Size = new System.Drawing.Size(744, 219);
+            this.LocationFromAddressGB.Size = new System.Drawing.Size(558, 178);
             this.LocationFromAddressGB.TabIndex = 1;
             this.LocationFromAddressGB.TabStop = false;
             this.LocationFromAddressGB.Text = "LocationFromAddress:";
@@ -1673,8 +1623,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel6.Controls.Add(this.LocationFromAddress_bValueMatchChB, 1, 2);
             this.tableLayoutPanel6.Controls.Add(this.LocationFromAddress_MaxTimeNum, 1, 3);
             this.tableLayoutPanel6.Controls.Add(this.LocationFromAddressBtn, 1, 4);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 23);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 19);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 5;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -1682,46 +1631,42 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(736, 188);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(552, 153);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(4, 0);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Location = new System.Drawing.Point(3, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(78, 17);
+            this.label22.Size = new System.Drawing.Size(58, 13);
             this.label22.TabIndex = 0;
             this.label22.Text = "StrAddress";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(4, 37);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Location = new System.Drawing.Point(3, 30);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(55, 17);
+            this.label23.Size = new System.Drawing.Size(42, 13);
             this.label23.TabIndex = 1;
             this.label23.Text = "bPostal";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(4, 74);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Location = new System.Drawing.Point(3, 60);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(90, 17);
+            this.label24.Size = new System.Drawing.Size(70, 13);
             this.label24.TabIndex = 2;
             this.label24.Text = "bValueMatch";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(4, 111);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Location = new System.Drawing.Point(3, 90);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(64, 17);
+            this.label25.Size = new System.Drawing.Size(50, 13);
             this.label25.TabIndex = 3;
             this.label25.Text = "MaxTime";
             // 
@@ -1729,43 +1674,39 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.LocationFromAddress_StrAddressTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LocationFromAddress_StrAddressTBox.Location = new System.Drawing.Point(219, 4);
-            this.LocationFromAddress_StrAddressTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LocationFromAddress_StrAddressTBox.Location = new System.Drawing.Point(164, 3);
             this.LocationFromAddress_StrAddressTBox.Name = "LocationFromAddress_StrAddressTBox";
-            this.LocationFromAddress_StrAddressTBox.Size = new System.Drawing.Size(513, 22);
+            this.LocationFromAddress_StrAddressTBox.Size = new System.Drawing.Size(385, 20);
             this.LocationFromAddress_StrAddressTBox.TabIndex = 4;
             // 
             // LocationFromAddress_bPostal_ChB
             // 
             this.LocationFromAddress_bPostal_ChB.AutoSize = true;
-            this.LocationFromAddress_bPostal_ChB.Location = new System.Drawing.Point(219, 41);
-            this.LocationFromAddress_bPostal_ChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LocationFromAddress_bPostal_ChB.Location = new System.Drawing.Point(164, 33);
             this.LocationFromAddress_bPostal_ChB.Name = "LocationFromAddress_bPostal_ChB";
-            this.LocationFromAddress_bPostal_ChB.Size = new System.Drawing.Size(18, 17);
+            this.LocationFromAddress_bPostal_ChB.Size = new System.Drawing.Size(15, 14);
             this.LocationFromAddress_bPostal_ChB.TabIndex = 5;
             this.LocationFromAddress_bPostal_ChB.UseVisualStyleBackColor = true;
             // 
             // LocationFromAddress_bValueMatchChB
             // 
             this.LocationFromAddress_bValueMatchChB.AutoSize = true;
-            this.LocationFromAddress_bValueMatchChB.Location = new System.Drawing.Point(219, 78);
-            this.LocationFromAddress_bValueMatchChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LocationFromAddress_bValueMatchChB.Location = new System.Drawing.Point(164, 63);
             this.LocationFromAddress_bValueMatchChB.Name = "LocationFromAddress_bValueMatchChB";
-            this.LocationFromAddress_bValueMatchChB.Size = new System.Drawing.Size(18, 17);
+            this.LocationFromAddress_bValueMatchChB.Size = new System.Drawing.Size(15, 14);
             this.LocationFromAddress_bValueMatchChB.TabIndex = 6;
             this.LocationFromAddress_bValueMatchChB.UseVisualStyleBackColor = true;
             // 
             // LocationFromAddress_MaxTimeNum
             // 
-            this.LocationFromAddress_MaxTimeNum.Location = new System.Drawing.Point(219, 115);
-            this.LocationFromAddress_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LocationFromAddress_MaxTimeNum.Location = new System.Drawing.Point(164, 93);
             this.LocationFromAddress_MaxTimeNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.LocationFromAddress_MaxTimeNum.Name = "LocationFromAddress_MaxTimeNum";
-            this.LocationFromAddress_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.LocationFromAddress_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.LocationFromAddress_MaxTimeNum.TabIndex = 7;
             // 
             // LocationFromAddressBtn
@@ -1773,10 +1714,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LocationFromAddressBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LocationFromAddressBtn.Location = new System.Drawing.Point(219, 152);
-            this.LocationFromAddressBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LocationFromAddressBtn.Location = new System.Drawing.Point(164, 123);
             this.LocationFromAddressBtn.Name = "LocationFromAddressBtn";
-            this.LocationFromAddressBtn.Size = new System.Drawing.Size(513, 32);
+            this.LocationFromAddressBtn.Size = new System.Drawing.Size(385, 27);
             this.LocationFromAddressBtn.TabIndex = 8;
             this.LocationFromAddressBtn.Text = "LocationFromAddress";
             this.LocationFromAddressBtn.UseVisualStyleBackColor = true;
@@ -1785,11 +1725,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // LocationFromAddressExGB
             // 
             this.LocationFromAddressExGB.Controls.Add(this.LocationFromAddressExTlp);
-            this.LocationFromAddressExGB.Location = new System.Drawing.Point(4, 238);
-            this.LocationFromAddressExGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LocationFromAddressExGB.Location = new System.Drawing.Point(3, 193);
             this.LocationFromAddressExGB.Name = "LocationFromAddressExGB";
-            this.LocationFromAddressExGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.LocationFromAddressExGB.Size = new System.Drawing.Size(744, 219);
+            this.LocationFromAddressExGB.Size = new System.Drawing.Size(558, 178);
             this.LocationFromAddressExGB.TabIndex = 0;
             this.LocationFromAddressExGB.TabStop = false;
             this.LocationFromAddressExGB.Text = "LocationFromAddressEx:";
@@ -1808,8 +1746,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LocationFromAddressExTlp.Controls.Add(this.LocationFromAddressEx_bFuzzySearchChB, 1, 2);
             this.LocationFromAddressExTlp.Controls.Add(this.LocationFromAddressEx_MaxTimeNum, 1, 3);
             this.LocationFromAddressExTlp.Controls.Add(this.LocationFromAddressEx_OkBtn, 1, 4);
-            this.LocationFromAddressExTlp.Location = new System.Drawing.Point(0, 23);
-            this.LocationFromAddressExTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LocationFromAddressExTlp.Location = new System.Drawing.Point(0, 19);
             this.LocationFromAddressExTlp.Name = "LocationFromAddressExTlp";
             this.LocationFromAddressExTlp.RowCount = 5;
             this.LocationFromAddressExTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -1817,46 +1754,42 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LocationFromAddressExTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.LocationFromAddressExTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.LocationFromAddressExTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.LocationFromAddressExTlp.Size = new System.Drawing.Size(736, 188);
+            this.LocationFromAddressExTlp.Size = new System.Drawing.Size(552, 153);
             this.LocationFromAddressExTlp.TabIndex = 0;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 0);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 17);
+            this.label5.Size = new System.Drawing.Size(56, 13);
             this.label5.TabIndex = 0;
             this.label5.Text = "strAddress";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(4, 37);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(3, 30);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 17);
+            this.label6.Size = new System.Drawing.Size(42, 13);
             this.label6.TabIndex = 1;
             this.label6.Text = "bPostal";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(4, 74);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(3, 60);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 17);
+            this.label7.Size = new System.Drawing.Size(74, 13);
             this.label7.TabIndex = 2;
             this.label7.Text = "bFuzzySearch";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(4, 111);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(3, 90);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 17);
+            this.label8.Size = new System.Drawing.Size(50, 13);
             this.label8.TabIndex = 3;
             this.label8.Text = "MaxTime";
             // 
@@ -1864,19 +1797,17 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.LocationFromAddressEx_strAddressTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LocationFromAddressEx_strAddressTBox.Location = new System.Drawing.Point(219, 4);
-            this.LocationFromAddressEx_strAddressTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LocationFromAddressEx_strAddressTBox.Location = new System.Drawing.Point(164, 3);
             this.LocationFromAddressEx_strAddressTBox.Name = "LocationFromAddressEx_strAddressTBox";
-            this.LocationFromAddressEx_strAddressTBox.Size = new System.Drawing.Size(513, 22);
+            this.LocationFromAddressEx_strAddressTBox.Size = new System.Drawing.Size(385, 20);
             this.LocationFromAddressEx_strAddressTBox.TabIndex = 4;
             // 
             // LocationFromAddressEx_bPostalChB
             // 
             this.LocationFromAddressEx_bPostalChB.AutoSize = true;
-            this.LocationFromAddressEx_bPostalChB.Location = new System.Drawing.Point(219, 41);
-            this.LocationFromAddressEx_bPostalChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LocationFromAddressEx_bPostalChB.Location = new System.Drawing.Point(164, 33);
             this.LocationFromAddressEx_bPostalChB.Name = "LocationFromAddressEx_bPostalChB";
-            this.LocationFromAddressEx_bPostalChB.Size = new System.Drawing.Size(18, 17);
+            this.LocationFromAddressEx_bPostalChB.Size = new System.Drawing.Size(15, 14);
             this.LocationFromAddressEx_bPostalChB.TabIndex = 5;
             this.LocationFromAddressEx_bPostalChB.UseVisualStyleBackColor = true;
             // 
@@ -1885,24 +1816,22 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LocationFromAddressEx_bFuzzySearchChB.AutoSize = true;
             this.LocationFromAddressEx_bFuzzySearchChB.Checked = true;
             this.LocationFromAddressEx_bFuzzySearchChB.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.LocationFromAddressEx_bFuzzySearchChB.Location = new System.Drawing.Point(219, 78);
-            this.LocationFromAddressEx_bFuzzySearchChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LocationFromAddressEx_bFuzzySearchChB.Location = new System.Drawing.Point(164, 63);
             this.LocationFromAddressEx_bFuzzySearchChB.Name = "LocationFromAddressEx_bFuzzySearchChB";
-            this.LocationFromAddressEx_bFuzzySearchChB.Size = new System.Drawing.Size(18, 17);
+            this.LocationFromAddressEx_bFuzzySearchChB.Size = new System.Drawing.Size(15, 14);
             this.LocationFromAddressEx_bFuzzySearchChB.TabIndex = 6;
             this.LocationFromAddressEx_bFuzzySearchChB.UseVisualStyleBackColor = true;
             // 
             // LocationFromAddressEx_MaxTimeNum
             // 
-            this.LocationFromAddressEx_MaxTimeNum.Location = new System.Drawing.Point(219, 115);
-            this.LocationFromAddressEx_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LocationFromAddressEx_MaxTimeNum.Location = new System.Drawing.Point(164, 93);
             this.LocationFromAddressEx_MaxTimeNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.LocationFromAddressEx_MaxTimeNum.Name = "LocationFromAddressEx_MaxTimeNum";
-            this.LocationFromAddressEx_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.LocationFromAddressEx_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.LocationFromAddressEx_MaxTimeNum.TabIndex = 7;
             // 
             // LocationFromAddressEx_OkBtn
@@ -1910,10 +1839,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LocationFromAddressEx_OkBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LocationFromAddressEx_OkBtn.Location = new System.Drawing.Point(219, 152);
-            this.LocationFromAddressEx_OkBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LocationFromAddressEx_OkBtn.Location = new System.Drawing.Point(164, 123);
             this.LocationFromAddressEx_OkBtn.Name = "LocationFromAddressEx_OkBtn";
-            this.LocationFromAddressEx_OkBtn.Size = new System.Drawing.Size(513, 32);
+            this.LocationFromAddressEx_OkBtn.Size = new System.Drawing.Size(385, 27);
             this.LocationFromAddressEx_OkBtn.TabIndex = 8;
             this.LocationFromAddressEx_OkBtn.Text = "LocationFromAddressEx";
             this.LocationFromAddressEx_OkBtn.UseVisualStyleBackColor = true;
@@ -1923,9 +1851,8 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T4.Controls.Add(this.DirectGeocodingGB);
             this.T4.Location = new System.Drawing.Point(4, 19);
-            this.T4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T4.Name = "T4";
-            this.T4.Size = new System.Drawing.Size(755, 618);
+            this.T4.Size = new System.Drawing.Size(564, 498);
             this.T4.TabIndex = 3;
             this.T4.Text = "T4";
             this.T4.UseVisualStyleBackColor = true;
@@ -1933,11 +1860,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // DirectGeocodingGB
             // 
             this.DirectGeocodingGB.Controls.Add(this.tableLayoutPanel1);
-            this.DirectGeocodingGB.Location = new System.Drawing.Point(4, 4);
-            this.DirectGeocodingGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DirectGeocodingGB.Location = new System.Drawing.Point(3, 3);
             this.DirectGeocodingGB.Name = "DirectGeocodingGB";
-            this.DirectGeocodingGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.DirectGeocodingGB.Size = new System.Drawing.Size(744, 219);
+            this.DirectGeocodingGB.Size = new System.Drawing.Size(558, 178);
             this.DirectGeocodingGB.TabIndex = 0;
             this.DirectGeocodingGB.TabStop = false;
             this.DirectGeocodingGB.Text = "Direct Geocoding (GetLocationInfo + ShowCoordinatesOnMap):";
@@ -1954,51 +1879,46 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel1.Controls.Add(this.DirectGeocoding_Y_Num, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.DirectGeocoding_MaxTime_Num, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.DirectGeocodingBtn, 1, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(728, 187);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(546, 152);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(4, 0);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(3, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(158, 34);
+            this.label9.Size = new System.Drawing.Size(117, 26);
             this.label9.TabIndex = 0;
             this.label9.Text = "X-coordinate (Latitude) multiplied by 100000:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(4, 46);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(3, 38);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(170, 34);
+            this.label10.Size = new System.Drawing.Size(126, 26);
             this.label10.TabIndex = 1;
             this.label10.Text = "Y-coordinate (Longitude) multiplied by 100000:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(4, 92);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(3, 76);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(68, 17);
+            this.label11.Size = new System.Drawing.Size(53, 13);
             this.label11.TabIndex = 2;
             this.label11.Text = "MaxTime:";
             // 
             // DirectGeocoding_X_Num
             // 
-            this.DirectGeocoding_X_Num.Location = new System.Drawing.Point(200, 4);
-            this.DirectGeocoding_X_Num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DirectGeocoding_X_Num.Location = new System.Drawing.Point(150, 3);
             this.DirectGeocoding_X_Num.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -2010,7 +1930,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.DirectGeocoding_X_Num.Name = "DirectGeocoding_X_Num";
-            this.DirectGeocoding_X_Num.Size = new System.Drawing.Size(196, 22);
+            this.DirectGeocoding_X_Num.Size = new System.Drawing.Size(147, 20);
             this.DirectGeocoding_X_Num.TabIndex = 3;
             this.DirectGeocoding_X_Num.Value = new decimal(new int[] {
             1712355,
@@ -2020,8 +1940,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // DirectGeocoding_Y_Num
             // 
-            this.DirectGeocoding_Y_Num.Location = new System.Drawing.Point(200, 50);
-            this.DirectGeocoding_Y_Num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DirectGeocoding_Y_Num.Location = new System.Drawing.Point(150, 41);
             this.DirectGeocoding_Y_Num.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -2033,7 +1952,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.DirectGeocoding_Y_Num.Name = "DirectGeocoding_Y_Num";
-            this.DirectGeocoding_Y_Num.Size = new System.Drawing.Size(196, 22);
+            this.DirectGeocoding_Y_Num.Size = new System.Drawing.Size(147, 20);
             this.DirectGeocoding_Y_Num.TabIndex = 4;
             this.DirectGeocoding_Y_Num.Value = new decimal(new int[] {
             4813063,
@@ -2043,15 +1962,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // DirectGeocoding_MaxTime_Num
             // 
-            this.DirectGeocoding_MaxTime_Num.Location = new System.Drawing.Point(200, 96);
-            this.DirectGeocoding_MaxTime_Num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DirectGeocoding_MaxTime_Num.Location = new System.Drawing.Point(150, 79);
             this.DirectGeocoding_MaxTime_Num.Maximum = new decimal(new int[] {
             100000,
             0,
             0,
             0});
             this.DirectGeocoding_MaxTime_Num.Name = "DirectGeocoding_MaxTime_Num";
-            this.DirectGeocoding_MaxTime_Num.Size = new System.Drawing.Size(119, 22);
+            this.DirectGeocoding_MaxTime_Num.Size = new System.Drawing.Size(89, 20);
             this.DirectGeocoding_MaxTime_Num.TabIndex = 5;
             // 
             // DirectGeocodingBtn
@@ -2059,10 +1977,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.DirectGeocodingBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DirectGeocodingBtn.Location = new System.Drawing.Point(200, 142);
-            this.DirectGeocodingBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DirectGeocodingBtn.Location = new System.Drawing.Point(150, 117);
             this.DirectGeocodingBtn.Name = "DirectGeocodingBtn";
-            this.DirectGeocodingBtn.Size = new System.Drawing.Size(524, 41);
+            this.DirectGeocodingBtn.Size = new System.Drawing.Size(393, 32);
             this.DirectGeocodingBtn.TabIndex = 6;
             this.DirectGeocodingBtn.Text = "DirectGeocoding";
             this.DirectGeocodingBtn.UseVisualStyleBackColor = true;
@@ -2072,10 +1989,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T5.Controls.Add(this.OnMenuCommandGB);
             this.T5.Location = new System.Drawing.Point(4, 19);
-            this.T5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T5.Name = "T5";
-            this.T5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T5.Size = new System.Drawing.Size(755, 618);
+            this.T5.Padding = new System.Windows.Forms.Padding(3);
+            this.T5.Size = new System.Drawing.Size(564, 498);
             this.T5.TabIndex = 4;
             this.T5.Text = "T5";
             this.T5.UseVisualStyleBackColor = true;
@@ -2083,11 +1999,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // OnMenuCommandGB
             // 
             this.OnMenuCommandGB.Controls.Add(this.OnMenuCommandTlp);
-            this.OnMenuCommandGB.Location = new System.Drawing.Point(8, 7);
-            this.OnMenuCommandGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OnMenuCommandGB.Location = new System.Drawing.Point(6, 6);
             this.OnMenuCommandGB.Name = "OnMenuCommandGB";
-            this.OnMenuCommandGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.OnMenuCommandGB.Size = new System.Drawing.Size(736, 231);
+            this.OnMenuCommandGB.Size = new System.Drawing.Size(552, 188);
             this.OnMenuCommandGB.TabIndex = 2;
             this.OnMenuCommandGB.TabStop = false;
             this.OnMenuCommandGB.Text = "OnMenuCommand";
@@ -2106,8 +2020,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.OnMenuCommandTlp.Controls.Add(this.label3, 0, 2);
             this.OnMenuCommandTlp.Controls.Add(this.OnMenuCommand_MaxTimeNum, 1, 3);
             this.OnMenuCommandTlp.Controls.Add(this.OnMenuCommand_IdNum, 1, 0);
-            this.OnMenuCommandTlp.Location = new System.Drawing.Point(8, 23);
-            this.OnMenuCommandTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OnMenuCommandTlp.Location = new System.Drawing.Point(6, 19);
             this.OnMenuCommandTlp.Name = "OnMenuCommandTlp";
             this.OnMenuCommandTlp.RowCount = 5;
             this.OnMenuCommandTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -2115,7 +2028,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.OnMenuCommandTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.OnMenuCommandTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.OnMenuCommandTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.OnMenuCommandTlp.Size = new System.Drawing.Size(720, 201);
+            this.OnMenuCommandTlp.Size = new System.Drawing.Size(540, 163);
             this.OnMenuCommandTlp.TabIndex = 9;
             // 
             // OnMenuCommand_bShowApplicationChBox
@@ -2123,27 +2036,24 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.OnMenuCommand_bShowApplicationChBox.AutoSize = true;
             this.OnMenuCommand_bShowApplicationChBox.Checked = true;
             this.OnMenuCommand_bShowApplicationChBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.OnMenuCommand_bShowApplicationChBox.Location = new System.Drawing.Point(161, 84);
-            this.OnMenuCommand_bShowApplicationChBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OnMenuCommand_bShowApplicationChBox.Location = new System.Drawing.Point(120, 67);
             this.OnMenuCommand_bShowApplicationChBox.Name = "OnMenuCommand_bShowApplicationChBox";
-            this.OnMenuCommand_bShowApplicationChBox.Size = new System.Drawing.Size(18, 17);
+            this.OnMenuCommand_bShowApplicationChBox.Size = new System.Drawing.Size(15, 14);
             this.OnMenuCommand_bShowApplicationChBox.TabIndex = 10;
             this.OnMenuCommand_bShowApplicationChBox.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 120);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(3, 96);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 17);
+            this.label4.Size = new System.Drawing.Size(50, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "MaxTime";
             // 
             // OnMenuCommand_SubIdNum
             // 
-            this.OnMenuCommand_SubIdNum.Location = new System.Drawing.Point(161, 44);
-            this.OnMenuCommand_SubIdNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OnMenuCommand_SubIdNum.Location = new System.Drawing.Point(120, 35);
             this.OnMenuCommand_SubIdNum.Maximum = new decimal(new int[] {
             999,
             0,
@@ -2155,16 +2065,15 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.OnMenuCommand_SubIdNum.Name = "OnMenuCommand_SubIdNum";
-            this.OnMenuCommand_SubIdNum.Size = new System.Drawing.Size(156, 22);
+            this.OnMenuCommand_SubIdNum.Size = new System.Drawing.Size(117, 20);
             this.OnMenuCommand_SubIdNum.TabIndex = 9;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 40);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(3, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 17);
+            this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "nSubId";
             // 
@@ -2173,10 +2082,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.OnMenuCommandBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.OnMenuCommandBtn.Location = new System.Drawing.Point(161, 164);
-            this.OnMenuCommandBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OnMenuCommandBtn.Location = new System.Drawing.Point(120, 131);
             this.OnMenuCommandBtn.Name = "OnMenuCommandBtn";
-            this.OnMenuCommandBtn.Size = new System.Drawing.Size(555, 33);
+            this.OnMenuCommandBtn.Size = new System.Drawing.Size(417, 29);
             this.OnMenuCommandBtn.TabIndex = 6;
             this.OnMenuCommandBtn.Text = "OnMenuCommand";
             this.OnMenuCommandBtn.UseVisualStyleBackColor = true;
@@ -2185,40 +2093,36 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // nIdLbl
             // 
             this.nIdLbl.AutoSize = true;
-            this.nIdLbl.Location = new System.Drawing.Point(4, 0);
-            this.nIdLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nIdLbl.Location = new System.Drawing.Point(3, 0);
             this.nIdLbl.Name = "nIdLbl";
-            this.nIdLbl.Size = new System.Drawing.Size(27, 17);
+            this.nIdLbl.Size = new System.Drawing.Size(22, 13);
             this.nIdLbl.TabIndex = 11;
             this.nIdLbl.Text = "nId";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 80);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(3, 64);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 17);
+            this.label3.Size = new System.Drawing.Size(92, 13);
             this.label3.TabIndex = 12;
             this.label3.Text = "bShowApplication";
             // 
             // OnMenuCommand_MaxTimeNum
             // 
-            this.OnMenuCommand_MaxTimeNum.Location = new System.Drawing.Point(161, 124);
-            this.OnMenuCommand_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OnMenuCommand_MaxTimeNum.Location = new System.Drawing.Point(120, 99);
             this.OnMenuCommand_MaxTimeNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.OnMenuCommand_MaxTimeNum.Name = "OnMenuCommand_MaxTimeNum";
-            this.OnMenuCommand_MaxTimeNum.Size = new System.Drawing.Size(156, 22);
+            this.OnMenuCommand_MaxTimeNum.Size = new System.Drawing.Size(117, 20);
             this.OnMenuCommand_MaxTimeNum.TabIndex = 13;
             // 
             // OnMenuCommand_IdNum
             // 
-            this.OnMenuCommand_IdNum.Location = new System.Drawing.Point(161, 4);
-            this.OnMenuCommand_IdNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OnMenuCommand_IdNum.Location = new System.Drawing.Point(120, 3);
             this.OnMenuCommand_IdNum.Maximum = new decimal(new int[] {
             999,
             0,
@@ -2230,7 +2134,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.OnMenuCommand_IdNum.Name = "OnMenuCommand_IdNum";
-            this.OnMenuCommand_IdNum.Size = new System.Drawing.Size(156, 22);
+            this.OnMenuCommand_IdNum.Size = new System.Drawing.Size(117, 20);
             this.OnMenuCommand_IdNum.TabIndex = 10;
             // 
             // T6
@@ -2238,10 +2142,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T6.Controls.Add(this.GetCoordinatesFromListOfOffsetIdsGBox);
             this.T6.Controls.Add(this.GetCoordinatesFromOffsetGBox);
             this.T6.Location = new System.Drawing.Point(4, 19);
-            this.T6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T6.Name = "T6";
-            this.T6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T6.Size = new System.Drawing.Size(755, 618);
+            this.T6.Padding = new System.Windows.Forms.Padding(3);
+            this.T6.Size = new System.Drawing.Size(564, 498);
             this.T6.TabIndex = 5;
             this.T6.Text = "T6";
             this.T6.UseVisualStyleBackColor = true;
@@ -2249,11 +2152,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // GetCoordinatesFromListOfOffsetIdsGBox
             // 
             this.GetCoordinatesFromListOfOffsetIdsGBox.Controls.Add(this.GetCoordinatesFromListOfOffsetIdsTlp);
-            this.GetCoordinatesFromListOfOffsetIdsGBox.Location = new System.Drawing.Point(8, 230);
-            this.GetCoordinatesFromListOfOffsetIdsGBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetCoordinatesFromListOfOffsetIdsGBox.Location = new System.Drawing.Point(6, 187);
             this.GetCoordinatesFromListOfOffsetIdsGBox.Name = "GetCoordinatesFromListOfOffsetIdsGBox";
-            this.GetCoordinatesFromListOfOffsetIdsGBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GetCoordinatesFromListOfOffsetIdsGBox.Size = new System.Drawing.Size(736, 153);
+            this.GetCoordinatesFromListOfOffsetIdsGBox.Size = new System.Drawing.Size(552, 124);
             this.GetCoordinatesFromListOfOffsetIdsGBox.TabIndex = 3;
             this.GetCoordinatesFromListOfOffsetIdsGBox.TabStop = false;
             this.GetCoordinatesFromListOfOffsetIdsGBox.Text = "GetCoordinatesFromListOfOffsetIds";
@@ -2266,22 +2167,20 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetCoordinatesFromListOfOffsetIdsTlp.Controls.Add(this.label133, 0, 0);
             this.GetCoordinatesFromListOfOffsetIdsTlp.Controls.Add(this.GetCoordinatesFromListOfOffsetIdsPathTBox, 1, 0);
             this.GetCoordinatesFromListOfOffsetIdsTlp.Controls.Add(this.GetCoordinatesFromListOfOffsetIdsBtn, 1, 1);
-            this.GetCoordinatesFromListOfOffsetIdsTlp.Location = new System.Drawing.Point(8, 23);
-            this.GetCoordinatesFromListOfOffsetIdsTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetCoordinatesFromListOfOffsetIdsTlp.Location = new System.Drawing.Point(6, 19);
             this.GetCoordinatesFromListOfOffsetIdsTlp.Name = "GetCoordinatesFromListOfOffsetIdsTlp";
             this.GetCoordinatesFromListOfOffsetIdsTlp.RowCount = 2;
             this.GetCoordinatesFromListOfOffsetIdsTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.GetCoordinatesFromListOfOffsetIdsTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.GetCoordinatesFromListOfOffsetIdsTlp.Size = new System.Drawing.Size(720, 92);
+            this.GetCoordinatesFromListOfOffsetIdsTlp.Size = new System.Drawing.Size(540, 75);
             this.GetCoordinatesFromListOfOffsetIdsTlp.TabIndex = 0;
             // 
             // label133
             // 
             this.label133.AutoSize = true;
-            this.label133.Location = new System.Drawing.Point(4, 0);
-            this.label133.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label133.Location = new System.Drawing.Point(3, 0);
             this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(242, 17);
+            this.label133.Size = new System.Drawing.Size(181, 13);
             this.label133.TabIndex = 0;
             this.label133.Text = "Path to file containing list of offset ids";
             // 
@@ -2289,10 +2188,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.GetCoordinatesFromListOfOffsetIdsPathTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.GetCoordinatesFromListOfOffsetIdsPathTBox.Location = new System.Drawing.Point(256, 4);
-            this.GetCoordinatesFromListOfOffsetIdsPathTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetCoordinatesFromListOfOffsetIdsPathTBox.Location = new System.Drawing.Point(192, 3);
             this.GetCoordinatesFromListOfOffsetIdsPathTBox.Name = "GetCoordinatesFromListOfOffsetIdsPathTBox";
-            this.GetCoordinatesFromListOfOffsetIdsPathTBox.Size = new System.Drawing.Size(460, 22);
+            this.GetCoordinatesFromListOfOffsetIdsPathTBox.Size = new System.Drawing.Size(345, 20);
             this.GetCoordinatesFromListOfOffsetIdsPathTBox.TabIndex = 1;
             // 
             // GetCoordinatesFromListOfOffsetIdsBtn
@@ -2300,10 +2198,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetCoordinatesFromListOfOffsetIdsBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.GetCoordinatesFromListOfOffsetIdsBtn.Location = new System.Drawing.Point(256, 50);
-            this.GetCoordinatesFromListOfOffsetIdsBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetCoordinatesFromListOfOffsetIdsBtn.Location = new System.Drawing.Point(192, 40);
             this.GetCoordinatesFromListOfOffsetIdsBtn.Name = "GetCoordinatesFromListOfOffsetIdsBtn";
-            this.GetCoordinatesFromListOfOffsetIdsBtn.Size = new System.Drawing.Size(460, 38);
+            this.GetCoordinatesFromListOfOffsetIdsBtn.Size = new System.Drawing.Size(345, 32);
             this.GetCoordinatesFromListOfOffsetIdsBtn.TabIndex = 2;
             this.GetCoordinatesFromListOfOffsetIdsBtn.Text = "GetCoordinatesFromListOfOffsetIds";
             this.GetCoordinatesFromListOfOffsetIdsBtn.UseVisualStyleBackColor = true;
@@ -2312,11 +2209,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // GetCoordinatesFromOffsetGBox
             // 
             this.GetCoordinatesFromOffsetGBox.Controls.Add(this.tableLayoutPanel7);
-            this.GetCoordinatesFromOffsetGBox.Location = new System.Drawing.Point(8, 7);
-            this.GetCoordinatesFromOffsetGBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetCoordinatesFromOffsetGBox.Location = new System.Drawing.Point(6, 6);
             this.GetCoordinatesFromOffsetGBox.Name = "GetCoordinatesFromOffsetGBox";
-            this.GetCoordinatesFromOffsetGBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GetCoordinatesFromOffsetGBox.Size = new System.Drawing.Size(736, 215);
+            this.GetCoordinatesFromOffsetGBox.Size = new System.Drawing.Size(552, 175);
             this.GetCoordinatesFromOffsetGBox.TabIndex = 2;
             this.GetCoordinatesFromOffsetGBox.TabStop = false;
             this.GetCoordinatesFromOffsetGBox.Text = "GetCoordinatesFromOffset";
@@ -2333,66 +2228,60 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel7.Controls.Add(this.GetCoordinatesFromOffset_RoadOffsetNum, 1, 1);
             this.tableLayoutPanel7.Controls.Add(this.GetCoordinatesFromOffsetBtn, 1, 3);
             this.tableLayoutPanel7.Controls.Add(this.GetCoordinatesFromOffset_MaxTimeNum, 1, 2);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 4;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(720, 175);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(540, 142);
             this.tableLayoutPanel7.TabIndex = 0;
             // 
             // label128
             // 
             this.label128.AutoSize = true;
-            this.label128.Location = new System.Drawing.Point(4, 0);
-            this.label128.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label128.Location = new System.Drawing.Point(3, 0);
             this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(59, 17);
+            this.label128.Size = new System.Drawing.Size(46, 13);
             this.label128.TabIndex = 0;
             this.label128.Text = "IsoCode";
             // 
             // label129
             // 
             this.label129.AutoSize = true;
-            this.label129.Location = new System.Drawing.Point(4, 43);
-            this.label129.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label129.Location = new System.Drawing.Point(3, 35);
             this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(80, 17);
+            this.label129.Size = new System.Drawing.Size(61, 13);
             this.label129.TabIndex = 1;
             this.label129.Text = "RoadOffset";
             // 
             // label130
             // 
             this.label130.AutoSize = true;
-            this.label130.Location = new System.Drawing.Point(4, 86);
-            this.label130.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label130.Location = new System.Drawing.Point(3, 70);
             this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(64, 17);
+            this.label130.Size = new System.Drawing.Size(50, 13);
             this.label130.TabIndex = 2;
             this.label130.Text = "MaxTime";
             // 
             // GetCoordinatesFromOffset_IsoCodeTBox
             // 
-            this.GetCoordinatesFromOffset_IsoCodeTBox.Location = new System.Drawing.Point(258, 4);
-            this.GetCoordinatesFromOffset_IsoCodeTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetCoordinatesFromOffset_IsoCodeTBox.Location = new System.Drawing.Point(193, 3);
             this.GetCoordinatesFromOffset_IsoCodeTBox.Name = "GetCoordinatesFromOffset_IsoCodeTBox";
-            this.GetCoordinatesFromOffset_IsoCodeTBox.Size = new System.Drawing.Size(97, 22);
+            this.GetCoordinatesFromOffset_IsoCodeTBox.Size = new System.Drawing.Size(74, 20);
             this.GetCoordinatesFromOffset_IsoCodeTBox.TabIndex = 3;
             // 
             // GetCoordinatesFromOffset_RoadOffsetNum
             // 
-            this.GetCoordinatesFromOffset_RoadOffsetNum.Location = new System.Drawing.Point(258, 47);
-            this.GetCoordinatesFromOffset_RoadOffsetNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetCoordinatesFromOffset_RoadOffsetNum.Location = new System.Drawing.Point(193, 38);
             this.GetCoordinatesFromOffset_RoadOffsetNum.Maximum = new decimal(new int[] {
             -727379969,
             232,
             0,
             0});
             this.GetCoordinatesFromOffset_RoadOffsetNum.Name = "GetCoordinatesFromOffset_RoadOffsetNum";
-            this.GetCoordinatesFromOffset_RoadOffsetNum.Size = new System.Drawing.Size(248, 22);
+            this.GetCoordinatesFromOffset_RoadOffsetNum.Size = new System.Drawing.Size(186, 20);
             this.GetCoordinatesFromOffset_RoadOffsetNum.TabIndex = 4;
             // 
             // GetCoordinatesFromOffsetBtn
@@ -2400,10 +2289,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetCoordinatesFromOffsetBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.GetCoordinatesFromOffsetBtn.Location = new System.Drawing.Point(258, 133);
-            this.GetCoordinatesFromOffsetBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetCoordinatesFromOffsetBtn.Location = new System.Drawing.Point(193, 108);
             this.GetCoordinatesFromOffsetBtn.Name = "GetCoordinatesFromOffsetBtn";
-            this.GetCoordinatesFromOffsetBtn.Size = new System.Drawing.Size(458, 38);
+            this.GetCoordinatesFromOffsetBtn.Size = new System.Drawing.Size(344, 31);
             this.GetCoordinatesFromOffsetBtn.TabIndex = 6;
             this.GetCoordinatesFromOffsetBtn.Text = "GetCoordinatesFromOffset";
             this.GetCoordinatesFromOffsetBtn.UseVisualStyleBackColor = true;
@@ -2411,15 +2299,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // GetCoordinatesFromOffset_MaxTimeNum
             // 
-            this.GetCoordinatesFromOffset_MaxTimeNum.Location = new System.Drawing.Point(258, 90);
-            this.GetCoordinatesFromOffset_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetCoordinatesFromOffset_MaxTimeNum.Location = new System.Drawing.Point(193, 73);
             this.GetCoordinatesFromOffset_MaxTimeNum.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
             this.GetCoordinatesFromOffset_MaxTimeNum.Name = "GetCoordinatesFromOffset_MaxTimeNum";
-            this.GetCoordinatesFromOffset_MaxTimeNum.Size = new System.Drawing.Size(131, 22);
+            this.GetCoordinatesFromOffset_MaxTimeNum.Size = new System.Drawing.Size(98, 20);
             this.GetCoordinatesFromOffset_MaxTimeNum.TabIndex = 5;
             // 
             // T7
@@ -2428,10 +2315,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T7.Controls.Add(this.TripEndGB);
             this.T7.Controls.Add(this.TripStartGB);
             this.T7.Location = new System.Drawing.Point(4, 19);
-            this.T7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T7.Name = "T7";
-            this.T7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T7.Size = new System.Drawing.Size(755, 618);
+            this.T7.Padding = new System.Windows.Forms.Padding(3);
+            this.T7.Size = new System.Drawing.Size(564, 498);
             this.T7.TabIndex = 6;
             this.T7.Text = "T7";
             this.T7.UseVisualStyleBackColor = true;
@@ -2439,11 +2325,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // TripAddUserEventGB
             // 
             this.TripAddUserEventGB.Controls.Add(this.tableLayoutPanel5);
-            this.TripAddUserEventGB.Location = new System.Drawing.Point(11, 350);
-            this.TripAddUserEventGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TripAddUserEventGB.Location = new System.Drawing.Point(8, 284);
             this.TripAddUserEventGB.Name = "TripAddUserEventGB";
-            this.TripAddUserEventGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TripAddUserEventGB.Size = new System.Drawing.Size(733, 192);
+            this.TripAddUserEventGB.Size = new System.Drawing.Size(550, 156);
             this.TripAddUserEventGB.TabIndex = 2;
             this.TripAddUserEventGB.TabStop = false;
             this.TripAddUserEventGB.Text = "TripAddUserEvent:";
@@ -2460,79 +2344,72 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel5.Controls.Add(this.TripAddUserEvent_CustomID, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.TripAddUserEvent_MaxTime, 1, 2);
             this.tableLayoutPanel5.Controls.Add(this.TripAddUserEventBtn, 1, 3);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 4;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(713, 161);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(535, 131);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(4, 0);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Location = new System.Drawing.Point(3, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(81, 17);
+            this.label19.Size = new System.Drawing.Size(63, 13);
             this.label19.TabIndex = 0;
             this.label19.Text = "EventName";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(4, 40);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Location = new System.Drawing.Point(3, 32);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(68, 17);
+            this.label20.Size = new System.Drawing.Size(53, 13);
             this.label20.TabIndex = 1;
             this.label20.Text = "CustomID";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(4, 80);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Location = new System.Drawing.Point(3, 64);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(64, 17);
+            this.label21.Size = new System.Drawing.Size(50, 13);
             this.label21.TabIndex = 2;
             this.label21.Text = "MaxTime";
             // 
             // TripAddUserEvent_EventNameTBox
             // 
-            this.TripAddUserEvent_EventNameTBox.Location = new System.Drawing.Point(185, 4);
-            this.TripAddUserEvent_EventNameTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TripAddUserEvent_EventNameTBox.Location = new System.Drawing.Point(139, 3);
             this.TripAddUserEvent_EventNameTBox.Name = "TripAddUserEvent_EventNameTBox";
-            this.TripAddUserEvent_EventNameTBox.Size = new System.Drawing.Size(523, 22);
+            this.TripAddUserEvent_EventNameTBox.Size = new System.Drawing.Size(393, 20);
             this.TripAddUserEvent_EventNameTBox.TabIndex = 3;
             // 
             // TripAddUserEvent_CustomID
             // 
-            this.TripAddUserEvent_CustomID.Location = new System.Drawing.Point(185, 44);
-            this.TripAddUserEvent_CustomID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TripAddUserEvent_CustomID.Location = new System.Drawing.Point(139, 35);
             this.TripAddUserEvent_CustomID.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
             this.TripAddUserEvent_CustomID.Name = "TripAddUserEvent_CustomID";
-            this.TripAddUserEvent_CustomID.Size = new System.Drawing.Size(160, 22);
+            this.TripAddUserEvent_CustomID.Size = new System.Drawing.Size(120, 20);
             this.TripAddUserEvent_CustomID.TabIndex = 4;
             // 
             // TripAddUserEvent_MaxTime
             // 
-            this.TripAddUserEvent_MaxTime.Location = new System.Drawing.Point(185, 84);
-            this.TripAddUserEvent_MaxTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TripAddUserEvent_MaxTime.Location = new System.Drawing.Point(139, 67);
             this.TripAddUserEvent_MaxTime.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.TripAddUserEvent_MaxTime.Name = "TripAddUserEvent_MaxTime";
-            this.TripAddUserEvent_MaxTime.Size = new System.Drawing.Size(160, 22);
+            this.TripAddUserEvent_MaxTime.Size = new System.Drawing.Size(120, 20);
             this.TripAddUserEvent_MaxTime.TabIndex = 5;
             // 
             // TripAddUserEventBtn
@@ -2540,10 +2417,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.TripAddUserEventBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TripAddUserEventBtn.Location = new System.Drawing.Point(185, 124);
-            this.TripAddUserEventBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TripAddUserEventBtn.Location = new System.Drawing.Point(139, 99);
             this.TripAddUserEventBtn.Name = "TripAddUserEventBtn";
-            this.TripAddUserEventBtn.Size = new System.Drawing.Size(524, 33);
+            this.TripAddUserEventBtn.Size = new System.Drawing.Size(393, 29);
             this.TripAddUserEventBtn.TabIndex = 6;
             this.TripAddUserEventBtn.Text = "TripAddUserEvent";
             this.TripAddUserEventBtn.UseVisualStyleBackColor = true;
@@ -2552,11 +2428,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // TripEndGB
             // 
             this.TripEndGB.Controls.Add(this.tableLayoutPanel4);
-            this.TripEndGB.Location = new System.Drawing.Point(11, 219);
-            this.TripEndGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TripEndGB.Location = new System.Drawing.Point(8, 178);
             this.TripEndGB.Name = "TripEndGB";
-            this.TripEndGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TripEndGB.Size = new System.Drawing.Size(733, 123);
+            this.TripEndGB.Size = new System.Drawing.Size(550, 100);
             this.TripEndGB.TabIndex = 1;
             this.TripEndGB.TabStop = false;
             this.TripEndGB.Text = "TripEnd:";
@@ -2569,36 +2443,33 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel4.Controls.Add(this.label18, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.TripEnd_MaxTimeNum, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.TripStopBtn, 1, 1);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(709, 92);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(532, 75);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(4, 0);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Location = new System.Drawing.Point(3, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(64, 17);
+            this.label18.Size = new System.Drawing.Size(50, 13);
             this.label18.TabIndex = 0;
             this.label18.Text = "MaxTime";
             // 
             // TripEnd_MaxTimeNum
             // 
-            this.TripEnd_MaxTimeNum.Location = new System.Drawing.Point(185, 4);
-            this.TripEnd_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TripEnd_MaxTimeNum.Location = new System.Drawing.Point(138, 3);
             this.TripEnd_MaxTimeNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.TripEnd_MaxTimeNum.Name = "TripEnd_MaxTimeNum";
-            this.TripEnd_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.TripEnd_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.TripEnd_MaxTimeNum.TabIndex = 1;
             // 
             // TripStopBtn
@@ -2606,10 +2477,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.TripStopBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TripStopBtn.Location = new System.Drawing.Point(185, 50);
-            this.TripStopBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TripStopBtn.Location = new System.Drawing.Point(138, 40);
             this.TripStopBtn.Name = "TripStopBtn";
-            this.TripStopBtn.Size = new System.Drawing.Size(520, 38);
+            this.TripStopBtn.Size = new System.Drawing.Size(391, 32);
             this.TripStopBtn.TabIndex = 2;
             this.TripStopBtn.Text = "TripStop";
             this.TripStopBtn.UseVisualStyleBackColor = true;
@@ -2618,11 +2488,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // TripStartGB
             // 
             this.TripStartGB.Controls.Add(this.tableLayoutPanel3);
-            this.TripStartGB.Location = new System.Drawing.Point(11, 7);
-            this.TripStartGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TripStartGB.Location = new System.Drawing.Point(8, 6);
             this.TripStartGB.Name = "TripStartGB";
-            this.TripStartGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TripStartGB.Size = new System.Drawing.Size(733, 204);
+            this.TripStartGB.Size = new System.Drawing.Size(550, 166);
             this.TripStartGB.TabIndex = 0;
             this.TripStartGB.TabStop = false;
             this.TripStartGB.Text = "TripStart:";
@@ -2639,53 +2507,48 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel3.Controls.Add(this.TripStart_DataModeCB, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.TripStart_MaxTimeNum, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.TripStartBtn, 1, 3);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 4;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.53192F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.82269F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(717, 174);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(538, 141);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(4, 0);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(3, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(70, 17);
+            this.label15.Size = new System.Drawing.Size(53, 13);
             this.label15.TabIndex = 0;
             this.label15.Text = "TripName";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(4, 43);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Location = new System.Drawing.Point(3, 35);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(73, 17);
+            this.label16.Size = new System.Drawing.Size(57, 13);
             this.label16.TabIndex = 1;
             this.label16.Text = "DataMode";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(4, 86);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Location = new System.Drawing.Point(3, 70);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(64, 17);
+            this.label17.Size = new System.Drawing.Size(50, 13);
             this.label17.TabIndex = 2;
             this.label17.Text = "MaxTime";
             // 
             // TripStart_NameTBox
             // 
-            this.TripStart_NameTBox.Location = new System.Drawing.Point(183, 4);
-            this.TripStart_NameTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TripStart_NameTBox.Location = new System.Drawing.Point(138, 3);
             this.TripStart_NameTBox.Name = "TripStart_NameTBox";
-            this.TripStart_NameTBox.Size = new System.Drawing.Size(528, 22);
+            this.TripStart_NameTBox.Size = new System.Drawing.Size(397, 20);
             this.TripStart_NameTBox.TabIndex = 3;
             // 
             // TripStart_DataModeCB
@@ -2695,24 +2558,22 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             "tbdmNoData",
             "tbdmFullData",
             "tbdmFullNMEA"});
-            this.TripStart_DataModeCB.Location = new System.Drawing.Point(183, 47);
-            this.TripStart_DataModeCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TripStart_DataModeCB.Location = new System.Drawing.Point(138, 38);
             this.TripStart_DataModeCB.Name = "TripStart_DataModeCB";
-            this.TripStart_DataModeCB.Size = new System.Drawing.Size(159, 24);
+            this.TripStart_DataModeCB.Size = new System.Drawing.Size(120, 21);
             this.TripStart_DataModeCB.TabIndex = 4;
             this.TripStart_DataModeCB.Text = "tbdmFullNMEA";
             // 
             // TripStart_MaxTimeNum
             // 
-            this.TripStart_MaxTimeNum.Location = new System.Drawing.Point(183, 90);
-            this.TripStart_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TripStart_MaxTimeNum.Location = new System.Drawing.Point(138, 73);
             this.TripStart_MaxTimeNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.TripStart_MaxTimeNum.Name = "TripStart_MaxTimeNum";
-            this.TripStart_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.TripStart_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.TripStart_MaxTimeNum.TabIndex = 5;
             // 
             // TripStartBtn
@@ -2720,10 +2581,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.TripStartBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TripStartBtn.Location = new System.Drawing.Point(183, 134);
-            this.TripStartBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TripStartBtn.Location = new System.Drawing.Point(138, 108);
             this.TripStartBtn.Name = "TripStartBtn";
-            this.TripStartBtn.Size = new System.Drawing.Size(530, 36);
+            this.TripStartBtn.Size = new System.Drawing.Size(397, 30);
             this.TripStartBtn.TabIndex = 6;
             this.TripStartBtn.Text = "TripStart";
             this.TripStartBtn.UseVisualStyleBackColor = true;
@@ -2735,10 +2595,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T8.Controls.Add(this.GetPoiCategoryListGB);
             this.T8.Controls.Add(this.AddPoiCategoryGB);
             this.T8.Location = new System.Drawing.Point(4, 19);
-            this.T8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T8.Name = "T8";
-            this.T8.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T8.Size = new System.Drawing.Size(755, 618);
+            this.T8.Padding = new System.Windows.Forms.Padding(3);
+            this.T8.Size = new System.Drawing.Size(564, 498);
             this.T8.TabIndex = 7;
             this.T8.Text = "T8";
             this.T8.UseVisualStyleBackColor = true;
@@ -2746,11 +2605,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // AddPoiGB
             // 
             this.AddPoiGB.Controls.Add(this.AddPoiTlp);
-            this.AddPoiGB.Location = new System.Drawing.Point(11, 319);
-            this.AddPoiGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoiGB.Location = new System.Drawing.Point(8, 259);
             this.AddPoiGB.Name = "AddPoiGB";
-            this.AddPoiGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.AddPoiGB.Size = new System.Drawing.Size(733, 286);
+            this.AddPoiGB.Size = new System.Drawing.Size(550, 232);
             this.AddPoiGB.TabIndex = 2;
             this.AddPoiGB.TabStop = false;
             this.AddPoiGB.Text = "AddPoi (with LocationFromAddress):";
@@ -2775,8 +2632,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddPoiTlp.Controls.Add(this.AddPoi_SearchAddressChB, 1, 5);
             this.AddPoiTlp.Controls.Add(this.AddPoi_MaxTimeNum, 1, 6);
             this.AddPoiTlp.Controls.Add(this.AddPoiBtn, 1, 7);
-            this.AddPoiTlp.Location = new System.Drawing.Point(8, 23);
-            this.AddPoiTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoiTlp.Location = new System.Drawing.Point(6, 19);
             this.AddPoiTlp.Name = "AddPoiTlp";
             this.AddPoiTlp.RowCount = 8;
             this.AddPoiTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -2787,95 +2643,86 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddPoiTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.AddPoiTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.AddPoiTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.AddPoiTlp.Size = new System.Drawing.Size(713, 255);
+            this.AddPoiTlp.Size = new System.Drawing.Size(535, 207);
             this.AddPoiTlp.TabIndex = 0;
             // 
             // labelx
             // 
             this.labelx.AutoSize = true;
-            this.labelx.Location = new System.Drawing.Point(4, 0);
-            this.labelx.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelx.Location = new System.Drawing.Point(3, 0);
             this.labelx.Name = "labelx";
-            this.labelx.Size = new System.Drawing.Size(76, 17);
+            this.labelx.Size = new System.Drawing.Size(56, 13);
             this.labelx.TabIndex = 0;
             this.labelx.Text = "strAddress";
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(4, 31);
-            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label36.Location = new System.Drawing.Point(3, 25);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(55, 17);
+            this.label36.Size = new System.Drawing.Size(42, 13);
             this.label36.TabIndex = 1;
             this.label36.Text = "bPostal";
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(4, 62);
-            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label37.Location = new System.Drawing.Point(3, 50);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(90, 17);
+            this.label37.Size = new System.Drawing.Size(70, 13);
             this.label37.TabIndex = 2;
             this.label37.Text = "bValueMatch";
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(4, 93);
-            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label38.Location = new System.Drawing.Point(3, 75);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(63, 17);
+            this.label38.Size = new System.Drawing.Size(48, 13);
             this.label38.TabIndex = 3;
             this.label38.Text = "category";
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(4, 124);
-            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label39.Location = new System.Drawing.Point(3, 100);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(43, 17);
+            this.label39.Size = new System.Drawing.Size(33, 13);
             this.label39.TabIndex = 4;
             this.label39.Text = "name";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(4, 155);
-            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label40.Location = new System.Drawing.Point(3, 125);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(110, 17);
+            this.label40.Size = new System.Drawing.Size(82, 13);
             this.label40.TabIndex = 5;
             this.label40.Text = "search_address";
             // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(4, 186);
-            this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label41.Location = new System.Drawing.Point(3, 150);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(64, 17);
+            this.label41.Size = new System.Drawing.Size(50, 13);
             this.label41.TabIndex = 6;
             this.label41.Text = "MaxTime";
             // 
             // AddPoi_StrAddressTBox
             // 
-            this.AddPoi_StrAddressTBox.Location = new System.Drawing.Point(210, 4);
-            this.AddPoi_StrAddressTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoi_StrAddressTBox.Location = new System.Drawing.Point(157, 3);
             this.AddPoi_StrAddressTBox.Name = "AddPoi_StrAddressTBox";
-            this.AddPoi_StrAddressTBox.Size = new System.Drawing.Size(499, 22);
+            this.AddPoi_StrAddressTBox.Size = new System.Drawing.Size(375, 20);
             this.AddPoi_StrAddressTBox.TabIndex = 7;
             this.AddPoi_StrAddressTBox.Text = "DNK,Ringsted,Volden,1";
             // 
             // AddPoi_BPostalChB
             // 
             this.AddPoi_BPostalChB.AutoSize = true;
-            this.AddPoi_BPostalChB.Location = new System.Drawing.Point(210, 35);
-            this.AddPoi_BPostalChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoi_BPostalChB.Location = new System.Drawing.Point(157, 28);
             this.AddPoi_BPostalChB.Name = "AddPoi_BPostalChB";
-            this.AddPoi_BPostalChB.Size = new System.Drawing.Size(18, 17);
+            this.AddPoi_BPostalChB.Size = new System.Drawing.Size(15, 14);
             this.AddPoi_BPostalChB.TabIndex = 8;
             this.AddPoi_BPostalChB.UseVisualStyleBackColor = true;
             // 
@@ -2884,29 +2731,26 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddPoi_BValueMatchChB.AutoSize = true;
             this.AddPoi_BValueMatchChB.Checked = true;
             this.AddPoi_BValueMatchChB.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.AddPoi_BValueMatchChB.Location = new System.Drawing.Point(210, 66);
-            this.AddPoi_BValueMatchChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoi_BValueMatchChB.Location = new System.Drawing.Point(157, 53);
             this.AddPoi_BValueMatchChB.Name = "AddPoi_BValueMatchChB";
-            this.AddPoi_BValueMatchChB.Size = new System.Drawing.Size(18, 17);
+            this.AddPoi_BValueMatchChB.Size = new System.Drawing.Size(15, 14);
             this.AddPoi_BValueMatchChB.TabIndex = 9;
             this.AddPoi_BValueMatchChB.UseVisualStyleBackColor = true;
             // 
             // AddPoi_CategoryCB
             // 
             this.AddPoi_CategoryCB.FormattingEnabled = true;
-            this.AddPoi_CategoryCB.Location = new System.Drawing.Point(210, 97);
-            this.AddPoi_CategoryCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoi_CategoryCB.Location = new System.Drawing.Point(157, 78);
             this.AddPoi_CategoryCB.Name = "AddPoi_CategoryCB";
-            this.AddPoi_CategoryCB.Size = new System.Drawing.Size(237, 24);
+            this.AddPoi_CategoryCB.Size = new System.Drawing.Size(179, 21);
             this.AddPoi_CategoryCB.TabIndex = 10;
             this.AddPoi_CategoryCB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AddPoi_CategoryCB_MouseClick);
             // 
             // AddPoi_NameTBox
             // 
-            this.AddPoi_NameTBox.Location = new System.Drawing.Point(210, 128);
-            this.AddPoi_NameTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoi_NameTBox.Location = new System.Drawing.Point(157, 103);
             this.AddPoi_NameTBox.Name = "AddPoi_NameTBox";
-            this.AddPoi_NameTBox.Size = new System.Drawing.Size(499, 22);
+            this.AddPoi_NameTBox.Size = new System.Drawing.Size(375, 20);
             this.AddPoi_NameTBox.TabIndex = 11;
             // 
             // AddPoi_SearchAddressChB
@@ -2914,24 +2758,22 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddPoi_SearchAddressChB.AutoSize = true;
             this.AddPoi_SearchAddressChB.Checked = true;
             this.AddPoi_SearchAddressChB.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.AddPoi_SearchAddressChB.Location = new System.Drawing.Point(210, 159);
-            this.AddPoi_SearchAddressChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoi_SearchAddressChB.Location = new System.Drawing.Point(157, 128);
             this.AddPoi_SearchAddressChB.Name = "AddPoi_SearchAddressChB";
-            this.AddPoi_SearchAddressChB.Size = new System.Drawing.Size(18, 17);
+            this.AddPoi_SearchAddressChB.Size = new System.Drawing.Size(15, 14);
             this.AddPoi_SearchAddressChB.TabIndex = 12;
             this.AddPoi_SearchAddressChB.UseVisualStyleBackColor = true;
             // 
             // AddPoi_MaxTimeNum
             // 
-            this.AddPoi_MaxTimeNum.Location = new System.Drawing.Point(210, 190);
-            this.AddPoi_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoi_MaxTimeNum.Location = new System.Drawing.Point(157, 153);
             this.AddPoi_MaxTimeNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.AddPoi_MaxTimeNum.Name = "AddPoi_MaxTimeNum";
-            this.AddPoi_MaxTimeNum.Size = new System.Drawing.Size(161, 22);
+            this.AddPoi_MaxTimeNum.Size = new System.Drawing.Size(121, 20);
             this.AddPoi_MaxTimeNum.TabIndex = 13;
             // 
             // AddPoiBtn
@@ -2939,10 +2781,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddPoiBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddPoiBtn.Location = new System.Drawing.Point(210, 221);
-            this.AddPoiBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoiBtn.Location = new System.Drawing.Point(157, 178);
             this.AddPoiBtn.Name = "AddPoiBtn";
-            this.AddPoiBtn.Size = new System.Drawing.Size(499, 30);
+            this.AddPoiBtn.Size = new System.Drawing.Size(375, 26);
             this.AddPoiBtn.TabIndex = 14;
             this.AddPoiBtn.Text = "AddPoi";
             this.AddPoiBtn.UseVisualStyleBackColor = true;
@@ -2951,11 +2792,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // GetPoiCategoryListGB
             // 
             this.GetPoiCategoryListGB.Controls.Add(this.GetPoiCategoryListTlp);
-            this.GetPoiCategoryListGB.Location = new System.Drawing.Point(11, 212);
-            this.GetPoiCategoryListGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetPoiCategoryListGB.Location = new System.Drawing.Point(8, 172);
             this.GetPoiCategoryListGB.Name = "GetPoiCategoryListGB";
-            this.GetPoiCategoryListGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GetPoiCategoryListGB.Size = new System.Drawing.Size(733, 100);
+            this.GetPoiCategoryListGB.Size = new System.Drawing.Size(550, 81);
             this.GetPoiCategoryListGB.TabIndex = 1;
             this.GetPoiCategoryListGB.TabStop = false;
             this.GetPoiCategoryListGB.Text = "GetPoiCategoryList:";
@@ -2968,36 +2807,33 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetPoiCategoryListTlp.Controls.Add(this.label34, 0, 0);
             this.GetPoiCategoryListTlp.Controls.Add(this.GetPoiCategoryList_MaxTimeNum, 1, 0);
             this.GetPoiCategoryListTlp.Controls.Add(this.GetPoiCategoryListBtn, 1, 1);
-            this.GetPoiCategoryListTlp.Location = new System.Drawing.Point(8, 23);
-            this.GetPoiCategoryListTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetPoiCategoryListTlp.Location = new System.Drawing.Point(6, 19);
             this.GetPoiCategoryListTlp.Name = "GetPoiCategoryListTlp";
             this.GetPoiCategoryListTlp.RowCount = 2;
             this.GetPoiCategoryListTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.GetPoiCategoryListTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.GetPoiCategoryListTlp.Size = new System.Drawing.Size(717, 68);
+            this.GetPoiCategoryListTlp.Size = new System.Drawing.Size(538, 55);
             this.GetPoiCategoryListTlp.TabIndex = 0;
             // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(4, 0);
-            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label34.Location = new System.Drawing.Point(3, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(64, 17);
+            this.label34.Size = new System.Drawing.Size(50, 13);
             this.label34.TabIndex = 0;
             this.label34.Text = "MaxTime";
             // 
             // GetPoiCategoryList_MaxTimeNum
             // 
-            this.GetPoiCategoryList_MaxTimeNum.Location = new System.Drawing.Point(211, 4);
-            this.GetPoiCategoryList_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetPoiCategoryList_MaxTimeNum.Location = new System.Drawing.Point(158, 3);
             this.GetPoiCategoryList_MaxTimeNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.GetPoiCategoryList_MaxTimeNum.Name = "GetPoiCategoryList_MaxTimeNum";
-            this.GetPoiCategoryList_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.GetPoiCategoryList_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.GetPoiCategoryList_MaxTimeNum.TabIndex = 1;
             // 
             // GetPoiCategoryListBtn
@@ -3005,10 +2841,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetPoiCategoryListBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.GetPoiCategoryListBtn.Location = new System.Drawing.Point(211, 38);
-            this.GetPoiCategoryListBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetPoiCategoryListBtn.Location = new System.Drawing.Point(158, 30);
             this.GetPoiCategoryListBtn.Name = "GetPoiCategoryListBtn";
-            this.GetPoiCategoryListBtn.Size = new System.Drawing.Size(502, 26);
+            this.GetPoiCategoryListBtn.Size = new System.Drawing.Size(377, 22);
             this.GetPoiCategoryListBtn.TabIndex = 2;
             this.GetPoiCategoryListBtn.Text = "GetPoiCategoryList";
             this.GetPoiCategoryListBtn.UseVisualStyleBackColor = true;
@@ -3017,11 +2852,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // AddPoiCategoryGB
             // 
             this.AddPoiCategoryGB.Controls.Add(this.AddPoiCategoryTlp);
-            this.AddPoiCategoryGB.Location = new System.Drawing.Point(11, 7);
-            this.AddPoiCategoryGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoiCategoryGB.Location = new System.Drawing.Point(8, 6);
             this.AddPoiCategoryGB.Name = "AddPoiCategoryGB";
-            this.AddPoiCategoryGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.AddPoiCategoryGB.Size = new System.Drawing.Size(733, 207);
+            this.AddPoiCategoryGB.Size = new System.Drawing.Size(550, 168);
             this.AddPoiCategoryGB.TabIndex = 0;
             this.AddPoiCategoryGB.TabStop = false;
             this.AddPoiCategoryGB.Text = "AddPoiCategory:";
@@ -3040,8 +2873,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddPoiCategoryTlp.Controls.Add(this.AddPoiCategory_strIsoCodeCB, 1, 2);
             this.AddPoiCategoryTlp.Controls.Add(this.AddPoiCategory_MaxTimeNum, 1, 3);
             this.AddPoiCategoryTlp.Controls.Add(this.AddPoiCategoryBtn, 1, 4);
-            this.AddPoiCategoryTlp.Location = new System.Drawing.Point(8, 23);
-            this.AddPoiCategoryTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoiCategoryTlp.Location = new System.Drawing.Point(6, 19);
             this.AddPoiCategoryTlp.Name = "AddPoiCategoryTlp";
             this.AddPoiCategoryTlp.RowCount = 5;
             this.AddPoiCategoryTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -3049,63 +2881,57 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddPoiCategoryTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.AddPoiCategoryTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.AddPoiCategoryTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.AddPoiCategoryTlp.Size = new System.Drawing.Size(717, 176);
+            this.AddPoiCategoryTlp.Size = new System.Drawing.Size(538, 143);
             this.AddPoiCategoryTlp.TabIndex = 0;
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(4, 0);
-            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label30.Location = new System.Drawing.Point(3, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(81, 17);
+            this.label30.Size = new System.Drawing.Size(60, 13);
             this.label30.TabIndex = 0;
             this.label30.Text = "strCategory";
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(4, 35);
-            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label31.Location = new System.Drawing.Point(3, 28);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(107, 34);
+            this.label31.Size = new System.Drawing.Size(86, 26);
             this.label31.TabIndex = 1;
             this.label31.Text = "strBitmapPath (Res\\icons\\poi\\)";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(4, 70);
-            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label32.Location = new System.Drawing.Point(3, 56);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(75, 17);
+            this.label32.Size = new System.Drawing.Size(57, 13);
             this.label32.TabIndex = 2;
             this.label32.Text = "strIsoCode";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(4, 105);
-            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label33.Location = new System.Drawing.Point(3, 84);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(64, 17);
+            this.label33.Size = new System.Drawing.Size(50, 13);
             this.label33.TabIndex = 3;
             this.label33.Text = "MaxTime";
             // 
             // AddPoiCateory_strCategoryTBox
             // 
-            this.AddPoiCateory_strCategoryTBox.Location = new System.Drawing.Point(210, 4);
-            this.AddPoiCateory_strCategoryTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoiCateory_strCategoryTBox.Location = new System.Drawing.Point(158, 3);
             this.AddPoiCateory_strCategoryTBox.Name = "AddPoiCateory_strCategoryTBox";
-            this.AddPoiCateory_strCategoryTBox.Size = new System.Drawing.Size(501, 22);
+            this.AddPoiCateory_strCategoryTBox.Size = new System.Drawing.Size(377, 20);
             this.AddPoiCateory_strCategoryTBox.TabIndex = 4;
             // 
             // AddPoiCategory_strBitmapPathTBox
             // 
-            this.AddPoiCategory_strBitmapPathTBox.Location = new System.Drawing.Point(210, 39);
-            this.AddPoiCategory_strBitmapPathTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoiCategory_strBitmapPathTBox.Location = new System.Drawing.Point(158, 31);
             this.AddPoiCategory_strBitmapPathTBox.Name = "AddPoiCategory_strBitmapPathTBox";
-            this.AddPoiCategory_strBitmapPathTBox.Size = new System.Drawing.Size(501, 22);
+            this.AddPoiCategory_strBitmapPathTBox.Size = new System.Drawing.Size(377, 20);
             this.AddPoiCategory_strBitmapPathTBox.TabIndex = 5;
             this.AddPoiCategory_strBitmapPathTBox.Text = "_favo_9.bmp";
             // 
@@ -3353,24 +3179,22 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             "YEM",
             "ZMB",
             "ZWE"});
-            this.AddPoiCategory_strIsoCodeCB.Location = new System.Drawing.Point(210, 74);
-            this.AddPoiCategory_strIsoCodeCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoiCategory_strIsoCodeCB.Location = new System.Drawing.Point(158, 59);
             this.AddPoiCategory_strIsoCodeCB.Name = "AddPoiCategory_strIsoCodeCB";
-            this.AddPoiCategory_strIsoCodeCB.Size = new System.Drawing.Size(160, 24);
+            this.AddPoiCategory_strIsoCodeCB.Size = new System.Drawing.Size(121, 21);
             this.AddPoiCategory_strIsoCodeCB.TabIndex = 6;
             this.AddPoiCategory_strIsoCodeCB.Text = "DEU";
             // 
             // AddPoiCategory_MaxTimeNum
             // 
-            this.AddPoiCategory_MaxTimeNum.Location = new System.Drawing.Point(210, 109);
-            this.AddPoiCategory_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoiCategory_MaxTimeNum.Location = new System.Drawing.Point(158, 87);
             this.AddPoiCategory_MaxTimeNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.AddPoiCategory_MaxTimeNum.Name = "AddPoiCategory_MaxTimeNum";
-            this.AddPoiCategory_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.AddPoiCategory_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.AddPoiCategory_MaxTimeNum.TabIndex = 7;
             // 
             // AddPoiCategoryBtn
@@ -3378,10 +3202,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddPoiCategoryBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddPoiCategoryBtn.Location = new System.Drawing.Point(210, 144);
-            this.AddPoiCategoryBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPoiCategoryBtn.Location = new System.Drawing.Point(158, 115);
             this.AddPoiCategoryBtn.Name = "AddPoiCategoryBtn";
-            this.AddPoiCategoryBtn.Size = new System.Drawing.Size(503, 28);
+            this.AddPoiCategoryBtn.Size = new System.Drawing.Size(377, 25);
             this.AddPoiCategoryBtn.TabIndex = 8;
             this.AddPoiCategoryBtn.Text = "AddPoiCategory";
             this.AddPoiCategoryBtn.UseVisualStyleBackColor = true;
@@ -3391,10 +3214,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T9.Controls.Add(this.LoadComputedRouteGB);
             this.T9.Location = new System.Drawing.Point(4, 19);
-            this.T9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T9.Name = "T9";
-            this.T9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T9.Size = new System.Drawing.Size(755, 618);
+            this.T9.Padding = new System.Windows.Forms.Padding(3);
+            this.T9.Size = new System.Drawing.Size(564, 498);
             this.T9.TabIndex = 8;
             this.T9.Text = "T9";
             this.T9.UseVisualStyleBackColor = true;
@@ -3402,11 +3224,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // LoadComputedRouteGB
             // 
             this.LoadComputedRouteGB.Controls.Add(this.tableLayoutPanel8);
-            this.LoadComputedRouteGB.Location = new System.Drawing.Point(15, 7);
-            this.LoadComputedRouteGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadComputedRouteGB.Location = new System.Drawing.Point(11, 6);
             this.LoadComputedRouteGB.Name = "LoadComputedRouteGB";
-            this.LoadComputedRouteGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.LoadComputedRouteGB.Size = new System.Drawing.Size(733, 174);
+            this.LoadComputedRouteGB.Size = new System.Drawing.Size(550, 141);
             this.LoadComputedRouteGB.TabIndex = 1;
             this.LoadComputedRouteGB.TabStop = false;
             this.LoadComputedRouteGB.Text = "LoadComputedRoute:";
@@ -3421,55 +3241,50 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel8.Controls.Add(this.LoadComputedRoute_TBox, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.LoadComputedRoute_Num, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.LoadComputedRouteBtn, 1, 2);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 3;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(717, 132);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(538, 107);
             this.tableLayoutPanel8.TabIndex = 0;
             // 
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(4, 0);
-            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label42.Location = new System.Drawing.Point(3, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(79, 17);
+            this.label42.Size = new System.Drawing.Size(59, 13);
             this.label42.TabIndex = 0;
             this.label42.Text = "Path (*.rsv)";
             // 
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(4, 44);
-            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label43.Location = new System.Drawing.Point(3, 35);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(68, 17);
+            this.label43.Size = new System.Drawing.Size(53, 13);
             this.label43.TabIndex = 1;
             this.label43.Text = "Max Time";
             // 
             // LoadComputedRoute_TBox
             // 
-            this.LoadComputedRoute_TBox.Location = new System.Drawing.Point(166, 4);
-            this.LoadComputedRoute_TBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadComputedRoute_TBox.Location = new System.Drawing.Point(125, 3);
             this.LoadComputedRoute_TBox.Name = "LoadComputedRoute_TBox";
-            this.LoadComputedRoute_TBox.Size = new System.Drawing.Size(545, 22);
+            this.LoadComputedRoute_TBox.Size = new System.Drawing.Size(410, 20);
             this.LoadComputedRoute_TBox.TabIndex = 2;
             // 
             // LoadComputedRoute_Num
             // 
-            this.LoadComputedRoute_Num.Location = new System.Drawing.Point(166, 48);
-            this.LoadComputedRoute_Num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadComputedRoute_Num.Location = new System.Drawing.Point(125, 38);
             this.LoadComputedRoute_Num.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.LoadComputedRoute_Num.Name = "LoadComputedRoute_Num";
-            this.LoadComputedRoute_Num.Size = new System.Drawing.Size(160, 22);
+            this.LoadComputedRoute_Num.Size = new System.Drawing.Size(120, 20);
             this.LoadComputedRoute_Num.TabIndex = 3;
             // 
             // LoadComputedRouteBtn
@@ -3477,10 +3292,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LoadComputedRouteBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LoadComputedRouteBtn.Location = new System.Drawing.Point(166, 92);
-            this.LoadComputedRouteBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadComputedRouteBtn.Location = new System.Drawing.Point(125, 73);
             this.LoadComputedRouteBtn.Name = "LoadComputedRouteBtn";
-            this.LoadComputedRouteBtn.Size = new System.Drawing.Size(547, 36);
+            this.LoadComputedRouteBtn.Size = new System.Drawing.Size(410, 31);
             this.LoadComputedRouteBtn.TabIndex = 4;
             this.LoadComputedRouteBtn.Text = "LoadComputedRoute";
             this.LoadComputedRouteBtn.UseVisualStyleBackColor = true;
@@ -3490,91 +3304,73 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T10.Controls.Add(this.ShowChangeOptionGB);
             this.T10.Location = new System.Drawing.Point(4, 19);
-            this.T10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T10.Name = "T10";
-            this.T10.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T10.Size = new System.Drawing.Size(755, 618);
+            this.T10.Padding = new System.Windows.Forms.Padding(3);
+            this.T10.Size = new System.Drawing.Size(564, 498);
             this.T10.TabIndex = 9;
             this.T10.Text = "T10";
             this.T10.UseVisualStyleBackColor = true;
             // 
             // ShowChangeOptionGB
             // 
-            this.ShowChangeOptionGB.Controls.Add(this.ShowChangeOptionPropertyGrid);
+            this.ShowChangeOptionGB.Controls.Add(this.ApplicationChangeOptionsTextbox);
             this.ShowChangeOptionGB.Controls.Add(this.tableLayoutPanel9);
-            this.ShowChangeOptionGB.Location = new System.Drawing.Point(8, 7);
-            this.ShowChangeOptionGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowChangeOptionGB.Location = new System.Drawing.Point(6, 6);
             this.ShowChangeOptionGB.Name = "ShowChangeOptionGB";
-            this.ShowChangeOptionGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ShowChangeOptionGB.Size = new System.Drawing.Size(736, 597);
+            this.ShowChangeOptionGB.Size = new System.Drawing.Size(552, 485);
             this.ShowChangeOptionGB.TabIndex = 0;
             this.ShowChangeOptionGB.TabStop = false;
             this.ShowChangeOptionGB.Text = "ShowChangeOption:";
             // 
-            // ShowChangeOptionPropertyGrid
+            // ApplicationChangeOptionsTextbox
             // 
-            this.ShowChangeOptionPropertyGrid.Location = new System.Drawing.Point(329, 23);
-            this.ShowChangeOptionPropertyGrid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ShowChangeOptionPropertyGrid.Name = "ShowChangeOptionPropertyGrid";
-            this.ShowChangeOptionPropertyGrid.Size = new System.Drawing.Size(399, 566);
-            this.ShowChangeOptionPropertyGrid.TabIndex = 2;
+            this.ApplicationChangeOptionsTextbox.AcceptsReturn = true;
+            this.ApplicationChangeOptionsTextbox.WordWrap = true;
+            this.ApplicationChangeOptionsTextbox.Location = new System.Drawing.Point(150, 19);
+            this.ApplicationChangeOptionsTextbox.Multiline = true;
+            this.ApplicationChangeOptionsTextbox.Name = "ApplicationChangeOptionsTextbox";
+            this.ApplicationChangeOptionsTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.ApplicationChangeOptionsTextbox.Size = new System.Drawing.Size(396, 460);
+            this.ApplicationChangeOptionsTextbox.TabIndex = 0;
             // 
             // tableLayoutPanel9
             // 
             this.tableLayoutPanel9.ColumnCount = 2;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.04255F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.95744F));
-            this.tableLayoutPanel9.Controls.Add(this.DissableMenuBtn, 1, 3);
-            this.tableLayoutPanel9.Controls.Add(this.label44, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.ShowChangeOption_MaxTimeNum, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.ShowChangeOptionBtn, 1, 1);
             this.tableLayoutPanel9.Controls.Add(this.ShowChangeOption_SetChangeOptionBtn, 1, 2);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel9.Controls.Add(this.label44, 0, 0);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 4;
+            this.tableLayoutPanel9.RowCount = 3;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(313, 169);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(141, 137);
             this.tableLayoutPanel9.TabIndex = 1;
-            // 
-            // DissableMenuBtn
-            // 
-            this.DissableMenuBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DissableMenuBtn.Location = new System.Drawing.Point(110, 130);
-            this.DissableMenuBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.DissableMenuBtn.Name = "DissableMenuBtn";
-            this.DissableMenuBtn.Size = new System.Drawing.Size(199, 35);
-            this.DissableMenuBtn.TabIndex = 3;
-            this.DissableMenuBtn.Text = "Dissable menu";
-            this.DissableMenuBtn.UseVisualStyleBackColor = true;
-            this.DissableMenuBtn.Click += new System.EventHandler(this.DissableMenuBtn_Click);
             // 
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(4, 0);
-            this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label44.Location = new System.Drawing.Point(3, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(64, 17);
+            this.label44.Size = new System.Drawing.Size(36, 26);
             this.label44.TabIndex = 0;
             this.label44.Text = "MaxTime";
             // 
             // ShowChangeOption_MaxTimeNum
             // 
-            this.ShowChangeOption_MaxTimeNum.Location = new System.Drawing.Point(110, 4);
-            this.ShowChangeOption_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowChangeOption_MaxTimeNum.Location = new System.Drawing.Point(50, 3);
             this.ShowChangeOption_MaxTimeNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.ShowChangeOption_MaxTimeNum.Name = "ShowChangeOption_MaxTimeNum";
-            this.ShowChangeOption_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.ShowChangeOption_MaxTimeNum.Size = new System.Drawing.Size(88, 20);
             this.ShowChangeOption_MaxTimeNum.TabIndex = 1;
             // 
             // ShowChangeOptionBtn
@@ -3582,12 +3378,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowChangeOptionBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ShowChangeOptionBtn.Location = new System.Drawing.Point(110, 46);
-            this.ShowChangeOptionBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowChangeOptionBtn.Location = new System.Drawing.Point(50, 48);
             this.ShowChangeOptionBtn.Name = "ShowChangeOptionBtn";
-            this.ShowChangeOptionBtn.Size = new System.Drawing.Size(199, 34);
+            this.ShowChangeOptionBtn.Size = new System.Drawing.Size(88, 39);
             this.ShowChangeOptionBtn.TabIndex = 2;
-            this.ShowChangeOptionBtn.Text = "ShowChangeOption";
+            this.ShowChangeOptionBtn.Text = "GetApplicationOptions";
             this.ShowChangeOptionBtn.UseVisualStyleBackColor = true;
             this.ShowChangeOptionBtn.Click += new System.EventHandler(this.ShowChangeOptionBtn_Click);
             // 
@@ -3596,12 +3391,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowChangeOption_SetChangeOptionBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ShowChangeOption_SetChangeOptionBtn.Location = new System.Drawing.Point(110, 88);
-            this.ShowChangeOption_SetChangeOptionBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowChangeOption_SetChangeOptionBtn.Location = new System.Drawing.Point(50, 93);
             this.ShowChangeOption_SetChangeOptionBtn.Name = "ShowChangeOption_SetChangeOptionBtn";
-            this.ShowChangeOption_SetChangeOptionBtn.Size = new System.Drawing.Size(199, 34);
+            this.ShowChangeOption_SetChangeOptionBtn.Size = new System.Drawing.Size(88, 41);
             this.ShowChangeOption_SetChangeOptionBtn.TabIndex = 3;
-            this.ShowChangeOption_SetChangeOptionBtn.Text = "SetChangeOption";
+            this.ShowChangeOption_SetChangeOptionBtn.Text = "SetApplicationOptions";
             this.ShowChangeOption_SetChangeOptionBtn.UseVisualStyleBackColor = true;
             this.ShowChangeOption_SetChangeOptionBtn.Click += new System.EventHandler(this.ShowChangeOption_SetChangeOptionBtn_Click);
             // 
@@ -3609,10 +3403,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T11.Controls.Add(this.AddTMCEventGB);
             this.T11.Location = new System.Drawing.Point(4, 19);
-            this.T11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T11.Name = "T11";
-            this.T11.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T11.Size = new System.Drawing.Size(755, 618);
+            this.T11.Padding = new System.Windows.Forms.Padding(3);
+            this.T11.Size = new System.Drawing.Size(564, 498);
             this.T11.TabIndex = 10;
             this.T11.Text = "T11";
             this.T11.UseVisualStyleBackColor = true;
@@ -3620,11 +3413,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // AddTMCEventGB
             // 
             this.AddTMCEventGB.Controls.Add(this.tableLayoutPanel10);
-            this.AddTMCEventGB.Location = new System.Drawing.Point(8, 7);
-            this.AddTMCEventGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTMCEventGB.Location = new System.Drawing.Point(6, 6);
             this.AddTMCEventGB.Name = "AddTMCEventGB";
-            this.AddTMCEventGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.AddTMCEventGB.Size = new System.Drawing.Size(736, 544);
+            this.AddTMCEventGB.Size = new System.Drawing.Size(552, 442);
             this.AddTMCEventGB.TabIndex = 0;
             this.AddTMCEventGB.TabStop = false;
             this.AddTMCEventGB.Text = "AddTMCEvent:";
@@ -3657,8 +3448,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel10.Controls.Add(this.AddTMCEvent_wIDNum, 1, 9);
             this.tableLayoutPanel10.Controls.Add(this.AddTMCEvent_MaxTimeNum, 1, 10);
             this.tableLayoutPanel10.Controls.Add(this.AddTMCEventBtn, 1, 11);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 12;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
@@ -3673,136 +3463,123 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(720, 452);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(540, 367);
             this.tableLayoutPanel10.TabIndex = 0;
             // 
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(4, 0);
-            this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label45.Location = new System.Drawing.Point(3, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(81, 17);
+            this.label45.Size = new System.Drawing.Size(62, 13);
             this.label45.TabIndex = 0;
             this.label45.Text = "bUserAvoid";
             // 
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(4, 37);
-            this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label46.Location = new System.Drawing.Point(3, 30);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(20, 17);
+            this.label46.Size = new System.Drawing.Size(16, 13);
             this.label46.TabIndex = 1;
             this.label46.Text = "lX";
             // 
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(4, 74);
-            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label47.Location = new System.Drawing.Point(3, 60);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(20, 17);
+            this.label47.Size = new System.Drawing.Size(16, 13);
             this.label47.TabIndex = 2;
             this.label47.Text = "lY";
             // 
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(4, 111);
-            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label48.Location = new System.Drawing.Point(3, 90);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(85, 17);
+            this.label48.Size = new System.Drawing.Size(66, 13);
             this.label48.TabIndex = 3;
             this.label48.Text = "nEventCode";
             // 
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(4, 148);
-            this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label49.Location = new System.Drawing.Point(3, 120);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(86, 17);
+            this.label49.Size = new System.Drawing.Size(65, 13);
             this.label49.TabIndex = 4;
             this.label49.Text = "nValidityDay";
             // 
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(4, 185);
-            this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label50.Location = new System.Drawing.Point(3, 150);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(92, 17);
+            this.label50.Size = new System.Drawing.Size(69, 13);
             this.label50.TabIndex = 5;
             this.label50.Text = "nValidityHour";
             // 
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(4, 259);
-            this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label51.Location = new System.Drawing.Point(3, 210);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(100, 17);
+            this.label51.Size = new System.Drawing.Size(76, 13);
             this.label51.TabIndex = 6;
             this.label51.Text = "nValidityMonth";
             // 
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(4, 333);
-            this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label52.Location = new System.Drawing.Point(3, 270);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(30, 17);
+            this.label52.Size = new System.Drawing.Size(26, 13);
             this.label52.TabIndex = 7;
             this.label52.Text = "wID";
             // 
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(4, 370);
-            this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label53.Location = new System.Drawing.Point(3, 300);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(64, 17);
+            this.label53.Size = new System.Drawing.Size(50, 13);
             this.label53.TabIndex = 8;
             this.label53.Text = "MaxTime";
             // 
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(4, 222);
-            this.label54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label54.Location = new System.Drawing.Point(3, 180);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(103, 17);
+            this.label54.Size = new System.Drawing.Size(78, 13);
             this.label54.TabIndex = 9;
             this.label54.Text = "nValidityMinute";
             // 
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(4, 296);
-            this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label55.Location = new System.Drawing.Point(3, 240);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(91, 17);
+            this.label55.Size = new System.Drawing.Size(68, 13);
             this.label55.TabIndex = 10;
             this.label55.Text = "nValidityYear";
             // 
             // AddTMCEvent_bUserAvoidNum
             // 
-            this.AddTMCEvent_bUserAvoidNum.Location = new System.Drawing.Point(154, 4);
-            this.AddTMCEvent_bUserAvoidNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTMCEvent_bUserAvoidNum.Location = new System.Drawing.Point(116, 3);
             this.AddTMCEvent_bUserAvoidNum.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.AddTMCEvent_bUserAvoidNum.Name = "AddTMCEvent_bUserAvoidNum";
-            this.AddTMCEvent_bUserAvoidNum.Size = new System.Drawing.Size(60, 22);
+            this.AddTMCEvent_bUserAvoidNum.Size = new System.Drawing.Size(45, 20);
             this.AddTMCEvent_bUserAvoidNum.TabIndex = 11;
             // 
             // AddTMCEvent_lXNum
             // 
-            this.AddTMCEvent_lXNum.Location = new System.Drawing.Point(154, 41);
-            this.AddTMCEvent_lXNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTMCEvent_lXNum.Location = new System.Drawing.Point(116, 33);
             this.AddTMCEvent_lXNum.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3814,13 +3591,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.AddTMCEvent_lXNum.Name = "AddTMCEvent_lXNum";
-            this.AddTMCEvent_lXNum.Size = new System.Drawing.Size(160, 22);
+            this.AddTMCEvent_lXNum.Size = new System.Drawing.Size(120, 20);
             this.AddTMCEvent_lXNum.TabIndex = 12;
             // 
             // AddTMCEvent_lYNum
             // 
-            this.AddTMCEvent_lYNum.Location = new System.Drawing.Point(154, 78);
-            this.AddTMCEvent_lYNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTMCEvent_lYNum.Location = new System.Drawing.Point(116, 63);
             this.AddTMCEvent_lYNum.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -3832,23 +3608,21 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.AddTMCEvent_lYNum.Name = "AddTMCEvent_lYNum";
-            this.AddTMCEvent_lYNum.Size = new System.Drawing.Size(160, 22);
+            this.AddTMCEvent_lYNum.Size = new System.Drawing.Size(120, 20);
             this.AddTMCEvent_lYNum.TabIndex = 13;
             // 
             // AddTMCEvent_nEventCodeNum
             // 
-            this.AddTMCEvent_nEventCodeNum.Location = new System.Drawing.Point(154, 115);
-            this.AddTMCEvent_nEventCodeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTMCEvent_nEventCodeNum.Location = new System.Drawing.Point(116, 93);
             this.AddTMCEvent_nEventCodeNum.Name = "AddTMCEvent_nEventCodeNum";
-            this.AddTMCEvent_nEventCodeNum.Size = new System.Drawing.Size(60, 22);
+            this.AddTMCEvent_nEventCodeNum.Size = new System.Drawing.Size(45, 20);
             this.AddTMCEvent_nEventCodeNum.TabIndex = 14;
             // 
             // AddTMCEvent_nValidityDayNum
             // 
-            this.AddTMCEvent_nValidityDayNum.Location = new System.Drawing.Point(154, 152);
-            this.AddTMCEvent_nValidityDayNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTMCEvent_nValidityDayNum.Location = new System.Drawing.Point(116, 123);
             this.AddTMCEvent_nValidityDayNum.Name = "AddTMCEvent_nValidityDayNum";
-            this.AddTMCEvent_nValidityDayNum.Size = new System.Drawing.Size(60, 22);
+            this.AddTMCEvent_nValidityDayNum.Size = new System.Drawing.Size(45, 20);
             this.AddTMCEvent_nValidityDayNum.TabIndex = 15;
             this.AddTMCEvent_nValidityDayNum.Value = new decimal(new int[] {
             1,
@@ -3858,10 +3632,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // AddTMCEvent_nValidityHourNum
             // 
-            this.AddTMCEvent_nValidityHourNum.Location = new System.Drawing.Point(154, 189);
-            this.AddTMCEvent_nValidityHourNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTMCEvent_nValidityHourNum.Location = new System.Drawing.Point(116, 153);
             this.AddTMCEvent_nValidityHourNum.Name = "AddTMCEvent_nValidityHourNum";
-            this.AddTMCEvent_nValidityHourNum.Size = new System.Drawing.Size(60, 22);
+            this.AddTMCEvent_nValidityHourNum.Size = new System.Drawing.Size(45, 20);
             this.AddTMCEvent_nValidityHourNum.TabIndex = 16;
             this.AddTMCEvent_nValidityHourNum.Value = new decimal(new int[] {
             1,
@@ -3871,10 +3644,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // AddTMCEvent_nValidityMinuteNum
             // 
-            this.AddTMCEvent_nValidityMinuteNum.Location = new System.Drawing.Point(154, 226);
-            this.AddTMCEvent_nValidityMinuteNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTMCEvent_nValidityMinuteNum.Location = new System.Drawing.Point(116, 183);
             this.AddTMCEvent_nValidityMinuteNum.Name = "AddTMCEvent_nValidityMinuteNum";
-            this.AddTMCEvent_nValidityMinuteNum.Size = new System.Drawing.Size(60, 22);
+            this.AddTMCEvent_nValidityMinuteNum.Size = new System.Drawing.Size(45, 20);
             this.AddTMCEvent_nValidityMinuteNum.TabIndex = 17;
             this.AddTMCEvent_nValidityMinuteNum.Value = new decimal(new int[] {
             1,
@@ -3884,10 +3656,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // AddTMCEvent_nValidityMonthNum
             // 
-            this.AddTMCEvent_nValidityMonthNum.Location = new System.Drawing.Point(154, 263);
-            this.AddTMCEvent_nValidityMonthNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTMCEvent_nValidityMonthNum.Location = new System.Drawing.Point(116, 213);
             this.AddTMCEvent_nValidityMonthNum.Name = "AddTMCEvent_nValidityMonthNum";
-            this.AddTMCEvent_nValidityMonthNum.Size = new System.Drawing.Size(60, 22);
+            this.AddTMCEvent_nValidityMonthNum.Size = new System.Drawing.Size(45, 20);
             this.AddTMCEvent_nValidityMonthNum.TabIndex = 18;
             this.AddTMCEvent_nValidityMonthNum.Value = new decimal(new int[] {
             1,
@@ -3897,8 +3668,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // AddTMCEvent_nValidityYearNum
             // 
-            this.AddTMCEvent_nValidityYearNum.Location = new System.Drawing.Point(154, 300);
-            this.AddTMCEvent_nValidityYearNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTMCEvent_nValidityYearNum.Location = new System.Drawing.Point(116, 243);
             this.AddTMCEvent_nValidityYearNum.Maximum = new decimal(new int[] {
             3000,
             0,
@@ -3910,7 +3680,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             0});
             this.AddTMCEvent_nValidityYearNum.Name = "AddTMCEvent_nValidityYearNum";
-            this.AddTMCEvent_nValidityYearNum.Size = new System.Drawing.Size(60, 22);
+            this.AddTMCEvent_nValidityYearNum.Size = new System.Drawing.Size(45, 20);
             this.AddTMCEvent_nValidityYearNum.TabIndex = 19;
             this.AddTMCEvent_nValidityYearNum.Value = new decimal(new int[] {
             2012,
@@ -3920,28 +3690,26 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // AddTMCEvent_wIDNum
             // 
-            this.AddTMCEvent_wIDNum.Location = new System.Drawing.Point(154, 337);
-            this.AddTMCEvent_wIDNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTMCEvent_wIDNum.Location = new System.Drawing.Point(116, 273);
             this.AddTMCEvent_wIDNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.AddTMCEvent_wIDNum.Name = "AddTMCEvent_wIDNum";
-            this.AddTMCEvent_wIDNum.Size = new System.Drawing.Size(160, 22);
+            this.AddTMCEvent_wIDNum.Size = new System.Drawing.Size(120, 20);
             this.AddTMCEvent_wIDNum.TabIndex = 20;
             // 
             // AddTMCEvent_MaxTimeNum
             // 
-            this.AddTMCEvent_MaxTimeNum.Location = new System.Drawing.Point(154, 374);
-            this.AddTMCEvent_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTMCEvent_MaxTimeNum.Location = new System.Drawing.Point(116, 303);
             this.AddTMCEvent_MaxTimeNum.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
             this.AddTMCEvent_MaxTimeNum.Name = "AddTMCEvent_MaxTimeNum";
-            this.AddTMCEvent_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.AddTMCEvent_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.AddTMCEvent_MaxTimeNum.TabIndex = 21;
             // 
             // AddTMCEventBtn
@@ -3949,10 +3717,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddTMCEventBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddTMCEventBtn.Location = new System.Drawing.Point(154, 411);
-            this.AddTMCEventBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTMCEventBtn.Location = new System.Drawing.Point(116, 333);
             this.AddTMCEventBtn.Name = "AddTMCEventBtn";
-            this.AddTMCEventBtn.Size = new System.Drawing.Size(562, 37);
+            this.AddTMCEventBtn.Size = new System.Drawing.Size(421, 31);
             this.AddTMCEventBtn.TabIndex = 22;
             this.AddTMCEventBtn.Text = "AddTMCEvent";
             this.AddTMCEventBtn.UseVisualStyleBackColor = true;
@@ -3963,10 +3730,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T12.Controls.Add(this.GetNextInstructionAutoGB);
             this.T12.Controls.Add(this.GetNextInstructionGB);
             this.T12.Location = new System.Drawing.Point(4, 19);
-            this.T12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T12.Name = "T12";
-            this.T12.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T12.Size = new System.Drawing.Size(755, 618);
+            this.T12.Padding = new System.Windows.Forms.Padding(3);
+            this.T12.Size = new System.Drawing.Size(564, 498);
             this.T12.TabIndex = 11;
             this.T12.Text = "T12";
             this.T12.UseVisualStyleBackColor = true;
@@ -3974,11 +3740,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // GetNextInstructionAutoGB
             // 
             this.GetNextInstructionAutoGB.Controls.Add(this.GetNextInstructionAutoTlp);
-            this.GetNextInstructionAutoGB.Location = new System.Drawing.Point(11, 146);
-            this.GetNextInstructionAutoGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetNextInstructionAutoGB.Location = new System.Drawing.Point(8, 119);
             this.GetNextInstructionAutoGB.Name = "GetNextInstructionAutoGB";
-            this.GetNextInstructionAutoGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GetNextInstructionAutoGB.Size = new System.Drawing.Size(733, 428);
+            this.GetNextInstructionAutoGB.Size = new System.Drawing.Size(550, 348);
             this.GetNextInstructionAutoGB.TabIndex = 1;
             this.GetNextInstructionAutoGB.TabStop = false;
             this.GetNextInstructionAutoGB.Text = "GetNextInstructionAuto:";
@@ -4005,8 +3769,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetNextInstructionAutoTlp.Controls.Add(this.GetNextInstructionAuto_lNextTurnYTBox, 1, 5);
             this.GetNextInstructionAutoTlp.Controls.Add(this.GetNextInstructionAuto_nInstructionTBox, 1, 6);
             this.GetNextInstructionAutoTlp.Controls.Add(this.GetNextInstructionAuto_nRoundaboutExitIndexTBox, 1, 7);
-            this.GetNextInstructionAutoTlp.Location = new System.Drawing.Point(8, 23);
-            this.GetNextInstructionAutoTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetNextInstructionAutoTlp.Location = new System.Drawing.Point(6, 19);
             this.GetNextInstructionAutoTlp.Name = "GetNextInstructionAutoTlp";
             this.GetNextInstructionAutoTlp.RowCount = 9;
             this.GetNextInstructionAutoTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
@@ -4018,7 +3781,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetNextInstructionAutoTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.GetNextInstructionAutoTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.GetNextInstructionAutoTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.GetNextInstructionAutoTlp.Size = new System.Drawing.Size(717, 389);
+            this.GetNextInstructionAutoTlp.Size = new System.Drawing.Size(538, 316);
             this.GetNextInstructionAutoTlp.TabIndex = 0;
             // 
             // GetNextInstructionAutoBtn
@@ -4026,10 +3789,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetNextInstructionAutoBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.GetNextInstructionAutoBtn.Location = new System.Drawing.Point(215, 348);
-            this.GetNextInstructionAutoBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetNextInstructionAutoBtn.Location = new System.Drawing.Point(161, 283);
             this.GetNextInstructionAutoBtn.Name = "GetNextInstructionAutoBtn";
-            this.GetNextInstructionAutoBtn.Size = new System.Drawing.Size(498, 37);
+            this.GetNextInstructionAutoBtn.Size = new System.Drawing.Size(374, 30);
             this.GetNextInstructionAutoBtn.TabIndex = 0;
             this.GetNextInstructionAutoBtn.Text = "GetNextInstructionAuto";
             this.GetNextInstructionAutoBtn.UseVisualStyleBackColor = true;
@@ -4038,87 +3800,78 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(4, 0);
-            this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label57.Location = new System.Drawing.Point(3, 0);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(131, 17);
+            this.label57.Size = new System.Drawing.Size(100, 13);
             this.label57.TabIndex = 1;
             this.label57.Text = "Delay and Max time";
             // 
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(4, 43);
-            this.label58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label58.Location = new System.Drawing.Point(3, 35);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(140, 17);
+            this.label58.Size = new System.Drawing.Size(106, 13);
             this.label58.TabIndex = 2;
             this.label58.Text = "Repeat automatically";
             // 
             // label59
             // 
             this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(4, 86);
-            this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label59.Location = new System.Drawing.Point(3, 70);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(63, 17);
+            this.label59.Size = new System.Drawing.Size(50, 13);
             this.label59.TabIndex = 3;
             this.label59.Text = "ExitIndex";
             // 
             // label60
             // 
             this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(4, 129);
-            this.label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label60.Location = new System.Drawing.Point(3, 105);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(141, 17);
+            this.label60.Size = new System.Drawing.Size(108, 13);
             this.label60.TabIndex = 4;
             this.label60.Text = "lDistanceToNextTurn";
             // 
             // label61
             // 
             this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(4, 172);
-            this.label61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label61.Location = new System.Drawing.Point(3, 140);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(78, 17);
+            this.label61.Size = new System.Drawing.Size(60, 13);
             this.label61.TabIndex = 5;
             this.label61.Text = "lNextTurnX";
             // 
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(4, 215);
-            this.label62.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label62.Location = new System.Drawing.Point(3, 175);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(78, 17);
+            this.label62.Size = new System.Drawing.Size(60, 13);
             this.label62.TabIndex = 6;
             this.label62.Text = "lNextTurnY";
             // 
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(4, 258);
-            this.label63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label63.Location = new System.Drawing.Point(3, 210);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(81, 17);
+            this.label63.Size = new System.Drawing.Size(62, 13);
             this.label63.TabIndex = 7;
             this.label63.Text = "nInstruction";
             // 
             // label64
             // 
             this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(4, 301);
-            this.label64.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label64.Location = new System.Drawing.Point(3, 245);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(149, 17);
+            this.label64.Size = new System.Drawing.Size(115, 13);
             this.label64.TabIndex = 8;
             this.label64.Text = "nRoundaboutExitIndex";
             // 
             // GetNextInstructionAuto_DelayAndMaxTimeNum
             // 
-            this.GetNextInstructionAuto_DelayAndMaxTimeNum.Location = new System.Drawing.Point(215, 4);
-            this.GetNextInstructionAuto_DelayAndMaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetNextInstructionAuto_DelayAndMaxTimeNum.Location = new System.Drawing.Point(161, 3);
             this.GetNextInstructionAuto_DelayAndMaxTimeNum.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -4130,7 +3883,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             0});
             this.GetNextInstructionAuto_DelayAndMaxTimeNum.Name = "GetNextInstructionAuto_DelayAndMaxTimeNum";
-            this.GetNextInstructionAuto_DelayAndMaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.GetNextInstructionAuto_DelayAndMaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.GetNextInstructionAuto_DelayAndMaxTimeNum.TabIndex = 9;
             this.GetNextInstructionAuto_DelayAndMaxTimeNum.Value = new decimal(new int[] {
             1000,
@@ -4141,69 +3894,60 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // GetNextInstructionAuto_RepeatAutomaticallyChB
             // 
             this.GetNextInstructionAuto_RepeatAutomaticallyChB.AutoSize = true;
-            this.GetNextInstructionAuto_RepeatAutomaticallyChB.Location = new System.Drawing.Point(215, 47);
-            this.GetNextInstructionAuto_RepeatAutomaticallyChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetNextInstructionAuto_RepeatAutomaticallyChB.Location = new System.Drawing.Point(161, 38);
             this.GetNextInstructionAuto_RepeatAutomaticallyChB.Name = "GetNextInstructionAuto_RepeatAutomaticallyChB";
-            this.GetNextInstructionAuto_RepeatAutomaticallyChB.Size = new System.Drawing.Size(18, 17);
+            this.GetNextInstructionAuto_RepeatAutomaticallyChB.Size = new System.Drawing.Size(15, 14);
             this.GetNextInstructionAuto_RepeatAutomaticallyChB.TabIndex = 10;
             this.GetNextInstructionAuto_RepeatAutomaticallyChB.UseVisualStyleBackColor = true;
             // 
             // GetNextInstructionAuto_ExitIndexTBox
             // 
-            this.GetNextInstructionAuto_ExitIndexTBox.Location = new System.Drawing.Point(215, 90);
-            this.GetNextInstructionAuto_ExitIndexTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetNextInstructionAuto_ExitIndexTBox.Location = new System.Drawing.Point(161, 73);
             this.GetNextInstructionAuto_ExitIndexTBox.Name = "GetNextInstructionAuto_ExitIndexTBox";
-            this.GetNextInstructionAuto_ExitIndexTBox.Size = new System.Drawing.Size(132, 22);
+            this.GetNextInstructionAuto_ExitIndexTBox.Size = new System.Drawing.Size(100, 20);
             this.GetNextInstructionAuto_ExitIndexTBox.TabIndex = 11;
             // 
             // GetNextInstructionAuto_lDistanceToNextTurnTBox
             // 
-            this.GetNextInstructionAuto_lDistanceToNextTurnTBox.Location = new System.Drawing.Point(215, 133);
-            this.GetNextInstructionAuto_lDistanceToNextTurnTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetNextInstructionAuto_lDistanceToNextTurnTBox.Location = new System.Drawing.Point(161, 108);
             this.GetNextInstructionAuto_lDistanceToNextTurnTBox.Name = "GetNextInstructionAuto_lDistanceToNextTurnTBox";
-            this.GetNextInstructionAuto_lDistanceToNextTurnTBox.Size = new System.Drawing.Size(132, 22);
+            this.GetNextInstructionAuto_lDistanceToNextTurnTBox.Size = new System.Drawing.Size(100, 20);
             this.GetNextInstructionAuto_lDistanceToNextTurnTBox.TabIndex = 12;
             // 
             // GetNextInstructionAuto_lNextTurnXTBox
             // 
-            this.GetNextInstructionAuto_lNextTurnXTBox.Location = new System.Drawing.Point(215, 176);
-            this.GetNextInstructionAuto_lNextTurnXTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetNextInstructionAuto_lNextTurnXTBox.Location = new System.Drawing.Point(161, 143);
             this.GetNextInstructionAuto_lNextTurnXTBox.Name = "GetNextInstructionAuto_lNextTurnXTBox";
-            this.GetNextInstructionAuto_lNextTurnXTBox.Size = new System.Drawing.Size(132, 22);
+            this.GetNextInstructionAuto_lNextTurnXTBox.Size = new System.Drawing.Size(100, 20);
             this.GetNextInstructionAuto_lNextTurnXTBox.TabIndex = 13;
             // 
             // GetNextInstructionAuto_lNextTurnYTBox
             // 
-            this.GetNextInstructionAuto_lNextTurnYTBox.Location = new System.Drawing.Point(215, 219);
-            this.GetNextInstructionAuto_lNextTurnYTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetNextInstructionAuto_lNextTurnYTBox.Location = new System.Drawing.Point(161, 178);
             this.GetNextInstructionAuto_lNextTurnYTBox.Name = "GetNextInstructionAuto_lNextTurnYTBox";
-            this.GetNextInstructionAuto_lNextTurnYTBox.Size = new System.Drawing.Size(132, 22);
+            this.GetNextInstructionAuto_lNextTurnYTBox.Size = new System.Drawing.Size(100, 20);
             this.GetNextInstructionAuto_lNextTurnYTBox.TabIndex = 14;
             // 
             // GetNextInstructionAuto_nInstructionTBox
             // 
-            this.GetNextInstructionAuto_nInstructionTBox.Location = new System.Drawing.Point(215, 262);
-            this.GetNextInstructionAuto_nInstructionTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetNextInstructionAuto_nInstructionTBox.Location = new System.Drawing.Point(161, 213);
             this.GetNextInstructionAuto_nInstructionTBox.Name = "GetNextInstructionAuto_nInstructionTBox";
-            this.GetNextInstructionAuto_nInstructionTBox.Size = new System.Drawing.Size(132, 22);
+            this.GetNextInstructionAuto_nInstructionTBox.Size = new System.Drawing.Size(100, 20);
             this.GetNextInstructionAuto_nInstructionTBox.TabIndex = 15;
             // 
             // GetNextInstructionAuto_nRoundaboutExitIndexTBox
             // 
-            this.GetNextInstructionAuto_nRoundaboutExitIndexTBox.Location = new System.Drawing.Point(215, 305);
-            this.GetNextInstructionAuto_nRoundaboutExitIndexTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetNextInstructionAuto_nRoundaboutExitIndexTBox.Location = new System.Drawing.Point(161, 248);
             this.GetNextInstructionAuto_nRoundaboutExitIndexTBox.Name = "GetNextInstructionAuto_nRoundaboutExitIndexTBox";
-            this.GetNextInstructionAuto_nRoundaboutExitIndexTBox.Size = new System.Drawing.Size(132, 22);
+            this.GetNextInstructionAuto_nRoundaboutExitIndexTBox.Size = new System.Drawing.Size(100, 20);
             this.GetNextInstructionAuto_nRoundaboutExitIndexTBox.TabIndex = 16;
             // 
             // GetNextInstructionGB
             // 
             this.GetNextInstructionGB.Controls.Add(this.tableLayoutPanel11);
-            this.GetNextInstructionGB.Location = new System.Drawing.Point(8, 7);
-            this.GetNextInstructionGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetNextInstructionGB.Location = new System.Drawing.Point(6, 6);
             this.GetNextInstructionGB.Name = "GetNextInstructionGB";
-            this.GetNextInstructionGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GetNextInstructionGB.Size = new System.Drawing.Size(736, 132);
+            this.GetNextInstructionGB.Size = new System.Drawing.Size(552, 107);
             this.GetNextInstructionGB.TabIndex = 0;
             this.GetNextInstructionGB.TabStop = false;
             this.GetNextInstructionGB.Text = "GetNextInstruction:";
@@ -4216,36 +3960,33 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel11.Controls.Add(this.label56, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.GetNextInstruction_MaxTimeNum, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.GetNextInstructionBtn, 1, 1);
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 2;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(720, 89);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(540, 72);
             this.tableLayoutPanel11.TabIndex = 0;
             // 
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(4, 0);
-            this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label56.Location = new System.Drawing.Point(3, 0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(64, 17);
+            this.label56.Size = new System.Drawing.Size(50, 13);
             this.label56.TabIndex = 0;
             this.label56.Text = "MaxTime";
             // 
             // GetNextInstruction_MaxTimeNum
             // 
-            this.GetNextInstruction_MaxTimeNum.Location = new System.Drawing.Point(218, 4);
-            this.GetNextInstruction_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetNextInstruction_MaxTimeNum.Location = new System.Drawing.Point(164, 3);
             this.GetNextInstruction_MaxTimeNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.GetNextInstruction_MaxTimeNum.Name = "GetNextInstruction_MaxTimeNum";
-            this.GetNextInstruction_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.GetNextInstruction_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.GetNextInstruction_MaxTimeNum.TabIndex = 1;
             // 
             // GetNextInstructionBtn
@@ -4253,10 +3994,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetNextInstructionBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.GetNextInstructionBtn.Location = new System.Drawing.Point(218, 48);
-            this.GetNextInstructionBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetNextInstructionBtn.Location = new System.Drawing.Point(164, 39);
             this.GetNextInstructionBtn.Name = "GetNextInstructionBtn";
-            this.GetNextInstructionBtn.Size = new System.Drawing.Size(498, 37);
+            this.GetNextInstructionBtn.Size = new System.Drawing.Size(373, 30);
             this.GetNextInstructionBtn.TabIndex = 2;
             this.GetNextInstructionBtn.Text = "GetNextInstruction";
             this.GetNextInstructionBtn.UseVisualStyleBackColor = true;
@@ -4266,10 +4006,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T13.Controls.Add(this.PlayGpsLgGB);
             this.T13.Location = new System.Drawing.Point(4, 19);
-            this.T13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T13.Name = "T13";
-            this.T13.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T13.Size = new System.Drawing.Size(755, 618);
+            this.T13.Padding = new System.Windows.Forms.Padding(3);
+            this.T13.Size = new System.Drawing.Size(564, 498);
             this.T13.TabIndex = 12;
             this.T13.Text = "T13";
             this.T13.UseVisualStyleBackColor = true;
@@ -4277,11 +4016,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLgGB
             // 
             this.PlayGpsLgGB.Controls.Add(this.PlayGpsLogTlp);
-            this.PlayGpsLgGB.Location = new System.Drawing.Point(11, 7);
-            this.PlayGpsLgGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlayGpsLgGB.Location = new System.Drawing.Point(8, 6);
             this.PlayGpsLgGB.Name = "PlayGpsLgGB";
-            this.PlayGpsLgGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.PlayGpsLgGB.Size = new System.Drawing.Size(729, 254);
+            this.PlayGpsLgGB.Size = new System.Drawing.Size(547, 206);
             this.PlayGpsLgGB.TabIndex = 8;
             this.PlayGpsLgGB.TabStop = false;
             this.PlayGpsLgGB.Text = "PlayGpsLog:";
@@ -4293,17 +4030,16 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.PlayGpsLogTlp.Controls.Add(this.GpsLogStartStopTlp, 0, 1);
             this.PlayGpsLogTlp.Controls.Add(this.GpsLogPathTlp, 0, 0);
             this.PlayGpsLogTlp.Controls.Add(this.GpsLogTrackBar, 0, 2);
-            this.PlayGpsLogTlp.Location = new System.Drawing.Point(8, 21);
-            this.PlayGpsLogTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlayGpsLogTlp.Location = new System.Drawing.Point(6, 17);
             this.PlayGpsLogTlp.Name = "PlayGpsLogTlp";
             this.PlayGpsLogTlp.RowCount = 3;
             this.PlayGpsLogTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.32258F));
             this.PlayGpsLogTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.67742F));
-            this.PlayGpsLogTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.PlayGpsLogTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.PlayGpsLogTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.PlayGpsLogTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.PlayGpsLogTlp.Size = new System.Drawing.Size(713, 210);
+            this.PlayGpsLogTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.PlayGpsLogTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.PlayGpsLogTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.PlayGpsLogTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.PlayGpsLogTlp.Size = new System.Drawing.Size(535, 171);
             this.PlayGpsLogTlp.TabIndex = 0;
             // 
             // GpsLogStartStopTlp
@@ -4311,25 +4047,23 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GpsLogStartStopTlp.ColumnCount = 3;
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.87719F));
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.12281F));
-            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 577F));
+            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 436F));
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStartBtn, 0, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStopBtn, 2, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogPauseBtn, 1, 0);
-            this.GpsLogStartStopTlp.Location = new System.Drawing.Point(4, 56);
-            this.GpsLogStartStopTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GpsLogStartStopTlp.Location = new System.Drawing.Point(3, 45);
             this.GpsLogStartStopTlp.Name = "GpsLogStartStopTlp";
             this.GpsLogStartStopTlp.RowCount = 1;
             this.GpsLogStartStopTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.GpsLogStartStopTlp.Size = new System.Drawing.Size(705, 69);
+            this.GpsLogStartStopTlp.Size = new System.Drawing.Size(529, 56);
             this.GpsLogStartStopTlp.TabIndex = 4;
             // 
             // PlayGpsLogStartBtn
             // 
             this.PlayGpsLogStartBtn.Image = global::WindowsDemo.Properties.Resources.Button_Play_icon;
-            this.PlayGpsLogStartBtn.Location = new System.Drawing.Point(4, 4);
-            this.PlayGpsLogStartBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlayGpsLogStartBtn.Location = new System.Drawing.Point(3, 3);
             this.PlayGpsLogStartBtn.Name = "PlayGpsLogStartBtn";
-            this.PlayGpsLogStartBtn.Size = new System.Drawing.Size(57, 55);
+            this.PlayGpsLogStartBtn.Size = new System.Drawing.Size(41, 45);
             this.PlayGpsLogStartBtn.TabIndex = 2;
             this.PlayGpsLogStartBtn.UseVisualStyleBackColor = true;
             this.PlayGpsLogStartBtn.Click += new System.EventHandler(this.PlayGpsLogStartBtn_Click);
@@ -4337,10 +4071,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLogStopBtn
             // 
             this.PlayGpsLogStopBtn.Image = global::WindowsDemo.Properties.Resources.Button_Stop_icon;
-            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(131, 4);
-            this.PlayGpsLogStopBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(95, 3);
             this.PlayGpsLogStopBtn.Name = "PlayGpsLogStopBtn";
-            this.PlayGpsLogStopBtn.Size = new System.Drawing.Size(60, 55);
+            this.PlayGpsLogStopBtn.Size = new System.Drawing.Size(45, 45);
             this.PlayGpsLogStopBtn.TabIndex = 3;
             this.PlayGpsLogStopBtn.UseVisualStyleBackColor = true;
             this.PlayGpsLogStopBtn.Click += new System.EventHandler(this.PlayGpsLogStopBtn_Click);
@@ -4348,10 +4081,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLogPauseBtn
             // 
             this.PlayGpsLogPauseBtn.Image = global::WindowsDemo.Properties.Resources.Button_Pause_icon;
-            this.PlayGpsLogPauseBtn.Location = new System.Drawing.Point(69, 4);
-            this.PlayGpsLogPauseBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlayGpsLogPauseBtn.Location = new System.Drawing.Point(50, 3);
             this.PlayGpsLogPauseBtn.Name = "PlayGpsLogPauseBtn";
-            this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(54, 55);
+            this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(39, 45);
             this.PlayGpsLogPauseBtn.TabIndex = 4;
             this.PlayGpsLogPauseBtn.UseVisualStyleBackColor = true;
             this.PlayGpsLogPauseBtn.Click += new System.EventHandler(this.PlayGpsLogPauseBtn_Click);
@@ -4363,22 +4095,20 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GpsLogPathTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.506617F));
             this.GpsLogPathTlp.Controls.Add(this.PlayGpsLogPath, 0, 0);
             this.GpsLogPathTlp.Controls.Add(this.OpenGpsLogBtn, 1, 0);
-            this.GpsLogPathTlp.Location = new System.Drawing.Point(4, 4);
-            this.GpsLogPathTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GpsLogPathTlp.Location = new System.Drawing.Point(3, 3);
             this.GpsLogPathTlp.Name = "GpsLogPathTlp";
             this.GpsLogPathTlp.RowCount = 1;
             this.GpsLogPathTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.GpsLogPathTlp.Size = new System.Drawing.Size(705, 44);
+            this.GpsLogPathTlp.Size = new System.Drawing.Size(529, 36);
             this.GpsLogPathTlp.TabIndex = 5;
             // 
             // PlayGpsLogPath
             // 
             this.PlayGpsLogPath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.PlayGpsLogPath.FormattingEnabled = true;
-            this.PlayGpsLogPath.Location = new System.Drawing.Point(4, 10);
-            this.PlayGpsLogPath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlayGpsLogPath.Location = new System.Drawing.Point(3, 7);
             this.PlayGpsLogPath.Name = "PlayGpsLogPath";
-            this.PlayGpsLogPath.Size = new System.Drawing.Size(637, 24);
+            this.PlayGpsLogPath.Size = new System.Drawing.Size(478, 21);
             this.PlayGpsLogPath.TabIndex = 0;
             // 
             // OpenGpsLogBtn
@@ -4386,10 +4116,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.OpenGpsLogBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.OpenGpsLogBtn.Image = global::WindowsDemo.Properties.Resources.open;
-            this.OpenGpsLogBtn.Location = new System.Drawing.Point(649, 4);
-            this.OpenGpsLogBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OpenGpsLogBtn.Location = new System.Drawing.Point(487, 3);
             this.OpenGpsLogBtn.Name = "OpenGpsLogBtn";
-            this.OpenGpsLogBtn.Size = new System.Drawing.Size(52, 36);
+            this.OpenGpsLogBtn.Size = new System.Drawing.Size(39, 29);
             this.OpenGpsLogBtn.TabIndex = 1;
             this.OpenGpsLogBtn.UseVisualStyleBackColor = true;
             this.OpenGpsLogBtn.Click += new System.EventHandler(this.OpenGpsLogBtn_Click);
@@ -4397,11 +4126,10 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // GpsLogTrackBar
             // 
             this.GpsLogTrackBar.BackColor = System.Drawing.SystemColors.Window;
-            this.GpsLogTrackBar.Location = new System.Drawing.Point(4, 133);
-            this.GpsLogTrackBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GpsLogTrackBar.Location = new System.Drawing.Point(3, 108);
             this.GpsLogTrackBar.Maximum = 100;
             this.GpsLogTrackBar.Name = "GpsLogTrackBar";
-            this.GpsLogTrackBar.Size = new System.Drawing.Size(705, 56);
+            this.GpsLogTrackBar.Size = new System.Drawing.Size(529, 45);
             this.GpsLogTrackBar.TabIndex = 6;
             this.GpsLogTrackBar.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.GpsLogTrackBar.ValueChanged += new System.EventHandler(this.GpsLogTrackBar_ValueChanged);
@@ -4410,10 +4138,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T14.Controls.Add(this.GetMapVersionGB);
             this.T14.Location = new System.Drawing.Point(4, 19);
-            this.T14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T14.Name = "T14";
-            this.T14.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T14.Size = new System.Drawing.Size(755, 618);
+            this.T14.Padding = new System.Windows.Forms.Padding(3);
+            this.T14.Size = new System.Drawing.Size(564, 498);
             this.T14.TabIndex = 13;
             this.T14.Text = "T14";
             this.T14.UseVisualStyleBackColor = true;
@@ -4421,11 +4148,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // GetMapVersionGB
             // 
             this.GetMapVersionGB.Controls.Add(this.tableLayoutPanel12);
-            this.GetMapVersionGB.Location = new System.Drawing.Point(4, 7);
-            this.GetMapVersionGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetMapVersionGB.Location = new System.Drawing.Point(3, 6);
             this.GetMapVersionGB.Name = "GetMapVersionGB";
-            this.GetMapVersionGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GetMapVersionGB.Size = new System.Drawing.Size(740, 164);
+            this.GetMapVersionGB.Size = new System.Drawing.Size(555, 133);
             this.GetMapVersionGB.TabIndex = 0;
             this.GetMapVersionGB.TabStop = false;
             this.GetMapVersionGB.Text = "GetMapVersion:";
@@ -4440,33 +4165,30 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel12.Controls.Add(this.GetMapVersion_strIsoCB, 1, 0);
             this.tableLayoutPanel12.Controls.Add(this.GetMapVersion_MaxTimeNum, 1, 1);
             this.tableLayoutPanel12.Controls.Add(this.GetMapVersionBtn, 1, 2);
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 3;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(724, 127);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(543, 103);
             this.tableLayoutPanel12.TabIndex = 0;
             // 
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(4, 0);
-            this.label73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label73.Location = new System.Drawing.Point(3, 0);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(42, 17);
+            this.label73.Size = new System.Drawing.Size(32, 13);
             this.label73.TabIndex = 0;
             this.label73.Text = "strIso";
             // 
             // label74
             // 
             this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(4, 42);
-            this.label74.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label74.Location = new System.Drawing.Point(3, 34);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(64, 17);
+            this.label74.Size = new System.Drawing.Size(50, 13);
             this.label74.TabIndex = 1;
             this.label74.Text = "MaxTime";
             // 
@@ -4477,24 +4199,22 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             "svk",
             "cze",
             "deu"});
-            this.GetMapVersion_strIsoCB.Location = new System.Drawing.Point(121, 4);
-            this.GetMapVersion_strIsoCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetMapVersion_strIsoCB.Location = new System.Drawing.Point(90, 3);
             this.GetMapVersion_strIsoCB.MaxDropDownItems = 12;
             this.GetMapVersion_strIsoCB.Name = "GetMapVersion_strIsoCB";
-            this.GetMapVersion_strIsoCB.Size = new System.Drawing.Size(127, 24);
+            this.GetMapVersion_strIsoCB.Size = new System.Drawing.Size(96, 21);
             this.GetMapVersion_strIsoCB.TabIndex = 2;
             // 
             // GetMapVersion_MaxTimeNum
             // 
-            this.GetMapVersion_MaxTimeNum.Location = new System.Drawing.Point(121, 46);
-            this.GetMapVersion_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetMapVersion_MaxTimeNum.Location = new System.Drawing.Point(90, 37);
             this.GetMapVersion_MaxTimeNum.Maximum = new decimal(new int[] {
             1410065408,
             2,
             0,
             0});
             this.GetMapVersion_MaxTimeNum.Name = "GetMapVersion_MaxTimeNum";
-            this.GetMapVersion_MaxTimeNum.Size = new System.Drawing.Size(128, 22);
+            this.GetMapVersion_MaxTimeNum.Size = new System.Drawing.Size(96, 20);
             this.GetMapVersion_MaxTimeNum.TabIndex = 3;
             // 
             // GetMapVersionBtn
@@ -4502,10 +4222,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetMapVersionBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.GetMapVersionBtn.Location = new System.Drawing.Point(121, 88);
-            this.GetMapVersionBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetMapVersionBtn.Location = new System.Drawing.Point(90, 71);
             this.GetMapVersionBtn.Name = "GetMapVersionBtn";
-            this.GetMapVersionBtn.Size = new System.Drawing.Size(599, 35);
+            this.GetMapVersionBtn.Size = new System.Drawing.Size(450, 29);
             this.GetMapVersionBtn.TabIndex = 4;
             this.GetMapVersionBtn.Text = "GetMapVersion";
             this.GetMapVersionBtn.UseVisualStyleBackColor = true;
@@ -4515,10 +4234,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T15.Controls.Add(this.FindNearbyPoiGB);
             this.T15.Location = new System.Drawing.Point(4, 19);
-            this.T15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T15.Name = "T15";
-            this.T15.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T15.Size = new System.Drawing.Size(755, 618);
+            this.T15.Padding = new System.Windows.Forms.Padding(3);
+            this.T15.Size = new System.Drawing.Size(564, 498);
             this.T15.TabIndex = 14;
             this.T15.Text = "T15";
             this.T15.UseVisualStyleBackColor = true;
@@ -4526,11 +4244,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // FindNearbyPoiGB
             // 
             this.FindNearbyPoiGB.Controls.Add(this.FindNearbyPoiTlp);
-            this.FindNearbyPoiGB.Location = new System.Drawing.Point(8, 7);
-            this.FindNearbyPoiGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FindNearbyPoiGB.Location = new System.Drawing.Point(6, 6);
             this.FindNearbyPoiGB.Name = "FindNearbyPoiGB";
-            this.FindNearbyPoiGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.FindNearbyPoiGB.Size = new System.Drawing.Size(736, 358);
+            this.FindNearbyPoiGB.Size = new System.Drawing.Size(552, 291);
             this.FindNearbyPoiGB.TabIndex = 0;
             this.FindNearbyPoiGB.TabStop = false;
             this.FindNearbyPoiGB.Text = "FindNearbyPoi:";
@@ -4553,8 +4269,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.FindNearbyPoiTlp.Controls.Add(this.FindNearbyPoi_lYNum, 1, 4);
             this.FindNearbyPoiTlp.Controls.Add(this.FindNearbyPoi_MaxTimeNum, 1, 5);
             this.FindNearbyPoiTlp.Controls.Add(this.FindNearbyPoiBtn, 1, 6);
-            this.FindNearbyPoiTlp.Location = new System.Drawing.Point(8, 23);
-            this.FindNearbyPoiTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FindNearbyPoiTlp.Location = new System.Drawing.Point(6, 19);
             this.FindNearbyPoiTlp.Name = "FindNearbyPoiTlp";
             this.FindNearbyPoiTlp.RowCount = 7;
             this.FindNearbyPoiTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -4564,80 +4279,73 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.FindNearbyPoiTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.FindNearbyPoiTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.FindNearbyPoiTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.FindNearbyPoiTlp.Size = new System.Drawing.Size(720, 284);
+            this.FindNearbyPoiTlp.Size = new System.Drawing.Size(540, 231);
             this.FindNearbyPoiTlp.TabIndex = 0;
             // 
             // label77
             // 
             this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(4, 0);
-            this.label77.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label77.Location = new System.Drawing.Point(3, 0);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(57, 17);
+            this.label77.Size = new System.Drawing.Size(43, 13);
             this.label77.TabIndex = 0;
             this.label77.Text = "ListSize";
             // 
             // label78
             // 
             this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(4, 40);
-            this.label78.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label78.Location = new System.Drawing.Point(3, 32);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(115, 17);
+            this.label78.Size = new System.Drawing.Size(86, 13);
             this.label78.TabIndex = 1;
             this.label78.Text = "CategoryNumber";
             // 
             // label79
             // 
             this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(4, 80);
-            this.label79.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label79.Location = new System.Drawing.Point(3, 64);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(118, 17);
+            this.label79.Size = new System.Drawing.Size(88, 13);
             this.label79.TabIndex = 2;
             this.label79.Text = "strCategoryName";
             // 
             // label80
             // 
             this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(4, 120);
-            this.label80.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label80.Location = new System.Drawing.Point(3, 96);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(20, 17);
+            this.label80.Size = new System.Drawing.Size(16, 13);
             this.label80.TabIndex = 3;
             this.label80.Text = "lX";
             // 
             // label81
             // 
             this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(4, 160);
-            this.label81.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label81.Location = new System.Drawing.Point(3, 128);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(20, 17);
+            this.label81.Size = new System.Drawing.Size(16, 13);
             this.label81.TabIndex = 4;
             this.label81.Text = "lY";
             // 
             // label82
             // 
             this.label82.AutoSize = true;
-            this.label82.Location = new System.Drawing.Point(4, 200);
-            this.label82.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label82.Location = new System.Drawing.Point(3, 160);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(64, 17);
+            this.label82.Size = new System.Drawing.Size(50, 13);
             this.label82.TabIndex = 5;
             this.label82.Text = "MaxTime";
             // 
             // FindNearbyPoi_ListSizeNum
             // 
-            this.FindNearbyPoi_ListSizeNum.Location = new System.Drawing.Point(217, 4);
-            this.FindNearbyPoi_ListSizeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FindNearbyPoi_ListSizeNum.Location = new System.Drawing.Point(162, 3);
             this.FindNearbyPoi_ListSizeNum.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.FindNearbyPoi_ListSizeNum.Name = "FindNearbyPoi_ListSizeNum";
-            this.FindNearbyPoi_ListSizeNum.Size = new System.Drawing.Size(160, 22);
+            this.FindNearbyPoi_ListSizeNum.Size = new System.Drawing.Size(120, 20);
             this.FindNearbyPoi_ListSizeNum.TabIndex = 6;
             this.FindNearbyPoi_ListSizeNum.Value = new decimal(new int[] {
             1,
@@ -4647,29 +4355,26 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // FindNearbyPoi_CategoryNumberNum
             // 
-            this.FindNearbyPoi_CategoryNumberNum.Location = new System.Drawing.Point(217, 44);
-            this.FindNearbyPoi_CategoryNumberNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FindNearbyPoi_CategoryNumberNum.Location = new System.Drawing.Point(162, 35);
             this.FindNearbyPoi_CategoryNumberNum.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.FindNearbyPoi_CategoryNumberNum.Name = "FindNearbyPoi_CategoryNumberNum";
-            this.FindNearbyPoi_CategoryNumberNum.Size = new System.Drawing.Size(160, 22);
+            this.FindNearbyPoi_CategoryNumberNum.Size = new System.Drawing.Size(120, 20);
             this.FindNearbyPoi_CategoryNumberNum.TabIndex = 7;
             // 
             // FindNearbyPoi_strCategoryNameTBox
             // 
-            this.FindNearbyPoi_strCategoryNameTBox.Location = new System.Drawing.Point(217, 84);
-            this.FindNearbyPoi_strCategoryNameTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FindNearbyPoi_strCategoryNameTBox.Location = new System.Drawing.Point(162, 67);
             this.FindNearbyPoi_strCategoryNameTBox.Name = "FindNearbyPoi_strCategoryNameTBox";
-            this.FindNearbyPoi_strCategoryNameTBox.Size = new System.Drawing.Size(159, 22);
+            this.FindNearbyPoi_strCategoryNameTBox.Size = new System.Drawing.Size(120, 20);
             this.FindNearbyPoi_strCategoryNameTBox.TabIndex = 8;
             // 
             // FindNearbyPoi_lXNum
             // 
-            this.FindNearbyPoi_lXNum.Location = new System.Drawing.Point(217, 124);
-            this.FindNearbyPoi_lXNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FindNearbyPoi_lXNum.Location = new System.Drawing.Point(162, 99);
             this.FindNearbyPoi_lXNum.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -4681,13 +4386,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.FindNearbyPoi_lXNum.Name = "FindNearbyPoi_lXNum";
-            this.FindNearbyPoi_lXNum.Size = new System.Drawing.Size(160, 22);
+            this.FindNearbyPoi_lXNum.Size = new System.Drawing.Size(120, 20);
             this.FindNearbyPoi_lXNum.TabIndex = 9;
             // 
             // FindNearbyPoi_lYNum
             // 
-            this.FindNearbyPoi_lYNum.Location = new System.Drawing.Point(217, 164);
-            this.FindNearbyPoi_lYNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FindNearbyPoi_lYNum.Location = new System.Drawing.Point(162, 131);
             this.FindNearbyPoi_lYNum.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -4699,15 +4403,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.FindNearbyPoi_lYNum.Name = "FindNearbyPoi_lYNum";
-            this.FindNearbyPoi_lYNum.Size = new System.Drawing.Size(160, 22);
+            this.FindNearbyPoi_lYNum.Size = new System.Drawing.Size(120, 20);
             this.FindNearbyPoi_lYNum.TabIndex = 10;
             // 
             // FindNearbyPoi_MaxTimeNum
             // 
-            this.FindNearbyPoi_MaxTimeNum.Location = new System.Drawing.Point(217, 204);
-            this.FindNearbyPoi_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FindNearbyPoi_MaxTimeNum.Location = new System.Drawing.Point(162, 163);
             this.FindNearbyPoi_MaxTimeNum.Name = "FindNearbyPoi_MaxTimeNum";
-            this.FindNearbyPoi_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.FindNearbyPoi_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.FindNearbyPoi_MaxTimeNum.TabIndex = 11;
             // 
             // FindNearbyPoiBtn
@@ -4715,10 +4418,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.FindNearbyPoiBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.FindNearbyPoiBtn.Location = new System.Drawing.Point(217, 244);
-            this.FindNearbyPoiBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FindNearbyPoiBtn.Location = new System.Drawing.Point(162, 195);
             this.FindNearbyPoiBtn.Name = "FindNearbyPoiBtn";
-            this.FindNearbyPoiBtn.Size = new System.Drawing.Size(499, 36);
+            this.FindNearbyPoiBtn.Size = new System.Drawing.Size(375, 33);
             this.FindNearbyPoiBtn.TabIndex = 12;
             this.FindNearbyPoiBtn.Text = "FindNearbyPoi";
             this.FindNearbyPoiBtn.UseVisualStyleBackColor = true;
@@ -4728,10 +4430,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T16.Controls.Add(this.NavigateToAddressGB);
             this.T16.Location = new System.Drawing.Point(4, 19);
-            this.T16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T16.Name = "T16";
-            this.T16.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T16.Size = new System.Drawing.Size(755, 618);
+            this.T16.Padding = new System.Windows.Forms.Padding(3);
+            this.T16.Size = new System.Drawing.Size(564, 498);
             this.T16.TabIndex = 15;
             this.T16.Text = "T16";
             this.T16.UseVisualStyleBackColor = true;
@@ -4739,11 +4440,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // NavigateToAddressGB
             // 
             this.NavigateToAddressGB.Controls.Add(this.NavigateToAddressTlp);
-            this.NavigateToAddressGB.Location = new System.Drawing.Point(11, 7);
-            this.NavigateToAddressGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavigateToAddressGB.Location = new System.Drawing.Point(8, 6);
             this.NavigateToAddressGB.Name = "NavigateToAddressGB";
-            this.NavigateToAddressGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.NavigateToAddressGB.Size = new System.Drawing.Size(733, 278);
+            this.NavigateToAddressGB.Size = new System.Drawing.Size(550, 226);
             this.NavigateToAddressGB.TabIndex = 0;
             this.NavigateToAddressGB.TabStop = false;
             this.NavigateToAddressGB.Text = "NavigateToAddress:";
@@ -4764,8 +4463,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.NavigateToAddressTlp.Controls.Add(this.label85, 0, 2);
             this.NavigateToAddressTlp.Controls.Add(this.label86, 0, 3);
             this.NavigateToAddressTlp.Controls.Add(this.label87, 0, 4);
-            this.NavigateToAddressTlp.Location = new System.Drawing.Point(8, 23);
-            this.NavigateToAddressTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavigateToAddressTlp.Location = new System.Drawing.Point(6, 19);
             this.NavigateToAddressTlp.Name = "NavigateToAddressTlp";
             this.NavigateToAddressTlp.RowCount = 6;
             this.NavigateToAddressTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -4774,53 +4472,48 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.NavigateToAddressTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.NavigateToAddressTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.NavigateToAddressTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.NavigateToAddressTlp.Size = new System.Drawing.Size(717, 242);
+            this.NavigateToAddressTlp.Size = new System.Drawing.Size(538, 197);
             this.NavigateToAddressTlp.TabIndex = 0;
             // 
             // NavigateToAddress_AddressTBox
             // 
             this.NavigateToAddress_AddressTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.NavigateToAddress_AddressTBox.Location = new System.Drawing.Point(187, 4);
-            this.NavigateToAddress_AddressTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavigateToAddress_AddressTBox.Location = new System.Drawing.Point(141, 3);
             this.NavigateToAddress_AddressTBox.Name = "NavigateToAddress_AddressTBox";
-            this.NavigateToAddress_AddressTBox.Size = new System.Drawing.Size(526, 22);
+            this.NavigateToAddress_AddressTBox.Size = new System.Drawing.Size(394, 20);
             this.NavigateToAddress_AddressTBox.TabIndex = 0;
             // 
             // NavigateToAddress_bPostalChB
             // 
             this.NavigateToAddress_bPostalChB.AutoSize = true;
-            this.NavigateToAddress_bPostalChB.Location = new System.Drawing.Point(187, 44);
-            this.NavigateToAddress_bPostalChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavigateToAddress_bPostalChB.Location = new System.Drawing.Point(141, 35);
             this.NavigateToAddress_bPostalChB.Name = "NavigateToAddress_bPostalChB";
-            this.NavigateToAddress_bPostalChB.Size = new System.Drawing.Size(18, 17);
+            this.NavigateToAddress_bPostalChB.Size = new System.Drawing.Size(15, 14);
             this.NavigateToAddress_bPostalChB.TabIndex = 1;
             this.NavigateToAddress_bPostalChB.UseVisualStyleBackColor = true;
             // 
             // NavigateToAddress_FlagsNum
             // 
-            this.NavigateToAddress_FlagsNum.Location = new System.Drawing.Point(187, 84);
-            this.NavigateToAddress_FlagsNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavigateToAddress_FlagsNum.Location = new System.Drawing.Point(141, 67);
             this.NavigateToAddress_FlagsNum.Name = "NavigateToAddress_FlagsNum";
-            this.NavigateToAddress_FlagsNum.Size = new System.Drawing.Size(76, 22);
+            this.NavigateToAddress_FlagsNum.Size = new System.Drawing.Size(57, 20);
             this.NavigateToAddress_FlagsNum.TabIndex = 2;
             // 
             // NavigateToAddress_bShowApplicationChB
             // 
             this.NavigateToAddress_bShowApplicationChB.AutoSize = true;
-            this.NavigateToAddress_bShowApplicationChB.Location = new System.Drawing.Point(187, 124);
-            this.NavigateToAddress_bShowApplicationChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavigateToAddress_bShowApplicationChB.Location = new System.Drawing.Point(141, 99);
             this.NavigateToAddress_bShowApplicationChB.Name = "NavigateToAddress_bShowApplicationChB";
-            this.NavigateToAddress_bShowApplicationChB.Size = new System.Drawing.Size(18, 17);
+            this.NavigateToAddress_bShowApplicationChB.Size = new System.Drawing.Size(15, 14);
             this.NavigateToAddress_bShowApplicationChB.TabIndex = 3;
             this.NavigateToAddress_bShowApplicationChB.UseVisualStyleBackColor = true;
             // 
             // NavigateToAddress_MaxTimeNum
             // 
-            this.NavigateToAddress_MaxTimeNum.Location = new System.Drawing.Point(187, 164);
-            this.NavigateToAddress_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavigateToAddress_MaxTimeNum.Location = new System.Drawing.Point(141, 131);
             this.NavigateToAddress_MaxTimeNum.Name = "NavigateToAddress_MaxTimeNum";
-            this.NavigateToAddress_MaxTimeNum.Size = new System.Drawing.Size(156, 22);
+            this.NavigateToAddress_MaxTimeNum.Size = new System.Drawing.Size(117, 20);
             this.NavigateToAddress_MaxTimeNum.TabIndex = 4;
             // 
             // NavigateToAddressBtn
@@ -4828,10 +4521,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.NavigateToAddressBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.NavigateToAddressBtn.Location = new System.Drawing.Point(187, 204);
-            this.NavigateToAddressBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavigateToAddressBtn.Location = new System.Drawing.Point(141, 163);
             this.NavigateToAddressBtn.Name = "NavigateToAddressBtn";
-            this.NavigateToAddressBtn.Size = new System.Drawing.Size(526, 34);
+            this.NavigateToAddressBtn.Size = new System.Drawing.Size(394, 31);
             this.NavigateToAddressBtn.TabIndex = 5;
             this.NavigateToAddressBtn.Text = "NavigateToAddress";
             this.NavigateToAddressBtn.UseVisualStyleBackColor = true;
@@ -4840,50 +4532,45 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // label83
             // 
             this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(4, 0);
-            this.label83.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label83.Location = new System.Drawing.Point(3, 0);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(60, 17);
+            this.label83.Size = new System.Drawing.Size(45, 13);
             this.label83.TabIndex = 6;
             this.label83.Text = "Address";
             // 
             // label84
             // 
             this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(4, 40);
-            this.label84.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label84.Location = new System.Drawing.Point(3, 32);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(55, 17);
+            this.label84.Size = new System.Drawing.Size(42, 13);
             this.label84.TabIndex = 7;
             this.label84.Text = "bPostal";
             // 
             // label85
             // 
             this.label85.AutoSize = true;
-            this.label85.Location = new System.Drawing.Point(4, 80);
-            this.label85.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label85.Location = new System.Drawing.Point(3, 64);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(42, 17);
+            this.label85.Size = new System.Drawing.Size(32, 13);
             this.label85.TabIndex = 8;
             this.label85.Text = "Flags";
             // 
             // label86
             // 
             this.label86.AutoSize = true;
-            this.label86.Location = new System.Drawing.Point(4, 120);
-            this.label86.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label86.Location = new System.Drawing.Point(3, 96);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(119, 17);
+            this.label86.Size = new System.Drawing.Size(92, 13);
             this.label86.TabIndex = 9;
             this.label86.Text = "bShowApplication";
             // 
             // label87
             // 
             this.label87.AutoSize = true;
-            this.label87.Location = new System.Drawing.Point(4, 160);
-            this.label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label87.Location = new System.Drawing.Point(3, 128);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(64, 17);
+            this.label87.Size = new System.Drawing.Size(50, 13);
             this.label87.TabIndex = 10;
             this.label87.Text = "MaxTime";
             // 
@@ -4891,10 +4578,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T17.Controls.Add(this.GetPoiListGB);
             this.T17.Location = new System.Drawing.Point(4, 19);
-            this.T17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T17.Name = "T17";
-            this.T17.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T17.Size = new System.Drawing.Size(755, 618);
+            this.T17.Padding = new System.Windows.Forms.Padding(3);
+            this.T17.Size = new System.Drawing.Size(564, 498);
             this.T17.TabIndex = 16;
             this.T17.Text = "T17";
             this.T17.UseVisualStyleBackColor = true;
@@ -4902,11 +4588,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // GetPoiListGB
             // 
             this.GetPoiListGB.Controls.Add(this.tableLayoutPanel14);
-            this.GetPoiListGB.Location = new System.Drawing.Point(8, 7);
-            this.GetPoiListGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetPoiListGB.Location = new System.Drawing.Point(6, 6);
             this.GetPoiListGB.Name = "GetPoiListGB";
-            this.GetPoiListGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GetPoiListGB.Size = new System.Drawing.Size(736, 194);
+            this.GetPoiListGB.Size = new System.Drawing.Size(552, 158);
             this.GetPoiListGB.TabIndex = 0;
             this.GetPoiListGB.TabStop = false;
             this.GetPoiListGB.Text = "GetPoiList";
@@ -4923,76 +4607,69 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel14.Controls.Add(this.GetPoiList_bSearchAddressChB, 1, 1);
             this.tableLayoutPanel14.Controls.Add(this.GetPoiList_MaxTimeNum, 1, 2);
             this.tableLayoutPanel14.Controls.Add(this.GetPoiListBtn, 1, 3);
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 4;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(720, 164);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(540, 133);
             this.tableLayoutPanel14.TabIndex = 0;
             // 
             // label90
             // 
             this.label90.AutoSize = true;
-            this.label90.Location = new System.Drawing.Point(4, 0);
-            this.label90.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label90.Location = new System.Drawing.Point(3, 0);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(81, 17);
+            this.label90.Size = new System.Drawing.Size(60, 13);
             this.label90.TabIndex = 0;
             this.label90.Text = "strCategory";
             // 
             // label91
             // 
             this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(4, 41);
-            this.label91.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label91.Location = new System.Drawing.Point(3, 33);
             this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(113, 17);
+            this.label91.Size = new System.Drawing.Size(85, 13);
             this.label91.TabIndex = 1;
             this.label91.Text = "bSearchAddress";
             // 
             // label92
             // 
             this.label92.AutoSize = true;
-            this.label92.Location = new System.Drawing.Point(4, 82);
-            this.label92.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label92.Location = new System.Drawing.Point(3, 66);
             this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(64, 17);
+            this.label92.Size = new System.Drawing.Size(50, 13);
             this.label92.TabIndex = 2;
             this.label92.Text = "MaxTime";
             // 
             // GetPoiList_strCategoryTBox
             // 
-            this.GetPoiList_strCategoryTBox.Location = new System.Drawing.Point(194, 4);
-            this.GetPoiList_strCategoryTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetPoiList_strCategoryTBox.Location = new System.Drawing.Point(145, 3);
             this.GetPoiList_strCategoryTBox.Name = "GetPoiList_strCategoryTBox";
-            this.GetPoiList_strCategoryTBox.Size = new System.Drawing.Size(520, 22);
+            this.GetPoiList_strCategoryTBox.Size = new System.Drawing.Size(391, 20);
             this.GetPoiList_strCategoryTBox.TabIndex = 3;
             // 
             // GetPoiList_bSearchAddressChB
             // 
             this.GetPoiList_bSearchAddressChB.AutoSize = true;
-            this.GetPoiList_bSearchAddressChB.Location = new System.Drawing.Point(194, 45);
-            this.GetPoiList_bSearchAddressChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetPoiList_bSearchAddressChB.Location = new System.Drawing.Point(145, 36);
             this.GetPoiList_bSearchAddressChB.Name = "GetPoiList_bSearchAddressChB";
-            this.GetPoiList_bSearchAddressChB.Size = new System.Drawing.Size(18, 17);
+            this.GetPoiList_bSearchAddressChB.Size = new System.Drawing.Size(15, 14);
             this.GetPoiList_bSearchAddressChB.TabIndex = 4;
             this.GetPoiList_bSearchAddressChB.UseVisualStyleBackColor = true;
             // 
             // GetPoiList_MaxTimeNum
             // 
-            this.GetPoiList_MaxTimeNum.Location = new System.Drawing.Point(194, 86);
-            this.GetPoiList_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetPoiList_MaxTimeNum.Location = new System.Drawing.Point(145, 69);
             this.GetPoiList_MaxTimeNum.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
             this.GetPoiList_MaxTimeNum.Name = "GetPoiList_MaxTimeNum";
-            this.GetPoiList_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.GetPoiList_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.GetPoiList_MaxTimeNum.TabIndex = 5;
             // 
             // GetPoiListBtn
@@ -5000,10 +4677,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetPoiListBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.GetPoiListBtn.Location = new System.Drawing.Point(194, 127);
-            this.GetPoiListBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetPoiListBtn.Location = new System.Drawing.Point(145, 102);
             this.GetPoiListBtn.Name = "GetPoiListBtn";
-            this.GetPoiListBtn.Size = new System.Drawing.Size(522, 33);
+            this.GetPoiListBtn.Size = new System.Drawing.Size(392, 28);
             this.GetPoiListBtn.TabIndex = 6;
             this.GetPoiListBtn.Text = "GetPoiList";
             this.GetPoiListBtn.UseVisualStyleBackColor = true;
@@ -5013,10 +4689,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T18.Controls.Add(this.AddEntryToItineraryGB);
             this.T18.Location = new System.Drawing.Point(4, 19);
-            this.T18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T18.Name = "T18";
-            this.T18.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T18.Size = new System.Drawing.Size(755, 618);
+            this.T18.Padding = new System.Windows.Forms.Padding(3);
+            this.T18.Size = new System.Drawing.Size(564, 498);
             this.T18.TabIndex = 17;
             this.T18.Text = "T18";
             this.T18.UseVisualStyleBackColor = true;
@@ -5024,11 +4699,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // AddEntryToItineraryGB
             // 
             this.AddEntryToItineraryGB.Controls.Add(this.tableLayoutPanel16);
-            this.AddEntryToItineraryGB.Location = new System.Drawing.Point(8, 7);
-            this.AddEntryToItineraryGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddEntryToItineraryGB.Location = new System.Drawing.Point(6, 6);
             this.AddEntryToItineraryGB.Name = "AddEntryToItineraryGB";
-            this.AddEntryToItineraryGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.AddEntryToItineraryGB.Size = new System.Drawing.Size(733, 321);
+            this.AddEntryToItineraryGB.Size = new System.Drawing.Size(550, 261);
             this.AddEntryToItineraryGB.TabIndex = 1;
             this.AddEntryToItineraryGB.TabStop = false;
             this.AddEntryToItineraryGB.Text = "AddEntryToItinerary";
@@ -5053,8 +4726,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel16.Controls.Add(this.AddEntryToItineraryBtn, 1, 7);
             this.tableLayoutPanel16.Controls.Add(this.label122, 0, 6);
             this.tableLayoutPanel16.Controls.Add(this.AddEntryToItinerary_IdNum, 1, 6);
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel16.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
             this.tableLayoutPanel16.RowCount = 8;
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -5063,45 +4735,41 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(713, 288);
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(535, 234);
             this.tableLayoutPanel16.TabIndex = 0;
             // 
             // label94
             // 
             this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(4, 0);
-            this.label94.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label94.Location = new System.Drawing.Point(3, 0);
             this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(112, 17);
+            this.label94.Size = new System.Drawing.Size(83, 13);
             this.label94.TabIndex = 0;
             this.label94.Text = "strItineraryName";
             // 
             // label95
             // 
             this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(4, 33);
-            this.label95.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label95.Location = new System.Drawing.Point(3, 27);
             this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(20, 17);
+            this.label95.Size = new System.Drawing.Size(16, 13);
             this.label95.TabIndex = 2;
             this.label95.Text = "lX";
             // 
             // label96
             // 
             this.label96.AutoSize = true;
-            this.label96.Location = new System.Drawing.Point(4, 66);
-            this.label96.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label96.Location = new System.Drawing.Point(3, 54);
             this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(20, 17);
+            this.label96.Size = new System.Drawing.Size(16, 13);
             this.label96.TabIndex = 3;
             this.label96.Text = "lY";
             // 
             // AddEntryToItinerary_lXNum
             // 
-            this.AddEntryToItinerary_lXNum.Location = new System.Drawing.Point(217, 37);
-            this.AddEntryToItinerary_lXNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddEntryToItinerary_lXNum.Location = new System.Drawing.Point(162, 30);
             this.AddEntryToItinerary_lXNum.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -5113,13 +4781,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.AddEntryToItinerary_lXNum.Name = "AddEntryToItinerary_lXNum";
-            this.AddEntryToItinerary_lXNum.Size = new System.Drawing.Size(240, 22);
+            this.AddEntryToItinerary_lXNum.Size = new System.Drawing.Size(180, 20);
             this.AddEntryToItinerary_lXNum.TabIndex = 4;
             // 
             // AddEntryToItinerary_lYNum
             // 
-            this.AddEntryToItinerary_lYNum.Location = new System.Drawing.Point(217, 70);
-            this.AddEntryToItinerary_lYNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddEntryToItinerary_lYNum.Location = new System.Drawing.Point(162, 57);
             this.AddEntryToItinerary_lYNum.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -5131,34 +4798,31 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.AddEntryToItinerary_lYNum.Name = "AddEntryToItinerary_lYNum";
-            this.AddEntryToItinerary_lYNum.Size = new System.Drawing.Size(240, 22);
+            this.AddEntryToItinerary_lYNum.Size = new System.Drawing.Size(180, 20);
             this.AddEntryToItinerary_lYNum.TabIndex = 5;
             // 
             // AddEntryToItinerary_nPointTypeNum
             // 
-            this.AddEntryToItinerary_nPointTypeNum.Location = new System.Drawing.Point(217, 103);
-            this.AddEntryToItinerary_nPointTypeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddEntryToItinerary_nPointTypeNum.Location = new System.Drawing.Point(162, 84);
             this.AddEntryToItinerary_nPointTypeNum.Name = "AddEntryToItinerary_nPointTypeNum";
-            this.AddEntryToItinerary_nPointTypeNum.Size = new System.Drawing.Size(81, 22);
+            this.AddEntryToItinerary_nPointTypeNum.Size = new System.Drawing.Size(61, 20);
             this.AddEntryToItinerary_nPointTypeNum.TabIndex = 6;
             // 
             // label97
             // 
             this.label97.AutoSize = true;
-            this.label97.Location = new System.Drawing.Point(4, 99);
-            this.label97.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label97.Location = new System.Drawing.Point(3, 81);
             this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(80, 17);
+            this.label97.Size = new System.Drawing.Size(61, 13);
             this.label97.TabIndex = 7;
             this.label97.Text = "nPointType";
             // 
             // label98
             // 
             this.label98.AutoSize = true;
-            this.label98.Location = new System.Drawing.Point(4, 132);
-            this.label98.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label98.Location = new System.Drawing.Point(3, 108);
             this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(56, 17);
+            this.label98.Size = new System.Drawing.Size(43, 13);
             this.label98.TabIndex = 8;
             this.label98.Text = "Caption";
             // 
@@ -5166,28 +4830,25 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.AddEntryToItinerary_CaptionTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddEntryToItinerary_CaptionTBox.Location = new System.Drawing.Point(217, 136);
-            this.AddEntryToItinerary_CaptionTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddEntryToItinerary_CaptionTBox.Location = new System.Drawing.Point(162, 111);
             this.AddEntryToItinerary_CaptionTBox.Name = "AddEntryToItinerary_CaptionTBox";
-            this.AddEntryToItinerary_CaptionTBox.Size = new System.Drawing.Size(492, 22);
+            this.AddEntryToItinerary_CaptionTBox.Size = new System.Drawing.Size(370, 20);
             this.AddEntryToItinerary_CaptionTBox.TabIndex = 9;
             // 
             // label99
             // 
             this.label99.AutoSize = true;
-            this.label99.Location = new System.Drawing.Point(4, 165);
-            this.label99.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label99.Location = new System.Drawing.Point(3, 135);
             this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(49, 17);
+            this.label99.Size = new System.Drawing.Size(39, 13);
             this.label99.TabIndex = 12;
             this.label99.Text = "nIndex";
             // 
             // AddEntryToItinerary_nIndexNum
             // 
-            this.AddEntryToItinerary_nIndexNum.Location = new System.Drawing.Point(217, 169);
-            this.AddEntryToItinerary_nIndexNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddEntryToItinerary_nIndexNum.Location = new System.Drawing.Point(162, 138);
             this.AddEntryToItinerary_nIndexNum.Name = "AddEntryToItinerary_nIndexNum";
-            this.AddEntryToItinerary_nIndexNum.Size = new System.Drawing.Size(81, 22);
+            this.AddEntryToItinerary_nIndexNum.Size = new System.Drawing.Size(61, 20);
             this.AddEntryToItinerary_nIndexNum.TabIndex = 13;
             // 
             // AddEntryToItinerary_strItineraryNameCB
@@ -5195,10 +4856,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddEntryToItinerary_strItineraryNameCB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AddEntryToItinerary_strItineraryNameCB.FormattingEnabled = true;
-            this.AddEntryToItinerary_strItineraryNameCB.Location = new System.Drawing.Point(217, 4);
-            this.AddEntryToItinerary_strItineraryNameCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddEntryToItinerary_strItineraryNameCB.Location = new System.Drawing.Point(162, 3);
             this.AddEntryToItinerary_strItineraryNameCB.Name = "AddEntryToItinerary_strItineraryNameCB";
-            this.AddEntryToItinerary_strItineraryNameCB.Size = new System.Drawing.Size(492, 24);
+            this.AddEntryToItinerary_strItineraryNameCB.Size = new System.Drawing.Size(370, 21);
             this.AddEntryToItinerary_strItineraryNameCB.TabIndex = 14;
             // 
             // AddEntryToItineraryBtn
@@ -5206,10 +4866,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddEntryToItineraryBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddEntryToItineraryBtn.Location = new System.Drawing.Point(217, 244);
-            this.AddEntryToItineraryBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddEntryToItineraryBtn.Location = new System.Drawing.Point(162, 199);
             this.AddEntryToItineraryBtn.Name = "AddEntryToItineraryBtn";
-            this.AddEntryToItineraryBtn.Size = new System.Drawing.Size(492, 40);
+            this.AddEntryToItineraryBtn.Size = new System.Drawing.Size(370, 32);
             this.AddEntryToItineraryBtn.TabIndex = 15;
             this.AddEntryToItineraryBtn.Text = "AddEntryToItinerary";
             this.AddEntryToItineraryBtn.UseVisualStyleBackColor = true;
@@ -5218,34 +4877,31 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // label122
             // 
             this.label122.AutoSize = true;
-            this.label122.Location = new System.Drawing.Point(4, 198);
-            this.label122.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label122.Location = new System.Drawing.Point(3, 162);
             this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(19, 17);
+            this.label122.Size = new System.Drawing.Size(16, 13);
             this.label122.TabIndex = 16;
             this.label122.Text = "Id";
             // 
             // AddEntryToItinerary_IdNum
             // 
-            this.AddEntryToItinerary_IdNum.Location = new System.Drawing.Point(217, 202);
-            this.AddEntryToItinerary_IdNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddEntryToItinerary_IdNum.Location = new System.Drawing.Point(162, 165);
             this.AddEntryToItinerary_IdNum.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
             this.AddEntryToItinerary_IdNum.Name = "AddEntryToItinerary_IdNum";
-            this.AddEntryToItinerary_IdNum.Size = new System.Drawing.Size(81, 22);
+            this.AddEntryToItinerary_IdNum.Size = new System.Drawing.Size(61, 20);
             this.AddEntryToItinerary_IdNum.TabIndex = 17;
             // 
             // T19
             // 
             this.T19.Controls.Add(this.SwitchMapGB);
             this.T19.Location = new System.Drawing.Point(4, 19);
-            this.T19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T19.Name = "T19";
-            this.T19.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T19.Size = new System.Drawing.Size(755, 618);
+            this.T19.Padding = new System.Windows.Forms.Padding(3);
+            this.T19.Size = new System.Drawing.Size(564, 498);
             this.T19.TabIndex = 18;
             this.T19.Text = "T19";
             this.T19.UseVisualStyleBackColor = true;
@@ -5253,11 +4909,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // SwitchMapGB
             // 
             this.SwitchMapGB.Controls.Add(this.SwitchMapTlp);
-            this.SwitchMapGB.Location = new System.Drawing.Point(8, 7);
-            this.SwitchMapGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SwitchMapGB.Location = new System.Drawing.Point(6, 6);
             this.SwitchMapGB.Name = "SwitchMapGB";
-            this.SwitchMapGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.SwitchMapGB.Size = new System.Drawing.Size(736, 208);
+            this.SwitchMapGB.Size = new System.Drawing.Size(552, 169);
             this.SwitchMapGB.TabIndex = 0;
             this.SwitchMapGB.TabStop = false;
             this.SwitchMapGB.Text = "SwitchMap";
@@ -5273,34 +4927,31 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SwitchMapTlp.Controls.Add(this.SwitchMap_MaxTimeNum, 1, 2);
             this.SwitchMapTlp.Controls.Add(this.SwitchMap_strLoadPathCB, 1, 0);
             this.SwitchMapTlp.Controls.Add(this.SwitchMap_strLoadPath_openBtn, 1, 1);
-            this.SwitchMapTlp.Location = new System.Drawing.Point(8, 23);
-            this.SwitchMapTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SwitchMapTlp.Location = new System.Drawing.Point(6, 19);
             this.SwitchMapTlp.Name = "SwitchMapTlp";
             this.SwitchMapTlp.RowCount = 4;
             this.SwitchMapTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.06266F));
             this.SwitchMapTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.81203F));
             this.SwitchMapTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.06266F));
             this.SwitchMapTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.06266F));
-            this.SwitchMapTlp.Size = new System.Drawing.Size(720, 177);
+            this.SwitchMapTlp.Size = new System.Drawing.Size(540, 144);
             this.SwitchMapTlp.TabIndex = 0;
             // 
             // label118
             // 
             this.label118.AutoSize = true;
-            this.label118.Location = new System.Drawing.Point(4, 0);
-            this.label118.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label118.Location = new System.Drawing.Point(3, 0);
             this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(85, 17);
+            this.label118.Size = new System.Drawing.Size(64, 13);
             this.label118.TabIndex = 0;
             this.label118.Text = "strLoadPath";
             // 
             // label119
             // 
             this.label119.AutoSize = true;
-            this.label119.Location = new System.Drawing.Point(4, 87);
-            this.label119.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label119.Location = new System.Drawing.Point(3, 71);
             this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(64, 17);
+            this.label119.Size = new System.Drawing.Size(50, 13);
             this.label119.TabIndex = 1;
             this.label119.Text = "MaxTime";
             // 
@@ -5309,10 +4960,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SwitchMapBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.SwitchMapBtn.Location = new System.Drawing.Point(101, 135);
-            this.SwitchMapBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SwitchMapBtn.Location = new System.Drawing.Point(76, 110);
             this.SwitchMapBtn.Name = "SwitchMapBtn";
-            this.SwitchMapBtn.Size = new System.Drawing.Size(615, 38);
+            this.SwitchMapBtn.Size = new System.Drawing.Size(461, 31);
             this.SwitchMapBtn.TabIndex = 2;
             this.SwitchMapBtn.Text = "SwitchMap";
             this.SwitchMapBtn.UseVisualStyleBackColor = true;
@@ -5320,29 +4970,26 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // SwitchMap_MaxTimeNum
             // 
-            this.SwitchMap_MaxTimeNum.Location = new System.Drawing.Point(101, 91);
-            this.SwitchMap_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SwitchMap_MaxTimeNum.Location = new System.Drawing.Point(76, 74);
             this.SwitchMap_MaxTimeNum.Name = "SwitchMap_MaxTimeNum";
-            this.SwitchMap_MaxTimeNum.Size = new System.Drawing.Size(99, 22);
+            this.SwitchMap_MaxTimeNum.Size = new System.Drawing.Size(74, 20);
             this.SwitchMap_MaxTimeNum.TabIndex = 3;
             // 
             // SwitchMap_strLoadPathCB
             // 
             this.SwitchMap_strLoadPathCB.FormattingEnabled = true;
-            this.SwitchMap_strLoadPathCB.Location = new System.Drawing.Point(101, 4);
-            this.SwitchMap_strLoadPathCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SwitchMap_strLoadPathCB.Location = new System.Drawing.Point(76, 3);
             this.SwitchMap_strLoadPathCB.Name = "SwitchMap_strLoadPathCB";
-            this.SwitchMap_strLoadPathCB.Size = new System.Drawing.Size(613, 24);
+            this.SwitchMap_strLoadPathCB.Size = new System.Drawing.Size(461, 21);
             this.SwitchMap_strLoadPathCB.TabIndex = 4;
             // 
             // SwitchMap_strLoadPath_openBtn
             // 
             this.SwitchMap_strLoadPath_openBtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.SwitchMap_strLoadPath_openBtn.Image = global::WindowsDemo.Properties.Resources.open;
-            this.SwitchMap_strLoadPath_openBtn.Location = new System.Drawing.Point(667, 48);
-            this.SwitchMap_strLoadPath_openBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SwitchMap_strLoadPath_openBtn.Location = new System.Drawing.Point(500, 39);
             this.SwitchMap_strLoadPath_openBtn.Name = "SwitchMap_strLoadPath_openBtn";
-            this.SwitchMap_strLoadPath_openBtn.Size = new System.Drawing.Size(49, 35);
+            this.SwitchMap_strLoadPath_openBtn.Size = new System.Drawing.Size(37, 29);
             this.SwitchMap_strLoadPath_openBtn.TabIndex = 1;
             this.SwitchMap_strLoadPath_openBtn.UseVisualStyleBackColor = true;
             this.SwitchMap_strLoadPath_openBtn.Click += new System.EventHandler(this.SwitchMap_strLoadPath_openBtn_Click);
@@ -5351,10 +4998,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T20.Controls.Add(this.EventsGB);
             this.T20.Location = new System.Drawing.Point(4, 19);
-            this.T20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T20.Name = "T20";
-            this.T20.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T20.Size = new System.Drawing.Size(755, 618);
+            this.T20.Padding = new System.Windows.Forms.Padding(3);
+            this.T20.Size = new System.Drawing.Size(564, 498);
             this.T20.TabIndex = 19;
             this.T20.Text = "T20";
             this.T20.UseVisualStyleBackColor = true;
@@ -5363,11 +5009,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.EventsGB.Controls.Add(this.label121);
             this.EventsGB.Controls.Add(this.EventsChLB);
-            this.EventsGB.Location = new System.Drawing.Point(8, 7);
-            this.EventsGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EventsGB.Location = new System.Drawing.Point(6, 6);
             this.EventsGB.Name = "EventsGB";
-            this.EventsGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.EventsGB.Size = new System.Drawing.Size(736, 495);
+            this.EventsGB.Size = new System.Drawing.Size(552, 402);
             this.EventsGB.TabIndex = 0;
             this.EventsGB.TabStop = false;
             this.EventsGB.Text = "Events";
@@ -5375,10 +5019,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // label121
             // 
             this.label121.AutoSize = true;
-            this.label121.Location = new System.Drawing.Point(8, 36);
-            this.label121.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label121.Location = new System.Drawing.Point(6, 29);
             this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(453, 17);
+            this.label121.Size = new System.Drawing.Size(344, 13);
             this.label121.TabIndex = 1;
             this.label121.Text = "Please select the events you would like to be notified by when invoked:";
             // 
@@ -5408,10 +5051,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             "EVENT_SPEED_LIMIT_CHANGED",
             "EVENT_BITMAP_CLICK",
             "EVENT_POI_CLICK"});
-            this.EventsChLB.Location = new System.Drawing.Point(8, 73);
-            this.EventsChLB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EventsChLB.Location = new System.Drawing.Point(6, 59);
             this.EventsChLB.Name = "EventsChLB";
-            this.EventsChLB.Size = new System.Drawing.Size(457, 395);
+            this.EventsChLB.Size = new System.Drawing.Size(344, 319);
             this.EventsChLB.TabIndex = 0;
             // 
             // T21
@@ -5419,10 +5061,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T21.Controls.Add(this.RemoteActivationViaHttpGB);
             this.T21.Controls.Add(this.OptimizeItineraryGBox);
             this.T21.Location = new System.Drawing.Point(4, 19);
-            this.T21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T21.Name = "T21";
-            this.T21.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T21.Size = new System.Drawing.Size(755, 618);
+            this.T21.Padding = new System.Windows.Forms.Padding(3);
+            this.T21.Size = new System.Drawing.Size(564, 498);
             this.T21.TabIndex = 20;
             this.T21.Text = "T21";
             this.T21.UseVisualStyleBackColor = true;
@@ -5430,21 +5071,18 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // RemoteActivationViaHttpGB
             // 
             this.RemoteActivationViaHttpGB.Controls.Add(this.RemoteActivationViaHttpRequest_ActivateBtn);
-            this.RemoteActivationViaHttpGB.Location = new System.Drawing.Point(4, 175);
-            this.RemoteActivationViaHttpGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RemoteActivationViaHttpGB.Location = new System.Drawing.Point(3, 142);
             this.RemoteActivationViaHttpGB.Name = "RemoteActivationViaHttpGB";
-            this.RemoteActivationViaHttpGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.RemoteActivationViaHttpGB.Size = new System.Drawing.Size(736, 70);
+            this.RemoteActivationViaHttpGB.Size = new System.Drawing.Size(552, 57);
             this.RemoteActivationViaHttpGB.TabIndex = 2;
             this.RemoteActivationViaHttpGB.TabStop = false;
             this.RemoteActivationViaHttpGB.Text = "Remote activation via http request:";
             // 
             // RemoteActivationViaHttpRequest_ActivateBtn
             // 
-            this.RemoteActivationViaHttpRequest_ActivateBtn.Location = new System.Drawing.Point(8, 23);
-            this.RemoteActivationViaHttpRequest_ActivateBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RemoteActivationViaHttpRequest_ActivateBtn.Location = new System.Drawing.Point(6, 19);
             this.RemoteActivationViaHttpRequest_ActivateBtn.Name = "RemoteActivationViaHttpRequest_ActivateBtn";
-            this.RemoteActivationViaHttpRequest_ActivateBtn.Size = new System.Drawing.Size(173, 28);
+            this.RemoteActivationViaHttpRequest_ActivateBtn.Size = new System.Drawing.Size(130, 23);
             this.RemoteActivationViaHttpRequest_ActivateBtn.TabIndex = 0;
             this.RemoteActivationViaHttpRequest_ActivateBtn.Text = "Activate";
             this.RemoteActivationViaHttpRequest_ActivateBtn.UseVisualStyleBackColor = true;
@@ -5452,11 +5090,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // OptimizeItineraryGBox
             // 
             this.OptimizeItineraryGBox.Controls.Add(this.OptimizeItineraryTlp);
-            this.OptimizeItineraryGBox.Location = new System.Drawing.Point(11, 7);
-            this.OptimizeItineraryGBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OptimizeItineraryGBox.Location = new System.Drawing.Point(8, 6);
             this.OptimizeItineraryGBox.Name = "OptimizeItineraryGBox";
-            this.OptimizeItineraryGBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.OptimizeItineraryGBox.Size = new System.Drawing.Size(733, 160);
+            this.OptimizeItineraryGBox.Size = new System.Drawing.Size(550, 130);
             this.OptimizeItineraryGBox.TabIndex = 0;
             this.OptimizeItineraryGBox.TabStop = false;
             this.OptimizeItineraryGBox.Text = "OptimizeItinerary:";
@@ -5471,42 +5107,38 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.OptimizeItineraryTlp.Controls.Add(this.OptimizeItineraryBtn, 1, 2);
             this.OptimizeItineraryTlp.Controls.Add(this.OptimizeItinerary_strItineraryNameTBox, 1, 0);
             this.OptimizeItineraryTlp.Controls.Add(this.OptimizeItinerary_MaxTimeNum, 1, 1);
-            this.OptimizeItineraryTlp.Location = new System.Drawing.Point(8, 23);
-            this.OptimizeItineraryTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OptimizeItineraryTlp.Location = new System.Drawing.Point(6, 19);
             this.OptimizeItineraryTlp.Name = "OptimizeItineraryTlp";
             this.OptimizeItineraryTlp.RowCount = 3;
             this.OptimizeItineraryTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.OptimizeItineraryTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.OptimizeItineraryTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.OptimizeItineraryTlp.Size = new System.Drawing.Size(717, 130);
+            this.OptimizeItineraryTlp.Size = new System.Drawing.Size(538, 106);
             this.OptimizeItineraryTlp.TabIndex = 0;
             // 
             // label131
             // 
             this.label131.AutoSize = true;
-            this.label131.Location = new System.Drawing.Point(4, 0);
-            this.label131.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label131.Location = new System.Drawing.Point(3, 0);
             this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(112, 17);
+            this.label131.Size = new System.Drawing.Size(83, 13);
             this.label131.TabIndex = 0;
             this.label131.Text = "strItineraryName";
             // 
             // label132
             // 
             this.label132.AutoSize = true;
-            this.label132.Location = new System.Drawing.Point(4, 43);
-            this.label132.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label132.Location = new System.Drawing.Point(3, 35);
             this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(64, 17);
+            this.label132.Size = new System.Drawing.Size(50, 13);
             this.label132.TabIndex = 1;
             this.label132.Text = "MaxTime";
             // 
             // OptimizeItineraryBtn
             // 
-            this.OptimizeItineraryBtn.Location = new System.Drawing.Point(189, 90);
-            this.OptimizeItineraryBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OptimizeItineraryBtn.Location = new System.Drawing.Point(141, 73);
             this.OptimizeItineraryBtn.Name = "OptimizeItineraryBtn";
-            this.OptimizeItineraryBtn.Size = new System.Drawing.Size(239, 28);
+            this.OptimizeItineraryBtn.Size = new System.Drawing.Size(179, 23);
             this.OptimizeItineraryBtn.TabIndex = 2;
             this.OptimizeItineraryBtn.Text = "OptimizeItinerary";
             this.OptimizeItineraryBtn.UseVisualStyleBackColor = true;
@@ -5514,34 +5146,31 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // OptimizeItinerary_strItineraryNameTBox
             // 
-            this.OptimizeItinerary_strItineraryNameTBox.Location = new System.Drawing.Point(189, 4);
-            this.OptimizeItinerary_strItineraryNameTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OptimizeItinerary_strItineraryNameTBox.Location = new System.Drawing.Point(141, 3);
             this.OptimizeItinerary_strItineraryNameTBox.Name = "OptimizeItinerary_strItineraryNameTBox";
-            this.OptimizeItinerary_strItineraryNameTBox.Size = new System.Drawing.Size(523, 22);
+            this.OptimizeItinerary_strItineraryNameTBox.Size = new System.Drawing.Size(393, 20);
             this.OptimizeItinerary_strItineraryNameTBox.TabIndex = 3;
             this.OptimizeItinerary_strItineraryNameTBox.Text = "default";
             // 
             // OptimizeItinerary_MaxTimeNum
             // 
-            this.OptimizeItinerary_MaxTimeNum.Location = new System.Drawing.Point(189, 47);
-            this.OptimizeItinerary_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OptimizeItinerary_MaxTimeNum.Location = new System.Drawing.Point(141, 38);
             this.OptimizeItinerary_MaxTimeNum.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
             this.OptimizeItinerary_MaxTimeNum.Name = "OptimizeItinerary_MaxTimeNum";
-            this.OptimizeItinerary_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.OptimizeItinerary_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.OptimizeItinerary_MaxTimeNum.TabIndex = 4;
             // 
             // T22
             // 
             this.T22.Controls.Add(this.GetActualGpsPositionGB);
             this.T22.Location = new System.Drawing.Point(4, 19);
-            this.T22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T22.Name = "T22";
-            this.T22.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T22.Size = new System.Drawing.Size(755, 618);
+            this.T22.Padding = new System.Windows.Forms.Padding(3);
+            this.T22.Size = new System.Drawing.Size(564, 498);
             this.T22.TabIndex = 21;
             this.T22.Text = "T22";
             this.T22.UseVisualStyleBackColor = true;
@@ -5549,11 +5178,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // GetActualGpsPositionGB
             // 
             this.GetActualGpsPositionGB.Controls.Add(this.GetActualGpsPositionTlp);
-            this.GetActualGpsPositionGB.Location = new System.Drawing.Point(0, 7);
-            this.GetActualGpsPositionGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetActualGpsPositionGB.Location = new System.Drawing.Point(0, 6);
             this.GetActualGpsPositionGB.Name = "GetActualGpsPositionGB";
-            this.GetActualGpsPositionGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GetActualGpsPositionGB.Size = new System.Drawing.Size(744, 160);
+            this.GetActualGpsPositionGB.Size = new System.Drawing.Size(558, 130);
             this.GetActualGpsPositionGB.TabIndex = 2;
             this.GetActualGpsPositionGB.TabStop = false;
             this.GetActualGpsPositionGB.Text = "GetActualGpsPosition:";
@@ -5568,37 +5195,34 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetActualGpsPositionTlp.Controls.Add(this.GetActualGpsPositionBtn, 1, 2);
             this.GetActualGpsPositionTlp.Controls.Add(this.label100, 0, 0);
             this.GetActualGpsPositionTlp.Controls.Add(this.label101, 0, 1);
-            this.GetActualGpsPositionTlp.Location = new System.Drawing.Point(8, 23);
-            this.GetActualGpsPositionTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetActualGpsPositionTlp.Location = new System.Drawing.Point(6, 19);
             this.GetActualGpsPositionTlp.Name = "GetActualGpsPositionTlp";
             this.GetActualGpsPositionTlp.RowCount = 3;
             this.GetActualGpsPositionTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.GetActualGpsPositionTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.GetActualGpsPositionTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.GetActualGpsPositionTlp.Size = new System.Drawing.Size(728, 122);
+            this.GetActualGpsPositionTlp.Size = new System.Drawing.Size(546, 99);
             this.GetActualGpsPositionTlp.TabIndex = 0;
             // 
             // GetActualGpsPosition_SatellitesInfoChb
             // 
             this.GetActualGpsPosition_SatellitesInfoChb.AutoSize = true;
-            this.GetActualGpsPosition_SatellitesInfoChb.Location = new System.Drawing.Point(191, 4);
-            this.GetActualGpsPosition_SatellitesInfoChb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetActualGpsPosition_SatellitesInfoChb.Location = new System.Drawing.Point(143, 3);
             this.GetActualGpsPosition_SatellitesInfoChb.Name = "GetActualGpsPosition_SatellitesInfoChb";
-            this.GetActualGpsPosition_SatellitesInfoChb.Size = new System.Drawing.Size(18, 17);
+            this.GetActualGpsPosition_SatellitesInfoChb.Size = new System.Drawing.Size(15, 14);
             this.GetActualGpsPosition_SatellitesInfoChb.TabIndex = 0;
             this.GetActualGpsPosition_SatellitesInfoChb.UseVisualStyleBackColor = true;
             // 
             // GetActualGpsPosition_MaxTimeNum
             // 
-            this.GetActualGpsPosition_MaxTimeNum.Location = new System.Drawing.Point(191, 44);
-            this.GetActualGpsPosition_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetActualGpsPosition_MaxTimeNum.Location = new System.Drawing.Point(143, 36);
             this.GetActualGpsPosition_MaxTimeNum.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
             this.GetActualGpsPosition_MaxTimeNum.Name = "GetActualGpsPosition_MaxTimeNum";
-            this.GetActualGpsPosition_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.GetActualGpsPosition_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.GetActualGpsPosition_MaxTimeNum.TabIndex = 1;
             // 
             // GetActualGpsPositionBtn
@@ -5606,10 +5230,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetActualGpsPositionBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.GetActualGpsPositionBtn.Location = new System.Drawing.Point(191, 84);
-            this.GetActualGpsPositionBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetActualGpsPositionBtn.Location = new System.Drawing.Point(143, 69);
             this.GetActualGpsPositionBtn.Name = "GetActualGpsPositionBtn";
-            this.GetActualGpsPositionBtn.Size = new System.Drawing.Size(533, 34);
+            this.GetActualGpsPositionBtn.Size = new System.Drawing.Size(400, 27);
             this.GetActualGpsPositionBtn.TabIndex = 2;
             this.GetActualGpsPositionBtn.Text = "GetActualGpsPosition";
             this.GetActualGpsPositionBtn.UseVisualStyleBackColor = true;
@@ -5618,20 +5241,18 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // label100
             // 
             this.label100.AutoSize = true;
-            this.label100.Location = new System.Drawing.Point(4, 0);
-            this.label100.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label100.Location = new System.Drawing.Point(3, 0);
             this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(92, 17);
+            this.label100.Size = new System.Drawing.Size(70, 13);
             this.label100.TabIndex = 3;
             this.label100.Text = "SatellitesInfo:";
             // 
             // label101
             // 
             this.label101.AutoSize = true;
-            this.label101.Location = new System.Drawing.Point(4, 40);
-            this.label101.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label101.Location = new System.Drawing.Point(3, 33);
             this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(64, 17);
+            this.label101.Size = new System.Drawing.Size(50, 13);
             this.label101.TabIndex = 4;
             this.label101.Text = "MaxTime";
             // 
@@ -5639,10 +5260,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T23.Controls.Add(this.ChangeAppRectangleGB);
             this.T23.Location = new System.Drawing.Point(4, 19);
-            this.T23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T23.Name = "T23";
-            this.T23.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T23.Size = new System.Drawing.Size(755, 618);
+            this.T23.Padding = new System.Windows.Forms.Padding(3);
+            this.T23.Size = new System.Drawing.Size(564, 498);
             this.T23.TabIndex = 22;
             this.T23.Text = "T23";
             this.T23.UseVisualStyleBackColor = true;
@@ -5650,11 +5270,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // ChangeAppRectangleGB
             // 
             this.ChangeAppRectangleGB.Controls.Add(this.ChangeAppRectangleTlp);
-            this.ChangeAppRectangleGB.Location = new System.Drawing.Point(0, 7);
-            this.ChangeAppRectangleGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChangeAppRectangleGB.Location = new System.Drawing.Point(0, 6);
             this.ChangeAppRectangleGB.Name = "ChangeAppRectangleGB";
-            this.ChangeAppRectangleGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ChangeAppRectangleGB.Size = new System.Drawing.Size(736, 294);
+            this.ChangeAppRectangleGB.Size = new System.Drawing.Size(552, 239);
             this.ChangeAppRectangleGB.TabIndex = 11;
             this.ChangeAppRectangleGB.TabStop = false;
             this.ChangeAppRectangleGB.Text = "ChangeAppRectangle";
@@ -5675,8 +5293,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ChangeAppRectangleTlp.Controls.Add(this.ChangeAppRectangle_nHeightNum, 1, 3);
             this.ChangeAppRectangleTlp.Controls.Add(this.ChangeAppRectangle_MaxTimeNum, 1, 4);
             this.ChangeAppRectangleTlp.Controls.Add(this.ChangeAppRectangleBtn, 1, 5);
-            this.ChangeAppRectangleTlp.Location = new System.Drawing.Point(8, 23);
-            this.ChangeAppRectangleTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChangeAppRectangleTlp.Location = new System.Drawing.Point(6, 19);
             this.ChangeAppRectangleTlp.Name = "ChangeAppRectangleTlp";
             this.ChangeAppRectangleTlp.RowCount = 6;
             this.ChangeAppRectangleTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -5685,63 +5302,57 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ChangeAppRectangleTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.ChangeAppRectangleTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.ChangeAppRectangleTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.ChangeAppRectangleTlp.Size = new System.Drawing.Size(720, 260);
+            this.ChangeAppRectangleTlp.Size = new System.Drawing.Size(540, 211);
             this.ChangeAppRectangleTlp.TabIndex = 0;
             // 
             // label113
             // 
             this.label113.AutoSize = true;
-            this.label113.Location = new System.Drawing.Point(4, 0);
-            this.label113.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label113.Location = new System.Drawing.Point(3, 0);
             this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(40, 17);
+            this.label113.Size = new System.Drawing.Size(31, 13);
             this.label113.TabIndex = 0;
             this.label113.Text = "nLeft";
             // 
             // label114
             // 
             this.label114.AutoSize = true;
-            this.label114.Location = new System.Drawing.Point(4, 43);
-            this.label114.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label114.Location = new System.Drawing.Point(3, 35);
             this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(41, 17);
+            this.label114.Size = new System.Drawing.Size(32, 13);
             this.label114.TabIndex = 1;
             this.label114.Text = "nTop";
             // 
             // label115
             // 
             this.label115.AutoSize = true;
-            this.label115.Location = new System.Drawing.Point(4, 86);
-            this.label115.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label115.Location = new System.Drawing.Point(3, 70);
             this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(52, 17);
+            this.label115.Size = new System.Drawing.Size(41, 13);
             this.label115.TabIndex = 2;
             this.label115.Text = "nWidth";
             // 
             // label116
             // 
             this.label116.AutoSize = true;
-            this.label116.Location = new System.Drawing.Point(4, 129);
-            this.label116.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label116.Location = new System.Drawing.Point(3, 105);
             this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(57, 17);
+            this.label116.Size = new System.Drawing.Size(44, 13);
             this.label116.TabIndex = 3;
             this.label116.Text = "nHeight";
             // 
             // label117
             // 
             this.label117.AutoSize = true;
-            this.label117.Location = new System.Drawing.Point(4, 172);
-            this.label117.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label117.Location = new System.Drawing.Point(3, 140);
             this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(64, 17);
+            this.label117.Size = new System.Drawing.Size(50, 13);
             this.label117.TabIndex = 4;
             this.label117.Text = "MaxTime";
             // 
             // ChangeAppRectangle_nLeftNum
             // 
-            this.ChangeAppRectangle_nLeftNum.Location = new System.Drawing.Point(179, 4);
-            this.ChangeAppRectangle_nLeftNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChangeAppRectangle_nLeftNum.Location = new System.Drawing.Point(134, 3);
             this.ChangeAppRectangle_nLeftNum.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -5753,7 +5364,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.ChangeAppRectangle_nLeftNum.Name = "ChangeAppRectangle_nLeftNum";
-            this.ChangeAppRectangle_nLeftNum.Size = new System.Drawing.Size(160, 22);
+            this.ChangeAppRectangle_nLeftNum.Size = new System.Drawing.Size(120, 20);
             this.ChangeAppRectangle_nLeftNum.TabIndex = 5;
             this.ChangeAppRectangle_nLeftNum.Value = new decimal(new int[] {
             100,
@@ -5763,8 +5374,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ChangeAppRectangle_nTopNum
             // 
-            this.ChangeAppRectangle_nTopNum.Location = new System.Drawing.Point(179, 47);
-            this.ChangeAppRectangle_nTopNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChangeAppRectangle_nTopNum.Location = new System.Drawing.Point(134, 38);
             this.ChangeAppRectangle_nTopNum.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -5776,7 +5386,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.ChangeAppRectangle_nTopNum.Name = "ChangeAppRectangle_nTopNum";
-            this.ChangeAppRectangle_nTopNum.Size = new System.Drawing.Size(160, 22);
+            this.ChangeAppRectangle_nTopNum.Size = new System.Drawing.Size(120, 20);
             this.ChangeAppRectangle_nTopNum.TabIndex = 6;
             this.ChangeAppRectangle_nTopNum.Value = new decimal(new int[] {
             100,
@@ -5786,15 +5396,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ChangeAppRectangle_nWidthNum
             // 
-            this.ChangeAppRectangle_nWidthNum.Location = new System.Drawing.Point(179, 90);
-            this.ChangeAppRectangle_nWidthNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChangeAppRectangle_nWidthNum.Location = new System.Drawing.Point(134, 73);
             this.ChangeAppRectangle_nWidthNum.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.ChangeAppRectangle_nWidthNum.Name = "ChangeAppRectangle_nWidthNum";
-            this.ChangeAppRectangle_nWidthNum.Size = new System.Drawing.Size(160, 22);
+            this.ChangeAppRectangle_nWidthNum.Size = new System.Drawing.Size(120, 20);
             this.ChangeAppRectangle_nWidthNum.TabIndex = 7;
             this.ChangeAppRectangle_nWidthNum.Value = new decimal(new int[] {
             400,
@@ -5804,15 +5413,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ChangeAppRectangle_nHeightNum
             // 
-            this.ChangeAppRectangle_nHeightNum.Location = new System.Drawing.Point(179, 133);
-            this.ChangeAppRectangle_nHeightNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChangeAppRectangle_nHeightNum.Location = new System.Drawing.Point(134, 108);
             this.ChangeAppRectangle_nHeightNum.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.ChangeAppRectangle_nHeightNum.Name = "ChangeAppRectangle_nHeightNum";
-            this.ChangeAppRectangle_nHeightNum.Size = new System.Drawing.Size(160, 22);
+            this.ChangeAppRectangle_nHeightNum.Size = new System.Drawing.Size(120, 20);
             this.ChangeAppRectangle_nHeightNum.TabIndex = 8;
             this.ChangeAppRectangle_nHeightNum.Value = new decimal(new int[] {
             400,
@@ -5822,15 +5430,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ChangeAppRectangle_MaxTimeNum
             // 
-            this.ChangeAppRectangle_MaxTimeNum.Location = new System.Drawing.Point(179, 176);
-            this.ChangeAppRectangle_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChangeAppRectangle_MaxTimeNum.Location = new System.Drawing.Point(134, 143);
             this.ChangeAppRectangle_MaxTimeNum.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.ChangeAppRectangle_MaxTimeNum.Name = "ChangeAppRectangle_MaxTimeNum";
-            this.ChangeAppRectangle_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.ChangeAppRectangle_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.ChangeAppRectangle_MaxTimeNum.TabIndex = 9;
             // 
             // ChangeAppRectangleBtn
@@ -5838,10 +5445,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ChangeAppRectangleBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ChangeAppRectangleBtn.Location = new System.Drawing.Point(179, 219);
-            this.ChangeAppRectangleBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChangeAppRectangleBtn.Location = new System.Drawing.Point(134, 178);
             this.ChangeAppRectangleBtn.Name = "ChangeAppRectangleBtn";
-            this.ChangeAppRectangleBtn.Size = new System.Drawing.Size(537, 37);
+            this.ChangeAppRectangleBtn.Size = new System.Drawing.Size(403, 30);
             this.ChangeAppRectangleBtn.TabIndex = 10;
             this.ChangeAppRectangleBtn.Text = "ChangeAppRectangle";
             this.ChangeAppRectangleBtn.UseVisualStyleBackColor = true;
@@ -5851,10 +5457,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T24.Controls.Add(this.AddBitmapToMap_GB);
             this.T24.Location = new System.Drawing.Point(4, 19);
-            this.T24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T24.Name = "T24";
-            this.T24.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T24.Size = new System.Drawing.Size(755, 618);
+            this.T24.Padding = new System.Windows.Forms.Padding(3);
+            this.T24.Size = new System.Drawing.Size(564, 498);
             this.T24.TabIndex = 23;
             this.T24.Text = "T24";
             this.T24.UseVisualStyleBackColor = true;
@@ -5862,11 +5467,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // AddBitmapToMap_GB
             // 
             this.AddBitmapToMap_GB.Controls.Add(this.tableLayoutPanel2);
-            this.AddBitmapToMap_GB.Location = new System.Drawing.Point(8, 7);
-            this.AddBitmapToMap_GB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddBitmapToMap_GB.Location = new System.Drawing.Point(6, 6);
             this.AddBitmapToMap_GB.Name = "AddBitmapToMap_GB";
-            this.AddBitmapToMap_GB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.AddBitmapToMap_GB.Size = new System.Drawing.Size(736, 191);
+            this.AddBitmapToMap_GB.Size = new System.Drawing.Size(552, 155);
             this.AddBitmapToMap_GB.TabIndex = 1;
             this.AddBitmapToMap_GB.TabStop = false;
             this.AddBitmapToMap_GB.Text = "AddBitmapToMap:";
@@ -5883,44 +5486,40 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel2.Controls.Add(this.AddBitmapToMap_Address_TBox, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.AddBitmapToMap_Num, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.AddBitmapToMap_Btn, 1, 3);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(720, 160);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(540, 130);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(4, 0);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(3, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(127, 17);
+            this.label12.Size = new System.Drawing.Size(97, 13);
             this.label12.TabIndex = 0;
             this.label12.Text = "PathToThePicture:";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(4, 40);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(3, 32);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(225, 17);
+            this.label13.Size = new System.Drawing.Size(167, 13);
             this.label13.TabIndex = 1;
             this.label13.Text = "Address (where to set the bitmap):";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(4, 80);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(3, 64);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(68, 17);
+            this.label14.Size = new System.Drawing.Size(53, 13);
             this.label14.TabIndex = 2;
             this.label14.Text = "MaxTime:";
             // 
@@ -5928,33 +5527,30 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.AddBitmapToMap_PathToBitmap_TBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddBitmapToMap_PathToBitmap_TBox.Location = new System.Drawing.Point(237, 4);
-            this.AddBitmapToMap_PathToBitmap_TBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddBitmapToMap_PathToBitmap_TBox.Location = new System.Drawing.Point(178, 3);
             this.AddBitmapToMap_PathToBitmap_TBox.Name = "AddBitmapToMap_PathToBitmap_TBox";
-            this.AddBitmapToMap_PathToBitmap_TBox.Size = new System.Drawing.Size(479, 22);
+            this.AddBitmapToMap_PathToBitmap_TBox.Size = new System.Drawing.Size(359, 20);
             this.AddBitmapToMap_PathToBitmap_TBox.TabIndex = 3;
             // 
             // AddBitmapToMap_Address_TBox
             // 
             this.AddBitmapToMap_Address_TBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddBitmapToMap_Address_TBox.Location = new System.Drawing.Point(237, 44);
-            this.AddBitmapToMap_Address_TBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddBitmapToMap_Address_TBox.Location = new System.Drawing.Point(178, 35);
             this.AddBitmapToMap_Address_TBox.Name = "AddBitmapToMap_Address_TBox";
-            this.AddBitmapToMap_Address_TBox.Size = new System.Drawing.Size(479, 22);
+            this.AddBitmapToMap_Address_TBox.Size = new System.Drawing.Size(359, 20);
             this.AddBitmapToMap_Address_TBox.TabIndex = 4;
             // 
             // AddBitmapToMap_Num
             // 
-            this.AddBitmapToMap_Num.Location = new System.Drawing.Point(237, 84);
-            this.AddBitmapToMap_Num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddBitmapToMap_Num.Location = new System.Drawing.Point(178, 67);
             this.AddBitmapToMap_Num.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
             this.AddBitmapToMap_Num.Name = "AddBitmapToMap_Num";
-            this.AddBitmapToMap_Num.Size = new System.Drawing.Size(160, 22);
+            this.AddBitmapToMap_Num.Size = new System.Drawing.Size(120, 20);
             this.AddBitmapToMap_Num.TabIndex = 5;
             // 
             // AddBitmapToMap_Btn
@@ -5962,10 +5558,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddBitmapToMap_Btn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddBitmapToMap_Btn.Location = new System.Drawing.Point(237, 124);
-            this.AddBitmapToMap_Btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddBitmapToMap_Btn.Location = new System.Drawing.Point(178, 99);
             this.AddBitmapToMap_Btn.Name = "AddBitmapToMap_Btn";
-            this.AddBitmapToMap_Btn.Size = new System.Drawing.Size(479, 32);
+            this.AddBitmapToMap_Btn.Size = new System.Drawing.Size(359, 28);
             this.AddBitmapToMap_Btn.TabIndex = 6;
             this.AddBitmapToMap_Btn.Text = "AddBitmapToMap";
             this.AddBitmapToMap_Btn.UseVisualStyleBackColor = true;
@@ -5977,10 +5572,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T25.Controls.Add(this.SetRouteGB);
             this.T25.Controls.Add(this.GetItineraryListGB);
             this.T25.Location = new System.Drawing.Point(4, 19);
-            this.T25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T25.Name = "T25";
-            this.T25.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T25.Size = new System.Drawing.Size(755, 618);
+            this.T25.Padding = new System.Windows.Forms.Padding(3);
+            this.T25.Size = new System.Drawing.Size(564, 498);
             this.T25.TabIndex = 24;
             this.T25.Text = "T25";
             this.T25.UseVisualStyleBackColor = true;
@@ -5988,11 +5582,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // DeleteItineraryTlp
             // 
             this.DeleteItineraryTlp.Controls.Add(this.tableLayoutPanel23);
-            this.DeleteItineraryTlp.Location = new System.Drawing.Point(11, 415);
-            this.DeleteItineraryTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeleteItineraryTlp.Location = new System.Drawing.Point(8, 337);
             this.DeleteItineraryTlp.Name = "DeleteItineraryTlp";
-            this.DeleteItineraryTlp.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.DeleteItineraryTlp.Size = new System.Drawing.Size(731, 167);
+            this.DeleteItineraryTlp.Size = new System.Drawing.Size(548, 136);
             this.DeleteItineraryTlp.TabIndex = 6;
             this.DeleteItineraryTlp.TabStop = false;
             this.DeleteItineraryTlp.Text = "DeleteItinerary:";
@@ -6007,37 +5599,34 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel23.Controls.Add(this.DeleteItineraryBtn, 1, 2);
             this.tableLayoutPanel23.Controls.Add(this.label172, 0, 0);
             this.tableLayoutPanel23.Controls.Add(this.label173, 0, 1);
-            this.tableLayoutPanel23.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel23.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel23.Name = "tableLayoutPanel23";
             this.tableLayoutPanel23.RowCount = 3;
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel23.Size = new System.Drawing.Size(715, 133);
+            this.tableLayoutPanel23.Size = new System.Drawing.Size(536, 108);
             this.tableLayoutPanel23.TabIndex = 0;
             // 
             // DeleteItinerary_strItineraryNameTBox
             // 
             this.DeleteItinerary_strItineraryNameTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DeleteItinerary_strItineraryNameTBox.Location = new System.Drawing.Point(166, 4);
-            this.DeleteItinerary_strItineraryNameTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeleteItinerary_strItineraryNameTBox.Location = new System.Drawing.Point(124, 3);
             this.DeleteItinerary_strItineraryNameTBox.Name = "DeleteItinerary_strItineraryNameTBox";
-            this.DeleteItinerary_strItineraryNameTBox.Size = new System.Drawing.Size(545, 22);
+            this.DeleteItinerary_strItineraryNameTBox.Size = new System.Drawing.Size(409, 20);
             this.DeleteItinerary_strItineraryNameTBox.TabIndex = 0;
             // 
             // DeleteItinerary_MaxTimeNum
             // 
-            this.DeleteItinerary_MaxTimeNum.Location = new System.Drawing.Point(166, 48);
-            this.DeleteItinerary_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeleteItinerary_MaxTimeNum.Location = new System.Drawing.Point(124, 39);
             this.DeleteItinerary_MaxTimeNum.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
             this.DeleteItinerary_MaxTimeNum.Name = "DeleteItinerary_MaxTimeNum";
-            this.DeleteItinerary_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.DeleteItinerary_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.DeleteItinerary_MaxTimeNum.TabIndex = 1;
             // 
             // DeleteItineraryBtn
@@ -6045,10 +5634,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.DeleteItineraryBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DeleteItineraryBtn.Location = new System.Drawing.Point(166, 92);
-            this.DeleteItineraryBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeleteItineraryBtn.Location = new System.Drawing.Point(124, 75);
             this.DeleteItineraryBtn.Name = "DeleteItineraryBtn";
-            this.DeleteItineraryBtn.Size = new System.Drawing.Size(545, 37);
+            this.DeleteItineraryBtn.Size = new System.Drawing.Size(409, 30);
             this.DeleteItineraryBtn.TabIndex = 2;
             this.DeleteItineraryBtn.Text = "DeleteItinerary";
             this.DeleteItineraryBtn.UseVisualStyleBackColor = true;
@@ -6057,31 +5645,27 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // label172
             // 
             this.label172.AutoSize = true;
-            this.label172.Location = new System.Drawing.Point(4, 0);
-            this.label172.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label172.Location = new System.Drawing.Point(3, 0);
             this.label172.Name = "label172";
-            this.label172.Size = new System.Drawing.Size(112, 17);
+            this.label172.Size = new System.Drawing.Size(83, 13);
             this.label172.TabIndex = 3;
             this.label172.Text = "strItineraryName";
             // 
             // label173
             // 
             this.label173.AutoSize = true;
-            this.label173.Location = new System.Drawing.Point(4, 44);
-            this.label173.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label173.Location = new System.Drawing.Point(3, 36);
             this.label173.Name = "label173";
-            this.label173.Size = new System.Drawing.Size(64, 17);
+            this.label173.Size = new System.Drawing.Size(50, 13);
             this.label173.TabIndex = 4;
             this.label173.Text = "MaxTime";
             // 
             // SetRouteGB
             // 
             this.SetRouteGB.Controls.Add(this.tableLayoutPanel20);
-            this.SetRouteGB.Location = new System.Drawing.Point(9, 170);
-            this.SetRouteGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SetRouteGB.Location = new System.Drawing.Point(7, 138);
             this.SetRouteGB.Name = "SetRouteGB";
-            this.SetRouteGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.SetRouteGB.Size = new System.Drawing.Size(733, 238);
+            this.SetRouteGB.Size = new System.Drawing.Size(550, 193);
             this.SetRouteGB.TabIndex = 5;
             this.SetRouteGB.TabStop = false;
             this.SetRouteGB.Text = "SetRoute:";
@@ -6100,8 +5684,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel20.Controls.Add(this.label143, 0, 1);
             this.tableLayoutPanel20.Controls.Add(this.SetRoute_flagNum, 1, 1);
             this.tableLayoutPanel20.Controls.Add(this.SetRoute2Btn, 1, 4);
-            this.tableLayoutPanel20.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel20.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel20.Name = "tableLayoutPanel20";
             this.tableLayoutPanel20.RowCount = 5;
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -6109,90 +5692,82 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(717, 207);
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(538, 168);
             this.tableLayoutPanel20.TabIndex = 0;
             // 
             // label140
             // 
             this.label140.AutoSize = true;
-            this.label140.Location = new System.Drawing.Point(4, 0);
-            this.label140.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label140.Location = new System.Drawing.Point(3, 0);
             this.label140.Name = "label140";
-            this.label140.Size = new System.Drawing.Size(112, 17);
+            this.label140.Size = new System.Drawing.Size(83, 13);
             this.label140.TabIndex = 0;
             this.label140.Text = "strItineraryName";
             // 
             // label141
             // 
             this.label141.AutoSize = true;
-            this.label141.Location = new System.Drawing.Point(4, 82);
-            this.label141.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label141.Location = new System.Drawing.Point(3, 66);
             this.label141.Name = "label141";
-            this.label141.Size = new System.Drawing.Size(119, 17);
+            this.label141.Size = new System.Drawing.Size(92, 13);
             this.label141.TabIndex = 2;
             this.label141.Text = "bShowApplication";
             // 
             // label142
             // 
             this.label142.AutoSize = true;
-            this.label142.Location = new System.Drawing.Point(4, 123);
-            this.label142.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label142.Location = new System.Drawing.Point(3, 99);
             this.label142.Name = "label142";
-            this.label142.Size = new System.Drawing.Size(64, 17);
+            this.label142.Size = new System.Drawing.Size(50, 13);
             this.label142.TabIndex = 3;
             this.label142.Text = "MaxTime";
             // 
             // SetRoute_strItineraryNameTBox
             // 
             this.SetRoute_strItineraryNameTBox.FormattingEnabled = true;
-            this.SetRoute_strItineraryNameTBox.Location = new System.Drawing.Point(166, 4);
-            this.SetRoute_strItineraryNameTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SetRoute_strItineraryNameTBox.Location = new System.Drawing.Point(125, 3);
             this.SetRoute_strItineraryNameTBox.Name = "SetRoute_strItineraryNameTBox";
-            this.SetRoute_strItineraryNameTBox.Size = new System.Drawing.Size(543, 24);
+            this.SetRoute_strItineraryNameTBox.Size = new System.Drawing.Size(408, 21);
             this.SetRoute_strItineraryNameTBox.TabIndex = 4;
             this.SetRoute_strItineraryNameTBox.Text = "default";
             // 
             // SetRoute_bShowApplicationChBox
             // 
             this.SetRoute_bShowApplicationChBox.AutoSize = true;
-            this.SetRoute_bShowApplicationChBox.Location = new System.Drawing.Point(166, 86);
-            this.SetRoute_bShowApplicationChBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SetRoute_bShowApplicationChBox.Location = new System.Drawing.Point(125, 69);
             this.SetRoute_bShowApplicationChBox.Name = "SetRoute_bShowApplicationChBox";
-            this.SetRoute_bShowApplicationChBox.Size = new System.Drawing.Size(18, 17);
+            this.SetRoute_bShowApplicationChBox.Size = new System.Drawing.Size(15, 14);
             this.SetRoute_bShowApplicationChBox.TabIndex = 6;
             this.SetRoute_FlagsToolTip.SetToolTip(this.SetRoute_bShowApplicationChBox, resources.GetString("SetRoute_bShowApplicationChBox.ToolTip"));
             this.SetRoute_bShowApplicationChBox.UseVisualStyleBackColor = true;
             // 
             // SetRoute_maximumTimeNum
             // 
-            this.SetRoute_maximumTimeNum.Location = new System.Drawing.Point(166, 127);
-            this.SetRoute_maximumTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SetRoute_maximumTimeNum.Location = new System.Drawing.Point(125, 102);
             this.SetRoute_maximumTimeNum.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
             this.SetRoute_maximumTimeNum.Name = "SetRoute_maximumTimeNum";
-            this.SetRoute_maximumTimeNum.Size = new System.Drawing.Size(161, 22);
+            this.SetRoute_maximumTimeNum.Size = new System.Drawing.Size(121, 20);
             this.SetRoute_maximumTimeNum.TabIndex = 7;
             // 
             // label143
             // 
             this.label143.AutoSize = true;
-            this.label143.Location = new System.Drawing.Point(4, 41);
-            this.label143.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label143.Location = new System.Drawing.Point(3, 33);
             this.label143.Name = "label143";
-            this.label143.Size = new System.Drawing.Size(42, 17);
+            this.label143.Size = new System.Drawing.Size(32, 13);
             this.label143.TabIndex = 1;
             this.label143.Text = "Flags";
             this.SetRoute_FlagsToolTip.SetToolTip(this.label143, resources.GetString("label143.ToolTip"));
             // 
             // SetRoute_flagNum
             // 
-            this.SetRoute_flagNum.Location = new System.Drawing.Point(166, 45);
-            this.SetRoute_flagNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SetRoute_flagNum.Location = new System.Drawing.Point(125, 36);
             this.SetRoute_flagNum.Name = "SetRoute_flagNum";
-            this.SetRoute_flagNum.Size = new System.Drawing.Size(80, 22);
+            this.SetRoute_flagNum.Size = new System.Drawing.Size(60, 20);
             this.SetRoute_flagNum.TabIndex = 5;
             this.SetRoute_FlagsToolTip.SetToolTip(this.SetRoute_flagNum, resources.GetString("SetRoute_flagNum.ToolTip"));
             // 
@@ -6201,10 +5776,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SetRoute2Btn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetRoute2Btn.Location = new System.Drawing.Point(166, 168);
-            this.SetRoute2Btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SetRoute2Btn.Location = new System.Drawing.Point(125, 135);
             this.SetRoute2Btn.Name = "SetRoute2Btn";
-            this.SetRoute2Btn.Size = new System.Drawing.Size(547, 35);
+            this.SetRoute2Btn.Size = new System.Drawing.Size(410, 30);
             this.SetRoute2Btn.TabIndex = 8;
             this.SetRoute2Btn.Text = "SetRoute";
             this.SetRoute2Btn.UseVisualStyleBackColor = true;
@@ -6213,11 +5787,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // GetItineraryListGB
             // 
             this.GetItineraryListGB.Controls.Add(this.GetItineraryListTlp);
-            this.GetItineraryListGB.Location = new System.Drawing.Point(8, 7);
-            this.GetItineraryListGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetItineraryListGB.Location = new System.Drawing.Point(6, 6);
             this.GetItineraryListGB.Name = "GetItineraryListGB";
-            this.GetItineraryListGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GetItineraryListGB.Size = new System.Drawing.Size(733, 155);
+            this.GetItineraryListGB.Size = new System.Drawing.Size(550, 126);
             this.GetItineraryListGB.TabIndex = 3;
             this.GetItineraryListGB.TabStop = false;
             this.GetItineraryListGB.Text = "GetItineraryList:";
@@ -6232,57 +5804,52 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetItineraryListTlp.Controls.Add(this.GetItineraryList_strItineraryNameCB, 1, 0);
             this.GetItineraryListTlp.Controls.Add(this.GetItineraryList_MaxTimeNum, 1, 1);
             this.GetItineraryListTlp.Controls.Add(this.GetItineraryListBtn, 1, 2);
-            this.GetItineraryListTlp.Location = new System.Drawing.Point(8, 23);
-            this.GetItineraryListTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetItineraryListTlp.Location = new System.Drawing.Point(6, 19);
             this.GetItineraryListTlp.Name = "GetItineraryListTlp";
             this.GetItineraryListTlp.RowCount = 3;
             this.GetItineraryListTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.GetItineraryListTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.GetItineraryListTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.GetItineraryListTlp.Size = new System.Drawing.Size(717, 124);
+            this.GetItineraryListTlp.Size = new System.Drawing.Size(538, 101);
             this.GetItineraryListTlp.TabIndex = 0;
             // 
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(4, 0);
-            this.label71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label71.Location = new System.Drawing.Point(3, 0);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(112, 17);
+            this.label71.Size = new System.Drawing.Size(83, 13);
             this.label71.TabIndex = 0;
             this.label71.Text = "strItineraryName";
             // 
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(4, 41);
-            this.label72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label72.Location = new System.Drawing.Point(3, 33);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(64, 17);
+            this.label72.Size = new System.Drawing.Size(50, 13);
             this.label72.TabIndex = 1;
             this.label72.Text = "MaxTime";
             // 
             // GetItineraryList_strItineraryNameCB
             // 
             this.GetItineraryList_strItineraryNameCB.FormattingEnabled = true;
-            this.GetItineraryList_strItineraryNameCB.Location = new System.Drawing.Point(170, 4);
-            this.GetItineraryList_strItineraryNameCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetItineraryList_strItineraryNameCB.Location = new System.Drawing.Point(127, 3);
             this.GetItineraryList_strItineraryNameCB.Name = "GetItineraryList_strItineraryNameCB";
-            this.GetItineraryList_strItineraryNameCB.Size = new System.Drawing.Size(541, 24);
+            this.GetItineraryList_strItineraryNameCB.Size = new System.Drawing.Size(407, 21);
             this.GetItineraryList_strItineraryNameCB.TabIndex = 2;
             this.GetItineraryList_strItineraryNameCB.Text = "default";
             // 
             // GetItineraryList_MaxTimeNum
             // 
-            this.GetItineraryList_MaxTimeNum.Location = new System.Drawing.Point(170, 45);
-            this.GetItineraryList_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetItineraryList_MaxTimeNum.Location = new System.Drawing.Point(127, 36);
             this.GetItineraryList_MaxTimeNum.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
             this.GetItineraryList_MaxTimeNum.Name = "GetItineraryList_MaxTimeNum";
-            this.GetItineraryList_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.GetItineraryList_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.GetItineraryList_MaxTimeNum.TabIndex = 3;
             // 
             // GetItineraryListBtn
@@ -6290,10 +5857,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetItineraryListBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.GetItineraryListBtn.Location = new System.Drawing.Point(170, 86);
-            this.GetItineraryListBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GetItineraryListBtn.Location = new System.Drawing.Point(127, 69);
             this.GetItineraryListBtn.Name = "GetItineraryListBtn";
-            this.GetItineraryListBtn.Size = new System.Drawing.Size(543, 34);
+            this.GetItineraryListBtn.Size = new System.Drawing.Size(408, 29);
             this.GetItineraryListBtn.TabIndex = 4;
             this.GetItineraryListBtn.Text = "GetItineraryList";
             this.GetItineraryListBtn.UseVisualStyleBackColor = true;
@@ -6303,10 +5869,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T26.Controls.Add(this.LoadExternalFileGB);
             this.T26.Location = new System.Drawing.Point(4, 19);
-            this.T26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T26.Name = "T26";
-            this.T26.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T26.Size = new System.Drawing.Size(755, 618);
+            this.T26.Padding = new System.Windows.Forms.Padding(3);
+            this.T26.Size = new System.Drawing.Size(564, 498);
             this.T26.TabIndex = 25;
             this.T26.Text = "T26";
             this.T26.UseVisualStyleBackColor = true;
@@ -6314,11 +5879,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // LoadExternalFileGB
             // 
             this.LoadExternalFileGB.Controls.Add(this.LoadExternalFileTlp);
-            this.LoadExternalFileGB.Location = new System.Drawing.Point(8, 7);
-            this.LoadExternalFileGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadExternalFileGB.Location = new System.Drawing.Point(6, 6);
             this.LoadExternalFileGB.Name = "LoadExternalFileGB";
-            this.LoadExternalFileGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.LoadExternalFileGB.Size = new System.Drawing.Size(729, 225);
+            this.LoadExternalFileGB.Size = new System.Drawing.Size(547, 183);
             this.LoadExternalFileGB.TabIndex = 10;
             this.LoadExternalFileGB.TabStop = false;
             this.LoadExternalFileGB.Text = "LoadExternalFile:";
@@ -6335,44 +5898,40 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LoadExternalFileTlp.Controls.Add(this.LoadExternalFile_PathTBox, 1, 0);
             this.LoadExternalFileTlp.Controls.Add(this.LoadExternalFile_TypeFileNum, 1, 1);
             this.LoadExternalFileTlp.Controls.Add(this.LoadExternalFile_MaxTimeNum, 1, 2);
-            this.LoadExternalFileTlp.Location = new System.Drawing.Point(12, 23);
-            this.LoadExternalFileTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadExternalFileTlp.Location = new System.Drawing.Point(9, 19);
             this.LoadExternalFileTlp.Name = "LoadExternalFileTlp";
             this.LoadExternalFileTlp.RowCount = 4;
             this.LoadExternalFileTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.64151F));
             this.LoadExternalFileTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.07547F));
             this.LoadExternalFileTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.64151F));
             this.LoadExternalFileTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.64151F));
-            this.LoadExternalFileTlp.Size = new System.Drawing.Size(709, 187);
+            this.LoadExternalFileTlp.Size = new System.Drawing.Size(532, 152);
             this.LoadExternalFileTlp.TabIndex = 0;
             // 
             // label106
             // 
             this.label106.AutoSize = true;
-            this.label106.Location = new System.Drawing.Point(4, 0);
-            this.label106.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label106.Location = new System.Drawing.Point(3, 0);
             this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(37, 17);
+            this.label106.Size = new System.Drawing.Size(29, 13);
             this.label106.TabIndex = 0;
             this.label106.Text = "Path";
             // 
             // label107
             // 
             this.label107.AutoSize = true;
-            this.label107.Location = new System.Drawing.Point(4, 42);
-            this.label107.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label107.Location = new System.Drawing.Point(3, 34);
             this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(150, 34);
+            this.label107.Size = new System.Drawing.Size(113, 26);
             this.label107.TabIndex = 1;
             this.label107.Text = "FileType                       1 - GF file, 2 - TMC file";
             // 
             // label108
             // 
             this.label108.AutoSize = true;
-            this.label108.Location = new System.Drawing.Point(4, 101);
-            this.label108.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label108.Location = new System.Drawing.Point(3, 82);
             this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(64, 17);
+            this.label108.Size = new System.Drawing.Size(50, 13);
             this.label108.TabIndex = 2;
             this.label108.Text = "MaxTime";
             // 
@@ -6381,10 +5940,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LoadExternalFileBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LoadExternalFileBtn.Location = new System.Drawing.Point(163, 147);
-            this.LoadExternalFileBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadExternalFileBtn.Location = new System.Drawing.Point(122, 119);
             this.LoadExternalFileBtn.Name = "LoadExternalFileBtn";
-            this.LoadExternalFileBtn.Size = new System.Drawing.Size(542, 36);
+            this.LoadExternalFileBtn.Size = new System.Drawing.Size(407, 30);
             this.LoadExternalFileBtn.TabIndex = 3;
             this.LoadExternalFileBtn.Text = "LoadExternalFile";
             this.LoadExternalFileBtn.UseVisualStyleBackColor = true;
@@ -6394,16 +5952,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.LoadExternalFile_PathTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LoadExternalFile_PathTBox.Location = new System.Drawing.Point(163, 4);
-            this.LoadExternalFile_PathTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadExternalFile_PathTBox.Location = new System.Drawing.Point(122, 3);
             this.LoadExternalFile_PathTBox.Name = "LoadExternalFile_PathTBox";
-            this.LoadExternalFile_PathTBox.Size = new System.Drawing.Size(542, 22);
+            this.LoadExternalFile_PathTBox.Size = new System.Drawing.Size(407, 20);
             this.LoadExternalFile_PathTBox.TabIndex = 4;
             // 
             // LoadExternalFile_TypeFileNum
             // 
-            this.LoadExternalFile_TypeFileNum.Location = new System.Drawing.Point(163, 46);
-            this.LoadExternalFile_TypeFileNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadExternalFile_TypeFileNum.Location = new System.Drawing.Point(122, 37);
             this.LoadExternalFile_TypeFileNum.Maximum = new decimal(new int[] {
             5,
             0,
@@ -6415,7 +5971,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             0});
             this.LoadExternalFile_TypeFileNum.Name = "LoadExternalFile_TypeFileNum";
-            this.LoadExternalFile_TypeFileNum.Size = new System.Drawing.Size(63, 22);
+            this.LoadExternalFile_TypeFileNum.Size = new System.Drawing.Size(47, 20);
             this.LoadExternalFile_TypeFileNum.TabIndex = 5;
             this.LoadExternalFile_TypeFileNum.Value = new decimal(new int[] {
             1,
@@ -6425,25 +5981,23 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // LoadExternalFile_MaxTimeNum
             // 
-            this.LoadExternalFile_MaxTimeNum.Location = new System.Drawing.Point(163, 105);
-            this.LoadExternalFile_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadExternalFile_MaxTimeNum.Location = new System.Drawing.Point(122, 85);
             this.LoadExternalFile_MaxTimeNum.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
             this.LoadExternalFile_MaxTimeNum.Name = "LoadExternalFile_MaxTimeNum";
-            this.LoadExternalFile_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.LoadExternalFile_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.LoadExternalFile_MaxTimeNum.TabIndex = 6;
             // 
             // T27
             // 
             this.T27.Controls.Add(this.AutomaticRemoteActivationGB);
             this.T27.Location = new System.Drawing.Point(4, 19);
-            this.T27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T27.Name = "T27";
-            this.T27.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T27.Size = new System.Drawing.Size(755, 618);
+            this.T27.Padding = new System.Windows.Forms.Padding(3);
+            this.T27.Size = new System.Drawing.Size(564, 498);
             this.T27.TabIndex = 26;
             this.T27.Text = "T27";
             this.T27.UseVisualStyleBackColor = true;
@@ -6451,11 +6005,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // AutomaticRemoteActivationGB
             // 
             this.AutomaticRemoteActivationGB.Controls.Add(this.tableLayoutPanel18);
-            this.AutomaticRemoteActivationGB.Location = new System.Drawing.Point(4, 7);
-            this.AutomaticRemoteActivationGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AutomaticRemoteActivationGB.Location = new System.Drawing.Point(3, 6);
             this.AutomaticRemoteActivationGB.Name = "AutomaticRemoteActivationGB";
-            this.AutomaticRemoteActivationGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.AutomaticRemoteActivationGB.Size = new System.Drawing.Size(740, 210);
+            this.AutomaticRemoteActivationGB.Size = new System.Drawing.Size(555, 171);
             this.AutomaticRemoteActivationGB.TabIndex = 3;
             this.AutomaticRemoteActivationGB.TabStop = false;
             this.AutomaticRemoteActivationGB.Text = "Automatic remote activation:";
@@ -6472,71 +6024,64 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel18.Controls.Add(this.label102, 0, 1);
             this.tableLayoutPanel18.Controls.Add(this.label134, 0, 2);
             this.tableLayoutPanel18.Controls.Add(this.button1, 1, 3);
-            this.tableLayoutPanel18.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel18.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel18.Name = "tableLayoutPanel18";
             this.tableLayoutPanel18.RowCount = 4;
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(724, 176);
+            this.tableLayoutPanel18.Size = new System.Drawing.Size(543, 143);
             this.tableLayoutPanel18.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(176, 4);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Location = new System.Drawing.Point(132, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(543, 22);
+            this.textBox2.Size = new System.Drawing.Size(408, 20);
             this.textBox2.TabIndex = 0;
             this.textBox2.Text = "c:\\Windows\\RemoteActivation\\XP\\Activate.exe";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(176, 48);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Location = new System.Drawing.Point(132, 38);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(543, 22);
+            this.textBox3.Size = new System.Drawing.Size(408, 20);
             this.textBox3.TabIndex = 1;
             this.textBox3.Text = "c:\\C\\Maps\\Europe(Logistics)_2013.03\\Sygic Fleet Truck Portable 10 - Europe 2013.0" +
     "3 (+tts).mlm";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(176, 92);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Location = new System.Drawing.Point(132, 73);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(185, 22);
+            this.textBox4.Size = new System.Drawing.Size(140, 20);
             this.textBox4.TabIndex = 2;
             // 
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(4, 0);
-            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label35.Location = new System.Drawing.Point(3, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(116, 17);
+            this.label35.Size = new System.Drawing.Size(90, 13);
             this.label35.TabIndex = 3;
             this.label35.Text = "Activate.exe path";
             // 
             // label102
             // 
             this.label102.AutoSize = true;
-            this.label102.Location = new System.Drawing.Point(4, 44);
-            this.label102.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label102.Location = new System.Drawing.Point(3, 35);
             this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(69, 17);
+            this.label102.Size = new System.Drawing.Size(52, 13);
             this.label102.TabIndex = 4;
             this.label102.Text = ".mlm path";
             // 
             // label134
             // 
             this.label134.AutoSize = true;
-            this.label134.Location = new System.Drawing.Point(4, 88);
-            this.label134.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label134.Location = new System.Drawing.Point(3, 70);
             this.label134.Name = "label134";
-            this.label134.Size = new System.Drawing.Size(91, 17);
+            this.label134.Size = new System.Drawing.Size(70, 13);
             this.label134.TabIndex = 5;
             this.label134.Text = "SD password";
             // 
@@ -6545,10 +6090,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(176, 136);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(132, 108);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(544, 36);
+            this.button1.Size = new System.Drawing.Size(408, 32);
             this.button1.TabIndex = 6;
             this.button1.Text = "Automatic Remote Activation";
             this.button1.UseVisualStyleBackColor = true;
@@ -6557,10 +6101,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T28.Controls.Add(this.PlaySoundTTSGB);
             this.T28.Location = new System.Drawing.Point(4, 19);
-            this.T28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T28.Name = "T28";
-            this.T28.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T28.Size = new System.Drawing.Size(755, 618);
+            this.T28.Padding = new System.Windows.Forms.Padding(3);
+            this.T28.Size = new System.Drawing.Size(564, 498);
             this.T28.TabIndex = 27;
             this.T28.Text = "T28";
             this.T28.UseVisualStyleBackColor = true;
@@ -6568,11 +6111,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlaySoundTTSGB
             // 
             this.PlaySoundTTSGB.Controls.Add(this.PlaySoundTTSTlp);
-            this.PlaySoundTTSGB.Location = new System.Drawing.Point(8, 7);
-            this.PlaySoundTTSGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlaySoundTTSGB.Location = new System.Drawing.Point(6, 6);
             this.PlaySoundTTSGB.Name = "PlaySoundTTSGB";
-            this.PlaySoundTTSGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.PlaySoundTTSGB.Size = new System.Drawing.Size(736, 155);
+            this.PlaySoundTTSGB.Size = new System.Drawing.Size(552, 126);
             this.PlaySoundTTSGB.TabIndex = 2;
             this.PlaySoundTTSGB.TabStop = false;
             this.PlaySoundTTSGB.Text = "PlaySoundTTS:";
@@ -6587,55 +6128,50 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.PlaySoundTTSTlp.Controls.Add(this.PlaySoundTTS_TextTBox, 1, 0);
             this.PlaySoundTTSTlp.Controls.Add(this.PlaySoundTTS_TimeNum, 1, 1);
             this.PlaySoundTTSTlp.Controls.Add(this.PlaySoundTTSBtn, 1, 2);
-            this.PlaySoundTTSTlp.Location = new System.Drawing.Point(8, 23);
-            this.PlaySoundTTSTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlaySoundTTSTlp.Location = new System.Drawing.Point(6, 19);
             this.PlaySoundTTSTlp.Name = "PlaySoundTTSTlp";
             this.PlaySoundTTSTlp.RowCount = 3;
             this.PlaySoundTTSTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.PlaySoundTTSTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.PlaySoundTTSTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.PlaySoundTTSTlp.Size = new System.Drawing.Size(720, 124);
+            this.PlaySoundTTSTlp.Size = new System.Drawing.Size(540, 101);
             this.PlaySoundTTSTlp.TabIndex = 0;
             // 
             // label88
             // 
             this.label88.AutoSize = true;
-            this.label88.Location = new System.Drawing.Point(4, 0);
-            this.label88.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label88.Location = new System.Drawing.Point(3, 0);
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(35, 17);
+            this.label88.Size = new System.Drawing.Size(28, 13);
             this.label88.TabIndex = 0;
             this.label88.Text = "Text";
             // 
             // label89
             // 
             this.label89.AutoSize = true;
-            this.label89.Location = new System.Drawing.Point(4, 41);
-            this.label89.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label89.Location = new System.Drawing.Point(3, 33);
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(64, 17);
+            this.label89.Size = new System.Drawing.Size(50, 13);
             this.label89.TabIndex = 1;
             this.label89.Text = "MaxTime";
             // 
             // PlaySoundTTS_TextTBox
             // 
-            this.PlaySoundTTS_TextTBox.Location = new System.Drawing.Point(157, 4);
-            this.PlaySoundTTS_TextTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlaySoundTTS_TextTBox.Location = new System.Drawing.Point(118, 3);
             this.PlaySoundTTS_TextTBox.Name = "PlaySoundTTS_TextTBox";
-            this.PlaySoundTTS_TextTBox.Size = new System.Drawing.Size(557, 22);
+            this.PlaySoundTTS_TextTBox.Size = new System.Drawing.Size(419, 20);
             this.PlaySoundTTS_TextTBox.TabIndex = 2;
             // 
             // PlaySoundTTS_TimeNum
             // 
-            this.PlaySoundTTS_TimeNum.Location = new System.Drawing.Point(157, 45);
-            this.PlaySoundTTS_TimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlaySoundTTS_TimeNum.Location = new System.Drawing.Point(118, 36);
             this.PlaySoundTTS_TimeNum.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
             this.PlaySoundTTS_TimeNum.Name = "PlaySoundTTS_TimeNum";
-            this.PlaySoundTTS_TimeNum.Size = new System.Drawing.Size(160, 22);
+            this.PlaySoundTTS_TimeNum.Size = new System.Drawing.Size(120, 20);
             this.PlaySoundTTS_TimeNum.TabIndex = 3;
             // 
             // PlaySoundTTSBtn
@@ -6643,10 +6179,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.PlaySoundTTSBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PlaySoundTTSBtn.Location = new System.Drawing.Point(157, 86);
-            this.PlaySoundTTSBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlaySoundTTSBtn.Location = new System.Drawing.Point(118, 69);
             this.PlaySoundTTSBtn.Name = "PlaySoundTTSBtn";
-            this.PlaySoundTTSBtn.Size = new System.Drawing.Size(559, 34);
+            this.PlaySoundTTSBtn.Size = new System.Drawing.Size(419, 29);
             this.PlaySoundTTSBtn.TabIndex = 4;
             this.PlaySoundTTSBtn.Text = "PlaySoundTTS";
             this.PlaySoundTTSBtn.UseVisualStyleBackColor = true;
@@ -6656,10 +6191,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T29.Controls.Add(this.ShowMessageGB);
             this.T29.Location = new System.Drawing.Point(4, 19);
-            this.T29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T29.Name = "T29";
-            this.T29.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T29.Size = new System.Drawing.Size(755, 618);
+            this.T29.Padding = new System.Windows.Forms.Padding(3);
+            this.T29.Size = new System.Drawing.Size(564, 498);
             this.T29.TabIndex = 28;
             this.T29.Text = "T29";
             this.T29.UseVisualStyleBackColor = true;
@@ -6667,11 +6201,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // ShowMessageGB
             // 
             this.ShowMessageGB.Controls.Add(this.ShowMessage2Tlp);
-            this.ShowMessageGB.Location = new System.Drawing.Point(15, 7);
-            this.ShowMessageGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowMessageGB.Location = new System.Drawing.Point(11, 6);
             this.ShowMessageGB.Name = "ShowMessageGB";
-            this.ShowMessageGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ShowMessageGB.Size = new System.Drawing.Size(733, 311);
+            this.ShowMessageGB.Size = new System.Drawing.Size(550, 253);
             this.ShowMessageGB.TabIndex = 2;
             this.ShowMessageGB.TabStop = false;
             this.ShowMessageGB.Text = "ShowMessage";
@@ -6692,8 +6224,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowMessage2Tlp.Controls.Add(this.label138, 0, 4);
             this.ShowMessage2Tlp.Controls.Add(this.label139, 0, 3);
             this.ShowMessage2Tlp.Controls.Add(this.ShowMessage2_BShowApplicationChB, 1, 3);
-            this.ShowMessage2Tlp.Location = new System.Drawing.Point(7, 23);
-            this.ShowMessage2Tlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowMessage2Tlp.Location = new System.Drawing.Point(5, 19);
             this.ShowMessage2Tlp.Name = "ShowMessage2Tlp";
             this.ShowMessage2Tlp.RowCount = 6;
             this.ShowMessage2Tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -6702,51 +6233,46 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowMessage2Tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.ShowMessage2Tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.ShowMessage2Tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.ShowMessage2Tlp.Size = new System.Drawing.Size(720, 277);
+            this.ShowMessage2Tlp.Size = new System.Drawing.Size(540, 225);
             this.ShowMessage2Tlp.TabIndex = 0;
             // 
             // label135
             // 
             this.label135.AutoSize = true;
-            this.label135.Location = new System.Drawing.Point(4, 0);
-            this.label135.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label135.Location = new System.Drawing.Point(3, 0);
             this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(65, 17);
+            this.label135.Size = new System.Drawing.Size(49, 13);
             this.label135.TabIndex = 0;
             this.label135.Text = "message";
             // 
             // label136
             // 
             this.label136.AutoSize = true;
-            this.label136.Location = new System.Drawing.Point(4, 46);
-            this.label136.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label136.Location = new System.Drawing.Point(3, 37);
             this.label136.Name = "label136";
-            this.label136.Size = new System.Drawing.Size(55, 17);
+            this.label136.Size = new System.Drawing.Size(42, 13);
             this.label136.TabIndex = 1;
             this.label136.Text = "buttons";
             // 
             // label137
             // 
             this.label137.AutoSize = true;
-            this.label137.Location = new System.Drawing.Point(4, 92);
-            this.label137.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label137.Location = new System.Drawing.Point(3, 74);
             this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(127, 17);
+            this.label137.Size = new System.Drawing.Size(98, 13);
             this.label137.TabIndex = 2;
             this.label137.Text = "bWaitForFeedback";
             // 
             // ShowMessage2_MessageTBox
             // 
-            this.ShowMessage2_MessageTBox.Location = new System.Drawing.Point(157, 4);
-            this.ShowMessage2_MessageTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowMessage2_MessageTBox.Location = new System.Drawing.Point(118, 3);
             this.ShowMessage2_MessageTBox.Name = "ShowMessage2_MessageTBox";
-            this.ShowMessage2_MessageTBox.Size = new System.Drawing.Size(557, 22);
+            this.ShowMessage2_MessageTBox.Size = new System.Drawing.Size(419, 20);
             this.ShowMessage2_MessageTBox.TabIndex = 4;
             // 
             // ShowMessage2_ButtonsNum
             // 
-            this.ShowMessage2_ButtonsNum.Location = new System.Drawing.Point(157, 50);
-            this.ShowMessage2_ButtonsNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowMessage2_ButtonsNum.Location = new System.Drawing.Point(118, 40);
             this.ShowMessage2_ButtonsNum.Maximum = new decimal(new int[] {
             3,
             0,
@@ -6758,7 +6284,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             0});
             this.ShowMessage2_ButtonsNum.Name = "ShowMessage2_ButtonsNum";
-            this.ShowMessage2_ButtonsNum.Size = new System.Drawing.Size(63, 22);
+            this.ShowMessage2_ButtonsNum.Size = new System.Drawing.Size(47, 20);
             this.ShowMessage2_ButtonsNum.TabIndex = 5;
             this.ShowMessage2_ButtonsNum.Value = new decimal(new int[] {
             1,
@@ -6769,10 +6295,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // ShowMessage2_BWaitForFeedbackChB
             // 
             this.ShowMessage2_BWaitForFeedbackChB.AutoSize = true;
-            this.ShowMessage2_BWaitForFeedbackChB.Location = new System.Drawing.Point(157, 96);
-            this.ShowMessage2_BWaitForFeedbackChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowMessage2_BWaitForFeedbackChB.Location = new System.Drawing.Point(118, 77);
             this.ShowMessage2_BWaitForFeedbackChB.Name = "ShowMessage2_BWaitForFeedbackChB";
-            this.ShowMessage2_BWaitForFeedbackChB.Size = new System.Drawing.Size(18, 17);
+            this.ShowMessage2_BWaitForFeedbackChB.Size = new System.Drawing.Size(15, 14);
             this.ShowMessage2_BWaitForFeedbackChB.TabIndex = 6;
             this.ShowMessage2_BWaitForFeedbackChB.UseVisualStyleBackColor = true;
             // 
@@ -6781,10 +6306,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowMessage2Btn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ShowMessage2Btn.Location = new System.Drawing.Point(157, 234);
-            this.ShowMessage2Btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowMessage2Btn.Location = new System.Drawing.Point(118, 188);
             this.ShowMessage2Btn.Name = "ShowMessage2Btn";
-            this.ShowMessage2Btn.Size = new System.Drawing.Size(559, 39);
+            this.ShowMessage2Btn.Size = new System.Drawing.Size(419, 34);
             this.ShowMessage2Btn.TabIndex = 9;
             this.ShowMessage2Btn.Text = "ShowMessage";
             this.ShowMessage2Btn.UseVisualStyleBackColor = true;
@@ -6792,44 +6316,40 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ShowMessage2_MaxtimeNum
             // 
-            this.ShowMessage2_MaxtimeNum.Location = new System.Drawing.Point(157, 188);
-            this.ShowMessage2_MaxtimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowMessage2_MaxtimeNum.Location = new System.Drawing.Point(118, 151);
             this.ShowMessage2_MaxtimeNum.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
             this.ShowMessage2_MaxtimeNum.Name = "ShowMessage2_MaxtimeNum";
-            this.ShowMessage2_MaxtimeNum.Size = new System.Drawing.Size(160, 22);
+            this.ShowMessage2_MaxtimeNum.Size = new System.Drawing.Size(120, 20);
             this.ShowMessage2_MaxtimeNum.TabIndex = 7;
             // 
             // label138
             // 
             this.label138.AutoSize = true;
-            this.label138.Location = new System.Drawing.Point(4, 184);
-            this.label138.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label138.Location = new System.Drawing.Point(3, 148);
             this.label138.Name = "label138";
-            this.label138.Size = new System.Drawing.Size(64, 17);
+            this.label138.Size = new System.Drawing.Size(49, 13);
             this.label138.TabIndex = 3;
             this.label138.Text = "maxTime";
             // 
             // label139
             // 
             this.label139.AutoSize = true;
-            this.label139.Location = new System.Drawing.Point(4, 138);
-            this.label139.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label139.Location = new System.Drawing.Point(3, 111);
             this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(119, 17);
+            this.label139.Size = new System.Drawing.Size(92, 13);
             this.label139.TabIndex = 10;
             this.label139.Text = "bShowApplication";
             // 
             // ShowMessage2_BShowApplicationChB
             // 
             this.ShowMessage2_BShowApplicationChB.AutoSize = true;
-            this.ShowMessage2_BShowApplicationChB.Location = new System.Drawing.Point(157, 142);
-            this.ShowMessage2_BShowApplicationChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowMessage2_BShowApplicationChB.Location = new System.Drawing.Point(118, 114);
             this.ShowMessage2_BShowApplicationChB.Name = "ShowMessage2_BShowApplicationChB";
-            this.ShowMessage2_BShowApplicationChB.Size = new System.Drawing.Size(18, 17);
+            this.ShowMessage2_BShowApplicationChB.Size = new System.Drawing.Size(15, 14);
             this.ShowMessage2_BShowApplicationChB.TabIndex = 11;
             this.ShowMessage2_BShowApplicationChB.UseVisualStyleBackColor = true;
             // 
@@ -6837,10 +6357,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T30.Controls.Add(this.StartNavigationGB);
             this.T30.Location = new System.Drawing.Point(4, 19);
-            this.T30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T30.Name = "T30";
-            this.T30.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T30.Size = new System.Drawing.Size(755, 618);
+            this.T30.Padding = new System.Windows.Forms.Padding(3);
+            this.T30.Size = new System.Drawing.Size(564, 498);
             this.T30.TabIndex = 29;
             this.T30.Text = "T30";
             this.T30.UseVisualStyleBackColor = true;
@@ -6848,11 +6367,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // StartNavigationGB
             // 
             this.StartNavigationGB.Controls.Add(this.StartNavigationTlp);
-            this.StartNavigationGB.Location = new System.Drawing.Point(4, 9);
-            this.StartNavigationGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartNavigationGB.Location = new System.Drawing.Point(3, 7);
             this.StartNavigationGB.Name = "StartNavigationGB";
-            this.StartNavigationGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.StartNavigationGB.Size = new System.Drawing.Size(744, 289);
+            this.StartNavigationGB.Size = new System.Drawing.Size(558, 235);
             this.StartNavigationGB.TabIndex = 4;
             this.StartNavigationGB.TabStop = false;
             this.StartNavigationGB.Text = "StartNavigation:";
@@ -6875,8 +6392,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.StartNavigationTlp.Controls.Add(this.StartNavigation_bSearchAddressChB, 1, 4);
             this.StartNavigationTlp.Controls.Add(this.StartNavigation_MaxTimeNum, 1, 5);
             this.StartNavigationTlp.Controls.Add(this.StartNavigationBtn, 1, 6);
-            this.StartNavigationTlp.Location = new System.Drawing.Point(3, 23);
-            this.StartNavigationTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartNavigationTlp.Location = new System.Drawing.Point(2, 19);
             this.StartNavigationTlp.Name = "StartNavigationTlp";
             this.StartNavigationTlp.RowCount = 7;
             this.StartNavigationTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -6886,73 +6402,66 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.StartNavigationTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.StartNavigationTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.StartNavigationTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.StartNavigationTlp.Size = new System.Drawing.Size(733, 258);
+            this.StartNavigationTlp.Size = new System.Drawing.Size(550, 210);
             this.StartNavigationTlp.TabIndex = 0;
             // 
             // label65
             // 
             this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(4, 0);
-            this.label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label65.Location = new System.Drawing.Point(3, 0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(20, 17);
+            this.label65.Size = new System.Drawing.Size(16, 13);
             this.label65.TabIndex = 0;
             this.label65.Text = "lX";
             // 
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(4, 36);
-            this.label66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label66.Location = new System.Drawing.Point(3, 29);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(20, 17);
+            this.label66.Size = new System.Drawing.Size(16, 13);
             this.label66.TabIndex = 1;
             this.label66.Text = "lY";
             // 
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(4, 72);
-            this.label67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label67.Location = new System.Drawing.Point(3, 58);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(42, 17);
+            this.label67.Size = new System.Drawing.Size(32, 13);
             this.label67.TabIndex = 2;
             this.label67.Text = "Flags";
             // 
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(4, 108);
-            this.label68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label68.Location = new System.Drawing.Point(3, 87);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(119, 17);
+            this.label68.Size = new System.Drawing.Size(92, 13);
             this.label68.TabIndex = 3;
             this.label68.Text = "bShowApplication";
             // 
             // label69
             // 
             this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(4, 144);
-            this.label69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label69.Location = new System.Drawing.Point(3, 116);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(113, 17);
+            this.label69.Size = new System.Drawing.Size(85, 13);
             this.label69.TabIndex = 4;
             this.label69.Text = "bSearchAddress";
             // 
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(4, 180);
-            this.label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label70.Location = new System.Drawing.Point(3, 145);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(64, 17);
+            this.label70.Size = new System.Drawing.Size(50, 13);
             this.label70.TabIndex = 5;
             this.label70.Text = "MaxTime";
             // 
             // StartNavigation_lXNum
             // 
-            this.StartNavigation_lXNum.Location = new System.Drawing.Point(229, 4);
-            this.StartNavigation_lXNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartNavigation_lXNum.Location = new System.Drawing.Point(171, 3);
             this.StartNavigation_lXNum.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -6964,13 +6473,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.StartNavigation_lXNum.Name = "StartNavigation_lXNum";
-            this.StartNavigation_lXNum.Size = new System.Drawing.Size(160, 22);
+            this.StartNavigation_lXNum.Size = new System.Drawing.Size(120, 20);
             this.StartNavigation_lXNum.TabIndex = 6;
             // 
             // StartNavigation_lYNum
             // 
-            this.StartNavigation_lYNum.Location = new System.Drawing.Point(229, 40);
-            this.StartNavigation_lYNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartNavigation_lYNum.Location = new System.Drawing.Point(171, 32);
             this.StartNavigation_lYNum.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -6982,48 +6490,44 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.StartNavigation_lYNum.Name = "StartNavigation_lYNum";
-            this.StartNavigation_lYNum.Size = new System.Drawing.Size(160, 22);
+            this.StartNavigation_lYNum.Size = new System.Drawing.Size(120, 20);
             this.StartNavigation_lYNum.TabIndex = 7;
             // 
             // StartNavigation_FlagsNum
             // 
-            this.StartNavigation_FlagsNum.Location = new System.Drawing.Point(229, 76);
-            this.StartNavigation_FlagsNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartNavigation_FlagsNum.Location = new System.Drawing.Point(171, 61);
             this.StartNavigation_FlagsNum.Name = "StartNavigation_FlagsNum";
-            this.StartNavigation_FlagsNum.Size = new System.Drawing.Size(107, 22);
+            this.StartNavigation_FlagsNum.Size = new System.Drawing.Size(80, 20);
             this.StartNavigation_FlagsNum.TabIndex = 8;
             // 
             // StartNavigation_bShowApplicationChB
             // 
             this.StartNavigation_bShowApplicationChB.AutoSize = true;
-            this.StartNavigation_bShowApplicationChB.Location = new System.Drawing.Point(229, 112);
-            this.StartNavigation_bShowApplicationChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartNavigation_bShowApplicationChB.Location = new System.Drawing.Point(171, 90);
             this.StartNavigation_bShowApplicationChB.Name = "StartNavigation_bShowApplicationChB";
-            this.StartNavigation_bShowApplicationChB.Size = new System.Drawing.Size(18, 17);
+            this.StartNavigation_bShowApplicationChB.Size = new System.Drawing.Size(15, 14);
             this.StartNavigation_bShowApplicationChB.TabIndex = 9;
             this.StartNavigation_bShowApplicationChB.UseVisualStyleBackColor = true;
             // 
             // StartNavigation_bSearchAddressChB
             // 
             this.StartNavigation_bSearchAddressChB.AutoSize = true;
-            this.StartNavigation_bSearchAddressChB.Location = new System.Drawing.Point(229, 148);
-            this.StartNavigation_bSearchAddressChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartNavigation_bSearchAddressChB.Location = new System.Drawing.Point(171, 119);
             this.StartNavigation_bSearchAddressChB.Name = "StartNavigation_bSearchAddressChB";
-            this.StartNavigation_bSearchAddressChB.Size = new System.Drawing.Size(18, 17);
+            this.StartNavigation_bSearchAddressChB.Size = new System.Drawing.Size(15, 14);
             this.StartNavigation_bSearchAddressChB.TabIndex = 10;
             this.StartNavigation_bSearchAddressChB.UseVisualStyleBackColor = true;
             // 
             // StartNavigation_MaxTimeNum
             // 
-            this.StartNavigation_MaxTimeNum.Location = new System.Drawing.Point(229, 184);
-            this.StartNavigation_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartNavigation_MaxTimeNum.Location = new System.Drawing.Point(171, 148);
             this.StartNavigation_MaxTimeNum.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
             this.StartNavigation_MaxTimeNum.Name = "StartNavigation_MaxTimeNum";
-            this.StartNavigation_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.StartNavigation_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.StartNavigation_MaxTimeNum.TabIndex = 11;
             // 
             // StartNavigationBtn
@@ -7031,10 +6535,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.StartNavigationBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.StartNavigationBtn.Location = new System.Drawing.Point(229, 220);
-            this.StartNavigationBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartNavigationBtn.Location = new System.Drawing.Point(171, 177);
             this.StartNavigationBtn.Name = "StartNavigationBtn";
-            this.StartNavigationBtn.Size = new System.Drawing.Size(500, 34);
+            this.StartNavigationBtn.Size = new System.Drawing.Size(376, 30);
             this.StartNavigationBtn.TabIndex = 12;
             this.StartNavigationBtn.Text = "StartNavigation";
             this.StartNavigationBtn.UseVisualStyleBackColor = true;
@@ -7044,10 +6547,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T31.Controls.Add(this.FlashMessageGB);
             this.T31.Location = new System.Drawing.Point(4, 19);
-            this.T31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T31.Name = "T31";
-            this.T31.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T31.Size = new System.Drawing.Size(755, 618);
+            this.T31.Padding = new System.Windows.Forms.Padding(3);
+            this.T31.Size = new System.Drawing.Size(564, 498);
             this.T31.TabIndex = 30;
             this.T31.Text = "T31";
             this.T31.UseVisualStyleBackColor = true;
@@ -7055,11 +6557,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // FlashMessageGB
             // 
             this.FlashMessageGB.Controls.Add(this.FlashMessageTlp);
-            this.FlashMessageGB.Location = new System.Drawing.Point(4, 7);
-            this.FlashMessageGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FlashMessageGB.Location = new System.Drawing.Point(3, 6);
             this.FlashMessageGB.Name = "FlashMessageGB";
-            this.FlashMessageGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.FlashMessageGB.Size = new System.Drawing.Size(740, 215);
+            this.FlashMessageGB.Size = new System.Drawing.Size(555, 175);
             this.FlashMessageGB.TabIndex = 0;
             this.FlashMessageGB.TabStop = false;
             this.FlashMessageGB.Text = "FlashMessage";
@@ -7076,44 +6576,40 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.FlashMessageTlp.Controls.Add(this.FlashMessage_bShowApplicationChB, 1, 1);
             this.FlashMessageTlp.Controls.Add(this.FlashMessage_MaxTimeNum, 1, 2);
             this.FlashMessageTlp.Controls.Add(this.FlashMessageBtn, 1, 3);
-            this.FlashMessageTlp.Location = new System.Drawing.Point(8, 23);
-            this.FlashMessageTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FlashMessageTlp.Location = new System.Drawing.Point(6, 19);
             this.FlashMessageTlp.Name = "FlashMessageTlp";
             this.FlashMessageTlp.RowCount = 4;
             this.FlashMessageTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.FlashMessageTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.FlashMessageTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.FlashMessageTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.FlashMessageTlp.Size = new System.Drawing.Size(724, 178);
+            this.FlashMessageTlp.Size = new System.Drawing.Size(543, 145);
             this.FlashMessageTlp.TabIndex = 0;
             // 
             // label153
             // 
             this.label153.AutoSize = true;
-            this.label153.Location = new System.Drawing.Point(4, 0);
-            this.label153.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label153.Location = new System.Drawing.Point(3, 0);
             this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(81, 17);
+            this.label153.Size = new System.Drawing.Size(61, 13);
             this.label153.TabIndex = 0;
             this.label153.Text = "strMessage";
             // 
             // label154
             // 
             this.label154.AutoSize = true;
-            this.label154.Location = new System.Drawing.Point(4, 44);
-            this.label154.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label154.Location = new System.Drawing.Point(3, 36);
             this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(119, 17);
+            this.label154.Size = new System.Drawing.Size(92, 13);
             this.label154.TabIndex = 1;
             this.label154.Text = "bShowApplication";
             // 
             // label155
             // 
             this.label155.AutoSize = true;
-            this.label155.Location = new System.Drawing.Point(4, 88);
-            this.label155.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label155.Location = new System.Drawing.Point(3, 72);
             this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(64, 17);
+            this.label155.Size = new System.Drawing.Size(50, 13);
             this.label155.TabIndex = 2;
             this.label155.Text = "MaxTime";
             // 
@@ -7122,33 +6618,30 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.FlashMessage_strMessageTBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.FlashMessage_strMessageTBox.Location = new System.Drawing.Point(189, 4);
-            this.FlashMessage_strMessageTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FlashMessage_strMessageTBox.Location = new System.Drawing.Point(142, 3);
             this.FlashMessage_strMessageTBox.Name = "FlashMessage_strMessageTBox";
-            this.FlashMessage_strMessageTBox.Size = new System.Drawing.Size(531, 22);
+            this.FlashMessage_strMessageTBox.Size = new System.Drawing.Size(398, 20);
             this.FlashMessage_strMessageTBox.TabIndex = 3;
             // 
             // FlashMessage_bShowApplicationChB
             // 
             this.FlashMessage_bShowApplicationChB.AutoSize = true;
-            this.FlashMessage_bShowApplicationChB.Location = new System.Drawing.Point(189, 48);
-            this.FlashMessage_bShowApplicationChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FlashMessage_bShowApplicationChB.Location = new System.Drawing.Point(142, 39);
             this.FlashMessage_bShowApplicationChB.Name = "FlashMessage_bShowApplicationChB";
-            this.FlashMessage_bShowApplicationChB.Size = new System.Drawing.Size(18, 17);
+            this.FlashMessage_bShowApplicationChB.Size = new System.Drawing.Size(15, 14);
             this.FlashMessage_bShowApplicationChB.TabIndex = 4;
             this.FlashMessage_bShowApplicationChB.UseVisualStyleBackColor = true;
             // 
             // FlashMessage_MaxTimeNum
             // 
-            this.FlashMessage_MaxTimeNum.Location = new System.Drawing.Point(189, 92);
-            this.FlashMessage_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FlashMessage_MaxTimeNum.Location = new System.Drawing.Point(142, 75);
             this.FlashMessage_MaxTimeNum.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
             this.FlashMessage_MaxTimeNum.Name = "FlashMessage_MaxTimeNum";
-            this.FlashMessage_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.FlashMessage_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.FlashMessage_MaxTimeNum.TabIndex = 5;
             // 
             // FlashMessageBtn
@@ -7156,10 +6649,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.FlashMessageBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.FlashMessageBtn.Location = new System.Drawing.Point(189, 136);
-            this.FlashMessageBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FlashMessageBtn.Location = new System.Drawing.Point(142, 111);
             this.FlashMessageBtn.Name = "FlashMessageBtn";
-            this.FlashMessageBtn.Size = new System.Drawing.Size(531, 38);
+            this.FlashMessageBtn.Size = new System.Drawing.Size(398, 31);
             this.FlashMessageBtn.TabIndex = 6;
             this.FlashMessageBtn.Text = "FlashMessage";
             this.FlashMessageBtn.UseVisualStyleBackColor = true;
@@ -7169,10 +6661,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T32.Controls.Add(this.ShowRectangleOnMapGB);
             this.T32.Location = new System.Drawing.Point(4, 19);
-            this.T32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T32.Name = "T32";
-            this.T32.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T32.Size = new System.Drawing.Size(755, 618);
+            this.T32.Padding = new System.Windows.Forms.Padding(3);
+            this.T32.Size = new System.Drawing.Size(564, 498);
             this.T32.TabIndex = 31;
             this.T32.Text = "T32";
             this.T32.UseVisualStyleBackColor = true;
@@ -7180,11 +6671,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // ShowRectangleOnMapGB
             // 
             this.ShowRectangleOnMapGB.Controls.Add(this.ShowRectangleOnMapTlp);
-            this.ShowRectangleOnMapGB.Location = new System.Drawing.Point(4, 7);
-            this.ShowRectangleOnMapGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowRectangleOnMapGB.Location = new System.Drawing.Point(3, 6);
             this.ShowRectangleOnMapGB.Name = "ShowRectangleOnMapGB";
-            this.ShowRectangleOnMapGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ShowRectangleOnMapGB.Size = new System.Drawing.Size(740, 306);
+            this.ShowRectangleOnMapGB.Size = new System.Drawing.Size(555, 249);
             this.ShowRectangleOnMapGB.TabIndex = 0;
             this.ShowRectangleOnMapGB.TabStop = false;
             this.ShowRectangleOnMapGB.Text = "ShowRectangleOnMap";
@@ -7207,8 +6696,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowRectangleOnMapTlp.Controls.Add(this.ShowRectangleOnMap_MaxTimeNum, 1, 5);
             this.ShowRectangleOnMapTlp.Controls.Add(this.ShowRectangleOnMapBtn, 1, 6);
             this.ShowRectangleOnMapTlp.Controls.Add(this.ShowRectangleOnMap_bShowApplicationChB, 1, 4);
-            this.ShowRectangleOnMapTlp.Location = new System.Drawing.Point(8, 23);
-            this.ShowRectangleOnMapTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowRectangleOnMapTlp.Location = new System.Drawing.Point(6, 19);
             this.ShowRectangleOnMapTlp.Name = "ShowRectangleOnMapTlp";
             this.ShowRectangleOnMapTlp.RowCount = 7;
             this.ShowRectangleOnMapTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -7218,73 +6706,66 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowRectangleOnMapTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.ShowRectangleOnMapTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.ShowRectangleOnMapTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.ShowRectangleOnMapTlp.Size = new System.Drawing.Size(724, 273);
+            this.ShowRectangleOnMapTlp.Size = new System.Drawing.Size(543, 222);
             this.ShowRectangleOnMapTlp.TabIndex = 0;
             // 
             // label156
             // 
             this.label156.AutoSize = true;
-            this.label156.Location = new System.Drawing.Point(4, 0);
-            this.label156.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label156.Location = new System.Drawing.Point(3, 0);
             this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(55, 17);
+            this.label156.Size = new System.Drawing.Size(42, 13);
             this.label156.TabIndex = 0;
             this.label156.Text = "lBottom";
             // 
             // label157
             // 
             this.label157.AutoSize = true;
-            this.label157.Location = new System.Drawing.Point(4, 38);
-            this.label157.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label157.Location = new System.Drawing.Point(3, 31);
             this.label157.Name = "label157";
-            this.label157.Size = new System.Drawing.Size(35, 17);
+            this.label157.Size = new System.Drawing.Size(27, 13);
             this.label157.TabIndex = 1;
             this.label157.Text = "lLeft";
             // 
             // label158
             // 
             this.label158.AutoSize = true;
-            this.label158.Location = new System.Drawing.Point(4, 76);
-            this.label158.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label158.Location = new System.Drawing.Point(3, 62);
             this.label158.Name = "label158";
-            this.label158.Size = new System.Drawing.Size(44, 17);
+            this.label158.Size = new System.Drawing.Size(34, 13);
             this.label158.TabIndex = 2;
             this.label158.Text = "lRight";
             // 
             // label159
             // 
             this.label159.AutoSize = true;
-            this.label159.Location = new System.Drawing.Point(4, 114);
-            this.label159.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label159.Location = new System.Drawing.Point(3, 93);
             this.label159.Name = "label159";
-            this.label159.Size = new System.Drawing.Size(36, 17);
+            this.label159.Size = new System.Drawing.Size(28, 13);
             this.label159.TabIndex = 3;
             this.label159.Text = "lTop";
             // 
             // label160
             // 
             this.label160.AutoSize = true;
-            this.label160.Location = new System.Drawing.Point(4, 152);
-            this.label160.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label160.Location = new System.Drawing.Point(3, 124);
             this.label160.Name = "label160";
-            this.label160.Size = new System.Drawing.Size(119, 17);
+            this.label160.Size = new System.Drawing.Size(92, 13);
             this.label160.TabIndex = 4;
             this.label160.Text = "bShowApplication";
             // 
             // label161
             // 
             this.label161.AutoSize = true;
-            this.label161.Location = new System.Drawing.Point(4, 190);
-            this.label161.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label161.Location = new System.Drawing.Point(3, 155);
             this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(64, 17);
+            this.label161.Size = new System.Drawing.Size(50, 13);
             this.label161.TabIndex = 5;
             this.label161.Text = "MaxTime";
             // 
             // ShowRectangleOnMap_lBottomNum
             // 
-            this.ShowRectangleOnMap_lBottomNum.Location = new System.Drawing.Point(187, 4);
-            this.ShowRectangleOnMap_lBottomNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowRectangleOnMap_lBottomNum.Location = new System.Drawing.Point(140, 3);
             this.ShowRectangleOnMap_lBottomNum.Maximum = new decimal(new int[] {
             9000000,
             0,
@@ -7296,7 +6777,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.ShowRectangleOnMap_lBottomNum.Name = "ShowRectangleOnMap_lBottomNum";
-            this.ShowRectangleOnMap_lBottomNum.Size = new System.Drawing.Size(160, 22);
+            this.ShowRectangleOnMap_lBottomNum.Size = new System.Drawing.Size(120, 20);
             this.ShowRectangleOnMap_lBottomNum.TabIndex = 6;
             this.ShowRectangleOnMap_lBottomNum.Value = new decimal(new int[] {
             4600000,
@@ -7306,8 +6787,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ShowRectangleOnMap_lLeftNum
             // 
-            this.ShowRectangleOnMap_lLeftNum.Location = new System.Drawing.Point(187, 42);
-            this.ShowRectangleOnMap_lLeftNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowRectangleOnMap_lLeftNum.Location = new System.Drawing.Point(140, 34);
             this.ShowRectangleOnMap_lLeftNum.Maximum = new decimal(new int[] {
             18000000,
             0,
@@ -7319,7 +6799,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.ShowRectangleOnMap_lLeftNum.Name = "ShowRectangleOnMap_lLeftNum";
-            this.ShowRectangleOnMap_lLeftNum.Size = new System.Drawing.Size(160, 22);
+            this.ShowRectangleOnMap_lLeftNum.Size = new System.Drawing.Size(120, 20);
             this.ShowRectangleOnMap_lLeftNum.TabIndex = 7;
             this.ShowRectangleOnMap_lLeftNum.Value = new decimal(new int[] {
             500000,
@@ -7329,8 +6809,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ShowRectangleOnMap_lRightNum
             // 
-            this.ShowRectangleOnMap_lRightNum.Location = new System.Drawing.Point(187, 80);
-            this.ShowRectangleOnMap_lRightNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowRectangleOnMap_lRightNum.Location = new System.Drawing.Point(140, 65);
             this.ShowRectangleOnMap_lRightNum.Maximum = new decimal(new int[] {
             18000000,
             0,
@@ -7342,7 +6821,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.ShowRectangleOnMap_lRightNum.Name = "ShowRectangleOnMap_lRightNum";
-            this.ShowRectangleOnMap_lRightNum.Size = new System.Drawing.Size(160, 22);
+            this.ShowRectangleOnMap_lRightNum.Size = new System.Drawing.Size(120, 20);
             this.ShowRectangleOnMap_lRightNum.TabIndex = 8;
             this.ShowRectangleOnMap_lRightNum.Value = new decimal(new int[] {
             2300000,
@@ -7352,8 +6831,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ShowRectangleOnMap_lTopNum
             // 
-            this.ShowRectangleOnMap_lTopNum.Location = new System.Drawing.Point(187, 118);
-            this.ShowRectangleOnMap_lTopNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowRectangleOnMap_lTopNum.Location = new System.Drawing.Point(140, 96);
             this.ShowRectangleOnMap_lTopNum.Maximum = new decimal(new int[] {
             9000000,
             0,
@@ -7365,7 +6843,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             -2147483648});
             this.ShowRectangleOnMap_lTopNum.Name = "ShowRectangleOnMap_lTopNum";
-            this.ShowRectangleOnMap_lTopNum.Size = new System.Drawing.Size(160, 22);
+            this.ShowRectangleOnMap_lTopNum.Size = new System.Drawing.Size(120, 20);
             this.ShowRectangleOnMap_lTopNum.TabIndex = 9;
             this.ShowRectangleOnMap_lTopNum.Value = new decimal(new int[] {
             5200000,
@@ -7375,15 +6853,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // ShowRectangleOnMap_MaxTimeNum
             // 
-            this.ShowRectangleOnMap_MaxTimeNum.Location = new System.Drawing.Point(187, 194);
-            this.ShowRectangleOnMap_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowRectangleOnMap_MaxTimeNum.Location = new System.Drawing.Point(140, 158);
             this.ShowRectangleOnMap_MaxTimeNum.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
             this.ShowRectangleOnMap_MaxTimeNum.Name = "ShowRectangleOnMap_MaxTimeNum";
-            this.ShowRectangleOnMap_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.ShowRectangleOnMap_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.ShowRectangleOnMap_MaxTimeNum.TabIndex = 10;
             // 
             // ShowRectangleOnMapBtn
@@ -7391,10 +6868,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowRectangleOnMapBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ShowRectangleOnMapBtn.Location = new System.Drawing.Point(187, 232);
-            this.ShowRectangleOnMapBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowRectangleOnMapBtn.Location = new System.Drawing.Point(140, 189);
             this.ShowRectangleOnMapBtn.Name = "ShowRectangleOnMapBtn";
-            this.ShowRectangleOnMapBtn.Size = new System.Drawing.Size(533, 37);
+            this.ShowRectangleOnMapBtn.Size = new System.Drawing.Size(400, 30);
             this.ShowRectangleOnMapBtn.TabIndex = 11;
             this.ShowRectangleOnMapBtn.Text = "ShowRectangleOnMap";
             this.ShowRectangleOnMapBtn.UseVisualStyleBackColor = true;
@@ -7403,10 +6879,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // ShowRectangleOnMap_bShowApplicationChB
             // 
             this.ShowRectangleOnMap_bShowApplicationChB.AutoSize = true;
-            this.ShowRectangleOnMap_bShowApplicationChB.Location = new System.Drawing.Point(187, 156);
-            this.ShowRectangleOnMap_bShowApplicationChB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShowRectangleOnMap_bShowApplicationChB.Location = new System.Drawing.Point(140, 127);
             this.ShowRectangleOnMap_bShowApplicationChB.Name = "ShowRectangleOnMap_bShowApplicationChB";
-            this.ShowRectangleOnMap_bShowApplicationChB.Size = new System.Drawing.Size(18, 17);
+            this.ShowRectangleOnMap_bShowApplicationChB.Size = new System.Drawing.Size(15, 14);
             this.ShowRectangleOnMap_bShowApplicationChB.TabIndex = 12;
             this.ShowRectangleOnMap_bShowApplicationChB.UseVisualStyleBackColor = true;
             // 
@@ -7414,10 +6889,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T33.Controls.Add(this.HighlightPoiGB);
             this.T33.Location = new System.Drawing.Point(4, 19);
-            this.T33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T33.Name = "T33";
-            this.T33.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T33.Size = new System.Drawing.Size(755, 618);
+            this.T33.Padding = new System.Windows.Forms.Padding(3);
+            this.T33.Size = new System.Drawing.Size(564, 498);
             this.T33.TabIndex = 32;
             this.T33.Text = "T33";
             this.T33.UseVisualStyleBackColor = true;
@@ -7425,11 +6899,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // HighlightPoiGB
             // 
             this.HighlightPoiGB.Controls.Add(this.tableLayoutPanel13);
-            this.HighlightPoiGB.Location = new System.Drawing.Point(8, 15);
-            this.HighlightPoiGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HighlightPoiGB.Location = new System.Drawing.Point(6, 12);
             this.HighlightPoiGB.Name = "HighlightPoiGB";
-            this.HighlightPoiGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.HighlightPoiGB.Size = new System.Drawing.Size(736, 341);
+            this.HighlightPoiGB.Size = new System.Drawing.Size(552, 277);
             this.HighlightPoiGB.TabIndex = 1;
             this.HighlightPoiGB.TabStop = false;
             this.HighlightPoiGB.Text = "HighlightPoi";
@@ -7452,8 +6924,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel13.Controls.Add(this.HighlightPoi_lXNum, 1, 3);
             this.tableLayoutPanel13.Controls.Add(this.HighlightPoi_lYNum, 1, 4);
             this.tableLayoutPanel13.Controls.Add(this.HighlightPoi_MaxTimeNum, 1, 5);
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 7;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -7463,66 +6934,60 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(720, 306);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(540, 249);
             this.tableLayoutPanel13.TabIndex = 0;
             // 
             // label162
             // 
             this.label162.AutoSize = true;
-            this.label162.Location = new System.Drawing.Point(4, 0);
-            this.label162.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label162.Location = new System.Drawing.Point(3, 0);
             this.label162.Name = "label162";
-            this.label162.Size = new System.Drawing.Size(85, 17);
+            this.label162.Size = new System.Drawing.Size(64, 13);
             this.label162.TabIndex = 0;
             this.label162.Text = "PoiCategory";
             // 
             // label163
             // 
             this.label163.AutoSize = true;
-            this.label163.Location = new System.Drawing.Point(4, 43);
-            this.label163.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label163.Location = new System.Drawing.Point(3, 35);
             this.label163.Name = "label163";
-            this.label163.Size = new System.Drawing.Size(65, 17);
+            this.label163.Size = new System.Drawing.Size(50, 13);
             this.label163.TabIndex = 1;
             this.label163.Text = "PoiName";
             // 
             // label164
             // 
             this.label164.AutoSize = true;
-            this.label164.Location = new System.Drawing.Point(4, 86);
-            this.label164.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label164.Location = new System.Drawing.Point(3, 70);
             this.label164.Name = "label164";
-            this.label164.Size = new System.Drawing.Size(49, 17);
+            this.label164.Size = new System.Drawing.Size(38, 13);
             this.label164.TabIndex = 2;
             this.label164.Text = "Sound";
             // 
             // label165
             // 
             this.label165.AutoSize = true;
-            this.label165.Location = new System.Drawing.Point(4, 129);
-            this.label165.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label165.Location = new System.Drawing.Point(3, 105);
             this.label165.Name = "label165";
-            this.label165.Size = new System.Drawing.Size(20, 17);
+            this.label165.Size = new System.Drawing.Size(16, 13);
             this.label165.TabIndex = 3;
             this.label165.Text = "lX";
             // 
             // label166
             // 
             this.label166.AutoSize = true;
-            this.label166.Location = new System.Drawing.Point(4, 172);
-            this.label166.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label166.Location = new System.Drawing.Point(3, 140);
             this.label166.Name = "label166";
-            this.label166.Size = new System.Drawing.Size(20, 17);
+            this.label166.Size = new System.Drawing.Size(16, 13);
             this.label166.TabIndex = 4;
             this.label166.Text = "lY";
             // 
             // label167
             // 
             this.label167.AutoSize = true;
-            this.label167.Location = new System.Drawing.Point(4, 215);
-            this.label167.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label167.Location = new System.Drawing.Point(3, 175);
             this.label167.Name = "label167";
-            this.label167.Size = new System.Drawing.Size(64, 17);
+            this.label167.Size = new System.Drawing.Size(50, 13);
             this.label167.TabIndex = 5;
             this.label167.Text = "MaxTime";
             // 
@@ -7530,30 +6995,27 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.HighlightPoi_PoiCategoryTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.HighlightPoi_PoiCategoryTBox.Location = new System.Drawing.Point(186, 4);
-            this.HighlightPoi_PoiCategoryTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HighlightPoi_PoiCategoryTBox.Location = new System.Drawing.Point(140, 3);
             this.HighlightPoi_PoiCategoryTBox.Name = "HighlightPoi_PoiCategoryTBox";
-            this.HighlightPoi_PoiCategoryTBox.Size = new System.Drawing.Size(530, 22);
+            this.HighlightPoi_PoiCategoryTBox.Size = new System.Drawing.Size(397, 20);
             this.HighlightPoi_PoiCategoryTBox.TabIndex = 6;
             // 
             // HighlightPoi_PoiNameTBox
             // 
             this.HighlightPoi_PoiNameTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.HighlightPoi_PoiNameTBox.Location = new System.Drawing.Point(186, 47);
-            this.HighlightPoi_PoiNameTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HighlightPoi_PoiNameTBox.Location = new System.Drawing.Point(140, 38);
             this.HighlightPoi_PoiNameTBox.Name = "HighlightPoi_PoiNameTBox";
-            this.HighlightPoi_PoiNameTBox.Size = new System.Drawing.Size(530, 22);
+            this.HighlightPoi_PoiNameTBox.Size = new System.Drawing.Size(397, 20);
             this.HighlightPoi_PoiNameTBox.TabIndex = 7;
             // 
             // HighlightPoi_SoundTBox
             // 
             this.HighlightPoi_SoundTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.HighlightPoi_SoundTBox.Location = new System.Drawing.Point(186, 90);
-            this.HighlightPoi_SoundTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HighlightPoi_SoundTBox.Location = new System.Drawing.Point(140, 73);
             this.HighlightPoi_SoundTBox.Name = "HighlightPoi_SoundTBox";
-            this.HighlightPoi_SoundTBox.Size = new System.Drawing.Size(530, 22);
+            this.HighlightPoi_SoundTBox.Size = new System.Drawing.Size(397, 20);
             this.HighlightPoi_SoundTBox.TabIndex = 8;
             // 
             // HighlightPoiBtn
@@ -7561,10 +7023,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.HighlightPoiBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.HighlightPoiBtn.Location = new System.Drawing.Point(186, 262);
-            this.HighlightPoiBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HighlightPoiBtn.Location = new System.Drawing.Point(140, 213);
             this.HighlightPoiBtn.Name = "HighlightPoiBtn";
-            this.HighlightPoiBtn.Size = new System.Drawing.Size(530, 40);
+            this.HighlightPoiBtn.Size = new System.Drawing.Size(397, 33);
             this.HighlightPoiBtn.TabIndex = 9;
             this.HighlightPoiBtn.Text = "HighlightPoi";
             this.HighlightPoiBtn.UseVisualStyleBackColor = true;
@@ -7572,26 +7033,23 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // HighlightPoi_lXNum
             // 
-            this.HighlightPoi_lXNum.Location = new System.Drawing.Point(186, 133);
-            this.HighlightPoi_lXNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HighlightPoi_lXNum.Location = new System.Drawing.Point(140, 108);
             this.HighlightPoi_lXNum.Name = "HighlightPoi_lXNum";
-            this.HighlightPoi_lXNum.Size = new System.Drawing.Size(160, 22);
+            this.HighlightPoi_lXNum.Size = new System.Drawing.Size(120, 20);
             this.HighlightPoi_lXNum.TabIndex = 10;
             // 
             // HighlightPoi_lYNum
             // 
-            this.HighlightPoi_lYNum.Location = new System.Drawing.Point(186, 176);
-            this.HighlightPoi_lYNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HighlightPoi_lYNum.Location = new System.Drawing.Point(140, 143);
             this.HighlightPoi_lYNum.Name = "HighlightPoi_lYNum";
-            this.HighlightPoi_lYNum.Size = new System.Drawing.Size(160, 22);
+            this.HighlightPoi_lYNum.Size = new System.Drawing.Size(120, 20);
             this.HighlightPoi_lYNum.TabIndex = 11;
             // 
             // HighlightPoi_MaxTimeNum
             // 
-            this.HighlightPoi_MaxTimeNum.Location = new System.Drawing.Point(186, 219);
-            this.HighlightPoi_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HighlightPoi_MaxTimeNum.Location = new System.Drawing.Point(140, 178);
             this.HighlightPoi_MaxTimeNum.Name = "HighlightPoi_MaxTimeNum";
-            this.HighlightPoi_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.HighlightPoi_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.HighlightPoi_MaxTimeNum.TabIndex = 12;
             // 
             // T34
@@ -7599,10 +7057,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T34.Controls.Add(this.UnloadGFFileGB);
             this.T34.Controls.Add(this.LoadGFFileGB);
             this.T34.Location = new System.Drawing.Point(4, 19);
-            this.T34.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T34.Name = "T34";
-            this.T34.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T34.Size = new System.Drawing.Size(755, 618);
+            this.T34.Padding = new System.Windows.Forms.Padding(3);
+            this.T34.Size = new System.Drawing.Size(564, 498);
             this.T34.TabIndex = 33;
             this.T34.Text = "T34";
             this.T34.UseVisualStyleBackColor = true;
@@ -7610,11 +7067,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // UnloadGFFileGB
             // 
             this.UnloadGFFileGB.Controls.Add(this.UnloadGFFileTlp);
-            this.UnloadGFFileGB.Location = new System.Drawing.Point(4, 204);
-            this.UnloadGFFileGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UnloadGFFileGB.Location = new System.Drawing.Point(3, 166);
             this.UnloadGFFileGB.Name = "UnloadGFFileGB";
-            this.UnloadGFFileGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.UnloadGFFileGB.Size = new System.Drawing.Size(740, 171);
+            this.UnloadGFFileGB.Size = new System.Drawing.Size(555, 139);
             this.UnloadGFFileGB.TabIndex = 1;
             this.UnloadGFFileGB.TabStop = false;
             this.UnloadGFFileGB.Text = "UnloadGFFile";
@@ -7629,33 +7084,30 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.UnloadGFFileTlp.Controls.Add(this.UnloadGFFileBtn, 1, 2);
             this.UnloadGFFileTlp.Controls.Add(this.UnloadGFFile_PathTBox, 1, 0);
             this.UnloadGFFileTlp.Controls.Add(this.UnloadGFFile_MaxTimeNum, 1, 1);
-            this.UnloadGFFileTlp.Location = new System.Drawing.Point(8, 23);
-            this.UnloadGFFileTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UnloadGFFileTlp.Location = new System.Drawing.Point(6, 19);
             this.UnloadGFFileTlp.Name = "UnloadGFFileTlp";
             this.UnloadGFFileTlp.RowCount = 3;
             this.UnloadGFFileTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.UnloadGFFileTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.UnloadGFFileTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.UnloadGFFileTlp.Size = new System.Drawing.Size(724, 140);
+            this.UnloadGFFileTlp.Size = new System.Drawing.Size(543, 114);
             this.UnloadGFFileTlp.TabIndex = 0;
             // 
             // label170
             // 
             this.label170.AutoSize = true;
-            this.label170.Location = new System.Drawing.Point(4, 0);
-            this.label170.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label170.Location = new System.Drawing.Point(3, 0);
             this.label170.Name = "label170";
-            this.label170.Size = new System.Drawing.Size(37, 17);
+            this.label170.Size = new System.Drawing.Size(29, 13);
             this.label170.TabIndex = 0;
             this.label170.Text = "Path";
             // 
             // label171
             // 
             this.label171.AutoSize = true;
-            this.label171.Location = new System.Drawing.Point(4, 46);
-            this.label171.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label171.Location = new System.Drawing.Point(3, 38);
             this.label171.Name = "label171";
-            this.label171.Size = new System.Drawing.Size(64, 17);
+            this.label171.Size = new System.Drawing.Size(50, 13);
             this.label171.TabIndex = 1;
             this.label171.Text = "MaxTime";
             // 
@@ -7664,10 +7116,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.UnloadGFFileBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UnloadGFFileBtn.Location = new System.Drawing.Point(194, 96);
-            this.UnloadGFFileBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UnloadGFFileBtn.Location = new System.Drawing.Point(145, 79);
             this.UnloadGFFileBtn.Name = "UnloadGFFileBtn";
-            this.UnloadGFFileBtn.Size = new System.Drawing.Size(526, 40);
+            this.UnloadGFFileBtn.Size = new System.Drawing.Size(395, 32);
             this.UnloadGFFileBtn.TabIndex = 2;
             this.UnloadGFFileBtn.Text = "UnloadGFFile";
             this.UnloadGFFileBtn.UseVisualStyleBackColor = true;
@@ -7677,33 +7128,29 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.UnloadGFFile_PathTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UnloadGFFile_PathTBox.Location = new System.Drawing.Point(194, 4);
-            this.UnloadGFFile_PathTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UnloadGFFile_PathTBox.Location = new System.Drawing.Point(145, 3);
             this.UnloadGFFile_PathTBox.Name = "UnloadGFFile_PathTBox";
-            this.UnloadGFFile_PathTBox.Size = new System.Drawing.Size(526, 22);
+            this.UnloadGFFile_PathTBox.Size = new System.Drawing.Size(395, 20);
             this.UnloadGFFile_PathTBox.TabIndex = 3;
             // 
             // UnloadGFFile_MaxTimeNum
             // 
-            this.UnloadGFFile_MaxTimeNum.Location = new System.Drawing.Point(194, 50);
-            this.UnloadGFFile_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UnloadGFFile_MaxTimeNum.Location = new System.Drawing.Point(145, 41);
             this.UnloadGFFile_MaxTimeNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.UnloadGFFile_MaxTimeNum.Name = "UnloadGFFile_MaxTimeNum";
-            this.UnloadGFFile_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.UnloadGFFile_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.UnloadGFFile_MaxTimeNum.TabIndex = 4;
             // 
             // LoadGFFileGB
             // 
             this.LoadGFFileGB.Controls.Add(this.LoadGFFileTlp);
-            this.LoadGFFileGB.Location = new System.Drawing.Point(4, 7);
-            this.LoadGFFileGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadGFFileGB.Location = new System.Drawing.Point(3, 6);
             this.LoadGFFileGB.Name = "LoadGFFileGB";
-            this.LoadGFFileGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.LoadGFFileGB.Size = new System.Drawing.Size(740, 172);
+            this.LoadGFFileGB.Size = new System.Drawing.Size(555, 140);
             this.LoadGFFileGB.TabIndex = 0;
             this.LoadGFFileGB.TabStop = false;
             this.LoadGFFileGB.Text = "LoadGFFile";
@@ -7718,33 +7165,30 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LoadGFFileTlp.Controls.Add(this.LoadGFFileBtn, 1, 2);
             this.LoadGFFileTlp.Controls.Add(this.LoadGFFile_PathTBox, 1, 0);
             this.LoadGFFileTlp.Controls.Add(this.LoadGFFile_MaxTimeNum, 1, 1);
-            this.LoadGFFileTlp.Location = new System.Drawing.Point(7, 23);
-            this.LoadGFFileTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadGFFileTlp.Location = new System.Drawing.Point(5, 19);
             this.LoadGFFileTlp.Name = "LoadGFFileTlp";
             this.LoadGFFileTlp.RowCount = 3;
             this.LoadGFFileTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.LoadGFFileTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.LoadGFFileTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.LoadGFFileTlp.Size = new System.Drawing.Size(725, 142);
+            this.LoadGFFileTlp.Size = new System.Drawing.Size(544, 115);
             this.LoadGFFileTlp.TabIndex = 0;
             // 
             // label168
             // 
             this.label168.AutoSize = true;
-            this.label168.Location = new System.Drawing.Point(4, 0);
-            this.label168.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label168.Location = new System.Drawing.Point(3, 0);
             this.label168.Name = "label168";
-            this.label168.Size = new System.Drawing.Size(37, 17);
+            this.label168.Size = new System.Drawing.Size(29, 13);
             this.label168.TabIndex = 0;
             this.label168.Text = "Path";
             // 
             // label169
             // 
             this.label169.AutoSize = true;
-            this.label169.Location = new System.Drawing.Point(4, 47);
-            this.label169.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label169.Location = new System.Drawing.Point(3, 38);
             this.label169.Name = "label169";
-            this.label169.Size = new System.Drawing.Size(64, 17);
+            this.label169.Size = new System.Drawing.Size(50, 13);
             this.label169.TabIndex = 1;
             this.label169.Text = "MaxTime";
             // 
@@ -7753,10 +7197,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LoadGFFileBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LoadGFFileBtn.Location = new System.Drawing.Point(197, 98);
-            this.LoadGFFileBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadGFFileBtn.Location = new System.Drawing.Point(147, 79);
             this.LoadGFFileBtn.Name = "LoadGFFileBtn";
-            this.LoadGFFileBtn.Size = new System.Drawing.Size(524, 40);
+            this.LoadGFFileBtn.Size = new System.Drawing.Size(394, 33);
             this.LoadGFFileBtn.TabIndex = 2;
             this.LoadGFFileBtn.Text = "LoadGFFile";
             this.LoadGFFileBtn.UseVisualStyleBackColor = true;
@@ -7766,33 +7209,30 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.LoadGFFile_PathTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LoadGFFile_PathTBox.Location = new System.Drawing.Point(197, 4);
-            this.LoadGFFile_PathTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadGFFile_PathTBox.Location = new System.Drawing.Point(147, 3);
             this.LoadGFFile_PathTBox.Name = "LoadGFFile_PathTBox";
-            this.LoadGFFile_PathTBox.Size = new System.Drawing.Size(524, 22);
+            this.LoadGFFile_PathTBox.Size = new System.Drawing.Size(394, 20);
             this.LoadGFFile_PathTBox.TabIndex = 3;
             // 
             // LoadGFFile_MaxTimeNum
             // 
-            this.LoadGFFile_MaxTimeNum.Location = new System.Drawing.Point(197, 51);
-            this.LoadGFFile_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadGFFile_MaxTimeNum.Location = new System.Drawing.Point(147, 41);
             this.LoadGFFile_MaxTimeNum.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
             this.LoadGFFile_MaxTimeNum.Name = "LoadGFFile_MaxTimeNum";
-            this.LoadGFFile_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.LoadGFFile_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.LoadGFFile_MaxTimeNum.TabIndex = 4;
             // 
             // T35
             // 
             this.T35.Controls.Add(this.AddItineraryGB);
             this.T35.Location = new System.Drawing.Point(4, 19);
-            this.T35.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T35.Name = "T35";
-            this.T35.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T35.Size = new System.Drawing.Size(755, 618);
+            this.T35.Padding = new System.Windows.Forms.Padding(3);
+            this.T35.Size = new System.Drawing.Size(564, 498);
             this.T35.TabIndex = 34;
             this.T35.Text = "T35";
             this.T35.UseVisualStyleBackColor = true;
@@ -7800,11 +7240,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // AddItineraryGB
             // 
             this.AddItineraryGB.Controls.Add(this.tableLayoutPanel15);
-            this.AddItineraryGB.Location = new System.Drawing.Point(11, 6);
-            this.AddItineraryGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddItineraryGB.Location = new System.Drawing.Point(8, 5);
             this.AddItineraryGB.Name = "AddItineraryGB";
-            this.AddItineraryGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.AddItineraryGB.Size = new System.Drawing.Size(733, 599);
+            this.AddItineraryGB.Size = new System.Drawing.Size(550, 487);
             this.AddItineraryGB.TabIndex = 1;
             this.AddItineraryGB.TabStop = false;
             this.AddItineraryGB.Text = "AddItinerary";
@@ -7813,18 +7251,17 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.tableLayoutPanel15.ColumnCount = 1;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel15.Controls.Add(this.AddItineraryDGW, 0, 0);
             this.tableLayoutPanel15.Controls.Add(this.AddItinerary2Tlp, 0, 1);
             this.tableLayoutPanel15.Controls.Add(this.AddItinerary3Tlp, 0, 2);
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 3;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.53012F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.46988F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(717, 569);
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(538, 462);
             this.tableLayoutPanel15.TabIndex = 0;
             // 
             // AddItineraryDGW
@@ -7840,10 +7277,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.IdClm,
             this.bVisitedClm,
             this.CaptionCol});
-            this.AddItineraryDGW.Location = new System.Drawing.Point(4, 4);
-            this.AddItineraryDGW.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddItineraryDGW.Location = new System.Drawing.Point(3, 3);
             this.AddItineraryDGW.Name = "AddItineraryDGW";
-            this.AddItineraryDGW.Size = new System.Drawing.Size(709, 465);
+            this.AddItineraryDGW.Size = new System.Drawing.Size(532, 378);
             this.AddItineraryDGW.TabIndex = 3;
             // 
             // lXCol
@@ -7898,22 +7334,20 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddItinerary2Tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.51128F));
             this.AddItinerary2Tlp.Controls.Add(this.label93, 0, 0);
             this.AddItinerary2Tlp.Controls.Add(this.AddItinerary_strItineraryNameTBox, 1, 0);
-            this.AddItinerary2Tlp.Location = new System.Drawing.Point(4, 477);
-            this.AddItinerary2Tlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddItinerary2Tlp.Location = new System.Drawing.Point(3, 387);
             this.AddItinerary2Tlp.Name = "AddItinerary2Tlp";
             this.AddItinerary2Tlp.RowCount = 1;
             this.AddItinerary2Tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddItinerary2Tlp.Size = new System.Drawing.Size(709, 30);
+            this.AddItinerary2Tlp.Size = new System.Drawing.Size(532, 25);
             this.AddItinerary2Tlp.TabIndex = 4;
             // 
             // label93
             // 
             this.label93.AutoSize = true;
-            this.label93.Location = new System.Drawing.Point(4, 0);
-            this.label93.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label93.Location = new System.Drawing.Point(3, 0);
             this.label93.Name = "label93";
-            this.label93.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.label93.Size = new System.Drawing.Size(112, 22);
+            this.label93.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
+            this.label93.Size = new System.Drawing.Size(83, 17);
             this.label93.TabIndex = 1;
             this.label93.Text = "strItineraryName";
             // 
@@ -7921,10 +7355,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.AddItinerary_strItineraryNameTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddItinerary_strItineraryNameTBox.Location = new System.Drawing.Point(149, 4);
-            this.AddItinerary_strItineraryNameTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddItinerary_strItineraryNameTBox.Location = new System.Drawing.Point(111, 3);
             this.AddItinerary_strItineraryNameTBox.Name = "AddItinerary_strItineraryNameTBox";
-            this.AddItinerary_strItineraryNameTBox.Size = new System.Drawing.Size(556, 22);
+            this.AddItinerary_strItineraryNameTBox.Size = new System.Drawing.Size(418, 20);
             this.AddItinerary_strItineraryNameTBox.TabIndex = 1;
             // 
             // AddItinerary3Tlp
@@ -7936,12 +7369,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddItinerary3Tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.30075F));
             this.AddItinerary3Tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.69925F));
             this.AddItinerary3Tlp.Controls.Add(this.AddItinerary_Btn, 1, 0);
-            this.AddItinerary3Tlp.Location = new System.Drawing.Point(4, 515);
-            this.AddItinerary3Tlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddItinerary3Tlp.Location = new System.Drawing.Point(3, 418);
             this.AddItinerary3Tlp.Name = "AddItinerary3Tlp";
             this.AddItinerary3Tlp.RowCount = 1;
             this.AddItinerary3Tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddItinerary3Tlp.Size = new System.Drawing.Size(709, 50);
+            this.AddItinerary3Tlp.Size = new System.Drawing.Size(532, 41);
             this.AddItinerary3Tlp.TabIndex = 5;
             // 
             // AddItinerary_Btn
@@ -7949,10 +7381,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddItinerary_Btn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddItinerary_Btn.Location = new System.Drawing.Point(147, 4);
-            this.AddItinerary_Btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddItinerary_Btn.Location = new System.Drawing.Point(110, 3);
             this.AddItinerary_Btn.Name = "AddItinerary_Btn";
-            this.AddItinerary_Btn.Size = new System.Drawing.Size(558, 42);
+            this.AddItinerary_Btn.Size = new System.Drawing.Size(419, 35);
             this.AddItinerary_Btn.TabIndex = 2;
             this.AddItinerary_Btn.Text = "AddItinerary";
             this.AddItinerary_Btn.UseVisualStyleBackColor = true;
@@ -7962,10 +7393,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T36.Controls.Add(this.DeviceItineraryGB);
             this.T36.Location = new System.Drawing.Point(4, 19);
-            this.T36.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T36.Name = "T36";
-            this.T36.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T36.Size = new System.Drawing.Size(755, 618);
+            this.T36.Padding = new System.Windows.Forms.Padding(3);
+            this.T36.Size = new System.Drawing.Size(564, 498);
             this.T36.TabIndex = 35;
             this.T36.Text = "T36";
             this.T36.UseVisualStyleBackColor = true;
@@ -7973,11 +7403,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // DeviceItineraryGB
             // 
             this.DeviceItineraryGB.Controls.Add(this.tableLayoutPanel22);
-            this.DeviceItineraryGB.Location = new System.Drawing.Point(11, 15);
-            this.DeviceItineraryGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeviceItineraryGB.Location = new System.Drawing.Point(8, 12);
             this.DeviceItineraryGB.Name = "DeviceItineraryGB";
-            this.DeviceItineraryGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.DeviceItineraryGB.Size = new System.Drawing.Size(732, 204);
+            this.DeviceItineraryGB.Size = new System.Drawing.Size(549, 166);
             this.DeviceItineraryGB.TabIndex = 4;
             this.DeviceItineraryGB.TabStop = false;
             this.DeviceItineraryGB.Text = "Devide itinerary into smaller ones:";
@@ -7992,15 +7420,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel22.Controls.Add(this.label152, 0, 0);
             this.tableLayoutPanel22.Controls.Add(this.DevideItinerary_PathTBox, 1, 0);
             this.tableLayoutPanel22.Controls.Add(this.DevideItinerary_DetectWrongBtn, 1, 3);
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(11, 23);
-            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel22.Location = new System.Drawing.Point(8, 19);
             this.tableLayoutPanel22.Name = "tableLayoutPanel22";
             this.tableLayoutPanel22.RowCount = 4;
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.99813F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(717, 169);
+            this.tableLayoutPanel22.Size = new System.Drawing.Size(538, 137);
             this.tableLayoutPanel22.TabIndex = 0;
             // 
             // DevideItinerary_DevideBtn
@@ -8008,10 +7435,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.DevideItinerary_DevideBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DevideItinerary_DevideBtn.Location = new System.Drawing.Point(189, 46);
-            this.DevideItinerary_DevideBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DevideItinerary_DevideBtn.Location = new System.Drawing.Point(141, 37);
             this.DevideItinerary_DevideBtn.Name = "DevideItinerary_DevideBtn";
-            this.DevideItinerary_DevideBtn.Size = new System.Drawing.Size(524, 34);
+            this.DevideItinerary_DevideBtn.Size = new System.Drawing.Size(394, 28);
             this.DevideItinerary_DevideBtn.TabIndex = 0;
             this.DevideItinerary_DevideBtn.Text = "Devide";
             this.DevideItinerary_DevideBtn.UseVisualStyleBackColor = true;
@@ -8022,10 +7448,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.DevideItinerary_DevideComputeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DevideItinerary_DevideComputeBtn.Location = new System.Drawing.Point(189, 88);
-            this.DevideItinerary_DevideComputeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DevideItinerary_DevideComputeBtn.Location = new System.Drawing.Point(141, 71);
             this.DevideItinerary_DevideComputeBtn.Name = "DevideItinerary_DevideComputeBtn";
-            this.DevideItinerary_DevideComputeBtn.Size = new System.Drawing.Size(524, 34);
+            this.DevideItinerary_DevideComputeBtn.Size = new System.Drawing.Size(394, 28);
             this.DevideItinerary_DevideComputeBtn.TabIndex = 1;
             this.DevideItinerary_DevideComputeBtn.Text = "Devide and compute";
             this.DevideItinerary_DevideComputeBtn.UseVisualStyleBackColor = true;
@@ -8034,20 +7459,18 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // label152
             // 
             this.label152.AutoSize = true;
-            this.label152.Location = new System.Drawing.Point(4, 0);
-            this.label152.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label152.Location = new System.Drawing.Point(3, 0);
             this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(98, 17);
+            this.label152.Size = new System.Drawing.Size(73, 13);
             this.label152.TabIndex = 2;
             this.label152.Text = "Itinerary name";
             // 
             // DevideItinerary_PathTBox
             // 
             this.DevideItinerary_PathTBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DevideItinerary_PathTBox.Location = new System.Drawing.Point(189, 4);
-            this.DevideItinerary_PathTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DevideItinerary_PathTBox.Location = new System.Drawing.Point(141, 3);
             this.DevideItinerary_PathTBox.Name = "DevideItinerary_PathTBox";
-            this.DevideItinerary_PathTBox.Size = new System.Drawing.Size(524, 22);
+            this.DevideItinerary_PathTBox.Size = new System.Drawing.Size(394, 20);
             this.DevideItinerary_PathTBox.TabIndex = 3;
             // 
             // DevideItinerary_DetectWrongBtn
@@ -8055,10 +7478,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.DevideItinerary_DetectWrongBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DevideItinerary_DetectWrongBtn.Location = new System.Drawing.Point(189, 130);
-            this.DevideItinerary_DetectWrongBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DevideItinerary_DetectWrongBtn.Location = new System.Drawing.Point(141, 105);
             this.DevideItinerary_DetectWrongBtn.Name = "DevideItinerary_DetectWrongBtn";
-            this.DevideItinerary_DetectWrongBtn.Size = new System.Drawing.Size(524, 35);
+            this.DevideItinerary_DetectWrongBtn.Size = new System.Drawing.Size(394, 29);
             this.DevideItinerary_DetectWrongBtn.TabIndex = 4;
             this.DevideItinerary_DetectWrongBtn.Text = "Detect wrong waypoints";
             this.DevideItinerary_DetectWrongBtn.UseVisualStyleBackColor = true;
@@ -8068,10 +7490,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T37.Controls.Add(this.DeleteEntryInItineraryGB);
             this.T37.Location = new System.Drawing.Point(4, 19);
-            this.T37.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.T37.Name = "T37";
-            this.T37.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.T37.Size = new System.Drawing.Size(755, 618);
+            this.T37.Padding = new System.Windows.Forms.Padding(3);
+            this.T37.Size = new System.Drawing.Size(564, 498);
             this.T37.TabIndex = 36;
             this.T37.Text = "T37";
             this.T37.UseVisualStyleBackColor = true;
@@ -8079,11 +7500,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // DeleteEntryInItineraryGB
             // 
             this.DeleteEntryInItineraryGB.Controls.Add(this.DeleteEntryInItineraryTlp);
-            this.DeleteEntryInItineraryGB.Location = new System.Drawing.Point(11, 7);
-            this.DeleteEntryInItineraryGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeleteEntryInItineraryGB.Location = new System.Drawing.Point(8, 6);
             this.DeleteEntryInItineraryGB.Name = "DeleteEntryInItineraryGB";
-            this.DeleteEntryInItineraryGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.DeleteEntryInItineraryGB.Size = new System.Drawing.Size(733, 214);
+            this.DeleteEntryInItineraryGB.Size = new System.Drawing.Size(550, 174);
             this.DeleteEntryInItineraryGB.TabIndex = 0;
             this.DeleteEntryInItineraryGB.TabStop = false;
             this.DeleteEntryInItineraryGB.Text = "DeleteEntryInItinerary";
@@ -8100,15 +7519,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.DeleteEntryInItineraryTlp.Controls.Add(this.DeleteEntryInItinerary_strItineraryNameTBox, 1, 0);
             this.DeleteEntryInItineraryTlp.Controls.Add(this.DeleteEntryInItinerary_nIndexNum, 1, 1);
             this.DeleteEntryInItineraryTlp.Controls.Add(this.DeleteEntryInItinerary_MaxTimeNum, 1, 2);
-            this.DeleteEntryInItineraryTlp.Location = new System.Drawing.Point(8, 23);
-            this.DeleteEntryInItineraryTlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeleteEntryInItineraryTlp.Location = new System.Drawing.Point(6, 19);
             this.DeleteEntryInItineraryTlp.Name = "DeleteEntryInItineraryTlp";
             this.DeleteEntryInItineraryTlp.RowCount = 4;
             this.DeleteEntryInItineraryTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.DeleteEntryInItineraryTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.DeleteEntryInItineraryTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.DeleteEntryInItineraryTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.DeleteEntryInItineraryTlp.Size = new System.Drawing.Size(717, 183);
+            this.DeleteEntryInItineraryTlp.Size = new System.Drawing.Size(538, 149);
             this.DeleteEntryInItineraryTlp.TabIndex = 0;
             // 
             // DeleteEntryInItineraryBtn
@@ -8116,10 +7534,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.DeleteEntryInItineraryBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DeleteEntryInItineraryBtn.Location = new System.Drawing.Point(182, 139);
-            this.DeleteEntryInItineraryBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeleteEntryInItineraryBtn.Location = new System.Drawing.Point(136, 114);
             this.DeleteEntryInItineraryBtn.Name = "DeleteEntryInItineraryBtn";
-            this.DeleteEntryInItineraryBtn.Size = new System.Drawing.Size(531, 40);
+            this.DeleteEntryInItineraryBtn.Size = new System.Drawing.Size(399, 32);
             this.DeleteEntryInItineraryBtn.TabIndex = 0;
             this.DeleteEntryInItineraryBtn.Text = "DeleteEntryInItinerary";
             this.DeleteEntryInItineraryBtn.UseVisualStyleBackColor = true;
@@ -8128,30 +7545,27 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // label174
             // 
             this.label174.AutoSize = true;
-            this.label174.Location = new System.Drawing.Point(4, 0);
-            this.label174.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label174.Location = new System.Drawing.Point(3, 0);
             this.label174.Name = "label174";
-            this.label174.Size = new System.Drawing.Size(112, 17);
+            this.label174.Size = new System.Drawing.Size(83, 13);
             this.label174.TabIndex = 1;
             this.label174.Text = "strItineraryName";
             // 
             // label175
             // 
             this.label175.AutoSize = true;
-            this.label175.Location = new System.Drawing.Point(4, 45);
-            this.label175.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label175.Location = new System.Drawing.Point(3, 37);
             this.label175.Name = "label175";
-            this.label175.Size = new System.Drawing.Size(49, 17);
+            this.label175.Size = new System.Drawing.Size(39, 13);
             this.label175.TabIndex = 2;
             this.label175.Text = "nIndex";
             // 
             // label176
             // 
             this.label176.AutoSize = true;
-            this.label176.Location = new System.Drawing.Point(4, 90);
-            this.label176.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label176.Location = new System.Drawing.Point(3, 74);
             this.label176.Name = "label176";
-            this.label176.Size = new System.Drawing.Size(64, 17);
+            this.label176.Size = new System.Drawing.Size(50, 13);
             this.label176.TabIndex = 3;
             this.label176.Text = "MaxTime";
             // 
@@ -8160,36 +7574,33 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.DeleteEntryInItinerary_strItineraryNameTBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DeleteEntryInItinerary_strItineraryNameTBox.Location = new System.Drawing.Point(182, 4);
-            this.DeleteEntryInItinerary_strItineraryNameTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeleteEntryInItinerary_strItineraryNameTBox.Location = new System.Drawing.Point(136, 3);
             this.DeleteEntryInItinerary_strItineraryNameTBox.Name = "DeleteEntryInItinerary_strItineraryNameTBox";
-            this.DeleteEntryInItinerary_strItineraryNameTBox.Size = new System.Drawing.Size(531, 22);
+            this.DeleteEntryInItinerary_strItineraryNameTBox.Size = new System.Drawing.Size(399, 20);
             this.DeleteEntryInItinerary_strItineraryNameTBox.TabIndex = 4;
             // 
             // DeleteEntryInItinerary_nIndexNum
             // 
-            this.DeleteEntryInItinerary_nIndexNum.Location = new System.Drawing.Point(182, 49);
-            this.DeleteEntryInItinerary_nIndexNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeleteEntryInItinerary_nIndexNum.Location = new System.Drawing.Point(136, 40);
             this.DeleteEntryInItinerary_nIndexNum.Maximum = new decimal(new int[] {
             100000,
             0,
             0,
             0});
             this.DeleteEntryInItinerary_nIndexNum.Name = "DeleteEntryInItinerary_nIndexNum";
-            this.DeleteEntryInItinerary_nIndexNum.Size = new System.Drawing.Size(160, 22);
+            this.DeleteEntryInItinerary_nIndexNum.Size = new System.Drawing.Size(120, 20);
             this.DeleteEntryInItinerary_nIndexNum.TabIndex = 5;
             // 
             // DeleteEntryInItinerary_MaxTimeNum
             // 
-            this.DeleteEntryInItinerary_MaxTimeNum.Location = new System.Drawing.Point(182, 94);
-            this.DeleteEntryInItinerary_MaxTimeNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeleteEntryInItinerary_MaxTimeNum.Location = new System.Drawing.Point(136, 77);
             this.DeleteEntryInItinerary_MaxTimeNum.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
             this.DeleteEntryInItinerary_MaxTimeNum.Name = "DeleteEntryInItinerary_MaxTimeNum";
-            this.DeleteEntryInItinerary_MaxTimeNum.Size = new System.Drawing.Size(160, 22);
+            this.DeleteEntryInItinerary_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.DeleteEntryInItinerary_MaxTimeNum.TabIndex = 6;
             // 
             // P
@@ -8198,10 +7609,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.P.AutoSize = true;
-            this.P.Location = new System.Drawing.Point(771, 0);
-            this.P.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.P.Location = new System.Drawing.Point(578, 0);
             this.P.Name = "P";
-            this.P.Size = new System.Drawing.Size(1031, 839);
+            this.P.Size = new System.Drawing.Size(773, 682);
             this.P.TabIndex = 2;
             this.P.SizeChanged += new System.EventHandler(this.P_SizeChanged);
             this.P.Click += new System.EventHandler(this.P_Click);
@@ -8210,10 +7620,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.OutputRTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.OutputRTB.Location = new System.Drawing.Point(0, 681);
-            this.OutputRTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OutputRTB.Location = new System.Drawing.Point(0, 553);
             this.OutputRTB.Name = "OutputRTB";
-            this.OutputRTB.Size = new System.Drawing.Size(761, 158);
+            this.OutputRTB.Size = new System.Drawing.Size(572, 129);
             this.OutputRTB.TabIndex = 3;
             this.OutputRTB.Text = "";
             // 
@@ -8245,7 +7654,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SetRoute_bShowApplicationChB.AutoSize = true;
             this.SetRoute_bShowApplicationChB.Location = new System.Drawing.Point(186, 65);
             this.SetRoute_bShowApplicationChB.Name = "SetRoute_bShowApplicationChB";
-            this.SetRoute_bShowApplicationChB.Size = new System.Drawing.Size(18, 17);
+            this.SetRoute_bShowApplicationChB.Size = new System.Drawing.Size(15, 14);
             this.SetRoute_bShowApplicationChB.TabIndex = 6;
             this.SetRoute_FlagsToolTip.SetToolTip(this.SetRoute_bShowApplicationChB, resources.GetString("SetRoute_bShowApplicationChB.ToolTip"));
             this.SetRoute_bShowApplicationChB.UseVisualStyleBackColor = true;
@@ -8255,7 +7664,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label110.AutoSize = true;
             this.label110.Location = new System.Drawing.Point(3, 31);
             this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(42, 17);
+            this.label110.Size = new System.Drawing.Size(32, 13);
             this.label110.TabIndex = 1;
             this.label110.Text = "Flags";
             this.SetRoute_FlagsToolTip.SetToolTip(this.label110, resources.GetString("label110.ToolTip"));
@@ -8264,7 +7673,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.SetRoute_FlagsNum.Location = new System.Drawing.Point(186, 34);
             this.SetRoute_FlagsNum.Name = "SetRoute_FlagsNum";
-            this.SetRoute_FlagsNum.Size = new System.Drawing.Size(60, 22);
+            this.SetRoute_FlagsNum.Size = new System.Drawing.Size(60, 20);
             this.SetRoute_FlagsNum.TabIndex = 5;
             this.SetRoute_FlagsToolTip.SetToolTip(this.SetRoute_FlagsNum, resources.GetString("SetRoute_FlagsNum.ToolTip"));
             // 
@@ -8284,8 +7693,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.cLEARToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip.Size = new System.Drawing.Size(1800, 24);
+            this.menuStrip.Size = new System.Drawing.Size(1350, 24);
             this.menuStrip.TabIndex = 7;
             // 
             // fileToolStripMenuItem
@@ -8303,14 +7711,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // openInEmbeddedWindowToolStripMenuItem
             // 
             this.openInEmbeddedWindowToolStripMenuItem.Name = "openInEmbeddedWindowToolStripMenuItem";
-            this.openInEmbeddedWindowToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
+            this.openInEmbeddedWindowToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.openInEmbeddedWindowToolStripMenuItem.Text = "Open navigation";
             this.openInEmbeddedWindowToolStripMenuItem.Click += new System.EventHandler(this.openInEmbeddedWindowToolStripMenuItem_Click);
             // 
             // closeNavigationToolStripMenuItem
             // 
             this.closeNavigationToolStripMenuItem.Name = "closeNavigationToolStripMenuItem";
-            this.closeNavigationToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
+            this.closeNavigationToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.closeNavigationToolStripMenuItem.Text = "Close navigation";
             this.closeNavigationToolStripMenuItem.Click += new System.EventHandler(this.closeNavigationToolStripMenuItem_Click);
             // 
@@ -8355,14 +7763,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // addBitmapToMapToolStripMenuItem
             // 
             this.addBitmapToMapToolStripMenuItem.Name = "addBitmapToMapToolStripMenuItem";
-            this.addBitmapToMapToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.addBitmapToMapToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.addBitmapToMapToolStripMenuItem.Text = "AddBitmapToMap";
             this.addBitmapToMapToolStripMenuItem.Click += new System.EventHandler(this.addBitmapToMapToolStripMenuItem_Click);
             // 
             // addEntryToItineraryToolStripMenuItem
             // 
             this.addEntryToItineraryToolStripMenuItem.Name = "addEntryToItineraryToolStripMenuItem";
-            this.addEntryToItineraryToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.addEntryToItineraryToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.addEntryToItineraryToolStripMenuItem.Text = "AddEntryToItinerary";
             this.addEntryToItineraryToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.addEntryToItineraryToolStripMenuItem.Click += new System.EventHandler(this.addEntryToItineraryToolStripMenuItem_Click);
@@ -8370,189 +7778,189 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // addItineraryToolStripMenuItem
             // 
             this.addItineraryToolStripMenuItem.Name = "addItineraryToolStripMenuItem";
-            this.addItineraryToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.addItineraryToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.addItineraryToolStripMenuItem.Text = "AddItinerary";
             this.addItineraryToolStripMenuItem.Click += new System.EventHandler(this.addItineraryToolStripMenuItem_Click);
             // 
             // addPoiToolStripMenuItem
             // 
             this.addPoiToolStripMenuItem.Name = "addPoiToolStripMenuItem";
-            this.addPoiToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.addPoiToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.addPoiToolStripMenuItem.Text = "AddPoi";
             this.addPoiToolStripMenuItem.Click += new System.EventHandler(this.addPoiToolStripMenuItem_Click);
             // 
             // addPoiCategoryToolStripMenuItem
             // 
             this.addPoiCategoryToolStripMenuItem.Name = "addPoiCategoryToolStripMenuItem";
-            this.addPoiCategoryToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.addPoiCategoryToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.addPoiCategoryToolStripMenuItem.Text = "AddPoiCategory";
             this.addPoiCategoryToolStripMenuItem.Click += new System.EventHandler(this.addPoiCategoryToolStripMenuItem_Click);
             // 
             // addTMCEventToolStripMenuItem
             // 
             this.addTMCEventToolStripMenuItem.Name = "addTMCEventToolStripMenuItem";
-            this.addTMCEventToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.addTMCEventToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.addTMCEventToolStripMenuItem.Text = "AddTMCEvent";
             this.addTMCEventToolStripMenuItem.Click += new System.EventHandler(this.addTMCEventToolStripMenuItem_Click);
             // 
             // bringAppToBackgroundToolStripMenuItem
             // 
             this.bringAppToBackgroundToolStripMenuItem.Name = "bringAppToBackgroundToolStripMenuItem";
-            this.bringAppToBackgroundToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.bringAppToBackgroundToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.bringAppToBackgroundToolStripMenuItem.Text = "BringAppToBackground";
             this.bringAppToBackgroundToolStripMenuItem.Click += new System.EventHandler(this.bringAppToBackgroundToolStripMenuItem_Click);
             // 
             // bringAppToForegroundToolStripMenuItem
             // 
             this.bringAppToForegroundToolStripMenuItem.Name = "bringAppToForegroundToolStripMenuItem";
-            this.bringAppToForegroundToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.bringAppToForegroundToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.bringAppToForegroundToolStripMenuItem.Text = "BringAppToForeground";
             this.bringAppToForegroundToolStripMenuItem.Click += new System.EventHandler(this.bringAppToForegroundToolStripMenuItem_Click);
             // 
             // closeDialogsToolStripMenuItem
             // 
             this.closeDialogsToolStripMenuItem.Name = "closeDialogsToolStripMenuItem";
-            this.closeDialogsToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.closeDialogsToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.closeDialogsToolStripMenuItem.Text = "CloseDialogs";
             this.closeDialogsToolStripMenuItem.Click += new System.EventHandler(this.closeDialogsToolStripMenuItem_Click);
             // 
             // deleteEntryInItineraryToolStripMenuItem
             // 
             this.deleteEntryInItineraryToolStripMenuItem.Name = "deleteEntryInItineraryToolStripMenuItem";
-            this.deleteEntryInItineraryToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.deleteEntryInItineraryToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.deleteEntryInItineraryToolStripMenuItem.Text = "DeleteEntryInItinerary";
             this.deleteEntryInItineraryToolStripMenuItem.Click += new System.EventHandler(this.deleteEntryInItineraryToolStripMenuItem_Click);
             // 
             // deleteItineraryToolStripMenuItem
             // 
             this.deleteItineraryToolStripMenuItem.Name = "deleteItineraryToolStripMenuItem";
-            this.deleteItineraryToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.deleteItineraryToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.deleteItineraryToolStripMenuItem.Text = "DeleteItinerary";
             this.deleteItineraryToolStripMenuItem.Click += new System.EventHandler(this.deleteItineraryToolStripMenuItem_Click);
             // 
             // eventsToolStripMenuItem
             // 
             this.eventsToolStripMenuItem.Name = "eventsToolStripMenuItem";
-            this.eventsToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.eventsToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.eventsToolStripMenuItem.Text = "Events";
             this.eventsToolStripMenuItem.Click += new System.EventHandler(this.eventsToolStripMenuItem_Click);
             // 
             // findNearbyPoiToolStripMenuItem
             // 
             this.findNearbyPoiToolStripMenuItem.Name = "findNearbyPoiToolStripMenuItem";
-            this.findNearbyPoiToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.findNearbyPoiToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.findNearbyPoiToolStripMenuItem.Text = "FindNearbyPoi";
             this.findNearbyPoiToolStripMenuItem.Click += new System.EventHandler(this.findNearbyPoiToolStripMenuItem_Click);
             // 
             // flashMessageToolStripMenuItem
             // 
             this.flashMessageToolStripMenuItem.Name = "flashMessageToolStripMenuItem";
-            this.flashMessageToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.flashMessageToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.flashMessageToolStripMenuItem.Text = "FlashMessage";
             this.flashMessageToolStripMenuItem.Click += new System.EventHandler(this.flashMessageToolStripMenuItem_Click);
             // 
             // getActualGpsPositionToolStripMenuItem
             // 
             this.getActualGpsPositionToolStripMenuItem.Name = "getActualGpsPositionToolStripMenuItem";
-            this.getActualGpsPositionToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.getActualGpsPositionToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getActualGpsPositionToolStripMenuItem.Text = "GetActualGpsPosition";
             this.getActualGpsPositionToolStripMenuItem.Click += new System.EventHandler(this.getActualGpsPositionToolStripMenuItem_Click);
             // 
             // getCoordinatesFromOffsetToolStripMenuItem
             // 
             this.getCoordinatesFromOffsetToolStripMenuItem.Name = "getCoordinatesFromOffsetToolStripMenuItem";
-            this.getCoordinatesFromOffsetToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.getCoordinatesFromOffsetToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getCoordinatesFromOffsetToolStripMenuItem.Text = "GetCoordinatesFromOffset";
             this.getCoordinatesFromOffsetToolStripMenuItem.Click += new System.EventHandler(this.getCoordinatesFromOffsetToolStripMenuItem_Click);
             // 
             // getCurrentSpeedLimitToolStripMenuItem
             // 
             this.getCurrentSpeedLimitToolStripMenuItem.Name = "getCurrentSpeedLimitToolStripMenuItem";
-            this.getCurrentSpeedLimitToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.getCurrentSpeedLimitToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getCurrentSpeedLimitToolStripMenuItem.Text = "GetCurrentSpeedLimit";
             this.getCurrentSpeedLimitToolStripMenuItem.Click += new System.EventHandler(this.getCurrentSpeedLimitToolStripMenuItem_Click);
             // 
             // getItineraryListToolStripMenuItem
             // 
             this.getItineraryListToolStripMenuItem.Name = "getItineraryListToolStripMenuItem";
-            this.getItineraryListToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.getItineraryListToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getItineraryListToolStripMenuItem.Text = "GetItineraryList";
             this.getItineraryListToolStripMenuItem.Click += new System.EventHandler(this.getItineraryListToolStripMenuItem_Click);
             // 
             // getLocationInfoToolStripMenuItem
             // 
             this.getLocationInfoToolStripMenuItem.Name = "getLocationInfoToolStripMenuItem";
-            this.getLocationInfoToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.getLocationInfoToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getLocationInfoToolStripMenuItem.Text = "GetLocationInfo";
             this.getLocationInfoToolStripMenuItem.Click += new System.EventHandler(this.getLocationInfoToolStripMenuItem_Click);
             // 
             // getMapVersionToolStripMenuItem
             // 
             this.getMapVersionToolStripMenuItem.Name = "getMapVersionToolStripMenuItem";
-            this.getMapVersionToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.getMapVersionToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getMapVersionToolStripMenuItem.Text = "GetMapVersion";
             this.getMapVersionToolStripMenuItem.Click += new System.EventHandler(this.getMapVersionToolStripMenuItem_Click);
             // 
             // getNextInstructionToolStripMenuItem
             // 
             this.getNextInstructionToolStripMenuItem.Name = "getNextInstructionToolStripMenuItem";
-            this.getNextInstructionToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.getNextInstructionToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getNextInstructionToolStripMenuItem.Text = "GetNextInstruction";
             this.getNextInstructionToolStripMenuItem.Click += new System.EventHandler(this.getNextInstructionToolStripMenuItem_Click);
             // 
             // getPoiCategoryListToolStripMenuItem
             // 
             this.getPoiCategoryListToolStripMenuItem.Name = "getPoiCategoryListToolStripMenuItem";
-            this.getPoiCategoryListToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.getPoiCategoryListToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getPoiCategoryListToolStripMenuItem.Text = "GetPoiCategoryList";
             this.getPoiCategoryListToolStripMenuItem.Click += new System.EventHandler(this.getPoiCategoryListToolStripMenuItem_Click);
             // 
             // getPoiListToolStripMenuItem
             // 
             this.getPoiListToolStripMenuItem.Name = "getPoiListToolStripMenuItem";
-            this.getPoiListToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.getPoiListToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getPoiListToolStripMenuItem.Text = "GetPoiList";
             this.getPoiListToolStripMenuItem.Click += new System.EventHandler(this.getPoiListToolStripMenuItem_Click);
             // 
             // getRouteInfoToolStripMenuItem
             // 
             this.getRouteInfoToolStripMenuItem.Name = "getRouteInfoToolStripMenuItem";
-            this.getRouteInfoToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.getRouteInfoToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getRouteInfoToolStripMenuItem.Text = "GetRouteInfo";
             this.getRouteInfoToolStripMenuItem.Click += new System.EventHandler(this.getRouteInfoToolStripMenuItem_Click);
             // 
             // getUniqueDeviceIdToolStripMenuItem
             // 
             this.getUniqueDeviceIdToolStripMenuItem.Name = "getUniqueDeviceIdToolStripMenuItem";
-            this.getUniqueDeviceIdToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.getUniqueDeviceIdToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getUniqueDeviceIdToolStripMenuItem.Text = "GetUniqueDeviceId";
             this.getUniqueDeviceIdToolStripMenuItem.Click += new System.EventHandler(this.getUniqueDeviceIdToolStripMenuItem_Click);
             // 
             // highlightPoiToolStripMenuItem
             // 
             this.highlightPoiToolStripMenuItem.Name = "highlightPoiToolStripMenuItem";
-            this.highlightPoiToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.highlightPoiToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.highlightPoiToolStripMenuItem.Text = "HighlightPoi";
             this.highlightPoiToolStripMenuItem.Click += new System.EventHandler(this.highlightPoiToolStripMenuItem_Click);
             // 
             // changeAppRectangleToolStripMenuItem
             // 
             this.changeAppRectangleToolStripMenuItem.Name = "changeAppRectangleToolStripMenuItem";
-            this.changeAppRectangleToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.changeAppRectangleToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.changeAppRectangleToolStripMenuItem.Text = "ChangeAppRectangle";
             this.changeAppRectangleToolStripMenuItem.Click += new System.EventHandler(this.changeAppRectangleToolStripMenuItem_Click);
             // 
             // changeApplicationOptionsToolStripMenuItem
             // 
             this.changeApplicationOptionsToolStripMenuItem.Name = "changeApplicationOptionsToolStripMenuItem";
-            this.changeApplicationOptionsToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
-            this.changeApplicationOptionsToolStripMenuItem.Text = "ChangeApplicationOptions";
+            this.changeApplicationOptionsToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.changeApplicationOptionsToolStripMenuItem.Text = "Get/SetApplicationOptions";
             this.changeApplicationOptionsToolStripMenuItem.Click += new System.EventHandler(this.changeApplicationOptionsToolStripMenuItem_Click);
             // 
             // initApiToolStripMenuItem
             // 
             this.initApiToolStripMenuItem.Name = "initApiToolStripMenuItem";
-            this.initApiToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.initApiToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.initApiToolStripMenuItem.Text = "InitApi";
             this.initApiToolStripMenuItem.Click += new System.EventHandler(this.initApiToolStripMenuItem_Click);
             // 
@@ -8590,154 +7998,154 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // isDriveRunningToolStripMenuItem
             // 
             this.isDriveRunningToolStripMenuItem.Name = "isDriveRunningToolStripMenuItem";
-            this.isDriveRunningToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.isDriveRunningToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.isDriveRunningToolStripMenuItem.Text = "IsDriveRunning";
             this.isDriveRunningToolStripMenuItem.Click += new System.EventHandler(this.isDriveRunningToolStripMenuItem_Click);
             // 
             // loadComputedRouteToolStripMenuItem1
             // 
             this.loadComputedRouteToolStripMenuItem1.Name = "loadComputedRouteToolStripMenuItem1";
-            this.loadComputedRouteToolStripMenuItem1.Size = new System.Drawing.Size(243, 24);
+            this.loadComputedRouteToolStripMenuItem1.Size = new System.Drawing.Size(207, 22);
             this.loadComputedRouteToolStripMenuItem1.Text = "LoadComputedRoute";
             this.loadComputedRouteToolStripMenuItem1.Click += new System.EventHandler(this.loadComputedRouteToolStripMenuItem1_Click);
             // 
             // loadExternalFileToolStripMenuItem
             // 
             this.loadExternalFileToolStripMenuItem.Name = "loadExternalFileToolStripMenuItem";
-            this.loadExternalFileToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.loadExternalFileToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.loadExternalFileToolStripMenuItem.Text = "LoadExternalFile";
             this.loadExternalFileToolStripMenuItem.Click += new System.EventHandler(this.loadExternalFileToolStripMenuItem_Click);
             // 
             // loadGFFileToolStripMenuItem
             // 
             this.loadGFFileToolStripMenuItem.Name = "loadGFFileToolStripMenuItem";
-            this.loadGFFileToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.loadGFFileToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.loadGFFileToolStripMenuItem.Text = "LoadGFFile";
             this.loadGFFileToolStripMenuItem.Click += new System.EventHandler(this.loadGFFileToolStripMenuItem_Click);
             // 
             // loadComputedRouteToolStripMenuItem2
             // 
             this.loadComputedRouteToolStripMenuItem2.Name = "loadComputedRouteToolStripMenuItem2";
-            this.loadComputedRouteToolStripMenuItem2.Size = new System.Drawing.Size(243, 24);
+            this.loadComputedRouteToolStripMenuItem2.Size = new System.Drawing.Size(207, 22);
             this.loadComputedRouteToolStripMenuItem2.Text = "LocationFromAddress";
             this.loadComputedRouteToolStripMenuItem2.Click += new System.EventHandler(this.loadComputedRouteToolStripMenuItem2_Click);
             // 
             // locationFromAddressExToolStripMenuItem
             // 
             this.locationFromAddressExToolStripMenuItem.Name = "locationFromAddressExToolStripMenuItem";
-            this.locationFromAddressExToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.locationFromAddressExToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.locationFromAddressExToolStripMenuItem.Text = "LocationFromAddressEx";
             this.locationFromAddressExToolStripMenuItem.Click += new System.EventHandler(this.locationFromAddressExToolStripMenuItem_Click);
             // 
             // navigateToAddressToolStripMenuItem
             // 
             this.navigateToAddressToolStripMenuItem.Name = "navigateToAddressToolStripMenuItem";
-            this.navigateToAddressToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.navigateToAddressToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.navigateToAddressToolStripMenuItem.Text = "NavigateToAddress";
             this.navigateToAddressToolStripMenuItem.Click += new System.EventHandler(this.navigateToAddressToolStripMenuItem_Click);
             // 
             // onMenuCommandToolStripMenuItem
             // 
             this.onMenuCommandToolStripMenuItem.Name = "onMenuCommandToolStripMenuItem";
-            this.onMenuCommandToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.onMenuCommandToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.onMenuCommandToolStripMenuItem.Text = "OnMenuCommand";
             this.onMenuCommandToolStripMenuItem.Click += new System.EventHandler(this.onMenuCommandToolStripMenuItem_Click);
             // 
             // playSoundTTSToolStripMenuItem
             // 
             this.playSoundTTSToolStripMenuItem.Name = "playSoundTTSToolStripMenuItem";
-            this.playSoundTTSToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.playSoundTTSToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.playSoundTTSToolStripMenuItem.Text = "PlaySoundTTS";
             this.playSoundTTSToolStripMenuItem.Click += new System.EventHandler(this.playSoundTTSToolStripMenuItem_Click);
             // 
             // sendGpsDataToolStripMenuItem
             // 
             this.sendGpsDataToolStripMenuItem.Name = "sendGpsDataToolStripMenuItem";
-            this.sendGpsDataToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.sendGpsDataToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.sendGpsDataToolStripMenuItem.Text = "SendGpsData";
             this.sendGpsDataToolStripMenuItem.Click += new System.EventHandler(this.sendGpsDataToolStripMenuItem_Click);
             // 
             // setRouteToolStripMenuItem
             // 
             this.setRouteToolStripMenuItem.Name = "setRouteToolStripMenuItem";
-            this.setRouteToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.setRouteToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.setRouteToolStripMenuItem.Text = "SetRoute";
             this.setRouteToolStripMenuItem.Click += new System.EventHandler(this.setRouteToolStripMenuItem_Click);
             // 
             // showMessageToolStripMenuItem
             // 
             this.showMessageToolStripMenuItem.Name = "showMessageToolStripMenuItem";
-            this.showMessageToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.showMessageToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.showMessageToolStripMenuItem.Text = "ShowMessage";
             this.showMessageToolStripMenuItem.Click += new System.EventHandler(this.showMessageToolStripMenuItem_Click);
             // 
             // showCoordinatesOnMapToolStripMenuItem
             // 
             this.showCoordinatesOnMapToolStripMenuItem.Name = "showCoordinatesOnMapToolStripMenuItem";
-            this.showCoordinatesOnMapToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.showCoordinatesOnMapToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.showCoordinatesOnMapToolStripMenuItem.Text = "ShowCoordinatesOnMap";
             this.showCoordinatesOnMapToolStripMenuItem.Click += new System.EventHandler(this.showCoordinatesOnMapToolStripMenuItem_Click);
             // 
             // showRectangleOnMapToolStripMenuItem
             // 
             this.showRectangleOnMapToolStripMenuItem.Name = "showRectangleOnMapToolStripMenuItem";
-            this.showRectangleOnMapToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.showRectangleOnMapToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.showRectangleOnMapToolStripMenuItem.Text = "ShowRectangleOnMap";
             this.showRectangleOnMapToolStripMenuItem.Click += new System.EventHandler(this.showRectangleOnMapToolStripMenuItem_Click);
             // 
             // skipNextWaypointToolStripMenuItem
             // 
             this.skipNextWaypointToolStripMenuItem.Name = "skipNextWaypointToolStripMenuItem";
-            this.skipNextWaypointToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.skipNextWaypointToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.skipNextWaypointToolStripMenuItem.Text = "SkipNextWaypoint";
             this.skipNextWaypointToolStripMenuItem.Click += new System.EventHandler(this.skipNextWaypointToolStripMenuItem_Click);
             // 
             // startNavigationToolStripMenuItem
             // 
             this.startNavigationToolStripMenuItem.Name = "startNavigationToolStripMenuItem";
-            this.startNavigationToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.startNavigationToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.startNavigationToolStripMenuItem.Text = "StartNavigation";
             this.startNavigationToolStripMenuItem.Click += new System.EventHandler(this.startNavigationToolStripMenuItem_Click);
             // 
             // stopNavigationToolStripMenuItem
             // 
             this.stopNavigationToolStripMenuItem.Name = "stopNavigationToolStripMenuItem";
-            this.stopNavigationToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.stopNavigationToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.stopNavigationToolStripMenuItem.Text = "StopNavigation";
             this.stopNavigationToolStripMenuItem.Click += new System.EventHandler(this.stopNavigationToolStripMenuItem_Click);
             // 
             // switchMapToolStripMenuItem
             // 
             this.switchMapToolStripMenuItem.Name = "switchMapToolStripMenuItem";
-            this.switchMapToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.switchMapToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.switchMapToolStripMenuItem.Text = "SwitchMap";
             this.switchMapToolStripMenuItem.Click += new System.EventHandler(this.switchMapToolStripMenuItem_Click);
             // 
             // tripAddUserEventToolStripMenuItem
             // 
             this.tripAddUserEventToolStripMenuItem.Name = "tripAddUserEventToolStripMenuItem";
-            this.tripAddUserEventToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.tripAddUserEventToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.tripAddUserEventToolStripMenuItem.Text = "TripAddUserEvent";
             this.tripAddUserEventToolStripMenuItem.Click += new System.EventHandler(this.tripAddUserEventToolStripMenuItem_Click);
             // 
             // tripEndToolStripMenuItem
             // 
             this.tripEndToolStripMenuItem.Name = "tripEndToolStripMenuItem";
-            this.tripEndToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.tripEndToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.tripEndToolStripMenuItem.Text = "TripEnd";
             this.tripEndToolStripMenuItem.Click += new System.EventHandler(this.tripEndToolStripMenuItem_Click);
             // 
             // tripStartToolStripMenuItem
             // 
             this.tripStartToolStripMenuItem.Name = "tripStartToolStripMenuItem";
-            this.tripStartToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.tripStartToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.tripStartToolStripMenuItem.Text = "TripStart";
             this.tripStartToolStripMenuItem.Click += new System.EventHandler(this.tripStartToolStripMenuItem_Click);
             // 
             // unloadGFFileToolStripMenuItem
             // 
             this.unloadGFFileToolStripMenuItem.Name = "unloadGFFileToolStripMenuItem";
-            this.unloadGFFileToolStripMenuItem.Size = new System.Drawing.Size(243, 24);
+            this.unloadGFFileToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.unloadGFFileToolStripMenuItem.Text = "UnloadGFFile";
             this.unloadGFFileToolStripMenuItem.Click += new System.EventHandler(this.unloadGFFileToolStripMenuItem_Click);
             // 
@@ -8757,28 +8165,28 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // deviceItineraryToolStripMenuItem
             // 
             this.deviceItineraryToolStripMenuItem.Name = "deviceItineraryToolStripMenuItem";
-            this.deviceItineraryToolStripMenuItem.Size = new System.Drawing.Size(201, 24);
+            this.deviceItineraryToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.deviceItineraryToolStripMenuItem.Text = "Devide Itinerary";
             this.deviceItineraryToolStripMenuItem.Click += new System.EventHandler(this.deviceItineraryToolStripMenuItem_Click);
             // 
             // itineraryGeneratorToolStripMenuItem
             // 
             this.itineraryGeneratorToolStripMenuItem.Name = "itineraryGeneratorToolStripMenuItem";
-            this.itineraryGeneratorToolStripMenuItem.Size = new System.Drawing.Size(201, 24);
+            this.itineraryGeneratorToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.itineraryGeneratorToolStripMenuItem.Text = "Itinerary generator";
             this.itineraryGeneratorToolStripMenuItem.Click += new System.EventHandler(this.itineraryGeneratorToolStripMenuItem_Click);
             // 
             // playGPSLogToolStripMenuItem
             // 
             this.playGPSLogToolStripMenuItem.Name = "playGPSLogToolStripMenuItem";
-            this.playGPSLogToolStripMenuItem.Size = new System.Drawing.Size(201, 24);
+            this.playGPSLogToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.playGPSLogToolStripMenuItem.Text = "Play GPS Log";
             this.playGPSLogToolStripMenuItem.Click += new System.EventHandler(this.playGPSLogToolStripMenuItem_Click);
             // 
             // remoteActivationToolStripMenuItem
             // 
             this.remoteActivationToolStripMenuItem.Name = "remoteActivationToolStripMenuItem";
-            this.remoteActivationToolStripMenuItem.Size = new System.Drawing.Size(201, 24);
+            this.remoteActivationToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.remoteActivationToolStripMenuItem.Text = "Remote activation";
             this.remoteActivationToolStripMenuItem.Click += new System.EventHandler(this.remoteActivationToolStripMenuItem_Click);
             // 
@@ -8816,7 +8224,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.AutomaticRemoteActivation_ActivationExePathTBox.Location = new System.Drawing.Point(132, 3);
             this.AutomaticRemoteActivation_ActivationExePathTBox.Name = "AutomaticRemoteActivation_ActivationExePathTBox";
-            this.AutomaticRemoteActivation_ActivationExePathTBox.Size = new System.Drawing.Size(408, 22);
+            this.AutomaticRemoteActivation_ActivationExePathTBox.Size = new System.Drawing.Size(408, 20);
             this.AutomaticRemoteActivation_ActivationExePathTBox.TabIndex = 0;
             this.AutomaticRemoteActivation_ActivationExePathTBox.Text = "c:\\Windows\\RemoteActivation\\XP\\Activate.exe";
             // 
@@ -8824,7 +8232,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.AutomaticRemoteActivation_MlmPathTBox.Location = new System.Drawing.Point(132, 48);
             this.AutomaticRemoteActivation_MlmPathTBox.Name = "AutomaticRemoteActivation_MlmPathTBox";
-            this.AutomaticRemoteActivation_MlmPathTBox.Size = new System.Drawing.Size(408, 22);
+            this.AutomaticRemoteActivation_MlmPathTBox.Size = new System.Drawing.Size(408, 20);
             this.AutomaticRemoteActivation_MlmPathTBox.TabIndex = 1;
             this.AutomaticRemoteActivation_MlmPathTBox.Text = "c:\\C\\Maps\\Europe(Logistics)_2013.03\\Sygic Fleet Truck Portable 10 - Europe 2013.0" +
     "3 (+tts).mlm";
@@ -8833,7 +8241,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.AutomaticRemoteActivation_SdPasswordTBox.Location = new System.Drawing.Point(132, 93);
             this.AutomaticRemoteActivation_SdPasswordTBox.Name = "AutomaticRemoteActivation_SdPasswordTBox";
-            this.AutomaticRemoteActivation_SdPasswordTBox.Size = new System.Drawing.Size(140, 22);
+            this.AutomaticRemoteActivation_SdPasswordTBox.Size = new System.Drawing.Size(140, 20);
             this.AutomaticRemoteActivation_SdPasswordTBox.TabIndex = 2;
             // 
             // label103
@@ -8841,7 +8249,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label103.AutoSize = true;
             this.label103.Location = new System.Drawing.Point(3, 0);
             this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(116, 17);
+            this.label103.Size = new System.Drawing.Size(90, 13);
             this.label103.TabIndex = 3;
             this.label103.Text = "Activate.exe path";
             // 
@@ -8850,7 +8258,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label104.AutoSize = true;
             this.label104.Location = new System.Drawing.Point(3, 45);
             this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(69, 17);
+            this.label104.Size = new System.Drawing.Size(52, 13);
             this.label104.TabIndex = 4;
             this.label104.Text = ".mlm path";
             // 
@@ -8859,7 +8267,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label105.AutoSize = true;
             this.label105.Location = new System.Drawing.Point(3, 90);
             this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(91, 17);
+            this.label105.Size = new System.Drawing.Size(70, 13);
             this.label105.TabIndex = 5;
             this.label105.Text = "SD password";
             // 
@@ -8905,7 +8313,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label123.AutoSize = true;
             this.label123.Location = new System.Drawing.Point(3, 0);
             this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(65, 17);
+            this.label123.Size = new System.Drawing.Size(49, 13);
             this.label123.TabIndex = 0;
             this.label123.Text = "message";
             // 
@@ -8914,7 +8322,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label124.AutoSize = true;
             this.label124.Location = new System.Drawing.Point(3, 36);
             this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(55, 17);
+            this.label124.Size = new System.Drawing.Size(42, 13);
             this.label124.TabIndex = 1;
             this.label124.Text = "buttons";
             // 
@@ -8923,7 +8331,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label125.AutoSize = true;
             this.label125.Location = new System.Drawing.Point(3, 72);
             this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(105, 34);
+            this.label125.Size = new System.Drawing.Size(98, 13);
             this.label125.TabIndex = 2;
             this.label125.Text = "bWaitForFeedback";
             // 
@@ -8931,7 +8339,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.ShowMessage_messageTBox.Location = new System.Drawing.Point(118, 3);
             this.ShowMessage_messageTBox.Name = "ShowMessage_messageTBox";
-            this.ShowMessage_messageTBox.Size = new System.Drawing.Size(419, 22);
+            this.ShowMessage_messageTBox.Size = new System.Drawing.Size(419, 20);
             this.ShowMessage_messageTBox.TabIndex = 4;
             // 
             // ShowMessage_buttonsNum
@@ -8948,7 +8356,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             0});
             this.ShowMessage_buttonsNum.Name = "ShowMessage_buttonsNum";
-            this.ShowMessage_buttonsNum.Size = new System.Drawing.Size(47, 22);
+            this.ShowMessage_buttonsNum.Size = new System.Drawing.Size(47, 20);
             this.ShowMessage_buttonsNum.TabIndex = 5;
             this.ShowMessage_buttonsNum.Value = new decimal(new int[] {
             1,
@@ -8961,7 +8369,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowMessage_waitForFeedbackChBox.AutoSize = true;
             this.ShowMessage_waitForFeedbackChBox.Location = new System.Drawing.Point(3, 111);
             this.ShowMessage_waitForFeedbackChBox.Name = "ShowMessage_waitForFeedbackChBox";
-            this.ShowMessage_waitForFeedbackChBox.Size = new System.Drawing.Size(18, 17);
+            this.ShowMessage_waitForFeedbackChBox.Size = new System.Drawing.Size(15, 14);
             this.ShowMessage_waitForFeedbackChBox.TabIndex = 6;
             this.ShowMessage_waitForFeedbackChBox.UseVisualStyleBackColor = true;
             // 
@@ -8986,7 +8394,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             0});
             this.ShowMessage_maxTimeNum.Name = "ShowMessage_maxTimeNum";
-            this.ShowMessage_maxTimeNum.Size = new System.Drawing.Size(109, 22);
+            this.ShowMessage_maxTimeNum.Size = new System.Drawing.Size(109, 20);
             this.ShowMessage_maxTimeNum.TabIndex = 7;
             // 
             // label126
@@ -8994,7 +8402,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label126.AutoSize = true;
             this.label126.Location = new System.Drawing.Point(118, 144);
             this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(64, 17);
+            this.label126.Size = new System.Drawing.Size(49, 13);
             this.label126.TabIndex = 3;
             this.label126.Text = "maxTime";
             // 
@@ -9003,7 +8411,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label127.AutoSize = true;
             this.label127.Location = new System.Drawing.Point(118, 108);
             this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(119, 17);
+            this.label127.Size = new System.Drawing.Size(92, 13);
             this.label127.TabIndex = 10;
             this.label127.Text = "bShowApplication";
             // 
@@ -9012,7 +8420,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowMessage_bShowApplicationChBox.AutoSize = true;
             this.ShowMessage_bShowApplicationChBox.Location = new System.Drawing.Point(3, 147);
             this.ShowMessage_bShowApplicationChBox.Name = "ShowMessage_bShowApplicationChBox";
-            this.ShowMessage_bShowApplicationChBox.Size = new System.Drawing.Size(18, 17);
+            this.ShowMessage_bShowApplicationChBox.Size = new System.Drawing.Size(15, 14);
             this.ShowMessage_bShowApplicationChBox.TabIndex = 11;
             this.ShowMessage_bShowApplicationChBox.UseVisualStyleBackColor = true;
             // 
@@ -9046,7 +8454,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label109.AutoSize = true;
             this.label109.Location = new System.Drawing.Point(3, 0);
             this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(112, 17);
+            this.label109.Size = new System.Drawing.Size(83, 13);
             this.label109.TabIndex = 0;
             this.label109.Text = "strItineraryName";
             // 
@@ -9055,7 +8463,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label111.AutoSize = true;
             this.label111.Location = new System.Drawing.Point(3, 62);
             this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(119, 17);
+            this.label111.Size = new System.Drawing.Size(92, 13);
             this.label111.TabIndex = 2;
             this.label111.Text = "bShowApplication";
             // 
@@ -9064,7 +8472,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label112.AutoSize = true;
             this.label112.Location = new System.Drawing.Point(3, 93);
             this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(64, 17);
+            this.label112.Size = new System.Drawing.Size(50, 13);
             this.label112.TabIndex = 3;
             this.label112.Text = "MaxTime";
             // 
@@ -9073,7 +8481,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SetRoute_strItineraryNameCB.FormattingEnabled = true;
             this.SetRoute_strItineraryNameCB.Location = new System.Drawing.Point(186, 3);
             this.SetRoute_strItineraryNameCB.Name = "SetRoute_strItineraryNameCB";
-            this.SetRoute_strItineraryNameCB.Size = new System.Drawing.Size(347, 25);
+            this.SetRoute_strItineraryNameCB.Size = new System.Drawing.Size(347, 21);
             this.SetRoute_strItineraryNameCB.TabIndex = 4;
             // 
             // SetRoute_MaxTimeNum
@@ -9085,7 +8493,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             0});
             this.SetRoute_MaxTimeNum.Name = "SetRoute_MaxTimeNum";
-            this.SetRoute_MaxTimeNum.Size = new System.Drawing.Size(120, 22);
+            this.SetRoute_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.SetRoute_MaxTimeNum.TabIndex = 7;
             // 
             // SetRouteBtn
@@ -9106,15 +8514,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // MainFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1800, 843);
+            this.ClientSize = new System.Drawing.Size(1350, 685);
             this.Controls.Add(this.OutputRTB);
             this.Controls.Add(this.P);
             this.Controls.Add(this.TC);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "SDK demo v. 2017-10-19";
@@ -9207,6 +8614,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             ((System.ComponentModel.ISupportInitialize)(this.LoadComputedRoute_Num)).EndInit();
             this.T10.ResumeLayout(false);
             this.ShowChangeOptionGB.ResumeLayout(false);
+            this.ShowChangeOptionGB.PerformLayout();
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShowChangeOption_MaxTimeNum)).EndInit();
@@ -9540,7 +8948,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.NumericUpDown ShowChangeOption_MaxTimeNum;
         private System.Windows.Forms.Button ShowChangeOptionBtn;
-        private System.Windows.Forms.PropertyGrid ShowChangeOptionPropertyGrid;
+        private System.Windows.Forms.TextBox ApplicationChangeOptionsTextbox;
         private System.Windows.Forms.GroupBox AddTMCEventGB;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.Label label45;
@@ -9677,7 +9085,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.GroupBox PlayGpsLgGB;
         private System.Windows.Forms.TableLayoutPanel PlayGpsLogTlp;
         private System.Windows.Forms.OpenFileDialog openDriveExeDlg;
-        private System.Windows.Forms.Button DissableMenuBtn;
         private System.Windows.Forms.Button ShowChangeOption_SetChangeOptionBtn;
         private System.Windows.Forms.ToolTip SetRoute_FlagsToolTip;
         private System.Windows.Forms.ComboBox AddEntryToItinerary_strItineraryNameCB;
