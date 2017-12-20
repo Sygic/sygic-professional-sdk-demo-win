@@ -27,7 +27,6 @@ This demo is a good tool for testing purposes on platform Windows XP/Vista/7/8/8
 * AddItinerary
 * AddPoi
 * AddPoiCategory
-* AddTMCEvent
 * BringAppToBackground
 * BringAppToForeground
 * CloseDialogs
@@ -41,7 +40,7 @@ This demo is a good tool for testing purposes on platform Windows XP/Vista/7/8/8
 * GetPoiList
 * GetRouteInfo
 * GetUniqueDeviceId
-* ChangeApplicationOptions (show options only)
+* Get/SetApplicationOptions
 * IsDriveRunning
 * LoadComputedRoute
 * LocationFromAddress
