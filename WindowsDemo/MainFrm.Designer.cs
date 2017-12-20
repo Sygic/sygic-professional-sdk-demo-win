@@ -209,32 +209,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowChangeOption_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
             this.ShowChangeOptionBtn = new System.Windows.Forms.Button();
             this.ShowChangeOption_SetChangeOptionBtn = new System.Windows.Forms.Button();
-            this.T11 = new System.Windows.Forms.TabPage();
-            this.AddTMCEventGB = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.AddTMCEvent_bUserAvoidNum = new System.Windows.Forms.NumericUpDown();
-            this.AddTMCEvent_lXNum = new System.Windows.Forms.NumericUpDown();
-            this.AddTMCEvent_lYNum = new System.Windows.Forms.NumericUpDown();
-            this.AddTMCEvent_nEventCodeNum = new System.Windows.Forms.NumericUpDown();
-            this.AddTMCEvent_nValidityDayNum = new System.Windows.Forms.NumericUpDown();
-            this.AddTMCEvent_nValidityHourNum = new System.Windows.Forms.NumericUpDown();
-            this.AddTMCEvent_nValidityMinuteNum = new System.Windows.Forms.NumericUpDown();
-            this.AddTMCEvent_nValidityMonthNum = new System.Windows.Forms.NumericUpDown();
-            this.AddTMCEvent_nValidityYearNum = new System.Windows.Forms.NumericUpDown();
-            this.AddTMCEvent_wIDNum = new System.Windows.Forms.NumericUpDown();
-            this.AddTMCEvent_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
-            this.AddTMCEventBtn = new System.Windows.Forms.Button();
             this.T12 = new System.Windows.Forms.TabPage();
             this.GetNextInstructionAutoGB = new System.Windows.Forms.GroupBox();
             this.GetNextInstructionAutoTlp = new System.Windows.Forms.TableLayoutPanel();
@@ -586,7 +560,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.addItineraryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addPoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addPoiCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addTMCEventToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bringAppToBackgroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bringAppToForegroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeDialogsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -742,20 +715,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowChangeOptionGB.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShowChangeOption_MaxTimeNum)).BeginInit();
-            this.T11.SuspendLayout();
-            this.AddTMCEventGB.SuspendLayout();
-            this.tableLayoutPanel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_bUserAvoidNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_lXNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_lYNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_nEventCodeNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_nValidityDayNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_nValidityHourNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_nValidityMinuteNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_nValidityMonthNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_nValidityYearNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_wIDNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_MaxTimeNum)).BeginInit();
             this.T12.SuspendLayout();
             this.GetNextInstructionAutoGB.SuspendLayout();
             this.GetNextInstructionAutoTlp.SuspendLayout();
@@ -921,7 +880,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.TC.Controls.Add(this.T8);
             this.TC.Controls.Add(this.T9);
             this.TC.Controls.Add(this.T10);
-            this.TC.Controls.Add(this.T11);
             this.TC.Controls.Add(this.T12);
             this.TC.Controls.Add(this.T13);
             this.TC.Controls.Add(this.T14);
@@ -3399,332 +3357,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowChangeOption_SetChangeOptionBtn.Text = "SetApplicationOptions";
             this.ShowChangeOption_SetChangeOptionBtn.UseVisualStyleBackColor = true;
             this.ShowChangeOption_SetChangeOptionBtn.Click += new System.EventHandler(this.ShowChangeOption_SetChangeOptionBtn_Click);
-            // 
-            // T11
-            // 
-            this.T11.Controls.Add(this.AddTMCEventGB);
-            this.T11.Location = new System.Drawing.Point(4, 19);
-            this.T11.Name = "T11";
-            this.T11.Padding = new System.Windows.Forms.Padding(3);
-            this.T11.Size = new System.Drawing.Size(564, 498);
-            this.T11.TabIndex = 10;
-            this.T11.Text = "T11";
-            this.T11.UseVisualStyleBackColor = true;
-            // 
-            // AddTMCEventGB
-            // 
-            this.AddTMCEventGB.Controls.Add(this.tableLayoutPanel10);
-            this.AddTMCEventGB.Location = new System.Drawing.Point(6, 6);
-            this.AddTMCEventGB.Name = "AddTMCEventGB";
-            this.AddTMCEventGB.Size = new System.Drawing.Size(552, 442);
-            this.AddTMCEventGB.TabIndex = 0;
-            this.AddTMCEventGB.TabStop = false;
-            this.AddTMCEventGB.Text = "AddTMCEvent:";
-            // 
-            // tableLayoutPanel10
-            // 
-            this.tableLayoutPanel10.ColumnCount = 2;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.92593F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.07407F));
-            this.tableLayoutPanel10.Controls.Add(this.label45, 0, 0);
-            this.tableLayoutPanel10.Controls.Add(this.label46, 0, 1);
-            this.tableLayoutPanel10.Controls.Add(this.label47, 0, 2);
-            this.tableLayoutPanel10.Controls.Add(this.label48, 0, 3);
-            this.tableLayoutPanel10.Controls.Add(this.label49, 0, 4);
-            this.tableLayoutPanel10.Controls.Add(this.label50, 0, 5);
-            this.tableLayoutPanel10.Controls.Add(this.label51, 0, 7);
-            this.tableLayoutPanel10.Controls.Add(this.label52, 0, 9);
-            this.tableLayoutPanel10.Controls.Add(this.label53, 0, 10);
-            this.tableLayoutPanel10.Controls.Add(this.label54, 0, 6);
-            this.tableLayoutPanel10.Controls.Add(this.label55, 0, 8);
-            this.tableLayoutPanel10.Controls.Add(this.AddTMCEvent_bUserAvoidNum, 1, 0);
-            this.tableLayoutPanel10.Controls.Add(this.AddTMCEvent_lXNum, 1, 1);
-            this.tableLayoutPanel10.Controls.Add(this.AddTMCEvent_lYNum, 1, 2);
-            this.tableLayoutPanel10.Controls.Add(this.AddTMCEvent_nEventCodeNum, 1, 3);
-            this.tableLayoutPanel10.Controls.Add(this.AddTMCEvent_nValidityDayNum, 1, 4);
-            this.tableLayoutPanel10.Controls.Add(this.AddTMCEvent_nValidityHourNum, 1, 5);
-            this.tableLayoutPanel10.Controls.Add(this.AddTMCEvent_nValidityMinuteNum, 1, 6);
-            this.tableLayoutPanel10.Controls.Add(this.AddTMCEvent_nValidityMonthNum, 1, 7);
-            this.tableLayoutPanel10.Controls.Add(this.AddTMCEvent_nValidityYearNum, 1, 8);
-            this.tableLayoutPanel10.Controls.Add(this.AddTMCEvent_wIDNum, 1, 9);
-            this.tableLayoutPanel10.Controls.Add(this.AddTMCEvent_MaxTimeNum, 1, 10);
-            this.tableLayoutPanel10.Controls.Add(this.AddTMCEventBtn, 1, 11);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(6, 19);
-            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 12;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(540, 367);
-            this.tableLayoutPanel10.TabIndex = 0;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(3, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(62, 13);
-            this.label45.TabIndex = 0;
-            this.label45.Text = "bUserAvoid";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(3, 30);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(16, 13);
-            this.label46.TabIndex = 1;
-            this.label46.Text = "lX";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(3, 60);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(16, 13);
-            this.label47.TabIndex = 2;
-            this.label47.Text = "lY";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(3, 90);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(66, 13);
-            this.label48.TabIndex = 3;
-            this.label48.Text = "nEventCode";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(3, 120);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(65, 13);
-            this.label49.TabIndex = 4;
-            this.label49.Text = "nValidityDay";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(3, 150);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(69, 13);
-            this.label50.TabIndex = 5;
-            this.label50.Text = "nValidityHour";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(3, 210);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(76, 13);
-            this.label51.TabIndex = 6;
-            this.label51.Text = "nValidityMonth";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(3, 270);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(26, 13);
-            this.label52.TabIndex = 7;
-            this.label52.Text = "wID";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(3, 300);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(50, 13);
-            this.label53.TabIndex = 8;
-            this.label53.Text = "MaxTime";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(3, 180);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(78, 13);
-            this.label54.TabIndex = 9;
-            this.label54.Text = "nValidityMinute";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(3, 240);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(68, 13);
-            this.label55.TabIndex = 10;
-            this.label55.Text = "nValidityYear";
-            // 
-            // AddTMCEvent_bUserAvoidNum
-            // 
-            this.AddTMCEvent_bUserAvoidNum.Location = new System.Drawing.Point(116, 3);
-            this.AddTMCEvent_bUserAvoidNum.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.AddTMCEvent_bUserAvoidNum.Name = "AddTMCEvent_bUserAvoidNum";
-            this.AddTMCEvent_bUserAvoidNum.Size = new System.Drawing.Size(45, 20);
-            this.AddTMCEvent_bUserAvoidNum.TabIndex = 11;
-            // 
-            // AddTMCEvent_lXNum
-            // 
-            this.AddTMCEvent_lXNum.Location = new System.Drawing.Point(116, 33);
-            this.AddTMCEvent_lXNum.Maximum = new decimal(new int[] {
-            1000000000,
-            0,
-            0,
-            0});
-            this.AddTMCEvent_lXNum.Minimum = new decimal(new int[] {
-            1000000000,
-            0,
-            0,
-            -2147483648});
-            this.AddTMCEvent_lXNum.Name = "AddTMCEvent_lXNum";
-            this.AddTMCEvent_lXNum.Size = new System.Drawing.Size(120, 20);
-            this.AddTMCEvent_lXNum.TabIndex = 12;
-            // 
-            // AddTMCEvent_lYNum
-            // 
-            this.AddTMCEvent_lYNum.Location = new System.Drawing.Point(116, 63);
-            this.AddTMCEvent_lYNum.Maximum = new decimal(new int[] {
-            1000000000,
-            0,
-            0,
-            0});
-            this.AddTMCEvent_lYNum.Minimum = new decimal(new int[] {
-            1000000000,
-            0,
-            0,
-            -2147483648});
-            this.AddTMCEvent_lYNum.Name = "AddTMCEvent_lYNum";
-            this.AddTMCEvent_lYNum.Size = new System.Drawing.Size(120, 20);
-            this.AddTMCEvent_lYNum.TabIndex = 13;
-            // 
-            // AddTMCEvent_nEventCodeNum
-            // 
-            this.AddTMCEvent_nEventCodeNum.Location = new System.Drawing.Point(116, 93);
-            this.AddTMCEvent_nEventCodeNum.Name = "AddTMCEvent_nEventCodeNum";
-            this.AddTMCEvent_nEventCodeNum.Size = new System.Drawing.Size(45, 20);
-            this.AddTMCEvent_nEventCodeNum.TabIndex = 14;
-            // 
-            // AddTMCEvent_nValidityDayNum
-            // 
-            this.AddTMCEvent_nValidityDayNum.Location = new System.Drawing.Point(116, 123);
-            this.AddTMCEvent_nValidityDayNum.Name = "AddTMCEvent_nValidityDayNum";
-            this.AddTMCEvent_nValidityDayNum.Size = new System.Drawing.Size(45, 20);
-            this.AddTMCEvent_nValidityDayNum.TabIndex = 15;
-            this.AddTMCEvent_nValidityDayNum.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // AddTMCEvent_nValidityHourNum
-            // 
-            this.AddTMCEvent_nValidityHourNum.Location = new System.Drawing.Point(116, 153);
-            this.AddTMCEvent_nValidityHourNum.Name = "AddTMCEvent_nValidityHourNum";
-            this.AddTMCEvent_nValidityHourNum.Size = new System.Drawing.Size(45, 20);
-            this.AddTMCEvent_nValidityHourNum.TabIndex = 16;
-            this.AddTMCEvent_nValidityHourNum.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // AddTMCEvent_nValidityMinuteNum
-            // 
-            this.AddTMCEvent_nValidityMinuteNum.Location = new System.Drawing.Point(116, 183);
-            this.AddTMCEvent_nValidityMinuteNum.Name = "AddTMCEvent_nValidityMinuteNum";
-            this.AddTMCEvent_nValidityMinuteNum.Size = new System.Drawing.Size(45, 20);
-            this.AddTMCEvent_nValidityMinuteNum.TabIndex = 17;
-            this.AddTMCEvent_nValidityMinuteNum.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // AddTMCEvent_nValidityMonthNum
-            // 
-            this.AddTMCEvent_nValidityMonthNum.Location = new System.Drawing.Point(116, 213);
-            this.AddTMCEvent_nValidityMonthNum.Name = "AddTMCEvent_nValidityMonthNum";
-            this.AddTMCEvent_nValidityMonthNum.Size = new System.Drawing.Size(45, 20);
-            this.AddTMCEvent_nValidityMonthNum.TabIndex = 18;
-            this.AddTMCEvent_nValidityMonthNum.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // AddTMCEvent_nValidityYearNum
-            // 
-            this.AddTMCEvent_nValidityYearNum.Location = new System.Drawing.Point(116, 243);
-            this.AddTMCEvent_nValidityYearNum.Maximum = new decimal(new int[] {
-            3000,
-            0,
-            0,
-            0});
-            this.AddTMCEvent_nValidityYearNum.Minimum = new decimal(new int[] {
-            2000,
-            0,
-            0,
-            0});
-            this.AddTMCEvent_nValidityYearNum.Name = "AddTMCEvent_nValidityYearNum";
-            this.AddTMCEvent_nValidityYearNum.Size = new System.Drawing.Size(45, 20);
-            this.AddTMCEvent_nValidityYearNum.TabIndex = 19;
-            this.AddTMCEvent_nValidityYearNum.Value = new decimal(new int[] {
-            2012,
-            0,
-            0,
-            0});
-            // 
-            // AddTMCEvent_wIDNum
-            // 
-            this.AddTMCEvent_wIDNum.Location = new System.Drawing.Point(116, 273);
-            this.AddTMCEvent_wIDNum.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.AddTMCEvent_wIDNum.Name = "AddTMCEvent_wIDNum";
-            this.AddTMCEvent_wIDNum.Size = new System.Drawing.Size(120, 20);
-            this.AddTMCEvent_wIDNum.TabIndex = 20;
-            // 
-            // AddTMCEvent_MaxTimeNum
-            // 
-            this.AddTMCEvent_MaxTimeNum.Location = new System.Drawing.Point(116, 303);
-            this.AddTMCEvent_MaxTimeNum.Maximum = new decimal(new int[] {
-            10000000,
-            0,
-            0,
-            0});
-            this.AddTMCEvent_MaxTimeNum.Name = "AddTMCEvent_MaxTimeNum";
-            this.AddTMCEvent_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
-            this.AddTMCEvent_MaxTimeNum.TabIndex = 21;
-            // 
-            // AddTMCEventBtn
-            // 
-            this.AddTMCEventBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddTMCEventBtn.Location = new System.Drawing.Point(116, 333);
-            this.AddTMCEventBtn.Name = "AddTMCEventBtn";
-            this.AddTMCEventBtn.Size = new System.Drawing.Size(421, 31);
-            this.AddTMCEventBtn.TabIndex = 22;
-            this.AddTMCEventBtn.Text = "AddTMCEvent";
-            this.AddTMCEventBtn.UseVisualStyleBackColor = true;
-            this.AddTMCEventBtn.Click += new System.EventHandler(this.AddTMCEventBtn_Click);
             // 
             // T12
             // 
@@ -7732,7 +7364,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.addItineraryToolStripMenuItem,
             this.addPoiToolStripMenuItem,
             this.addPoiCategoryToolStripMenuItem,
-            this.addTMCEventToolStripMenuItem,
             this.bringAppToBackgroundToolStripMenuItem,
             this.bringAppToForegroundToolStripMenuItem,
             this.closeDialogsToolStripMenuItem,
@@ -7797,13 +7428,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.addPoiCategoryToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.addPoiCategoryToolStripMenuItem.Text = "AddPoiCategory";
             this.addPoiCategoryToolStripMenuItem.Click += new System.EventHandler(this.addPoiCategoryToolStripMenuItem_Click);
-            // 
-            // addTMCEventToolStripMenuItem
-            // 
-            this.addTMCEventToolStripMenuItem.Name = "addTMCEventToolStripMenuItem";
-            this.addTMCEventToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
-            this.addTMCEventToolStripMenuItem.Text = "AddTMCEvent";
-            this.addTMCEventToolStripMenuItem.Click += new System.EventHandler(this.addTMCEventToolStripMenuItem_Click);
             // 
             // bringAppToBackgroundToolStripMenuItem
             // 
@@ -8627,21 +8251,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShowChangeOption_MaxTimeNum)).EndInit();
-            this.T11.ResumeLayout(false);
-            this.AddTMCEventGB.ResumeLayout(false);
-            this.tableLayoutPanel10.ResumeLayout(false);
-            this.tableLayoutPanel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_bUserAvoidNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_lXNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_lYNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_nEventCodeNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_nValidityDayNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_nValidityHourNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_nValidityMinuteNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_nValidityMonthNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_nValidityYearNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_wIDNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddTMCEvent_MaxTimeNum)).EndInit();
             this.T12.ResumeLayout(false);
             this.GetNextInstructionAutoGB.ResumeLayout(false);
             this.GetNextInstructionAutoTlp.ResumeLayout(false);
@@ -8950,7 +8559,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.Button LoadComputedRouteBtn;
         private System.Windows.Forms.TabPage T10;
         private System.Windows.Forms.GroupBox ShowChangeOptionGB;
-        private System.Windows.Forms.TabPage T11;
         private System.Windows.Forms.TabPage T12;
         private System.Windows.Forms.ComboBox MyDrivePathCB;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
@@ -8958,31 +8566,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.NumericUpDown ShowChangeOption_MaxTimeNum;
         private System.Windows.Forms.Button ShowChangeOptionBtn;
         private System.Windows.Forms.TextBox ApplicationChangeOptionsTextbox;
-        private System.Windows.Forms.GroupBox AddTMCEventGB;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.NumericUpDown AddTMCEvent_bUserAvoidNum;
-        private System.Windows.Forms.NumericUpDown AddTMCEvent_lXNum;
-        private System.Windows.Forms.NumericUpDown AddTMCEvent_lYNum;
-        private System.Windows.Forms.NumericUpDown AddTMCEvent_nEventCodeNum;
-        private System.Windows.Forms.NumericUpDown AddTMCEvent_nValidityDayNum;
-        private System.Windows.Forms.NumericUpDown AddTMCEvent_nValidityHourNum;
-        private System.Windows.Forms.NumericUpDown AddTMCEvent_nValidityMinuteNum;
-        private System.Windows.Forms.NumericUpDown AddTMCEvent_nValidityMonthNum;
-        private System.Windows.Forms.NumericUpDown AddTMCEvent_nValidityYearNum;
-        private System.Windows.Forms.NumericUpDown AddTMCEvent_wIDNum;
-        private System.Windows.Forms.NumericUpDown AddTMCEvent_MaxTimeNum;
-        private System.Windows.Forms.Button AddTMCEventBtn;
         private System.Windows.Forms.GroupBox GetNextInstructionGB;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
         private System.Windows.Forms.Label label56;
@@ -9377,7 +8960,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.ToolStripMenuItem addItineraryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addPoiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addPoiCategoryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addTMCEventToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bringAppToBackgroundToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bringAppToForegroundToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem closeDialogsToolStripMenuItem;

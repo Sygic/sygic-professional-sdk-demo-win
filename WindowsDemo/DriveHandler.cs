@@ -383,35 +383,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             O("SetApplicationOptions returns: " + ret.ToString());
         }
 
-        public static void AddTMCEvent(
-            int inBUserAvoid, 
-            int inLX, 
-            int inLY,
-            int inNEventCode,
-            byte inNValidityDay,
-            byte inNValidityHour,
-            byte inNValidityMinute,
-            byte inNValidityMonth,
-            uint inNValidityYear,
-            byte inWID,
-            int inMaxTime) 
-        {
-            STmcEvent tmc = new STmcEvent();
-            tmc.bUserAvoid = inBUserAvoid;
-            tmc.lX = inLX;
-            tmc.lY = inLY;
-            tmc.nEventCode = inNEventCode;
-            tmc.nValidityDay = inNValidityDay;
-            tmc.nValidityHour = inNValidityHour;
-            tmc.nValidityMinute = inNValidityMinute;
-            tmc.nValidityMonth = inNValidityMonth;
-            tmc.nValidityYear = inNValidityYear;
-            tmc.wID = inWID;
-
-            int ret = CApplicationAPI.AddTMCEvent(out _mySError, ref tmc, inMaxTime);
-            O("AddTMCEvent returns: " + ret.ToString());
-        }
-
         public static void GetNextInstruction(int inMaxTime) 
         {
             SRouteInstruction instr = new SRouteInstruction();

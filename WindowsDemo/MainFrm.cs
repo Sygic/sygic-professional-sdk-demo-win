@@ -626,22 +626,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             ApplicationChangeOptionsTextbox.Refresh();
         }
 
-        private void AddTMCEventBtn_Click(object sender, EventArgs e)
-        {
-            DriveHandler.AddTMCEvent(
-                (int)AddTMCEvent_bUserAvoidNum.Value,
-                (int)AddTMCEvent_lXNum.Value,
-                (int)AddTMCEvent_lYNum.Value,
-                (int)AddTMCEvent_nEventCodeNum.Value,
-                (byte)AddTMCEvent_nValidityDayNum.Value,
-                (byte)AddTMCEvent_nValidityHourNum.Value,
-                (byte)AddTMCEvent_nValidityMinuteNum.Value,
-                (byte)AddTMCEvent_nValidityMonthNum.Value,
-                (uint)AddTMCEvent_nValidityYearNum.Value,
-                (byte)AddTMCEvent_wIDNum.Value,
-                (int)AddTMCEvent_MaxTimeNum.Value);
-        }
-
         private void GetNextInstructionBtn_Click(object sender, EventArgs e)
         {
             DriveHandler.GetNextInstruction((int)GetNextInstruction_MaxTimeNum.Value);
@@ -1065,11 +1049,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private void getSDKversionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DriveHandler.GetSdkVersion();
-        }
-
-        private void addTMCEventToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TC.SelectedTab = T11;
         }
 
         private void bringAppToBackgroundToolStripMenuItem_Click(object sender, EventArgs e)
