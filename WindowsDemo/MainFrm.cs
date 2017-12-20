@@ -1062,6 +1062,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             TC.SelectedTab = T8;
         }
 
+        private void getSDKversionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DriveHandler.GetSdkVersion();
+        }
+
         private void addTMCEventToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TC.SelectedTab = T11;

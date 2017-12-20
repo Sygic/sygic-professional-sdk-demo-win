@@ -605,6 +605,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.getPoiCategoryListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getPoiListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getRouteInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.getSDKversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getUniqueDeviceIdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.highlightPoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changeAppRectangleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -7750,6 +7751,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.getPoiCategoryListToolStripMenuItem,
             this.getPoiListToolStripMenuItem,
             this.getRouteInfoToolStripMenuItem,
+            this.getSDKversionToolStripMenuItem,
             this.getUniqueDeviceIdToolStripMenuItem,
             this.highlightPoiToolStripMenuItem,
             this.changeAppRectangleToolStripMenuItem,
@@ -7928,6 +7930,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.getRouteInfoToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getRouteInfoToolStripMenuItem.Text = "GetRouteInfo";
             this.getRouteInfoToolStripMenuItem.Click += new System.EventHandler(this.getRouteInfoToolStripMenuItem_Click);
+            // 
+            // getSDKversionToolStripMenuItem
+            // 
+            this.getSDKversionToolStripMenuItem.Name = "getSDKversionToolStripMenuItem";
+            this.getSDKversionToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.getSDKversionToolStripMenuItem.Text = "GetSDKversion";
+            this.getSDKversionToolStripMenuItem.Click += new System.EventHandler(this.getSDKversionToolStripMenuItem_Click);
             // 
             // getUniqueDeviceIdToolStripMenuItem
             // 
@@ -9385,6 +9394,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.ToolStripMenuItem getPoiCategoryListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem getPoiListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem getRouteInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem getSDKversionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem getUniqueDeviceIdToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changeAppRectangleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changeApplicationOptionsToolStripMenuItem;

@@ -792,30 +792,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             return false;         
         }
 
-        //public static void DevideItinerary(string inPath)
-        //{
-        //    SStopOffPoint[] wp;
-        //    CApplicationAPI.GetItineraryList(out _mySError, inPath, out wp, 0);
-
-        //    if (wp != null)
-        //    {
-        //        for (int i = 0; i < wp.Length - 2; i++)
-        //        {
-        //            SStopOffPoint[] tmpWp = new SStopOffPoint[3];
-        //            tmpWp[0] = wp[i];
-        //            tmpWp[0].nPointType = 3;
-
-        //            tmpWp[1] = wp[i + 1];
-        //            tmpWp[1].nPointType = 1;
-
-        //            tmpWp[2] = wp[i + 2];
-        //            tmpWp[2].nPointType = 2;
-        //            O("Itinerary name: " + inPath + i.ToString());
-        //            DriveHandler.AddItinerary(inPath + i.ToString(), tmpWp);
-        //        }
-        //    }
-        //}
-
         public static void DevideItinerary(string inPath)
         {
             SStopOffPoint[] wp;
@@ -836,31 +812,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                 }
             }
         }
-
-        //public static void DevideItineraryAndCompute(string inPath)
-        //{
-        //    SStopOffPoint[] wp;
-        //    CApplicationAPI.GetItineraryList(out _mySError, inPath, out wp, 0);
-
-        //    if (wp != null)
-        //    {
-        //        for (int i = 0; i < wp.Length - 2; i++)
-        //        {
-        //            SStopOffPoint[] tmpWp = new SStopOffPoint[3];
-        //            tmpWp[0] = wp[i];
-        //            tmpWp[0].nPointType = 3;
-
-        //            tmpWp[1] = wp[i + 1];
-        //            tmpWp[1].nPointType = 1;
-
-        //            tmpWp[2] = wp[i + 2];
-        //            tmpWp[2].nPointType = 2;
-        //            O("Itinerary name: " + inPath + i.ToString());
-        //            DriveHandler.AddItinerary(inPath + i.ToString(), tmpWp);
-        //            DriveHandler.SetRoute(inPath + i.ToString(), 0, true, 0);
-        //        }
-        //    }
-        //}
 
         public static void DevideItineraryAndCompute(string inPath)
         {
@@ -950,6 +901,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         {
             int ret = CApplicationAPI.DeleteEntryInItinerary(out _mySError, inStrItineraryName, inNIndex, inMaxTime);
             O("DeleteEntryInItinerary returns: " + ret.ToString());
+        }
+
+        public static void GetSdkVersion()
+        {
+            string sdkVersion = "";
+            string buildNumber = "";
+            int ret = CApplicationAPI.GetSdkVersion(out _mySError, out sdkVersion, out buildNumber, 0);
+            O("GetSdkVersion returns: " + ret.ToString() + "; " + sdkVersion + "; " + buildNumber);
         }
 
         #endregion
