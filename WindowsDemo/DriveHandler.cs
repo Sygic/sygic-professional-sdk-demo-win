@@ -882,6 +882,24 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             O("GetSdkVersion returns: " + ret.ToString() + "; " + sdkVersion + "; " + buildNumber);
         }
 
+        public static void GetMapCorrectionEvents(out string data, int inMaxValue)
+        {
+            int ret = CApplicationAPI.GetMapCorrectionEvents(out _mySError, out data, inMaxValue);
+            O("GetMapCorrectionEvents returns: " + ret);
+        }
+
+        public static void AddMapCorrectionEvents(string data, int inMaxValue)
+        {
+            int ret = CApplicationAPI.AddMapCorrectionEvents(out _mySError, data, inMaxValue);
+            O("AddMapCorrectionEvents returns: " + ret);
+        }
+
+        public static void ClearMapCorrectionEvents(int inMaxValue)
+        {
+            int ret = CApplicationAPI.ClearMapCorrectionEvents(out _mySError, inMaxValue);
+            O("ClearMapCorrectionEvents returns: " + ret);
+        }
+
         #endregion
 
     }

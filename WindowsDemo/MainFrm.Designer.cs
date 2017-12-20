@@ -558,10 +558,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.addBitmapToMapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addEntryToItineraryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addItineraryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addMapCorrectionEvensToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addPoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addPoiCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bringAppToBackgroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bringAppToForegroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearMapCorrectionEventsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeDialogsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteEntryInItineraryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteItineraryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -573,6 +575,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.getCurrentSpeedLimitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getItineraryListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getLocationInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.getMapCorrectionEventsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getMapVersionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getNextInstructionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getPoiCategoryListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -641,6 +644,18 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SetRoute_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
             this.SetRouteBtn = new System.Windows.Forms.Button();
             this.openGpsDataDlg = new System.Windows.Forms.OpenFileDialog();
+            this.T11 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
+            this.label207 = new System.Windows.Forms.Label();
+            this.label208 = new System.Windows.Forms.Label();
+            this.GetMapCorrection_btn = new System.Windows.Forms.Button();
+            this.label209 = new System.Windows.Forms.Label();
+            this.label210 = new System.Windows.Forms.Label();
+            this.AddMapCorrectionEvents = new System.Windows.Forms.Button();
+            this.label211 = new System.Windows.Forms.Label();
+            this.ClearMapCorrecionEvents_btn = new System.Windows.Forms.Button();
+            this.GetMapCorrection_TB = new System.Windows.Forms.TextBox();
+            this.AddMapCorrection_TB = new System.Windows.Forms.TextBox();
             this.TC.SuspendLayout();
             this.T1.SuspendLayout();
             this.ScreenResolutionGB.SuspendLayout();
@@ -866,6 +881,8 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             ((System.ComponentModel.ISupportInitialize)(this.ShowMessage_maxTimeNum)).BeginInit();
             this.SetRouteTlp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_MaxTimeNum)).BeginInit();
+            this.T11.SuspendLayout();
+            this.tableLayoutPanel25.SuspendLayout();
             this.SuspendLayout();
             // 
             // TC
@@ -880,6 +897,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.TC.Controls.Add(this.T8);
             this.TC.Controls.Add(this.T9);
             this.TC.Controls.Add(this.T10);
+            this.TC.Controls.Add(this.T11);
             this.TC.Controls.Add(this.T12);
             this.TC.Controls.Add(this.T13);
             this.TC.Controls.Add(this.T14);
@@ -7362,10 +7380,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.addBitmapToMapToolStripMenuItem,
             this.addEntryToItineraryToolStripMenuItem,
             this.addItineraryToolStripMenuItem,
+            this.addMapCorrectionEvensToolStripMenuItem,
             this.addPoiToolStripMenuItem,
             this.addPoiCategoryToolStripMenuItem,
             this.bringAppToBackgroundToolStripMenuItem,
             this.bringAppToForegroundToolStripMenuItem,
+            this.clearMapCorrectionEventsToolStripMenuItem,
             this.closeDialogsToolStripMenuItem,
             this.deleteEntryInItineraryToolStripMenuItem,
             this.deleteItineraryToolStripMenuItem,
@@ -7377,6 +7397,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.getCurrentSpeedLimitToolStripMenuItem,
             this.getItineraryListToolStripMenuItem,
             this.getLocationInfoToolStripMenuItem,
+            this.getMapCorrectionEventsToolStripMenuItem,
             this.getMapVersionToolStripMenuItem,
             this.getNextInstructionToolStripMenuItem,
             this.getPoiCategoryListToolStripMenuItem,
@@ -7429,6 +7450,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.addPoiCategoryToolStripMenuItem.Text = "AddPoiCategory";
             this.addPoiCategoryToolStripMenuItem.Click += new System.EventHandler(this.addPoiCategoryToolStripMenuItem_Click);
             // 
+            // addMapCorrectionEvensToolStripMenuItem
+            // 
+            this.addMapCorrectionEvensToolStripMenuItem.Name = "addMapCorrectionEvensToolStripMenuItem";
+            this.addMapCorrectionEvensToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.addMapCorrectionEvensToolStripMenuItem.Text = "AddMapCorrectionEvens";
+            this.addMapCorrectionEvensToolStripMenuItem.Click += new System.EventHandler(this.addMapCorrectionEvensToolStripMenuItem_Click);
+            // 
             // bringAppToBackgroundToolStripMenuItem
             // 
             this.bringAppToBackgroundToolStripMenuItem.Name = "bringAppToBackgroundToolStripMenuItem";
@@ -7442,6 +7470,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.bringAppToForegroundToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.bringAppToForegroundToolStripMenuItem.Text = "BringAppToForeground";
             this.bringAppToForegroundToolStripMenuItem.Click += new System.EventHandler(this.bringAppToForegroundToolStripMenuItem_Click);
+            // 
+            // clearMapCorrectionEventsToolStripMenuItem
+            // 
+            this.clearMapCorrectionEventsToolStripMenuItem.Name = "clearMapCorrectionEventsToolStripMenuItem";
+            this.clearMapCorrectionEventsToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.clearMapCorrectionEventsToolStripMenuItem.Text = "ClearMapCorrectionEvents";
+            this.clearMapCorrectionEventsToolStripMenuItem.Click += new System.EventHandler(this.clearMapCorrectionEventsToolStripMenuItem_Click);
             // 
             // closeDialogsToolStripMenuItem
             // 
@@ -7519,6 +7554,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.getLocationInfoToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getLocationInfoToolStripMenuItem.Text = "GetLocationInfo";
             this.getLocationInfoToolStripMenuItem.Click += new System.EventHandler(this.getLocationInfoToolStripMenuItem_Click);
+            // 
+            // getMapCorrectionEventsToolStripMenuItem
+            // 
+            this.getMapCorrectionEventsToolStripMenuItem.Name = "getMapCorrectionEventsToolStripMenuItem";
+            this.getMapCorrectionEventsToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.getMapCorrectionEventsToolStripMenuItem.Text = "GetMapCorrectionEvents";
+            this.getMapCorrectionEventsToolStripMenuItem.Click += new System.EventHandler(this.getMapCorrectionEventsToolStripMenuItem_Click);
             // 
             // getMapVersionToolStripMenuItem
             // 
@@ -8145,6 +8187,138 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.openGpsDataDlg.Title = "Please enter the path to the file with GPS (nmea) data:";
             this.openGpsDataDlg.FileOk += new System.ComponentModel.CancelEventHandler(this.openGpsDataDlg_FileOk);
             // 
+            // T11
+            // 
+            this.T11.Controls.Add(this.tableLayoutPanel25);
+            this.T11.Location = new System.Drawing.Point(4, 19);
+            this.T11.Name = "T11";
+            this.T11.Padding = new System.Windows.Forms.Padding(3);
+            this.T11.Size = new System.Drawing.Size(564, 498);
+            this.T11.TabIndex = 40;
+            this.T11.Text = "T11";
+            this.T11.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel25
+            // 
+            this.tableLayoutPanel25.ColumnCount = 2;
+            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.63636F));
+            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.36364F));
+            this.tableLayoutPanel25.Controls.Add(this.label207, 0, 0);
+            this.tableLayoutPanel25.Controls.Add(this.label208, 0, 1);
+            this.tableLayoutPanel25.Controls.Add(this.GetMapCorrection_btn, 1, 2);
+            this.tableLayoutPanel25.Controls.Add(this.label209, 0, 4);
+            this.tableLayoutPanel25.Controls.Add(this.label210, 0, 5);
+            this.tableLayoutPanel25.Controls.Add(this.AddMapCorrectionEvents, 1, 6);
+            this.tableLayoutPanel25.Controls.Add(this.label211, 0, 8);
+            this.tableLayoutPanel25.Controls.Add(this.ClearMapCorrecionEvents_btn, 1, 8);
+            this.tableLayoutPanel25.Controls.Add(this.GetMapCorrection_TB, 1, 1);
+            this.tableLayoutPanel25.Controls.Add(this.AddMapCorrection_TB, 1, 5);
+            this.tableLayoutPanel25.Location = new System.Drawing.Point(8, 6);
+            this.tableLayoutPanel25.Name = "tableLayoutPanel25";
+            this.tableLayoutPanel25.RowCount = 9;
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.02139F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.97861F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 164F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel25.Size = new System.Drawing.Size(550, 486);
+            this.tableLayoutPanel25.TabIndex = 0;
+            // 
+            // label207
+            // 
+            this.label207.AutoSize = true;
+            this.label207.Location = new System.Drawing.Point(3, 0);
+            this.label207.Name = "label207";
+            this.label207.Size = new System.Drawing.Size(126, 13);
+            this.label207.TabIndex = 0;
+            this.label207.Text = "GetMapCorrectionEvents";
+            // 
+            // label208
+            // 
+            this.label208.AutoSize = true;
+            this.label208.Location = new System.Drawing.Point(3, 15);
+            this.label208.Name = "label208";
+            this.label208.Size = new System.Drawing.Size(37, 13);
+            this.label208.TabIndex = 1;
+            this.label208.Text = "Export";
+            // 
+            // GetMapCorrection_btn
+            // 
+            this.GetMapCorrection_btn.Location = new System.Drawing.Point(154, 190);
+            this.GetMapCorrection_btn.Name = "GetMapCorrection_btn";
+            this.GetMapCorrection_btn.Size = new System.Drawing.Size(392, 28);
+            this.GetMapCorrection_btn.TabIndex = 3;
+            this.GetMapCorrection_btn.Text = "GetMapCorrectionEvents";
+            this.GetMapCorrection_btn.UseVisualStyleBackColor = true;
+            this.GetMapCorrection_btn.Click += new System.EventHandler(this.GetMapCorrection_btn_Click);
+            // 
+            // label209
+            // 
+            this.label209.AutoSize = true;
+            this.label209.Location = new System.Drawing.Point(3, 235);
+            this.label209.Name = "label209";
+            this.label209.Size = new System.Drawing.Size(128, 13);
+            this.label209.TabIndex = 4;
+            this.label209.Text = "AddMapCorrectionEvents";
+            // 
+            // label210
+            // 
+            this.label210.AutoSize = true;
+            this.label210.Location = new System.Drawing.Point(3, 248);
+            this.label210.Name = "label210";
+            this.label210.Size = new System.Drawing.Size(36, 13);
+            this.label210.TabIndex = 5;
+            this.label210.Text = "Import";
+            // 
+            // AddMapCorrectionEvents
+            // 
+            this.AddMapCorrectionEvents.Location = new System.Drawing.Point(154, 415);
+            this.AddMapCorrectionEvents.Name = "AddMapCorrectionEvents";
+            this.AddMapCorrectionEvents.Size = new System.Drawing.Size(392, 28);
+            this.AddMapCorrectionEvents.TabIndex = 7;
+            this.AddMapCorrectionEvents.Text = "AddMapCorrectionEvents";
+            this.AddMapCorrectionEvents.UseVisualStyleBackColor = true;
+            this.AddMapCorrectionEvents.Click += new System.EventHandler(this.AddMapCorrectionEvents_Click);
+            // 
+            // label211
+            // 
+            this.label211.AutoSize = true;
+            this.label211.Location = new System.Drawing.Point(3, 455);
+            this.label211.Name = "label211";
+            this.label211.Size = new System.Drawing.Size(133, 13);
+            this.label211.TabIndex = 8;
+            this.label211.Text = "ClearMapCorrectionEvents";
+            // 
+            // ClearMapCorrecionEvents_btn
+            // 
+            this.ClearMapCorrecionEvents_btn.Location = new System.Drawing.Point(154, 458);
+            this.ClearMapCorrecionEvents_btn.Name = "ClearMapCorrecionEvents_btn";
+            this.ClearMapCorrecionEvents_btn.Size = new System.Drawing.Size(392, 25);
+            this.ClearMapCorrecionEvents_btn.TabIndex = 9;
+            this.ClearMapCorrecionEvents_btn.Text = "ClearMapCorrecionEvents";
+            this.ClearMapCorrecionEvents_btn.UseVisualStyleBackColor = true;
+            this.ClearMapCorrecionEvents_btn.Click += new System.EventHandler(this.ClearMapCorrecionEvents_btn_Click);
+            // 
+            // GetMapCorrection_TB
+            // 
+            this.GetMapCorrection_TB.Location = new System.Drawing.Point(154, 18);
+            this.GetMapCorrection_TB.Multiline = true;
+            this.GetMapCorrection_TB.Name = "GetMapCorrection_TB";
+            this.GetMapCorrection_TB.Size = new System.Drawing.Size(392, 166);
+            this.GetMapCorrection_TB.TabIndex = 10;
+            // 
+            // AddMapCorrection_TB
+            // 
+            this.AddMapCorrection_TB.Location = new System.Drawing.Point(154, 251);
+            this.AddMapCorrection_TB.Multiline = true;
+            this.AddMapCorrection_TB.Name = "AddMapCorrection_TB";
+            this.AddMapCorrection_TB.Size = new System.Drawing.Size(392, 158);
+            this.AddMapCorrection_TB.TabIndex = 11;
+            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -8436,6 +8610,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SetRouteTlp.ResumeLayout(false);
             this.SetRouteTlp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_MaxTimeNum)).EndInit();
+            this.T11.ResumeLayout(false);
+            this.tableLayoutPanel25.ResumeLayout(false);
+            this.tableLayoutPanel25.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -9054,6 +9231,21 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.NumericUpDown DeleteEntryInItinerary_nIndexNum;
         private System.Windows.Forms.NumericUpDown DeleteEntryInItinerary_MaxTimeNum;
         private System.Windows.Forms.ToolStripMenuItem deleteEntryInItineraryToolStripMenuItem;
+        private System.Windows.Forms.TabPage T11;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel25;
+        private System.Windows.Forms.Label label207;
+        private System.Windows.Forms.Label label208;
+        private System.Windows.Forms.Button GetMapCorrection_btn;
+        private System.Windows.Forms.Label label209;
+        private System.Windows.Forms.Label label210;
+        private System.Windows.Forms.Button AddMapCorrectionEvents;
+        private System.Windows.Forms.Label label211;
+        private System.Windows.Forms.Button ClearMapCorrecionEvents_btn;
+        private System.Windows.Forms.ToolStripMenuItem addMapCorrectionEvensToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearMapCorrectionEventsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem getMapCorrectionEventsToolStripMenuItem;
+        private System.Windows.Forms.TextBox GetMapCorrection_TB;
+        private System.Windows.Forms.TextBox AddMapCorrection_TB;
     }
 }
 

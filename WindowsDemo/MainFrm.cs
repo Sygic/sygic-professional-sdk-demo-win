@@ -1447,6 +1447,37 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                 (int)DeleteEntryInItinerary_nIndexNum.Value,
                 (int)DeleteEntryInItinerary_MaxTimeNum.Value);
         }
+        private void GetMapCorrection_btn_Click(object sender, EventArgs e)
+        {
+            string status;
+            DriveHandler.GetMapCorrectionEvents(out status, -1);
+            GetMapCorrection_TB.Text += status;
+        }
+
+        private void AddMapCorrectionEvents_Click(object sender, EventArgs e)
+        {
+            DriveHandler.AddMapCorrectionEvents(AddMapCorrection_TB.Text, -1);
+        }
+
+        private void ClearMapCorrecionEvents_btn_Click(object sender, EventArgs e)
+        {
+            DriveHandler.ClearMapCorrectionEvents(-1);
+        }
+
+        private void addMapCorrectionEvensToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TC.SelectedTab = T11;
+        }
+
+        private void getMapCorrectionEventsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TC.SelectedTab = T11;
+        }
+
+        private void clearMapCorrectionEventsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TC.SelectedTab = T11;
+        }
 
     }
 }
