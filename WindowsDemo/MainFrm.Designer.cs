@@ -205,10 +205,22 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowChangeOptionGB = new System.Windows.Forms.GroupBox();
             this.ApplicationChangeOptionsTextbox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.label44 = new System.Windows.Forms.Label();
             this.ShowChangeOption_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
             this.ShowChangeOptionBtn = new System.Windows.Forms.Button();
             this.ShowChangeOption_SetChangeOptionBtn = new System.Windows.Forms.Button();
+            this.label44 = new System.Windows.Forms.Label();
+            this.T11 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
+            this.label207 = new System.Windows.Forms.Label();
+            this.label208 = new System.Windows.Forms.Label();
+            this.GetMapCorrection_btn = new System.Windows.Forms.Button();
+            this.label209 = new System.Windows.Forms.Label();
+            this.label210 = new System.Windows.Forms.Label();
+            this.AddMapCorrectionEvents = new System.Windows.Forms.Button();
+            this.label211 = new System.Windows.Forms.Label();
+            this.ClearMapCorrecionEvents_btn = new System.Windows.Forms.Button();
+            this.GetMapCorrection_TB = new System.Windows.Forms.TextBox();
+            this.AddMapCorrection_TB = new System.Windows.Forms.TextBox();
             this.T12 = new System.Windows.Forms.TabPage();
             this.GetNextInstructionAutoGB = new System.Windows.Forms.GroupBox();
             this.GetNextInstructionAutoTlp = new System.Windows.Forms.TableLayoutPanel();
@@ -540,6 +552,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.DeleteEntryInItinerary_strItineraryNameTBox = new System.Windows.Forms.TextBox();
             this.DeleteEntryInItinerary_nIndexNum = new System.Windows.Forms.NumericUpDown();
             this.DeleteEntryInItinerary_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
+            this.T38 = new System.Windows.Forms.TabPage();
+            this.panelFts = new System.Windows.Forms.Panel();
+            this.listBoxFts = new System.Windows.Forms.ListBox();
+            this.buttonFts = new System.Windows.Forms.Button();
+            this.textBoxFts = new System.Windows.Forms.TextBox();
+            this.label214 = new System.Windows.Forms.Label();
+            this.label213 = new System.Windows.Forms.Label();
+            this.label212 = new System.Windows.Forms.Label();
             this.P = new System.Windows.Forms.Panel();
             this.OutputRTB = new System.Windows.Forms.RichTextBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
@@ -599,6 +619,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.playSoundTTSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sendGpsDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setRouteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchLocationFTSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showMessageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showCoordinatesOnMapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showRectangleOnMapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -644,18 +665,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SetRoute_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
             this.SetRouteBtn = new System.Windows.Forms.Button();
             this.openGpsDataDlg = new System.Windows.Forms.OpenFileDialog();
-            this.T11 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
-            this.label207 = new System.Windows.Forms.Label();
-            this.label208 = new System.Windows.Forms.Label();
-            this.GetMapCorrection_btn = new System.Windows.Forms.Button();
-            this.label209 = new System.Windows.Forms.Label();
-            this.label210 = new System.Windows.Forms.Label();
-            this.AddMapCorrectionEvents = new System.Windows.Forms.Button();
-            this.label211 = new System.Windows.Forms.Label();
-            this.ClearMapCorrecionEvents_btn = new System.Windows.Forms.Button();
-            this.GetMapCorrection_TB = new System.Windows.Forms.TextBox();
-            this.AddMapCorrection_TB = new System.Windows.Forms.TextBox();
             this.TC.SuspendLayout();
             this.T1.SuspendLayout();
             this.ScreenResolutionGB.SuspendLayout();
@@ -730,6 +739,8 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowChangeOptionGB.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShowChangeOption_MaxTimeNum)).BeginInit();
+            this.T11.SuspendLayout();
+            this.tableLayoutPanel25.SuspendLayout();
             this.T12.SuspendLayout();
             this.GetNextInstructionAutoGB.SuspendLayout();
             this.GetNextInstructionAutoTlp.SuspendLayout();
@@ -871,6 +882,8 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T37.SuspendLayout();
             this.DeleteEntryInItineraryGB.SuspendLayout();
             this.DeleteEntryInItineraryTlp.SuspendLayout();
+            this.T38.SuspendLayout();
+            this.panelFts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DeleteEntryInItinerary_nIndexNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DeleteEntryInItinerary_MaxTimeNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_FlagsNum)).BeginInit();
@@ -881,8 +894,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             ((System.ComponentModel.ISupportInitialize)(this.ShowMessage_maxTimeNum)).BeginInit();
             this.SetRouteTlp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_MaxTimeNum)).BeginInit();
-            this.T11.SuspendLayout();
-            this.tableLayoutPanel25.SuspendLayout();
             this.SuspendLayout();
             // 
             // TC
@@ -924,6 +935,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.TC.Controls.Add(this.T35);
             this.TC.Controls.Add(this.T36);
             this.TC.Controls.Add(this.T37);
+            this.TC.Controls.Add(this.T38);
             this.TC.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.TC.ItemSize = new System.Drawing.Size(30, 15);
             this.TC.Location = new System.Drawing.Point(0, 26);
@@ -3302,7 +3314,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // ApplicationChangeOptionsTextbox
             // 
             this.ApplicationChangeOptionsTextbox.AcceptsReturn = true;
-            this.ApplicationChangeOptionsTextbox.WordWrap = true;
             this.ApplicationChangeOptionsTextbox.Location = new System.Drawing.Point(150, 19);
             this.ApplicationChangeOptionsTextbox.Multiline = true;
             this.ApplicationChangeOptionsTextbox.Name = "ApplicationChangeOptionsTextbox";
@@ -3328,15 +3339,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.Size = new System.Drawing.Size(141, 137);
             this.tableLayoutPanel9.TabIndex = 1;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(3, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(36, 26);
-            this.label44.TabIndex = 0;
-            this.label44.Text = "MaxTime";
             // 
             // ShowChangeOption_MaxTimeNum
             // 
@@ -3375,6 +3377,147 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.ShowChangeOption_SetChangeOptionBtn.Text = "SetApplicationOptions";
             this.ShowChangeOption_SetChangeOptionBtn.UseVisualStyleBackColor = true;
             this.ShowChangeOption_SetChangeOptionBtn.Click += new System.EventHandler(this.ShowChangeOption_SetChangeOptionBtn_Click);
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(3, 0);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(36, 26);
+            this.label44.TabIndex = 0;
+            this.label44.Text = "MaxTime";
+            // 
+            // T11
+            // 
+            this.T11.Controls.Add(this.tableLayoutPanel25);
+            this.T11.Location = new System.Drawing.Point(4, 19);
+            this.T11.Name = "T11";
+            this.T11.Padding = new System.Windows.Forms.Padding(3);
+            this.T11.Size = new System.Drawing.Size(564, 498);
+            this.T11.TabIndex = 40;
+            this.T11.Text = "T11";
+            this.T11.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel25
+            // 
+            this.tableLayoutPanel25.ColumnCount = 2;
+            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.63636F));
+            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.36364F));
+            this.tableLayoutPanel25.Controls.Add(this.label207, 0, 0);
+            this.tableLayoutPanel25.Controls.Add(this.label208, 0, 1);
+            this.tableLayoutPanel25.Controls.Add(this.GetMapCorrection_btn, 1, 2);
+            this.tableLayoutPanel25.Controls.Add(this.label209, 0, 4);
+            this.tableLayoutPanel25.Controls.Add(this.label210, 0, 5);
+            this.tableLayoutPanel25.Controls.Add(this.AddMapCorrectionEvents, 1, 6);
+            this.tableLayoutPanel25.Controls.Add(this.label211, 0, 8);
+            this.tableLayoutPanel25.Controls.Add(this.ClearMapCorrecionEvents_btn, 1, 8);
+            this.tableLayoutPanel25.Controls.Add(this.GetMapCorrection_TB, 1, 1);
+            this.tableLayoutPanel25.Controls.Add(this.AddMapCorrection_TB, 1, 5);
+            this.tableLayoutPanel25.Location = new System.Drawing.Point(8, 6);
+            this.tableLayoutPanel25.Name = "tableLayoutPanel25";
+            this.tableLayoutPanel25.RowCount = 9;
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.02139F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.97861F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 164F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel25.Size = new System.Drawing.Size(550, 486);
+            this.tableLayoutPanel25.TabIndex = 0;
+            // 
+            // label207
+            // 
+            this.label207.AutoSize = true;
+            this.label207.Location = new System.Drawing.Point(3, 0);
+            this.label207.Name = "label207";
+            this.label207.Size = new System.Drawing.Size(126, 13);
+            this.label207.TabIndex = 0;
+            this.label207.Text = "GetMapCorrectionEvents";
+            // 
+            // label208
+            // 
+            this.label208.AutoSize = true;
+            this.label208.Location = new System.Drawing.Point(3, 15);
+            this.label208.Name = "label208";
+            this.label208.Size = new System.Drawing.Size(37, 13);
+            this.label208.TabIndex = 1;
+            this.label208.Text = "Export";
+            // 
+            // GetMapCorrection_btn
+            // 
+            this.GetMapCorrection_btn.Location = new System.Drawing.Point(154, 190);
+            this.GetMapCorrection_btn.Name = "GetMapCorrection_btn";
+            this.GetMapCorrection_btn.Size = new System.Drawing.Size(392, 28);
+            this.GetMapCorrection_btn.TabIndex = 3;
+            this.GetMapCorrection_btn.Text = "GetMapCorrectionEvents";
+            this.GetMapCorrection_btn.UseVisualStyleBackColor = true;
+            this.GetMapCorrection_btn.Click += new System.EventHandler(this.GetMapCorrection_btn_Click);
+            // 
+            // label209
+            // 
+            this.label209.AutoSize = true;
+            this.label209.Location = new System.Drawing.Point(3, 235);
+            this.label209.Name = "label209";
+            this.label209.Size = new System.Drawing.Size(128, 13);
+            this.label209.TabIndex = 4;
+            this.label209.Text = "AddMapCorrectionEvents";
+            // 
+            // label210
+            // 
+            this.label210.AutoSize = true;
+            this.label210.Location = new System.Drawing.Point(3, 248);
+            this.label210.Name = "label210";
+            this.label210.Size = new System.Drawing.Size(36, 13);
+            this.label210.TabIndex = 5;
+            this.label210.Text = "Import";
+            // 
+            // AddMapCorrectionEvents
+            // 
+            this.AddMapCorrectionEvents.Location = new System.Drawing.Point(154, 415);
+            this.AddMapCorrectionEvents.Name = "AddMapCorrectionEvents";
+            this.AddMapCorrectionEvents.Size = new System.Drawing.Size(392, 28);
+            this.AddMapCorrectionEvents.TabIndex = 7;
+            this.AddMapCorrectionEvents.Text = "AddMapCorrectionEvents";
+            this.AddMapCorrectionEvents.UseVisualStyleBackColor = true;
+            this.AddMapCorrectionEvents.Click += new System.EventHandler(this.AddMapCorrectionEvents_Click);
+            // 
+            // label211
+            // 
+            this.label211.AutoSize = true;
+            this.label211.Location = new System.Drawing.Point(3, 455);
+            this.label211.Name = "label211";
+            this.label211.Size = new System.Drawing.Size(133, 13);
+            this.label211.TabIndex = 8;
+            this.label211.Text = "ClearMapCorrectionEvents";
+            // 
+            // ClearMapCorrecionEvents_btn
+            // 
+            this.ClearMapCorrecionEvents_btn.Location = new System.Drawing.Point(154, 458);
+            this.ClearMapCorrecionEvents_btn.Name = "ClearMapCorrecionEvents_btn";
+            this.ClearMapCorrecionEvents_btn.Size = new System.Drawing.Size(392, 25);
+            this.ClearMapCorrecionEvents_btn.TabIndex = 9;
+            this.ClearMapCorrecionEvents_btn.Text = "ClearMapCorrecionEvents";
+            this.ClearMapCorrecionEvents_btn.UseVisualStyleBackColor = true;
+            this.ClearMapCorrecionEvents_btn.Click += new System.EventHandler(this.ClearMapCorrecionEvents_btn_Click);
+            // 
+            // GetMapCorrection_TB
+            // 
+            this.GetMapCorrection_TB.Location = new System.Drawing.Point(154, 18);
+            this.GetMapCorrection_TB.Multiline = true;
+            this.GetMapCorrection_TB.Name = "GetMapCorrection_TB";
+            this.GetMapCorrection_TB.Size = new System.Drawing.Size(392, 166);
+            this.GetMapCorrection_TB.TabIndex = 10;
+            // 
+            // AddMapCorrection_TB
+            // 
+            this.AddMapCorrection_TB.Location = new System.Drawing.Point(154, 251);
+            this.AddMapCorrection_TB.Multiline = true;
+            this.AddMapCorrection_TB.Name = "AddMapCorrection_TB";
+            this.AddMapCorrection_TB.Size = new System.Drawing.Size(392, 158);
+            this.AddMapCorrection_TB.TabIndex = 11;
             // 
             // T12
             // 
@@ -3698,7 +3841,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GpsLogStartStopTlp.ColumnCount = 3;
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.87719F));
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.12281F));
-            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 436F));
+            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 437F));
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStartBtn, 0, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStopBtn, 2, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogPauseBtn, 1, 0);
@@ -3714,7 +3857,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.PlayGpsLogStartBtn.Image = global::WindowsDemo.Properties.Resources.Button_Play_icon;
             this.PlayGpsLogStartBtn.Location = new System.Drawing.Point(3, 3);
             this.PlayGpsLogStartBtn.Name = "PlayGpsLogStartBtn";
-            this.PlayGpsLogStartBtn.Size = new System.Drawing.Size(41, 45);
+            this.PlayGpsLogStartBtn.Size = new System.Drawing.Size(40, 45);
             this.PlayGpsLogStartBtn.TabIndex = 2;
             this.PlayGpsLogStartBtn.UseVisualStyleBackColor = true;
             this.PlayGpsLogStartBtn.Click += new System.EventHandler(this.PlayGpsLogStartBtn_Click);
@@ -3722,7 +3865,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLogStopBtn
             // 
             this.PlayGpsLogStopBtn.Image = global::WindowsDemo.Properties.Resources.Button_Stop_icon;
-            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(95, 3);
+            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(94, 3);
             this.PlayGpsLogStopBtn.Name = "PlayGpsLogStopBtn";
             this.PlayGpsLogStopBtn.Size = new System.Drawing.Size(45, 45);
             this.PlayGpsLogStopBtn.TabIndex = 3;
@@ -3732,7 +3875,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLogPauseBtn
             // 
             this.PlayGpsLogPauseBtn.Image = global::WindowsDemo.Properties.Resources.Button_Pause_icon;
-            this.PlayGpsLogPauseBtn.Location = new System.Drawing.Point(50, 3);
+            this.PlayGpsLogPauseBtn.Location = new System.Drawing.Point(49, 3);
             this.PlayGpsLogPauseBtn.Name = "PlayGpsLogPauseBtn";
             this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(39, 45);
             this.PlayGpsLogPauseBtn.TabIndex = 4;
@@ -7254,6 +7397,91 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.DeleteEntryInItinerary_MaxTimeNum.Size = new System.Drawing.Size(120, 20);
             this.DeleteEntryInItinerary_MaxTimeNum.TabIndex = 6;
             // 
+            // T38
+            // 
+            this.T38.Controls.Add(this.panelFts);
+            this.T38.Location = new System.Drawing.Point(4, 19);
+            this.T38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.T38.Name = "T38";
+            this.T38.Size = new System.Drawing.Size(564, 498);
+            this.T38.TabIndex = 41;
+            this.T38.Text = "T38";
+            this.T38.UseVisualStyleBackColor = true;
+            // 
+            // panelFts
+            // 
+            this.panelFts.BackColor = System.Drawing.SystemColors.Control;
+            this.panelFts.Controls.Add(this.listBoxFts);
+            this.panelFts.Controls.Add(this.buttonFts);
+            this.panelFts.Controls.Add(this.textBoxFts);
+            this.panelFts.Controls.Add(this.label214);
+            this.panelFts.Controls.Add(this.label213);
+            this.panelFts.Controls.Add(this.label212);
+            this.panelFts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelFts.Location = new System.Drawing.Point(0, 0);
+            this.panelFts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelFts.Name = "panelFts";
+            this.panelFts.Size = new System.Drawing.Size(564, 498);
+            this.panelFts.TabIndex = 0;
+            // 
+            // listBoxFts
+            // 
+            this.listBoxFts.FormattingEnabled = true;
+            this.listBoxFts.Location = new System.Drawing.Point(8, 171);
+            this.listBoxFts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxFts.Name = "listBoxFts";
+            this.listBoxFts.Size = new System.Drawing.Size(527, 316);
+            this.listBoxFts.TabIndex = 5;
+            // 
+            // buttonFts
+            // 
+            this.buttonFts.Location = new System.Drawing.Point(8, 80);
+            this.buttonFts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonFts.Name = "buttonFts";
+            this.buttonFts.Size = new System.Drawing.Size(166, 33);
+            this.buttonFts.TabIndex = 4;
+            this.buttonFts.Text = "Search Location";
+            this.buttonFts.UseVisualStyleBackColor = true;
+            this.buttonFts.Click += new System.EventHandler(this.buttonFts_Click);
+            // 
+            // textBoxFts
+            // 
+            this.textBoxFts.Location = new System.Drawing.Point(84, 49);
+            this.textBoxFts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxFts.Name = "textBoxFts";
+            this.textBoxFts.Size = new System.Drawing.Size(451, 20);
+            this.textBoxFts.TabIndex = 3;
+            // 
+            // label214
+            // 
+            this.label214.AutoSize = true;
+            this.label214.Location = new System.Drawing.Point(6, 141);
+            this.label214.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label214.Name = "label214";
+            this.label214.Size = new System.Drawing.Size(45, 13);
+            this.label214.TabIndex = 2;
+            this.label214.Text = "Results:";
+            // 
+            // label213
+            // 
+            this.label213.AutoSize = true;
+            this.label213.Location = new System.Drawing.Point(6, 51);
+            this.label213.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label213.Name = "label213";
+            this.label213.Size = new System.Drawing.Size(75, 13);
+            this.label213.TabIndex = 1;
+            this.label213.Text = "Text to search";
+            // 
+            // label212
+            // 
+            this.label212.AutoSize = true;
+            this.label212.Location = new System.Drawing.Point(6, 11);
+            this.label212.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label212.Name = "label212";
+            this.label212.Size = new System.Drawing.Size(78, 13);
+            this.label212.TabIndex = 0;
+            this.label212.Text = "Full-text search";
+            // 
             // P
             // 
             this.P.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -7436,6 +7664,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.addItineraryToolStripMenuItem.Text = "AddItinerary";
             this.addItineraryToolStripMenuItem.Click += new System.EventHandler(this.addItineraryToolStripMenuItem_Click);
             // 
+            // addMapCorrectionEvensToolStripMenuItem
+            // 
+            this.addMapCorrectionEvensToolStripMenuItem.Name = "addMapCorrectionEvensToolStripMenuItem";
+            this.addMapCorrectionEvensToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.addMapCorrectionEvensToolStripMenuItem.Text = "AddMapCorrectionEvens";
+            this.addMapCorrectionEvensToolStripMenuItem.Click += new System.EventHandler(this.addMapCorrectionEvensToolStripMenuItem_Click);
+            // 
             // addPoiToolStripMenuItem
             // 
             this.addPoiToolStripMenuItem.Name = "addPoiToolStripMenuItem";
@@ -7449,13 +7684,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.addPoiCategoryToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.addPoiCategoryToolStripMenuItem.Text = "AddPoiCategory";
             this.addPoiCategoryToolStripMenuItem.Click += new System.EventHandler(this.addPoiCategoryToolStripMenuItem_Click);
-            // 
-            // addMapCorrectionEvensToolStripMenuItem
-            // 
-            this.addMapCorrectionEvensToolStripMenuItem.Name = "addMapCorrectionEvensToolStripMenuItem";
-            this.addMapCorrectionEvensToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.addMapCorrectionEvensToolStripMenuItem.Text = "AddMapCorrectionEvens";
-            this.addMapCorrectionEvensToolStripMenuItem.Click += new System.EventHandler(this.addMapCorrectionEvensToolStripMenuItem_Click);
             // 
             // bringAppToBackgroundToolStripMenuItem
             // 
@@ -7474,7 +7702,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // clearMapCorrectionEventsToolStripMenuItem
             // 
             this.clearMapCorrectionEventsToolStripMenuItem.Name = "clearMapCorrectionEventsToolStripMenuItem";
-            this.clearMapCorrectionEventsToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.clearMapCorrectionEventsToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.clearMapCorrectionEventsToolStripMenuItem.Text = "ClearMapCorrectionEvents";
             this.clearMapCorrectionEventsToolStripMenuItem.Click += new System.EventHandler(this.clearMapCorrectionEventsToolStripMenuItem_Click);
             // 
@@ -7558,7 +7786,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // getMapCorrectionEventsToolStripMenuItem
             // 
             this.getMapCorrectionEventsToolStripMenuItem.Name = "getMapCorrectionEventsToolStripMenuItem";
-            this.getMapCorrectionEventsToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.getMapCorrectionEventsToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getMapCorrectionEventsToolStripMenuItem.Text = "GetMapCorrectionEvents";
             this.getMapCorrectionEventsToolStripMenuItem.Click += new System.EventHandler(this.getMapCorrectionEventsToolStripMenuItem_Click);
             // 
@@ -7600,7 +7828,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // getSDKversionToolStripMenuItem
             // 
             this.getSDKversionToolStripMenuItem.Name = "getSDKversionToolStripMenuItem";
-            this.getSDKversionToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.getSDKversionToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.getSDKversionToolStripMenuItem.Text = "GetSDKversion";
             this.getSDKversionToolStripMenuItem.Click += new System.EventHandler(this.getSDKversionToolStripMenuItem_Click);
             // 
@@ -7654,6 +7882,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.playSoundTTSToolStripMenuItem,
             this.sendGpsDataToolStripMenuItem,
             this.setRouteToolStripMenuItem,
+            this.searchLocationFTSToolStripMenuItem,
             this.showMessageToolStripMenuItem,
             this.showCoordinatesOnMapToolStripMenuItem,
             this.showRectangleOnMapToolStripMenuItem,
@@ -7746,6 +7975,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.setRouteToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.setRouteToolStripMenuItem.Text = "SetRoute";
             this.setRouteToolStripMenuItem.Click += new System.EventHandler(this.setRouteToolStripMenuItem_Click);
+            // 
+            // searchLocationFTSToolStripMenuItem
+            // 
+            this.searchLocationFTSToolStripMenuItem.Name = "searchLocationFTSToolStripMenuItem";
+            this.searchLocationFTSToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.searchLocationFTSToolStripMenuItem.Text = "Search Location FTS";
+            this.searchLocationFTSToolStripMenuItem.Click += new System.EventHandler(this.searchLocationFTSToolStripMenuItem_Click);
             // 
             // showMessageToolStripMenuItem
             // 
@@ -8187,138 +8423,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.openGpsDataDlg.Title = "Please enter the path to the file with GPS (nmea) data:";
             this.openGpsDataDlg.FileOk += new System.ComponentModel.CancelEventHandler(this.openGpsDataDlg_FileOk);
             // 
-            // T11
-            // 
-            this.T11.Controls.Add(this.tableLayoutPanel25);
-            this.T11.Location = new System.Drawing.Point(4, 19);
-            this.T11.Name = "T11";
-            this.T11.Padding = new System.Windows.Forms.Padding(3);
-            this.T11.Size = new System.Drawing.Size(564, 498);
-            this.T11.TabIndex = 40;
-            this.T11.Text = "T11";
-            this.T11.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel25
-            // 
-            this.tableLayoutPanel25.ColumnCount = 2;
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.63636F));
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.36364F));
-            this.tableLayoutPanel25.Controls.Add(this.label207, 0, 0);
-            this.tableLayoutPanel25.Controls.Add(this.label208, 0, 1);
-            this.tableLayoutPanel25.Controls.Add(this.GetMapCorrection_btn, 1, 2);
-            this.tableLayoutPanel25.Controls.Add(this.label209, 0, 4);
-            this.tableLayoutPanel25.Controls.Add(this.label210, 0, 5);
-            this.tableLayoutPanel25.Controls.Add(this.AddMapCorrectionEvents, 1, 6);
-            this.tableLayoutPanel25.Controls.Add(this.label211, 0, 8);
-            this.tableLayoutPanel25.Controls.Add(this.ClearMapCorrecionEvents_btn, 1, 8);
-            this.tableLayoutPanel25.Controls.Add(this.GetMapCorrection_TB, 1, 1);
-            this.tableLayoutPanel25.Controls.Add(this.AddMapCorrection_TB, 1, 5);
-            this.tableLayoutPanel25.Location = new System.Drawing.Point(8, 6);
-            this.tableLayoutPanel25.Name = "tableLayoutPanel25";
-            this.tableLayoutPanel25.RowCount = 9;
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.02139F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.97861F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 164F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(550, 486);
-            this.tableLayoutPanel25.TabIndex = 0;
-            // 
-            // label207
-            // 
-            this.label207.AutoSize = true;
-            this.label207.Location = new System.Drawing.Point(3, 0);
-            this.label207.Name = "label207";
-            this.label207.Size = new System.Drawing.Size(126, 13);
-            this.label207.TabIndex = 0;
-            this.label207.Text = "GetMapCorrectionEvents";
-            // 
-            // label208
-            // 
-            this.label208.AutoSize = true;
-            this.label208.Location = new System.Drawing.Point(3, 15);
-            this.label208.Name = "label208";
-            this.label208.Size = new System.Drawing.Size(37, 13);
-            this.label208.TabIndex = 1;
-            this.label208.Text = "Export";
-            // 
-            // GetMapCorrection_btn
-            // 
-            this.GetMapCorrection_btn.Location = new System.Drawing.Point(154, 190);
-            this.GetMapCorrection_btn.Name = "GetMapCorrection_btn";
-            this.GetMapCorrection_btn.Size = new System.Drawing.Size(392, 28);
-            this.GetMapCorrection_btn.TabIndex = 3;
-            this.GetMapCorrection_btn.Text = "GetMapCorrectionEvents";
-            this.GetMapCorrection_btn.UseVisualStyleBackColor = true;
-            this.GetMapCorrection_btn.Click += new System.EventHandler(this.GetMapCorrection_btn_Click);
-            // 
-            // label209
-            // 
-            this.label209.AutoSize = true;
-            this.label209.Location = new System.Drawing.Point(3, 235);
-            this.label209.Name = "label209";
-            this.label209.Size = new System.Drawing.Size(128, 13);
-            this.label209.TabIndex = 4;
-            this.label209.Text = "AddMapCorrectionEvents";
-            // 
-            // label210
-            // 
-            this.label210.AutoSize = true;
-            this.label210.Location = new System.Drawing.Point(3, 248);
-            this.label210.Name = "label210";
-            this.label210.Size = new System.Drawing.Size(36, 13);
-            this.label210.TabIndex = 5;
-            this.label210.Text = "Import";
-            // 
-            // AddMapCorrectionEvents
-            // 
-            this.AddMapCorrectionEvents.Location = new System.Drawing.Point(154, 415);
-            this.AddMapCorrectionEvents.Name = "AddMapCorrectionEvents";
-            this.AddMapCorrectionEvents.Size = new System.Drawing.Size(392, 28);
-            this.AddMapCorrectionEvents.TabIndex = 7;
-            this.AddMapCorrectionEvents.Text = "AddMapCorrectionEvents";
-            this.AddMapCorrectionEvents.UseVisualStyleBackColor = true;
-            this.AddMapCorrectionEvents.Click += new System.EventHandler(this.AddMapCorrectionEvents_Click);
-            // 
-            // label211
-            // 
-            this.label211.AutoSize = true;
-            this.label211.Location = new System.Drawing.Point(3, 455);
-            this.label211.Name = "label211";
-            this.label211.Size = new System.Drawing.Size(133, 13);
-            this.label211.TabIndex = 8;
-            this.label211.Text = "ClearMapCorrectionEvents";
-            // 
-            // ClearMapCorrecionEvents_btn
-            // 
-            this.ClearMapCorrecionEvents_btn.Location = new System.Drawing.Point(154, 458);
-            this.ClearMapCorrecionEvents_btn.Name = "ClearMapCorrecionEvents_btn";
-            this.ClearMapCorrecionEvents_btn.Size = new System.Drawing.Size(392, 25);
-            this.ClearMapCorrecionEvents_btn.TabIndex = 9;
-            this.ClearMapCorrecionEvents_btn.Text = "ClearMapCorrecionEvents";
-            this.ClearMapCorrecionEvents_btn.UseVisualStyleBackColor = true;
-            this.ClearMapCorrecionEvents_btn.Click += new System.EventHandler(this.ClearMapCorrecionEvents_btn_Click);
-            // 
-            // GetMapCorrection_TB
-            // 
-            this.GetMapCorrection_TB.Location = new System.Drawing.Point(154, 18);
-            this.GetMapCorrection_TB.Multiline = true;
-            this.GetMapCorrection_TB.Name = "GetMapCorrection_TB";
-            this.GetMapCorrection_TB.Size = new System.Drawing.Size(392, 166);
-            this.GetMapCorrection_TB.TabIndex = 10;
-            // 
-            // AddMapCorrection_TB
-            // 
-            this.AddMapCorrection_TB.Location = new System.Drawing.Point(154, 251);
-            this.AddMapCorrection_TB.Multiline = true;
-            this.AddMapCorrection_TB.Name = "AddMapCorrection_TB";
-            this.AddMapCorrection_TB.Size = new System.Drawing.Size(392, 158);
-            this.AddMapCorrection_TB.TabIndex = 11;
-            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -8425,6 +8529,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShowChangeOption_MaxTimeNum)).EndInit();
+            this.T11.ResumeLayout(false);
+            this.tableLayoutPanel25.ResumeLayout(false);
+            this.tableLayoutPanel25.PerformLayout();
             this.T12.ResumeLayout(false);
             this.GetNextInstructionAutoGB.ResumeLayout(false);
             this.GetNextInstructionAutoTlp.ResumeLayout(false);
@@ -8610,9 +8717,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SetRouteTlp.ResumeLayout(false);
             this.SetRouteTlp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_MaxTimeNum)).EndInit();
-            this.T11.ResumeLayout(false);
-            this.tableLayoutPanel25.ResumeLayout(false);
-            this.tableLayoutPanel25.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -9246,6 +9350,15 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.ToolStripMenuItem getMapCorrectionEventsToolStripMenuItem;
         private System.Windows.Forms.TextBox GetMapCorrection_TB;
         private System.Windows.Forms.TextBox AddMapCorrection_TB;
+        private System.Windows.Forms.TabPage T38;
+        private System.Windows.Forms.Panel panelFts;
+        private System.Windows.Forms.Button buttonFts;
+        private System.Windows.Forms.TextBox textBoxFts;
+        private System.Windows.Forms.Label label214;
+        private System.Windows.Forms.Label label213;
+        private System.Windows.Forms.Label label212;
+        private System.Windows.Forms.ToolStripMenuItem searchLocationFTSToolStripMenuItem;
+        public System.Windows.Forms.ListBox listBoxFts;
     }
 }
 

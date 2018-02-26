@@ -1479,5 +1479,17 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             TC.SelectedTab = T11;
         }
 
+        private void searchLocationFTSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TC.SelectedTab = T38;
+        }
+
+        private void buttonFts_Click(object sender, EventArgs e)
+        {
+            WindowsDemo.MyListener ftsListener = new WindowsDemo.MyListener(listBoxFts);
+
+            DriveHandler.SearchLocation(textBoxFts.Text, ftsListener, -1);
+        }
+
     }
 }

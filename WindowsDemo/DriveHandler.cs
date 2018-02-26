@@ -900,6 +900,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             O("ClearMapCorrectionEvents returns: " + ret);
         }
 
+        public static void SearchLocation(string text, ApplicationAPI.OnSearchListener lsnr, int inMaxValue)
+        {
+            bool ret = CApplicationAPI.SearchLocation(out _mySError, text, ref lsnr, inMaxValue);
+            O("SearchLocation returns: " + ret);
+        }
+
         #endregion
 
     }
