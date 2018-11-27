@@ -109,17 +109,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.DirectGeocoding_MaxTime_Num = new System.Windows.Forms.NumericUpDown();
             this.DirectGeocodingBtn = new System.Windows.Forms.Button();
             this.T5 = new System.Windows.Forms.TabPage();
-            this.OnMenuCommandGB = new System.Windows.Forms.GroupBox();
-            this.OnMenuCommandTlp = new System.Windows.Forms.TableLayoutPanel();
-            this.OnMenuCommand_bShowApplicationChBox = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.OnMenuCommand_SubIdNum = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.OnMenuCommandBtn = new System.Windows.Forms.Button();
+            this.ShowDialogGB = new System.Windows.Forms.GroupBox();
+            this.ShowDialogTlp = new System.Windows.Forms.TableLayoutPanel();
+            this.MaxTime = new System.Windows.Forms.Label();
+            this.ShowDialogBtn = new System.Windows.Forms.Button();
             this.nIdLbl = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.OnMenuCommand_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
-            this.OnMenuCommand_IdNum = new System.Windows.Forms.NumericUpDown();
+            this.ShowDialog_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
+            this.ShowDialog_IdNum = new System.Windows.Forms.NumericUpDown();
             this.T6 = new System.Windows.Forms.TabPage();
             this.GetCoordinatesFromListOfOffsetIdsGBox = new System.Windows.Forms.GroupBox();
             this.GetCoordinatesFromListOfOffsetIdsTlp = new System.Windows.Forms.TableLayoutPanel();
@@ -615,7 +611,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.loadComputedRouteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.locationFromAddressExToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.navigateToAddressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.onMenuCommandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showDialogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.playSoundTTSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sendGpsDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setRouteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -698,11 +694,10 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             ((System.ComponentModel.ISupportInitialize)(this.DirectGeocoding_Y_Num)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DirectGeocoding_MaxTime_Num)).BeginInit();
             this.T5.SuspendLayout();
-            this.OnMenuCommandGB.SuspendLayout();
-            this.OnMenuCommandTlp.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.OnMenuCommand_SubIdNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OnMenuCommand_MaxTimeNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OnMenuCommand_IdNum)).BeginInit();
+            this.ShowDialogGB.SuspendLayout();
+            this.ShowDialogTlp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowDialog_MaxTimeNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowDialog_IdNum)).BeginInit();
             this.T6.SuspendLayout();
             this.GetCoordinatesFromListOfOffsetIdsGBox.SuspendLayout();
             this.GetCoordinatesFromListOfOffsetIdsTlp.SuspendLayout();
@@ -1976,7 +1971,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // T5
             // 
-            this.T5.Controls.Add(this.OnMenuCommandGB);
+            this.T5.Controls.Add(this.ShowDialogGB);
             this.T5.Location = new System.Drawing.Point(4, 19);
             this.T5.Name = "T5";
             this.T5.Padding = new System.Windows.Forms.Padding(3);
@@ -1985,99 +1980,58 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T5.Text = "T5";
             this.T5.UseVisualStyleBackColor = true;
             // 
-            // OnMenuCommandGB
+            // ShowDialogGB
             // 
-            this.OnMenuCommandGB.Controls.Add(this.OnMenuCommandTlp);
-            this.OnMenuCommandGB.Location = new System.Drawing.Point(6, 6);
-            this.OnMenuCommandGB.Name = "OnMenuCommandGB";
-            this.OnMenuCommandGB.Size = new System.Drawing.Size(552, 188);
-            this.OnMenuCommandGB.TabIndex = 2;
-            this.OnMenuCommandGB.TabStop = false;
-            this.OnMenuCommandGB.Text = "OnMenuCommand";
+            this.ShowDialogGB.Controls.Add(this.ShowDialogTlp);
+            this.ShowDialogGB.Location = new System.Drawing.Point(6, 6);
+            this.ShowDialogGB.Name = "ShowDialogGB";
+            this.ShowDialogGB.Size = new System.Drawing.Size(552, 134);
+            this.ShowDialogGB.TabIndex = 2;
+            this.ShowDialogGB.TabStop = false;
+            this.ShowDialogGB.Text = "ShowDialog";
+            this.ShowDialogGB.Enter += new System.EventHandler(this.ShowDialogGB_Enter);
             // 
-            // OnMenuCommandTlp
+            // ShowDialogTlp
             // 
-            this.OnMenuCommandTlp.ColumnCount = 2;
-            this.OnMenuCommandTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.85185F));
-            this.OnMenuCommandTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.14815F));
-            this.OnMenuCommandTlp.Controls.Add(this.OnMenuCommand_bShowApplicationChBox, 1, 2);
-            this.OnMenuCommandTlp.Controls.Add(this.label4, 0, 3);
-            this.OnMenuCommandTlp.Controls.Add(this.OnMenuCommand_SubIdNum, 1, 1);
-            this.OnMenuCommandTlp.Controls.Add(this.label2, 0, 1);
-            this.OnMenuCommandTlp.Controls.Add(this.OnMenuCommandBtn, 1, 4);
-            this.OnMenuCommandTlp.Controls.Add(this.nIdLbl, 0, 0);
-            this.OnMenuCommandTlp.Controls.Add(this.label3, 0, 2);
-            this.OnMenuCommandTlp.Controls.Add(this.OnMenuCommand_MaxTimeNum, 1, 3);
-            this.OnMenuCommandTlp.Controls.Add(this.OnMenuCommand_IdNum, 1, 0);
-            this.OnMenuCommandTlp.Location = new System.Drawing.Point(6, 19);
-            this.OnMenuCommandTlp.Name = "OnMenuCommandTlp";
-            this.OnMenuCommandTlp.RowCount = 5;
-            this.OnMenuCommandTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.OnMenuCommandTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.OnMenuCommandTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.OnMenuCommandTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.OnMenuCommandTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.OnMenuCommandTlp.Size = new System.Drawing.Size(540, 163);
-            this.OnMenuCommandTlp.TabIndex = 9;
+            this.ShowDialogTlp.ColumnCount = 2;
+            this.ShowDialogTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.85185F));
+            this.ShowDialogTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.14815F));
+            this.ShowDialogTlp.Controls.Add(this.MaxTime, 0, 1);
+            this.ShowDialogTlp.Controls.Add(this.ShowDialogBtn, 1, 2);
+            this.ShowDialogTlp.Controls.Add(this.nIdLbl, 0, 0);
+            this.ShowDialogTlp.Controls.Add(this.ShowDialog_MaxTimeNum, 1, 1);
+            this.ShowDialogTlp.Controls.Add(this.ShowDialog_IdNum, 1, 0);
+            this.ShowDialogTlp.Location = new System.Drawing.Point(6, 19);
+            this.ShowDialogTlp.Name = "ShowDialogTlp";
+            this.ShowDialogTlp.RowCount = 3;
+            this.ShowDialogTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.ShowDialogTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.ShowDialogTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.ShowDialogTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ShowDialogTlp.Size = new System.Drawing.Size(540, 107);
+            this.ShowDialogTlp.TabIndex = 9;
             // 
-            // OnMenuCommand_bShowApplicationChBox
+            // MaxTime
             // 
-            this.OnMenuCommand_bShowApplicationChBox.AutoSize = true;
-            this.OnMenuCommand_bShowApplicationChBox.Checked = true;
-            this.OnMenuCommand_bShowApplicationChBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.OnMenuCommand_bShowApplicationChBox.Location = new System.Drawing.Point(120, 67);
-            this.OnMenuCommand_bShowApplicationChBox.Name = "OnMenuCommand_bShowApplicationChBox";
-            this.OnMenuCommand_bShowApplicationChBox.Size = new System.Drawing.Size(15, 14);
-            this.OnMenuCommand_bShowApplicationChBox.TabIndex = 10;
-            this.OnMenuCommand_bShowApplicationChBox.UseVisualStyleBackColor = true;
+            this.MaxTime.AutoSize = true;
+            this.MaxTime.Location = new System.Drawing.Point(3, 35);
+            this.MaxTime.Name = "MaxTime";
+            this.MaxTime.Size = new System.Drawing.Size(50, 13);
+            this.MaxTime.TabIndex = 10;
+            this.MaxTime.Text = "MaxTime";
             // 
-            // label4
+            // ShowDialogBtn
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 96);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "MaxTime";
-            // 
-            // OnMenuCommand_SubIdNum
-            // 
-            this.OnMenuCommand_SubIdNum.Location = new System.Drawing.Point(120, 35);
-            this.OnMenuCommand_SubIdNum.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.OnMenuCommand_SubIdNum.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this.OnMenuCommand_SubIdNum.Name = "OnMenuCommand_SubIdNum";
-            this.OnMenuCommand_SubIdNum.Size = new System.Drawing.Size(117, 20);
-            this.OnMenuCommand_SubIdNum.TabIndex = 9;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "nSubId";
-            // 
-            // OnMenuCommandBtn
-            // 
-            this.OnMenuCommandBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ShowDialogBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.OnMenuCommandBtn.Location = new System.Drawing.Point(120, 131);
-            this.OnMenuCommandBtn.Name = "OnMenuCommandBtn";
-            this.OnMenuCommandBtn.Size = new System.Drawing.Size(417, 29);
-            this.OnMenuCommandBtn.TabIndex = 6;
-            this.OnMenuCommandBtn.Text = "OnMenuCommand";
-            this.OnMenuCommandBtn.UseVisualStyleBackColor = true;
-            this.OnMenuCommandBtn.Click += new System.EventHandler(this.OnMenuCommandBtn_Click_1);
+            this.ShowDialogBtn.Location = new System.Drawing.Point(120, 73);
+            this.ShowDialogBtn.Name = "ShowDialogBtn";
+            this.ShowDialogBtn.Size = new System.Drawing.Size(417, 31);
+            this.ShowDialogBtn.TabIndex = 6;
+            this.ShowDialogBtn.Text = "ShowDialog";
+            this.ShowDialogBtn.UseVisualStyleBackColor = true;
+            this.ShowDialogBtn.Click += new System.EventHandler(this.ShowDialogBtn_Click_1);
             // 
             // nIdLbl
             // 
@@ -2088,43 +2042,34 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.nIdLbl.TabIndex = 11;
             this.nIdLbl.Text = "nId";
             // 
-            // label3
+            // ShowDialog_MaxTimeNum
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 64);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "bShowApplication";
-            // 
-            // OnMenuCommand_MaxTimeNum
-            // 
-            this.OnMenuCommand_MaxTimeNum.Location = new System.Drawing.Point(120, 99);
-            this.OnMenuCommand_MaxTimeNum.Maximum = new decimal(new int[] {
+            this.ShowDialog_MaxTimeNum.Location = new System.Drawing.Point(120, 38);
+            this.ShowDialog_MaxTimeNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
-            this.OnMenuCommand_MaxTimeNum.Name = "OnMenuCommand_MaxTimeNum";
-            this.OnMenuCommand_MaxTimeNum.Size = new System.Drawing.Size(117, 20);
-            this.OnMenuCommand_MaxTimeNum.TabIndex = 13;
+            this.ShowDialog_MaxTimeNum.Name = "ShowDialog_MaxTimeNum";
+            this.ShowDialog_MaxTimeNum.Size = new System.Drawing.Size(117, 20);
+            this.ShowDialog_MaxTimeNum.TabIndex = 13;
             // 
-            // OnMenuCommand_IdNum
+            // ShowDialog_IdNum
             // 
-            this.OnMenuCommand_IdNum.Location = new System.Drawing.Point(120, 3);
-            this.OnMenuCommand_IdNum.Maximum = new decimal(new int[] {
+            this.ShowDialog_IdNum.Location = new System.Drawing.Point(120, 3);
+            this.ShowDialog_IdNum.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.OnMenuCommand_IdNum.Minimum = new decimal(new int[] {
+            this.ShowDialog_IdNum.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             -2147483648});
-            this.OnMenuCommand_IdNum.Name = "OnMenuCommand_IdNum";
-            this.OnMenuCommand_IdNum.Size = new System.Drawing.Size(117, 20);
-            this.OnMenuCommand_IdNum.TabIndex = 10;
+            this.ShowDialog_IdNum.Name = "ShowDialog_IdNum";
+            this.ShowDialog_IdNum.Size = new System.Drawing.Size(117, 20);
+            this.ShowDialog_IdNum.TabIndex = 10;
             // 
             // T6
             // 
@@ -3841,7 +3786,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GpsLogStartStopTlp.ColumnCount = 3;
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.87719F));
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.12281F));
-            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 438F));
+            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 441F));
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStartBtn, 0, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStopBtn, 2, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogPauseBtn, 1, 0);
@@ -3857,7 +3802,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.PlayGpsLogStartBtn.Image = global::WindowsDemo.Properties.Resources.Button_Play_icon;
             this.PlayGpsLogStartBtn.Location = new System.Drawing.Point(3, 3);
             this.PlayGpsLogStartBtn.Name = "PlayGpsLogStartBtn";
-            this.PlayGpsLogStartBtn.Size = new System.Drawing.Size(40, 45);
+            this.PlayGpsLogStartBtn.Size = new System.Drawing.Size(38, 45);
             this.PlayGpsLogStartBtn.TabIndex = 2;
             this.PlayGpsLogStartBtn.UseVisualStyleBackColor = true;
             this.PlayGpsLogStartBtn.Click += new System.EventHandler(this.PlayGpsLogStartBtn_Click);
@@ -3865,7 +3810,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLogStopBtn
             // 
             this.PlayGpsLogStopBtn.Image = global::WindowsDemo.Properties.Resources.Button_Stop_icon;
-            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(93, 3);
+            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(90, 3);
             this.PlayGpsLogStopBtn.Name = "PlayGpsLogStopBtn";
             this.PlayGpsLogStopBtn.Size = new System.Drawing.Size(45, 45);
             this.PlayGpsLogStopBtn.TabIndex = 3;
@@ -3875,9 +3820,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLogPauseBtn
             // 
             this.PlayGpsLogPauseBtn.Image = global::WindowsDemo.Properties.Resources.Button_Pause_icon;
-            this.PlayGpsLogPauseBtn.Location = new System.Drawing.Point(49, 3);
+            this.PlayGpsLogPauseBtn.Location = new System.Drawing.Point(47, 3);
             this.PlayGpsLogPauseBtn.Name = "PlayGpsLogPauseBtn";
-            this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(38, 45);
+            this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(37, 45);
             this.PlayGpsLogPauseBtn.TabIndex = 4;
             this.PlayGpsLogPauseBtn.UseVisualStyleBackColor = true;
             this.PlayGpsLogPauseBtn.Click += new System.EventHandler(this.PlayGpsLogPauseBtn_Click);
@@ -7882,11 +7827,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.loadComputedRouteToolStripMenuItem2,
             this.locationFromAddressExToolStripMenuItem,
             this.navigateToAddressToolStripMenuItem,
-            this.onMenuCommandToolStripMenuItem,
             this.playSoundTTSToolStripMenuItem,
             this.sendGpsDataToolStripMenuItem,
             this.setRouteToolStripMenuItem,
             this.searchLocationFTSToolStripMenuItem,
+            this.showDialogToolStripMenuItem,
             this.showMessageToolStripMenuItem,
             this.showCoordinatesOnMapToolStripMenuItem,
             this.showRectangleOnMapToolStripMenuItem,
@@ -7952,12 +7897,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.navigateToAddressToolStripMenuItem.Text = "NavigateToAddress";
             this.navigateToAddressToolStripMenuItem.Click += new System.EventHandler(this.navigateToAddressToolStripMenuItem_Click);
             // 
-            // onMenuCommandToolStripMenuItem
+            // showDialogToolStripMenuItem
             // 
-            this.onMenuCommandToolStripMenuItem.Name = "onMenuCommandToolStripMenuItem";
-            this.onMenuCommandToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.onMenuCommandToolStripMenuItem.Text = "OnMenuCommand";
-            this.onMenuCommandToolStripMenuItem.Click += new System.EventHandler(this.onMenuCommandToolStripMenuItem_Click);
+            this.showDialogToolStripMenuItem.Name = "showDialogToolStripMenuItem";
+            this.showDialogToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.showDialogToolStripMenuItem.Text = "ShowDialog";
+            this.showDialogToolStripMenuItem.Click += new System.EventHandler(this.showDialogToolStripMenuItem_Click);
             // 
             // playSoundTTSToolStripMenuItem
             // 
@@ -8480,12 +8425,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             ((System.ComponentModel.ISupportInitialize)(this.DirectGeocoding_Y_Num)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DirectGeocoding_MaxTime_Num)).EndInit();
             this.T5.ResumeLayout(false);
-            this.OnMenuCommandGB.ResumeLayout(false);
-            this.OnMenuCommandTlp.ResumeLayout(false);
-            this.OnMenuCommandTlp.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.OnMenuCommand_SubIdNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OnMenuCommand_MaxTimeNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OnMenuCommand_IdNum)).EndInit();
+            this.ShowDialogGB.ResumeLayout(false);
+            this.ShowDialogTlp.ResumeLayout(false);
+            this.ShowDialogTlp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowDialog_MaxTimeNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowDialog_IdNum)).EndInit();
             this.T6.ResumeLayout(false);
             this.GetCoordinatesFromListOfOffsetIdsGBox.ResumeLayout(false);
             this.GetCoordinatesFromListOfOffsetIdsTlp.ResumeLayout(false);
@@ -8951,17 +8895,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.TextBox AddEntryToItinerary_CaptionTBox;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.NumericUpDown AddEntryToItinerary_nIndexNum;
-        private System.Windows.Forms.GroupBox OnMenuCommandGB;
-        private System.Windows.Forms.TableLayoutPanel OnMenuCommandTlp;
-        private System.Windows.Forms.CheckBox OnMenuCommand_bShowApplicationChBox;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown OnMenuCommand_SubIdNum;
-        private System.Windows.Forms.Button OnMenuCommandBtn;
-        private System.Windows.Forms.NumericUpDown OnMenuCommand_IdNum;
+        private System.Windows.Forms.GroupBox ShowDialogGB;
+        private System.Windows.Forms.TableLayoutPanel ShowDialogTlp;
+        private System.Windows.Forms.Label MaxTime;
+        private System.Windows.Forms.Button ShowDialogBtn;
+        private System.Windows.Forms.NumericUpDown ShowDialog_IdNum;
         private System.Windows.Forms.Label nIdLbl;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown OnMenuCommand_MaxTimeNum;
+        private System.Windows.Forms.NumericUpDown ShowDialog_MaxTimeNum;
         private System.Windows.Forms.GroupBox PlayGpsLgGB;
         private System.Windows.Forms.TableLayoutPanel PlayGpsLogTlp;
         private System.Windows.Forms.OpenFileDialog openDriveExeDlg;
@@ -9025,7 +8965,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.ToolStripMenuItem loadComputedRouteToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem locationFromAddressExToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem navigateToAddressToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem onMenuCommandToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showDialogToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem playSoundTTSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setRouteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showMessageToolStripMenuItem;

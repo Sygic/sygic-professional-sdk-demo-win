@@ -132,17 +132,10 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
 
         #region Public members - Others
 
-        public static void onMenuCommand(int inID, int inSubID) 
+        public static void showDialog(int inID, int inMaxTime) 
         {
-            int ret = CApplicationAPI.OnMenuCommand(out _mySError, inID, inSubID, true, 0);
-            O("OnMenuCommand returns: " + ret.ToString());
-        }
-        public static void onMenuCommand(int inID, int inSubID, bool inBShowApplication, int inMaxTime)
-        {
-            //inID    = (int)CApplicationMenu.ID.IdMenuViewRoute;
-            //inSubID = (int)CApplicationMenu.IdMenuViewRoute.OnViewRouteShowOnMap;
-            int ret = CApplicationAPI.OnMenuCommand(out _mySError, inID, inSubID, inBShowApplication, inMaxTime);
-            O("OnMenuCommand returns: " + ret.ToString());
+            int ret = CApplicationAPI.ShowDialog(out _mySError, inID, inMaxTime);
+            O("ShowDialog returns: " + ret.ToString());       
         }
         public static void LocationFromAddress(string inStrAddress, bool inBPostal, bool inBValueMatch, int inMaxTime)
         {

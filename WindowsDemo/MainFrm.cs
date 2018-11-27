@@ -96,9 +96,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             }
         }
 
-        private void OnMenuCommandBtn_Click(object sender, EventArgs e)
+        private void ShowDialogBtn_Click(object sender, EventArgs e)
         {
-            DriveHandler.onMenuCommand(Convert.ToInt32(OnMenuCommand_IdNum.Value), Convert.ToInt32(OnMenuCommand_SubIdNum.Value));
+            DriveHandler.showDialog(Convert.ToInt32(ShowDialog_IdNum.Value), Convert.ToInt32(ShowDialog_MaxTimeNum.Value));
         }
         private void OnNotification(string errorString_in)
         {
@@ -520,13 +520,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             return points;
         }
 
-        private void OnMenuCommandBtn_Click_1(object sender, EventArgs e)
+        private void ShowDialogBtn_Click_1(object sender, EventArgs e)
         {
-            DriveHandler.onMenuCommand(
-                (int)OnMenuCommand_IdNum.Value,
-                (int)OnMenuCommand_SubIdNum.Value,
-                (bool)OnMenuCommand_bShowApplicationChBox.Checked,
-                (int)OnMenuCommand_MaxTimeNum.Value);
+            DriveHandler.showDialog(
+                (int)ShowDialog_IdNum.Value,
+                (int)ShowDialog_MaxTimeNum.Value);
         }
 
         private void LocationFromAddressEx_OkBtn_Click(object sender, EventArgs e)
@@ -1181,7 +1179,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             TC.SelectedTab = T16;
         }
 
-        private void onMenuCommandToolStripMenuItem_Click(object sender, EventArgs e)
+        private void showDialogToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TC.SelectedTab = T5;
         }
@@ -1507,6 +1505,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         }
 
         private void EventsChLB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShowDialogGB_Enter(object sender, EventArgs e)
         {
 
         }
