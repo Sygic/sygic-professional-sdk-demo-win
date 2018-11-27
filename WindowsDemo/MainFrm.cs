@@ -821,9 +821,18 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
 
         private void GetActualGpsPositionBtn_Click(object sender, EventArgs e)
         {
-            DriveHandler.GetActualGpsPosition(
-                GetActualGpsPosition_SatellitesInfoChb.Checked,
-                (int)GetActualGpsPosition_MaxTimeNum.Value);
+            if (GetActualGpsPosition_JsonChb.Checked)
+            {
+                string strJson;
+                DriveHandler.GetActualGpsPositionJson(GetActualGpsPosition_SatellitesInfoChb.Checked, out strJson, (int)GetActualGpsPosition_MaxTimeNum.Value);
+                JObject json = JObject.Parse(strJson);
+                GetActualGpsPosition_JsonTextBox.Text = json.ToString();
+                GetActualGpsPosition_JsonTextBox.Refresh();
+            }
+            else
+            {
+                DriveHandler.GetActualGpsPosition(GetActualGpsPosition_SatellitesInfoChb.Checked, (int)GetActualGpsPosition_MaxTimeNum.Value);
+            }
         }
 
         private void AutomaticRemoteActivationBtn_Click(object sender, EventArgs e)
@@ -1540,6 +1549,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             JObject json = JObject.Parse(text);
             textBoxLoadGeoJson.Text = json.ToString();
             textBoxLoadGeoJson.Refresh();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

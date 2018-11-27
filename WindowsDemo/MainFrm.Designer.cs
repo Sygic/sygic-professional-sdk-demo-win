@@ -563,6 +563,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.textBoxUnloadGeofileName = new System.Windows.Forms.TextBox();
             this.label217 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonFormatJson = new System.Windows.Forms.Button();
             this.buttonLoadGeofile = new System.Windows.Forms.Button();
             this.textBoxLoadGeoJson = new System.Windows.Forms.TextBox();
             this.label216 = new System.Windows.Forms.Label();
@@ -674,7 +675,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SetRoute_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
             this.SetRouteBtn = new System.Windows.Forms.Button();
             this.openGpsDataDlg = new System.Windows.Forms.OpenFileDialog();
-            this.buttonFormatJson = new System.Windows.Forms.Button();
+            this.GetActualGpsPosition_JsonTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.GetActualGpsPosition_JsonChb = new System.Windows.Forms.CheckBox();
             this.TC.SuspendLayout();
             this.T1.SuspendLayout();
             this.ScreenResolutionGB.SuspendLayout();
@@ -3804,7 +3807,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GpsLogStartStopTlp.ColumnCount = 3;
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.87719F));
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.12281F));
-            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 443F));
+            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 444F));
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStartBtn, 0, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStopBtn, 2, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogPauseBtn, 1, 0);
@@ -3828,7 +3831,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLogStopBtn
             // 
             this.PlayGpsLogStopBtn.Image = global::WindowsDemo.Properties.Resources.Button_Stop_icon;
-            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(88, 3);
+            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(87, 3);
             this.PlayGpsLogStopBtn.Name = "PlayGpsLogStopBtn";
             this.PlayGpsLogStopBtn.Size = new System.Drawing.Size(45, 45);
             this.PlayGpsLogStopBtn.TabIndex = 3;
@@ -3840,7 +3843,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.PlayGpsLogPauseBtn.Image = global::WindowsDemo.Properties.Resources.Button_Pause_icon;
             this.PlayGpsLogPauseBtn.Location = new System.Drawing.Point(46, 3);
             this.PlayGpsLogPauseBtn.Name = "PlayGpsLogPauseBtn";
-            this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(36, 45);
+            this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(35, 45);
             this.PlayGpsLogPauseBtn.TabIndex = 4;
             this.PlayGpsLogPauseBtn.UseVisualStyleBackColor = true;
             this.PlayGpsLogPauseBtn.Click += new System.EventHandler(this.PlayGpsLogPauseBtn_Click);
@@ -4927,6 +4930,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // T22
             // 
+            this.T22.Controls.Add(this.GetActualGpsPosition_JsonTextBox);
             this.T22.Controls.Add(this.GetActualGpsPositionGB);
             this.T22.Location = new System.Drawing.Point(4, 19);
             this.T22.Name = "T22";
@@ -4941,7 +4945,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetActualGpsPositionGB.Controls.Add(this.GetActualGpsPositionTlp);
             this.GetActualGpsPositionGB.Location = new System.Drawing.Point(0, 6);
             this.GetActualGpsPositionGB.Name = "GetActualGpsPositionGB";
-            this.GetActualGpsPositionGB.Size = new System.Drawing.Size(558, 130);
+            this.GetActualGpsPositionGB.Size = new System.Drawing.Size(558, 159);
             this.GetActualGpsPositionGB.TabIndex = 2;
             this.GetActualGpsPositionGB.TabStop = false;
             this.GetActualGpsPositionGB.Text = "GetActualGpsPosition:";
@@ -4953,16 +4957,19 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetActualGpsPositionTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.17583F));
             this.GetActualGpsPositionTlp.Controls.Add(this.GetActualGpsPosition_SatellitesInfoChb, 1, 0);
             this.GetActualGpsPositionTlp.Controls.Add(this.GetActualGpsPosition_MaxTimeNum, 1, 1);
-            this.GetActualGpsPositionTlp.Controls.Add(this.GetActualGpsPositionBtn, 1, 2);
             this.GetActualGpsPositionTlp.Controls.Add(this.label100, 0, 0);
             this.GetActualGpsPositionTlp.Controls.Add(this.label101, 0, 1);
+            this.GetActualGpsPositionTlp.Controls.Add(this.GetActualGpsPositionBtn, 1, 3);
+            this.GetActualGpsPositionTlp.Controls.Add(this.label2, 0, 2);
+            this.GetActualGpsPositionTlp.Controls.Add(this.GetActualGpsPosition_JsonChb, 1, 2);
             this.GetActualGpsPositionTlp.Location = new System.Drawing.Point(6, 19);
             this.GetActualGpsPositionTlp.Name = "GetActualGpsPositionTlp";
-            this.GetActualGpsPositionTlp.RowCount = 3;
-            this.GetActualGpsPositionTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.GetActualGpsPositionTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.GetActualGpsPositionTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.GetActualGpsPositionTlp.Size = new System.Drawing.Size(546, 99);
+            this.GetActualGpsPositionTlp.RowCount = 4;
+            this.GetActualGpsPositionTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.GetActualGpsPositionTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.GetActualGpsPositionTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.GetActualGpsPositionTlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.GetActualGpsPositionTlp.Size = new System.Drawing.Size(546, 134);
             this.GetActualGpsPositionTlp.TabIndex = 0;
             // 
             // GetActualGpsPosition_SatellitesInfoChb
@@ -4991,9 +4998,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetActualGpsPositionBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.GetActualGpsPositionBtn.Location = new System.Drawing.Point(143, 69);
+            this.GetActualGpsPositionBtn.Location = new System.Drawing.Point(143, 102);
             this.GetActualGpsPositionBtn.Name = "GetActualGpsPositionBtn";
-            this.GetActualGpsPositionBtn.Size = new System.Drawing.Size(400, 27);
+            this.GetActualGpsPositionBtn.Size = new System.Drawing.Size(400, 29);
             this.GetActualGpsPositionBtn.TabIndex = 2;
             this.GetActualGpsPositionBtn.Text = "GetActualGpsPosition";
             this.GetActualGpsPositionBtn.UseVisualStyleBackColor = true;
@@ -7532,6 +7539,17 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Load Geofile";
             // 
+            // buttonFormatJson
+            // 
+            this.buttonFormatJson.Location = new System.Drawing.Point(440, 231);
+            this.buttonFormatJson.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonFormatJson.Name = "buttonFormatJson";
+            this.buttonFormatJson.Size = new System.Drawing.Size(93, 35);
+            this.buttonFormatJson.TabIndex = 5;
+            this.buttonFormatJson.Text = "Format Input";
+            this.buttonFormatJson.UseVisualStyleBackColor = true;
+            this.buttonFormatJson.Click += new System.EventHandler(this.btnFormatJson_Click);
+            // 
             // buttonLoadGeofile
             // 
             this.buttonLoadGeofile.Location = new System.Drawing.Point(440, 24);
@@ -8530,16 +8548,39 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.openGpsDataDlg.Title = "Please enter the path to the file with GPS (nmea) data:";
             this.openGpsDataDlg.FileOk += new System.ComponentModel.CancelEventHandler(this.openGpsDataDlg_FileOk);
             // 
-            // buttonFormatJson
+            // GetActualGpsPosition_JsonTextBox
             // 
-            this.buttonFormatJson.Location = new System.Drawing.Point(440, 231);
-            this.buttonFormatJson.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonFormatJson.Name = "buttonFormatJson";
-            this.buttonFormatJson.Size = new System.Drawing.Size(93, 35);
-            this.buttonFormatJson.TabIndex = 5;
-            this.buttonFormatJson.Text = "Format Input";
-            this.buttonFormatJson.UseVisualStyleBackColor = true;
-            this.buttonFormatJson.Click += new System.EventHandler(this.btnFormatJson_Click);
+            this.GetActualGpsPosition_JsonTextBox.AcceptsReturn = true;
+            this.GetActualGpsPosition_JsonTextBox.AcceptsTab = true;
+            this.GetActualGpsPosition_JsonTextBox.BackColor = System.Drawing.Color.White;
+            this.GetActualGpsPosition_JsonTextBox.Location = new System.Drawing.Point(2, 164);
+            this.GetActualGpsPosition_JsonTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.GetActualGpsPosition_JsonTextBox.Multiline = true;
+            this.GetActualGpsPosition_JsonTextBox.Name = "GetActualGpsPosition_JsonTextBox";
+            this.GetActualGpsPosition_JsonTextBox.ReadOnly = true;
+            this.GetActualGpsPosition_JsonTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.GetActualGpsPosition_JsonTextBox.Size = new System.Drawing.Size(556, 339);
+            this.GetActualGpsPosition_JsonTextBox.TabIndex = 4;
+            this.GetActualGpsPosition_JsonTextBox.WordWrap = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Get json";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // GetActualGpsPosition_JsonChb
+            // 
+            this.GetActualGpsPosition_JsonChb.AutoSize = true;
+            this.GetActualGpsPosition_JsonChb.Location = new System.Drawing.Point(143, 69);
+            this.GetActualGpsPosition_JsonChb.Name = "GetActualGpsPosition_JsonChb";
+            this.GetActualGpsPosition_JsonChb.Size = new System.Drawing.Size(15, 14);
+            this.GetActualGpsPosition_JsonChb.TabIndex = 6;
+            this.GetActualGpsPosition_JsonChb.UseVisualStyleBackColor = true;
             // 
             // MainFrm
             // 
@@ -8714,6 +8755,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.OptimizeItineraryTlp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OptimizeItinerary_MaxTimeNum)).EndInit();
             this.T22.ResumeLayout(false);
+            this.T22.PerformLayout();
             this.GetActualGpsPositionGB.ResumeLayout(false);
             this.GetActualGpsPositionTlp.ResumeLayout(false);
             this.GetActualGpsPositionTlp.PerformLayout();
@@ -9494,6 +9536,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.Label label215;
         private System.Windows.Forms.TextBox textBoxLoadGeofileName;
         private System.Windows.Forms.Button buttonFormatJson;
+        private System.Windows.Forms.TextBox GetActualGpsPosition_JsonTextBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox GetActualGpsPosition_JsonChb;
     }
 }
 

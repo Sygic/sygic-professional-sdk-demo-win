@@ -599,7 +599,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             O("OptimizeItinerary returns: " + ret.ToString());
         }
 
-        public static void GetActualGpsPosition(bool inSatellitesInfo, int inMaxTime) 
+        public static void GetActualGpsPosition(bool inSatellitesInfo, int inMaxTime)
         {
             SGpsPosition gpos = new SGpsPosition();
             int ret = CApplicationAPI.GetActualGpsPosition(out _mySError, out gpos, inSatellitesInfo, inMaxTime);
@@ -625,6 +625,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             O("Speed: " + gpos.Speed.ToString());
             //O("Time: " + gpos.Time.ToString());
             //O("ToPointOffset: " + gpos.ToPointOffset.ToString());
+        }
+
+        public static void GetActualGpsPositionJson(bool inSatellitesInfo, out string strJson, int inMaxTime)
+        {
+            int ret = CApplicationAPI.GetActualGpsPosition(out _mySError, out strJson, inSatellitesInfo, inMaxTime);
         }
 
         public static void GetCurrentSpeedLimit(int inMaxTime)
