@@ -597,7 +597,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         public static void SetRoute(string inStrItineraryName, int inFlags, bool inBShowApplication, int inMaxTime) 
         {
             int ret = CApplicationAPI.SetRoute(out _mySError, inStrItineraryName, inFlags, inBShowApplication, inMaxTime);
-            O("SetRoute returns: " + ret.ToString());
+            O("SetRoute returns: " + ret.ToString() + " " + _mySError.GetDescription());
         }
 
         public static void OptimizeItinerary(string inStrItineraryName, int inMaxTime)
