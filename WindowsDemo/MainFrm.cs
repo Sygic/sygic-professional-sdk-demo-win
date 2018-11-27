@@ -1513,5 +1513,33 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         {
 
         }
+
+        private void loadGeofileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TC.SelectedTab = T39;
+        }
+
+        private void buttonLoadGeofile_Click(object sender, EventArgs e)
+        {
+            DriveHandler.LoadGeofile(textBoxLoadGeofileName.Text, textBoxLoadGeoJson.Text, 0);
+        }
+
+        private void buttonUnloadGeofile_Click(object sender, EventArgs e)
+        {
+            DriveHandler.UnloadGeofile(textBoxUnloadGeofileName.Text, 0);
+        }
+
+        private void buttonUnloadGeofiles_Click(object sender, EventArgs e)
+        {
+            DriveHandler.UnloadGeofiles(0);
+        }
+
+        private void btnFormatJson_Click(object sender, EventArgs e)
+        {
+            string text = textBoxLoadGeoJson.Text;
+            JObject json = JObject.Parse(text);
+            textBoxLoadGeoJson.Text = json.ToString();
+            textBoxLoadGeoJson.Refresh();
+        }
     }
 }

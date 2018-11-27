@@ -899,6 +899,23 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             O("SearchLocation returns: " + ret);
         }
 
+        public static void LoadGeofile(string geofileName, string geoJson, int inMaxValue)
+        {
+            int ret = CApplicationAPI.LoadGeoFile(out _mySError, geofileName, geoJson, inMaxValue);
+            O("LoadGeoFile returns: " + ret);
+        }
+
+        public static void UnloadGeofile(string geofileName, int inMaxValue)
+        {
+            int ret = CApplicationAPI.UnloadGeoFile(out _mySError, geofileName, inMaxValue);
+            O("UnloadGeoFile returns: " + ret);
+        }
+        public static void UnloadGeofiles(int inMaxValue)
+        {
+            int ret = CApplicationAPI.UnloadGeoFile(out _mySError, inMaxValue);
+            O("UnloadGeoFiles returns: " + ret);
+        }
+
         #endregion
 
     }

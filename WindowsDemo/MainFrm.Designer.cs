@@ -556,6 +556,18 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label214 = new System.Windows.Forms.Label();
             this.label213 = new System.Windows.Forms.Label();
             this.label212 = new System.Windows.Forms.Label();
+            this.T39 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonUnloadAllGeofile = new System.Windows.Forms.Button();
+            this.buttonUnloadGeofile = new System.Windows.Forms.Button();
+            this.textBoxUnloadGeofileName = new System.Windows.Forms.TextBox();
+            this.label217 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonLoadGeofile = new System.Windows.Forms.Button();
+            this.textBoxLoadGeoJson = new System.Windows.Forms.TextBox();
+            this.label216 = new System.Windows.Forms.Label();
+            this.label215 = new System.Windows.Forms.Label();
+            this.textBoxLoadGeofileName = new System.Windows.Forms.TextBox();
             this.P = new System.Windows.Forms.Panel();
             this.OutputRTB = new System.Windows.Forms.RichTextBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
@@ -607,15 +619,16 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.isDriveRunningToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadComputedRouteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.loadExternalFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadGeofileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadGFFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadComputedRouteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.locationFromAddressExToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.navigateToAddressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showDialogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.playSoundTTSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sendGpsDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setRouteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchLocationFTSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showDialogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showMessageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showCoordinatesOnMapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showRectangleOnMapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -661,6 +674,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SetRoute_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
             this.SetRouteBtn = new System.Windows.Forms.Button();
             this.openGpsDataDlg = new System.Windows.Forms.OpenFileDialog();
+            this.buttonFormatJson = new System.Windows.Forms.Button();
             this.TC.SuspendLayout();
             this.T1.SuspendLayout();
             this.ScreenResolutionGB.SuspendLayout();
@@ -881,6 +895,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             ((System.ComponentModel.ISupportInitialize)(this.DeleteEntryInItinerary_MaxTimeNum)).BeginInit();
             this.T38.SuspendLayout();
             this.panelFts.SuspendLayout();
+            this.T39.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_FlagsNum)).BeginInit();
             this.menuStrip.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
@@ -931,6 +948,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.TC.Controls.Add(this.T36);
             this.TC.Controls.Add(this.T37);
             this.TC.Controls.Add(this.T38);
+            this.TC.Controls.Add(this.T39);
             this.TC.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.TC.ItemSize = new System.Drawing.Size(30, 15);
             this.TC.Location = new System.Drawing.Point(0, 26);
@@ -3786,7 +3804,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GpsLogStartStopTlp.ColumnCount = 3;
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.87719F));
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.12281F));
-            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 441F));
+            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 443F));
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStartBtn, 0, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStopBtn, 2, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogPauseBtn, 1, 0);
@@ -3802,7 +3820,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.PlayGpsLogStartBtn.Image = global::WindowsDemo.Properties.Resources.Button_Play_icon;
             this.PlayGpsLogStartBtn.Location = new System.Drawing.Point(3, 3);
             this.PlayGpsLogStartBtn.Name = "PlayGpsLogStartBtn";
-            this.PlayGpsLogStartBtn.Size = new System.Drawing.Size(38, 45);
+            this.PlayGpsLogStartBtn.Size = new System.Drawing.Size(37, 45);
             this.PlayGpsLogStartBtn.TabIndex = 2;
             this.PlayGpsLogStartBtn.UseVisualStyleBackColor = true;
             this.PlayGpsLogStartBtn.Click += new System.EventHandler(this.PlayGpsLogStartBtn_Click);
@@ -3810,7 +3828,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLogStopBtn
             // 
             this.PlayGpsLogStopBtn.Image = global::WindowsDemo.Properties.Resources.Button_Stop_icon;
-            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(90, 3);
+            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(88, 3);
             this.PlayGpsLogStopBtn.Name = "PlayGpsLogStopBtn";
             this.PlayGpsLogStopBtn.Size = new System.Drawing.Size(45, 45);
             this.PlayGpsLogStopBtn.TabIndex = 3;
@@ -3820,9 +3838,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLogPauseBtn
             // 
             this.PlayGpsLogPauseBtn.Image = global::WindowsDemo.Properties.Resources.Button_Pause_icon;
-            this.PlayGpsLogPauseBtn.Location = new System.Drawing.Point(47, 3);
+            this.PlayGpsLogPauseBtn.Location = new System.Drawing.Point(46, 3);
             this.PlayGpsLogPauseBtn.Name = "PlayGpsLogPauseBtn";
-            this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(37, 45);
+            this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(36, 45);
             this.PlayGpsLogPauseBtn.TabIndex = 4;
             this.PlayGpsLogPauseBtn.UseVisualStyleBackColor = true;
             this.PlayGpsLogPauseBtn.Click += new System.EventHandler(this.PlayGpsLogPauseBtn_Click);
@@ -7431,6 +7449,138 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label212.TabIndex = 0;
             this.label212.Text = "Full-text search";
             // 
+            // T39
+            // 
+            this.T39.Controls.Add(this.groupBox2);
+            this.T39.Controls.Add(this.groupBox1);
+            this.T39.Location = new System.Drawing.Point(4, 19);
+            this.T39.Name = "T39";
+            this.T39.Size = new System.Drawing.Size(564, 498);
+            this.T39.TabIndex = 42;
+            this.T39.Text = "T39";
+            this.T39.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.buttonUnloadAllGeofile);
+            this.groupBox2.Controls.Add(this.buttonUnloadGeofile);
+            this.groupBox2.Controls.Add(this.textBoxUnloadGeofileName);
+            this.groupBox2.Controls.Add(this.label217);
+            this.groupBox2.Location = new System.Drawing.Point(8, 313);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(547, 177);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Unload Geofile";
+            // 
+            // buttonUnloadAllGeofile
+            // 
+            this.buttonUnloadAllGeofile.Location = new System.Drawing.Point(440, 102);
+            this.buttonUnloadAllGeofile.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonUnloadAllGeofile.Name = "buttonUnloadAllGeofile";
+            this.buttonUnloadAllGeofile.Size = new System.Drawing.Size(93, 35);
+            this.buttonUnloadAllGeofile.TabIndex = 6;
+            this.buttonUnloadAllGeofile.Text = "Unload All";
+            this.buttonUnloadAllGeofile.UseVisualStyleBackColor = true;
+            this.buttonUnloadAllGeofile.Click += new System.EventHandler(this.buttonUnloadGeofiles_Click);
+            // 
+            // buttonUnloadGeofile
+            // 
+            this.buttonUnloadGeofile.Location = new System.Drawing.Point(440, 38);
+            this.buttonUnloadGeofile.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonUnloadGeofile.Name = "buttonUnloadGeofile";
+            this.buttonUnloadGeofile.Size = new System.Drawing.Size(93, 35);
+            this.buttonUnloadGeofile.TabIndex = 5;
+            this.buttonUnloadGeofile.Text = "Unload";
+            this.buttonUnloadGeofile.UseVisualStyleBackColor = true;
+            this.buttonUnloadGeofile.Click += new System.EventHandler(this.buttonUnloadGeofile_Click);
+            // 
+            // textBoxUnloadGeofileName
+            // 
+            this.textBoxUnloadGeofileName.Location = new System.Drawing.Point(16, 55);
+            this.textBoxUnloadGeofileName.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxUnloadGeofileName.Name = "textBoxUnloadGeofileName";
+            this.textBoxUnloadGeofileName.Size = new System.Drawing.Size(216, 20);
+            this.textBoxUnloadGeofileName.TabIndex = 5;
+            // 
+            // label217
+            // 
+            this.label217.AutoSize = true;
+            this.label217.Location = new System.Drawing.Point(14, 28);
+            this.label217.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label217.Name = "label217";
+            this.label217.Size = new System.Drawing.Size(72, 13);
+            this.label217.TabIndex = 2;
+            this.label217.Text = "GeoFile name";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.buttonFormatJson);
+            this.groupBox1.Controls.Add(this.buttonLoadGeofile);
+            this.groupBox1.Controls.Add(this.textBoxLoadGeoJson);
+            this.groupBox1.Controls.Add(this.label216);
+            this.groupBox1.Controls.Add(this.label215);
+            this.groupBox1.Controls.Add(this.textBoxLoadGeofileName);
+            this.groupBox1.Location = new System.Drawing.Point(8, 14);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(547, 279);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Load Geofile";
+            // 
+            // buttonLoadGeofile
+            // 
+            this.buttonLoadGeofile.Location = new System.Drawing.Point(440, 24);
+            this.buttonLoadGeofile.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonLoadGeofile.Name = "buttonLoadGeofile";
+            this.buttonLoadGeofile.Size = new System.Drawing.Size(93, 35);
+            this.buttonLoadGeofile.TabIndex = 4;
+            this.buttonLoadGeofile.Text = "Load";
+            this.buttonLoadGeofile.UseVisualStyleBackColor = true;
+            this.buttonLoadGeofile.Click += new System.EventHandler(this.buttonLoadGeofile_Click);
+            // 
+            // textBoxLoadGeoJson
+            // 
+            this.textBoxLoadGeoJson.Location = new System.Drawing.Point(16, 96);
+            this.textBoxLoadGeoJson.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxLoadGeoJson.Multiline = true;
+            this.textBoxLoadGeoJson.Name = "textBoxLoadGeoJson";
+            this.textBoxLoadGeoJson.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxLoadGeoJson.Size = new System.Drawing.Size(518, 128);
+            this.textBoxLoadGeoJson.TabIndex = 3;
+            // 
+            // label216
+            // 
+            this.label216.AutoSize = true;
+            this.label216.Location = new System.Drawing.Point(14, 68);
+            this.label216.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label216.Name = "label216";
+            this.label216.Size = new System.Drawing.Size(82, 13);
+            this.label216.TabIndex = 2;
+            this.label216.Text = "GeoFile content";
+            // 
+            // label215
+            // 
+            this.label215.AutoSize = true;
+            this.label215.Location = new System.Drawing.Point(14, 24);
+            this.label215.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label215.Name = "label215";
+            this.label215.Size = new System.Drawing.Size(72, 13);
+            this.label215.TabIndex = 1;
+            this.label215.Text = "GeoFile name";
+            // 
+            // textBoxLoadGeofileName
+            // 
+            this.textBoxLoadGeofileName.Location = new System.Drawing.Point(16, 41);
+            this.textBoxLoadGeofileName.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxLoadGeofileName.Name = "textBoxLoadGeofileName";
+            this.textBoxLoadGeofileName.Size = new System.Drawing.Size(216, 20);
+            this.textBoxLoadGeofileName.TabIndex = 0;
+            // 
             // P
             // 
             this.P.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -7823,6 +7973,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.isDriveRunningToolStripMenuItem,
             this.loadComputedRouteToolStripMenuItem1,
             this.loadExternalFileToolStripMenuItem,
+            this.loadGeofileToolStripMenuItem,
             this.loadGFFileToolStripMenuItem,
             this.loadComputedRouteToolStripMenuItem2,
             this.locationFromAddressExToolStripMenuItem,
@@ -7869,6 +8020,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.loadExternalFileToolStripMenuItem.Text = "LoadExternalFile";
             this.loadExternalFileToolStripMenuItem.Click += new System.EventHandler(this.loadExternalFileToolStripMenuItem_Click);
             // 
+            // loadGeofileToolStripMenuItem
+            // 
+            this.loadGeofileToolStripMenuItem.Name = "loadGeofileToolStripMenuItem";
+            this.loadGeofileToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.loadGeofileToolStripMenuItem.Text = "LoadGeofile";
+            this.loadGeofileToolStripMenuItem.Click += new System.EventHandler(this.loadGeofileToolStripMenuItem_Click);
+            // 
             // loadGFFileToolStripMenuItem
             // 
             this.loadGFFileToolStripMenuItem.Name = "loadGFFileToolStripMenuItem";
@@ -7897,13 +8055,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.navigateToAddressToolStripMenuItem.Text = "NavigateToAddress";
             this.navigateToAddressToolStripMenuItem.Click += new System.EventHandler(this.navigateToAddressToolStripMenuItem_Click);
             // 
-            // showDialogToolStripMenuItem
-            // 
-            this.showDialogToolStripMenuItem.Name = "showDialogToolStripMenuItem";
-            this.showDialogToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.showDialogToolStripMenuItem.Text = "ShowDialog";
-            this.showDialogToolStripMenuItem.Click += new System.EventHandler(this.showDialogToolStripMenuItem_Click);
-            // 
             // playSoundTTSToolStripMenuItem
             // 
             this.playSoundTTSToolStripMenuItem.Name = "playSoundTTSToolStripMenuItem";
@@ -7931,6 +8082,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.searchLocationFTSToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.searchLocationFTSToolStripMenuItem.Text = "Search Location FTS";
             this.searchLocationFTSToolStripMenuItem.Click += new System.EventHandler(this.searchLocationFTSToolStripMenuItem_Click);
+            // 
+            // showDialogToolStripMenuItem
+            // 
+            this.showDialogToolStripMenuItem.Name = "showDialogToolStripMenuItem";
+            this.showDialogToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.showDialogToolStripMenuItem.Text = "ShowDialog";
+            this.showDialogToolStripMenuItem.Click += new System.EventHandler(this.showDialogToolStripMenuItem_Click);
             // 
             // showMessageToolStripMenuItem
             // 
@@ -8372,6 +8530,17 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.openGpsDataDlg.Title = "Please enter the path to the file with GPS (nmea) data:";
             this.openGpsDataDlg.FileOk += new System.ComponentModel.CancelEventHandler(this.openGpsDataDlg_FileOk);
             // 
+            // buttonFormatJson
+            // 
+            this.buttonFormatJson.Location = new System.Drawing.Point(440, 231);
+            this.buttonFormatJson.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonFormatJson.Name = "buttonFormatJson";
+            this.buttonFormatJson.Size = new System.Drawing.Size(93, 35);
+            this.buttonFormatJson.TabIndex = 5;
+            this.buttonFormatJson.Text = "Format Input";
+            this.buttonFormatJson.UseVisualStyleBackColor = true;
+            this.buttonFormatJson.Click += new System.EventHandler(this.btnFormatJson_Click);
+            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -8656,6 +8825,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T38.ResumeLayout(false);
             this.panelFts.ResumeLayout(false);
             this.panelFts.PerformLayout();
+            this.T39.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_FlagsNum)).EndInit();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
@@ -9306,6 +9480,20 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.Label label212;
         private System.Windows.Forms.ToolStripMenuItem searchLocationFTSToolStripMenuItem;
         public System.Windows.Forms.ListBox listBoxFts;
+        private System.Windows.Forms.ToolStripMenuItem loadGeofileToolStripMenuItem;
+        private System.Windows.Forms.TabPage T39;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button buttonUnloadAllGeofile;
+        private System.Windows.Forms.Button buttonUnloadGeofile;
+        private System.Windows.Forms.TextBox textBoxUnloadGeofileName;
+        private System.Windows.Forms.Label label217;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button buttonLoadGeofile;
+        private System.Windows.Forms.TextBox textBoxLoadGeoJson;
+        private System.Windows.Forms.Label label216;
+        private System.Windows.Forms.Label label215;
+        private System.Windows.Forms.TextBox textBoxLoadGeofileName;
+        private System.Windows.Forms.Button buttonFormatJson;
     }
 }
 
