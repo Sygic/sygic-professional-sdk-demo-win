@@ -882,10 +882,10 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T37.SuspendLayout();
             this.DeleteEntryInItineraryGB.SuspendLayout();
             this.DeleteEntryInItineraryTlp.SuspendLayout();
-            this.T38.SuspendLayout();
-            this.panelFts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DeleteEntryInItinerary_nIndexNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DeleteEntryInItinerary_MaxTimeNum)).BeginInit();
+            this.T38.SuspendLayout();
+            this.panelFts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_FlagsNum)).BeginInit();
             this.menuStrip.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
@@ -3841,7 +3841,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GpsLogStartStopTlp.ColumnCount = 3;
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.87719F));
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.12281F));
-            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 437F));
+            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 438F));
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStartBtn, 0, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStopBtn, 2, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogPauseBtn, 1, 0);
@@ -3865,7 +3865,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLogStopBtn
             // 
             this.PlayGpsLogStopBtn.Image = global::WindowsDemo.Properties.Resources.Button_Stop_icon;
-            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(94, 3);
+            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(93, 3);
             this.PlayGpsLogStopBtn.Name = "PlayGpsLogStopBtn";
             this.PlayGpsLogStopBtn.Size = new System.Drawing.Size(45, 45);
             this.PlayGpsLogStopBtn.TabIndex = 3;
@@ -3877,7 +3877,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.PlayGpsLogPauseBtn.Image = global::WindowsDemo.Properties.Resources.Button_Pause_icon;
             this.PlayGpsLogPauseBtn.Location = new System.Drawing.Point(49, 3);
             this.PlayGpsLogPauseBtn.Name = "PlayGpsLogPauseBtn";
-            this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(39, 45);
+            this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(38, 45);
             this.PlayGpsLogPauseBtn.TabIndex = 4;
             this.PlayGpsLogPauseBtn.UseVisualStyleBackColor = true;
             this.PlayGpsLogPauseBtn.Click += new System.EventHandler(this.PlayGpsLogPauseBtn_Click);
@@ -4805,7 +4805,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.EventsGB.Controls.Add(this.EventsChLB);
             this.EventsGB.Location = new System.Drawing.Point(6, 6);
             this.EventsGB.Name = "EventsGB";
-            this.EventsGB.Size = new System.Drawing.Size(552, 402);
+            this.EventsGB.Size = new System.Drawing.Size(552, 486);
             this.EventsGB.TabIndex = 0;
             this.EventsGB.TabStop = false;
             this.EventsGB.Text = "Events";
@@ -4813,7 +4813,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // label121
             // 
             this.label121.AutoSize = true;
-            this.label121.Location = new System.Drawing.Point(6, 29);
+            this.label121.Location = new System.Drawing.Point(6, 37);
             this.label121.Name = "label121";
             this.label121.Size = new System.Drawing.Size(344, 13);
             this.label121.TabIndex = 1;
@@ -4844,11 +4844,15 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             "EVENT_SPEED_EXCEEDING",
             "EVENT_SPEED_LIMIT_CHANGED",
             "EVENT_BITMAP_CLICK",
-            "EVENT_POI_CLICK"});
-            this.EventsChLB.Location = new System.Drawing.Point(6, 59);
+            "EVENT_POI_CLICK",
+            "EVENT_WAYPOINT_CLICKED",
+            "EVENT_SHARE_POSITION"});
+            this.EventsChLB.Location = new System.Drawing.Point(7, 54);
             this.EventsChLB.Name = "EventsChLB";
-            this.EventsChLB.Size = new System.Drawing.Size(344, 319);
+            this.EventsChLB.Size = new System.Drawing.Size(344, 424);
             this.EventsChLB.TabIndex = 0;
+            this.EventsChLB.UseCompatibleTextRendering = true;
+            this.EventsChLB.SelectedIndexChanged += new System.EventHandler(this.EventsChLB_SelectedIndexChanged);
             // 
             // T21
             // 
@@ -7401,7 +7405,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.T38.Controls.Add(this.panelFts);
             this.T38.Location = new System.Drawing.Point(4, 19);
-            this.T38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.T38.Margin = new System.Windows.Forms.Padding(2);
             this.T38.Name = "T38";
             this.T38.Size = new System.Drawing.Size(564, 498);
             this.T38.TabIndex = 41;
@@ -7419,7 +7423,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.panelFts.Controls.Add(this.label212);
             this.panelFts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFts.Location = new System.Drawing.Point(0, 0);
-            this.panelFts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelFts.Margin = new System.Windows.Forms.Padding(2);
             this.panelFts.Name = "panelFts";
             this.panelFts.Size = new System.Drawing.Size(564, 498);
             this.panelFts.TabIndex = 0;
@@ -7428,7 +7432,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             this.listBoxFts.FormattingEnabled = true;
             this.listBoxFts.Location = new System.Drawing.Point(8, 171);
-            this.listBoxFts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxFts.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxFts.Name = "listBoxFts";
             this.listBoxFts.Size = new System.Drawing.Size(527, 316);
             this.listBoxFts.TabIndex = 5;
@@ -7436,7 +7440,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // buttonFts
             // 
             this.buttonFts.Location = new System.Drawing.Point(8, 80);
-            this.buttonFts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonFts.Margin = new System.Windows.Forms.Padding(2);
             this.buttonFts.Name = "buttonFts";
             this.buttonFts.Size = new System.Drawing.Size(166, 33);
             this.buttonFts.TabIndex = 4;
@@ -7447,7 +7451,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // textBoxFts
             // 
             this.textBoxFts.Location = new System.Drawing.Point(84, 49);
-            this.textBoxFts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxFts.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxFts.Name = "textBoxFts";
             this.textBoxFts.Size = new System.Drawing.Size(451, 20);
             this.textBoxFts.TabIndex = 3;
@@ -8705,6 +8709,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.DeleteEntryInItineraryTlp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DeleteEntryInItinerary_nIndexNum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DeleteEntryInItinerary_MaxTimeNum)).EndInit();
+            this.T38.ResumeLayout(false);
+            this.panelFts.ResumeLayout(false);
+            this.panelFts.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_FlagsNum)).EndInit();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();

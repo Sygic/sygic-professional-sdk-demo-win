@@ -316,8 +316,23 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                             O("Clicked on poi: " + arr[3] + ", coordinates(x,y): " + arr[0] + " (multiplied by 100000)");
                         }
                         break;
-                    default:
+                    case ApplicationEvents.EVENT_WAYPOINT_CLICKED:
+                        if (EventsChLB.GetItemChecked(21))
+                        {
+                            O("EVENT_WAYPOINT_CLICKED has been invoked.");
+                            StringBuilder[] arr = parse3(strData);                            
+                            O("Clicked on waypoint: " + arr[0]);
+                        }
                         break;
+                    case ApplicationEvents.EVENT_SHARE_POSITION:                      
+                        if (EventsChLB.GetItemChecked(22))
+                        {                            
+                            StringBuilder[] arr = parse3(strData);                            
+                            O("EVENT_SHARE_POSITION has been invoked: " + arr[0] + ", " + arr[1]);
+                        }
+                        break;
+                    default:
+                            break;
                 }
             
         }
@@ -1491,5 +1506,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             DriveHandler.SearchLocation(textBoxFts.Text, ftsListener, -1);
         }
 
+        private void EventsChLB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
