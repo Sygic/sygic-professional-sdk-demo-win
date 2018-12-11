@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -15,7 +15,7 @@ namespace WindowsDemo
         {
             if (resultList != null)
             {
-                resultList.Invoke(new Action(() =>
+                resultList.BeginInvoke(new Action(() =>
                 {
                     resultList.Items.Clear();
                 }));
@@ -26,7 +26,7 @@ namespace WindowsDemo
                     {
                         string res = pt.Location.lX + ", " + pt.Location.lY + ", " + pt.GetAddress();
 
-                        resultList.Invoke(new Action(() =>
+                        resultList.BeginInvoke(new Action(() =>
                         {
                             resultList.Items.Add(res);
                         }));
