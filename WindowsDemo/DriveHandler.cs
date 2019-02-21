@@ -364,6 +364,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             O("LoadComputedRoute returns: " + ret);
         }
 
+        public static void LoadComputedRoute(string inRoutePath, string jsonParams, int inMaxValue)
+        {
+            int ret = CApplicationAPI.LoadComputedRoute(out _mySError, inRoutePath, jsonParams, inMaxValue);
+            O("LoadComputedRoute returns: " + ret);
+        }
+
         public static void GetChangeOption(int inMaxTime, out string outOption) 
         {
             int ret = CApplicationAPI.GetApplicationOptions(out _mySError, out outOption, inMaxTime);
