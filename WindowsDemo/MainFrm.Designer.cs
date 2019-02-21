@@ -8610,9 +8610,19 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             0,
             0,
             0});
+            this.LoadComputedRoute_Index.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.LoadComputedRoute_Index.Name = "LoadComputedRoute_Index";
             this.LoadComputedRoute_Index.Size = new System.Drawing.Size(120, 20);
             this.LoadComputedRoute_Index.TabIndex = 6;
+            this.LoadComputedRoute_Index.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
             // 
             // label4
             // 
