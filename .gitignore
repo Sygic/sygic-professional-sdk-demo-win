@@ -1,5 +1,7 @@
 .vs
 .gitignore
 ApplicationAPI.NET.dll
+ApplicationAPI.dll
+sdkdriver.dll
 WindowsDemo/bin
 WindowsDemo/obj
