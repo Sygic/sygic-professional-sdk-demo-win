@@ -192,11 +192,15 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T9 = new System.Windows.Forms.TabPage();
             this.LoadComputedRouteGB = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.LoadComputedRoute_Index = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.LoadComputedRoute_Path = new System.Windows.Forms.TextBox();
             this.LoadComputedRoute_MaxTime = new System.Windows.Forms.NumericUpDown();
             this.LoadComputedRouteBtn = new System.Windows.Forms.Button();
+            this.LoadComputedRoute_ShowOnly = new System.Windows.Forms.CheckBox();
             this.T10 = new System.Windows.Forms.TabPage();
             this.ShowChangeOptionGB = new System.Windows.Forms.GroupBox();
             this.ApplicationChangeOptionsTextbox = new System.Windows.Forms.TextBox();
@@ -572,6 +576,19 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label216 = new System.Windows.Forms.Label();
             this.label215 = new System.Windows.Forms.Label();
             this.textBoxLoadGeofileName = new System.Windows.Forms.TextBox();
+            this.T40 = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBoxGetPoiOnRoute = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.GetPoiOnRoute_minDriveTimeNum = new System.Windows.Forms.NumericUpDown();
+            this.GetPoiOnRoute_categoryNum = new System.Windows.Forms.NumericUpDown();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label47 = new System.Windows.Forms.Label();
+            this.GetPoiOnRoute_maxDriveTimeNum = new System.Windows.Forms.NumericUpDown();
+            this.GetPoiOnRoute_maxTimeNum = new System.Windows.Forms.NumericUpDown();
+            this.label48 = new System.Windows.Forms.Label();
             this.P = new System.Windows.Forms.Panel();
             this.OutputRTB = new System.Windows.Forms.RichTextBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
@@ -678,10 +695,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SetRoute_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
             this.SetRouteBtn = new System.Windows.Forms.Button();
             this.openGpsDataDlg = new System.Windows.Forms.OpenFileDialog();
-            this.label3 = new System.Windows.Forms.Label();
-            this.LoadComputedRoute_Index = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.LoadComputedRoute_ShowOnly = new System.Windows.Forms.CheckBox();
+            this.getPoiOnRouteMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TC.SuspendLayout();
             this.T1.SuspendLayout();
             this.ScreenResolutionGB.SuspendLayout();
@@ -750,6 +764,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T9.SuspendLayout();
             this.LoadComputedRouteGB.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LoadComputedRoute_Index)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LoadComputedRoute_MaxTime)).BeginInit();
             this.T10.SuspendLayout();
             this.ShowChangeOptionGB.SuspendLayout();
@@ -905,6 +920,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T39.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.T40.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.tableLayoutPanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GetPoiOnRoute_minDriveTimeNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GetPoiOnRoute_categoryNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GetPoiOnRoute_maxDriveTimeNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GetPoiOnRoute_maxTimeNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_FlagsNum)).BeginInit();
             this.menuStrip.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
@@ -913,7 +935,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             ((System.ComponentModel.ISupportInitialize)(this.ShowMessage_maxTimeNum)).BeginInit();
             this.SetRouteTlp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_MaxTimeNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LoadComputedRoute_Index)).BeginInit();
             this.SuspendLayout();
             // 
             // TC
@@ -957,6 +978,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.TC.Controls.Add(this.T37);
             this.TC.Controls.Add(this.T38);
             this.TC.Controls.Add(this.T39);
+            this.TC.Controls.Add(this.T40);
             this.TC.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.TC.ItemSize = new System.Drawing.Size(30, 15);
             this.TC.Location = new System.Drawing.Point(0, 26);
@@ -3216,6 +3238,46 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel8.Size = new System.Drawing.Size(538, 155);
             this.tableLayoutPanel8.TabIndex = 0;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Show Only";
+            // 
+            // LoadComputedRoute_Index
+            // 
+            this.LoadComputedRoute_Index.Location = new System.Drawing.Point(125, 34);
+            this.LoadComputedRoute_Index.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.LoadComputedRoute_Index.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.LoadComputedRoute_Index.Name = "LoadComputedRoute_Index";
+            this.LoadComputedRoute_Index.Size = new System.Drawing.Size(120, 20);
+            this.LoadComputedRoute_Index.TabIndex = 6;
+            this.LoadComputedRoute_Index.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Start from Index";
+            // 
             // label42
             // 
             this.label42.AutoSize = true;
@@ -3265,6 +3327,15 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LoadComputedRouteBtn.Text = "LoadComputedRoute";
             this.LoadComputedRouteBtn.UseVisualStyleBackColor = true;
             this.LoadComputedRouteBtn.Click += new System.EventHandler(this.LoadComputedRouteBtn_Click);
+            // 
+            // LoadComputedRoute_ShowOnly
+            // 
+            this.LoadComputedRoute_ShowOnly.AutoSize = true;
+            this.LoadComputedRoute_ShowOnly.Location = new System.Drawing.Point(125, 65);
+            this.LoadComputedRoute_ShowOnly.Name = "LoadComputedRoute_ShowOnly";
+            this.LoadComputedRoute_ShowOnly.Size = new System.Drawing.Size(15, 14);
+            this.LoadComputedRoute_ShowOnly.TabIndex = 8;
+            this.LoadComputedRoute_ShowOnly.UseVisualStyleBackColor = true;
             // 
             // T10
             // 
@@ -3818,7 +3889,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GpsLogStartStopTlp.ColumnCount = 3;
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.87719F));
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.12281F));
-            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 445F));
+            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 447F));
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStartBtn, 0, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStopBtn, 2, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogPauseBtn, 1, 0);
@@ -3834,7 +3905,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.PlayGpsLogStartBtn.Image = global::WindowsDemo.Properties.Resources.Button_Play_icon;
             this.PlayGpsLogStartBtn.Location = new System.Drawing.Point(3, 3);
             this.PlayGpsLogStartBtn.Name = "PlayGpsLogStartBtn";
-            this.PlayGpsLogStartBtn.Size = new System.Drawing.Size(36, 45);
+            this.PlayGpsLogStartBtn.Size = new System.Drawing.Size(35, 45);
             this.PlayGpsLogStartBtn.TabIndex = 2;
             this.PlayGpsLogStartBtn.UseVisualStyleBackColor = true;
             this.PlayGpsLogStartBtn.Click += new System.EventHandler(this.PlayGpsLogStartBtn_Click);
@@ -3842,7 +3913,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLogStopBtn
             // 
             this.PlayGpsLogStopBtn.Image = global::WindowsDemo.Properties.Resources.Button_Stop_icon;
-            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(86, 3);
+            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(84, 3);
             this.PlayGpsLogStopBtn.Name = "PlayGpsLogStopBtn";
             this.PlayGpsLogStopBtn.Size = new System.Drawing.Size(45, 45);
             this.PlayGpsLogStopBtn.TabIndex = 3;
@@ -3852,9 +3923,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLogPauseBtn
             // 
             this.PlayGpsLogPauseBtn.Image = global::WindowsDemo.Properties.Resources.Button_Pause_icon;
-            this.PlayGpsLogPauseBtn.Location = new System.Drawing.Point(45, 3);
+            this.PlayGpsLogPauseBtn.Location = new System.Drawing.Point(44, 3);
             this.PlayGpsLogPauseBtn.Name = "PlayGpsLogPauseBtn";
-            this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(35, 45);
+            this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(34, 45);
             this.PlayGpsLogPauseBtn.TabIndex = 4;
             this.PlayGpsLogPauseBtn.UseVisualStyleBackColor = true;
             this.PlayGpsLogPauseBtn.Click += new System.EventHandler(this.PlayGpsLogPauseBtn_Click);
@@ -7644,6 +7715,159 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.textBoxLoadGeofileName.Size = new System.Drawing.Size(216, 20);
             this.textBoxLoadGeofileName.TabIndex = 0;
             // 
+            // T40
+            // 
+            this.T40.Controls.Add(this.groupBox3);
+            this.T40.Location = new System.Drawing.Point(4, 19);
+            this.T40.Name = "T40";
+            this.T40.Size = new System.Drawing.Size(564, 498);
+            this.T40.TabIndex = 43;
+            this.T40.Text = "T40";
+            this.T40.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.textBoxGetPoiOnRoute);
+            this.groupBox3.Controls.Add(this.tableLayoutPanel10);
+            this.groupBox3.Location = new System.Drawing.Point(3, 3);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(558, 492);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "GetPoiOnRoute";
+            // 
+            // textBoxGetPoiOnRoute
+            // 
+            this.textBoxGetPoiOnRoute.Location = new System.Drawing.Point(6, 196);
+            this.textBoxGetPoiOnRoute.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxGetPoiOnRoute.Multiline = true;
+            this.textBoxGetPoiOnRoute.Name = "textBoxGetPoiOnRoute";
+            this.textBoxGetPoiOnRoute.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxGetPoiOnRoute.Size = new System.Drawing.Size(547, 291);
+            this.textBoxGetPoiOnRoute.TabIndex = 4;
+            // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.ColumnCount = 2;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.90706F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.09294F));
+            this.tableLayoutPanel10.Controls.Add(this.label45, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.label46, 0, 1);
+            this.tableLayoutPanel10.Controls.Add(this.GetPoiOnRoute_minDriveTimeNum, 1, 1);
+            this.tableLayoutPanel10.Controls.Add(this.GetPoiOnRoute_categoryNum, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.button2, 1, 4);
+            this.tableLayoutPanel10.Controls.Add(this.label47, 0, 3);
+            this.tableLayoutPanel10.Controls.Add(this.GetPoiOnRoute_maxDriveTimeNum, 1, 2);
+            this.tableLayoutPanel10.Controls.Add(this.GetPoiOnRoute_maxTimeNum, 1, 3);
+            this.tableLayoutPanel10.Controls.Add(this.label48, 0, 2);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(6, 19);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 5;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(546, 172);
+            this.tableLayoutPanel10.TabIndex = 0;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(3, 0);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(63, 13);
+            this.label45.TabIndex = 1;
+            this.label45.Text = "Category ID";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(3, 34);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(102, 13);
+            this.label46.TabIndex = 2;
+            this.label46.Text = "minDriveTime in sec";
+            // 
+            // GetPoiOnRoute_minDriveTimeNum
+            // 
+            this.GetPoiOnRoute_minDriveTimeNum.Location = new System.Drawing.Point(138, 37);
+            this.GetPoiOnRoute_minDriveTimeNum.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.GetPoiOnRoute_minDriveTimeNum.Name = "GetPoiOnRoute_minDriveTimeNum";
+            this.GetPoiOnRoute_minDriveTimeNum.Size = new System.Drawing.Size(120, 20);
+            this.GetPoiOnRoute_minDriveTimeNum.TabIndex = 5;
+            // 
+            // GetPoiOnRoute_categoryNum
+            // 
+            this.GetPoiOnRoute_categoryNum.Location = new System.Drawing.Point(138, 3);
+            this.GetPoiOnRoute_categoryNum.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.GetPoiOnRoute_categoryNum.Name = "GetPoiOnRoute_categoryNum";
+            this.GetPoiOnRoute_categoryNum.Size = new System.Drawing.Size(120, 20);
+            this.GetPoiOnRoute_categoryNum.TabIndex = 7;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(138, 139);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(405, 30);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "GetPoiOnRoute";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.GetPoiOnRoute_btnClick);
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(3, 102);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(50, 13);
+            this.label47.TabIndex = 3;
+            this.label47.Text = "MaxTime";
+            // 
+            // GetPoiOnRoute_maxDriveTimeNum
+            // 
+            this.GetPoiOnRoute_maxDriveTimeNum.Location = new System.Drawing.Point(138, 71);
+            this.GetPoiOnRoute_maxDriveTimeNum.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
+            this.GetPoiOnRoute_maxDriveTimeNum.Name = "GetPoiOnRoute_maxDriveTimeNum";
+            this.GetPoiOnRoute_maxDriveTimeNum.Size = new System.Drawing.Size(120, 20);
+            this.GetPoiOnRoute_maxDriveTimeNum.TabIndex = 6;
+            // 
+            // GetPoiOnRoute_maxTimeNum
+            // 
+            this.GetPoiOnRoute_maxTimeNum.Location = new System.Drawing.Point(138, 105);
+            this.GetPoiOnRoute_maxTimeNum.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
+            this.GetPoiOnRoute_maxTimeNum.Name = "GetPoiOnRoute_maxTimeNum";
+            this.GetPoiOnRoute_maxTimeNum.Size = new System.Drawing.Size(120, 20);
+            this.GetPoiOnRoute_maxTimeNum.TabIndex = 8;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(3, 68);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(105, 13);
+            this.label48.TabIndex = 9;
+            this.label48.Text = "maxDriveTime in sec";
+            // 
             // P
             // 
             this.P.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -7792,6 +8016,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.getNextInstructionToolStripMenuItem,
             this.getPoiCategoryListToolStripMenuItem,
             this.getPoiListToolStripMenuItem,
+            this.getPoiOnRouteMenuItem,
             this.getRouteInfoToolStripMenuItem,
             this.getSDKversionToolStripMenuItem,
             this.getUniqueDeviceIdToolStripMenuItem,
@@ -8593,54 +8818,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.openGpsDataDlg.Title = "Please enter the path to the file with GPS (nmea) data:";
             this.openGpsDataDlg.FileOk += new System.ComponentModel.CancelEventHandler(this.openGpsDataDlg_FileOk);
             // 
-            // label3
+            // getPoiOnRouteMenuItem
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Start from Index";
-            // 
-            // LoadComputedRoute_Index
-            // 
-            this.LoadComputedRoute_Index.Location = new System.Drawing.Point(125, 34);
-            this.LoadComputedRoute_Index.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.LoadComputedRoute_Index.Minimum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.LoadComputedRoute_Index.Name = "LoadComputedRoute_Index";
-            this.LoadComputedRoute_Index.Size = new System.Drawing.Size(120, 20);
-            this.LoadComputedRoute_Index.TabIndex = 6;
-            this.LoadComputedRoute_Index.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Show Only";
-            // 
-            // LoadComputedRoute_ShowOnly
-            // 
-            this.LoadComputedRoute_ShowOnly.AutoSize = true;
-            this.LoadComputedRoute_ShowOnly.Location = new System.Drawing.Point(125, 65);
-            this.LoadComputedRoute_ShowOnly.Name = "LoadComputedRoute_ShowOnly";
-            this.LoadComputedRoute_ShowOnly.Size = new System.Drawing.Size(15, 14);
-            this.LoadComputedRoute_ShowOnly.TabIndex = 8;
-            this.LoadComputedRoute_ShowOnly.UseVisualStyleBackColor = true;
+            this.getPoiOnRouteMenuItem.Name = "getPoiOnRouteMenuItem";
+            this.getPoiOnRouteMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.getPoiOnRouteMenuItem.Text = "GetPoiOnRoute";
+            this.getPoiOnRouteMenuItem.Click += new System.EventHandler(this.getPoiOnRouteToolStripMenuItem_Click);
             // 
             // MainFrm
             // 
@@ -8740,6 +8923,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LoadComputedRouteGB.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LoadComputedRoute_Index)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LoadComputedRoute_MaxTime)).EndInit();
             this.T10.ResumeLayout(false);
             this.ShowChangeOptionGB.ResumeLayout(false);
@@ -8932,6 +9116,15 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.T40.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GetPoiOnRoute_minDriveTimeNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GetPoiOnRoute_categoryNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GetPoiOnRoute_maxDriveTimeNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GetPoiOnRoute_maxTimeNum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_FlagsNum)).EndInit();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
@@ -8944,7 +9137,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SetRouteTlp.ResumeLayout(false);
             this.SetRouteTlp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_MaxTimeNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LoadComputedRoute_Index)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -9604,6 +9796,20 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.NumericUpDown LoadComputedRoute_Index;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox LoadComputedRoute_ShowOnly;
+        private System.Windows.Forms.TabPage T40;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.NumericUpDown GetPoiOnRoute_minDriveTimeNum;
+        private System.Windows.Forms.NumericUpDown GetPoiOnRoute_categoryNum;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.NumericUpDown GetPoiOnRoute_maxDriveTimeNum;
+        private System.Windows.Forms.NumericUpDown GetPoiOnRoute_maxTimeNum;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.TextBox textBoxGetPoiOnRoute;
+        private System.Windows.Forms.ToolStripMenuItem getPoiOnRouteMenuItem;
     }
 }
 

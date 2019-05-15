@@ -280,6 +280,24 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                 list[i] = pc[i].Name;
             return list;
         }
+
+        public static string[] GetPoiOnRoute(int inCategory, int inMinDriveTime, int inMaxDriveTime, int inMaxTime)
+        {
+            SPoiOnRoute[] poiOnRoute;
+            string[] list = {"no POI, you have to calculate a route or enter the parameters correctly"};
+            int ret = CApplicationAPI.GetPoiOnRoute(out _mySError, -1, inCategory, inMinDriveTime, inMaxDriveTime, out poiOnRoute, inMaxTime);
+            if (poiOnRoute != null)
+            {
+                O("GetPoiOnRoute returns: " + ret.ToString() + ", found POI on route: " + poiOnRoute.Length);
+                list = new string[poiOnRoute.Length];
+                for (int i = 0; i < poiOnRoute.Length; i++)
+                    list[i] = poiOnRoute[i].GetName().ToString() + ", " + poiOnRoute[i].GetAddress().ToString();
+            } else
+            {
+                O("GetPoiOnRoute returns: 0");
+            }            
+            return list;
+        }
         public static void AddPoi(int inX, int inY, string inCategory, string inName, bool inSearch_address, int inMaxTime) 
         {
             LONGPOSITION lp;

@@ -1566,9 +1566,49 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             textBoxLoadGeoJson.Refresh();
         }
 
+        private void GetPoiOnRoute_btnClick(object sender, EventArgs e)
+        {
+            int category = (int)GetPoiOnRoute_categoryNum.Value;
+            int minDriveTime = (int)GetPoiOnRoute_minDriveTimeNum.Value;
+            int maxDriveTime = (int)GetPoiOnRoute_maxDriveTimeNum.Value;
+            int maxTime = (int)GetPoiOnRoute_maxDriveTimeNum.Value;
+            textBoxGetPoiOnRoute.Text = "";
+            string[] poiOnRouteArr = DriveHandler.GetPoiOnRoute(category, minDriveTime, maxDriveTime, maxTime);
+            for(int i = 0; i < poiOnRouteArr.Length; i++)
+            {
+                textBoxGetPoiOnRoute.Text += i+1 + ". " + poiOnRouteArr[i] + "\r\n";
+            }
+            
+        }
+
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void TC_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void T40_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label46_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label48_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void getPoiOnRouteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TC.SelectedTab = T40;
         }
     }
 }
