@@ -1610,5 +1610,23 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         {
             TC.SelectedTab = T40;
         }
+
+        private void joinRouteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TC.SelectedTab = T41;
+        }
+
+        private void JoinRouteBtn_Click(object sender, EventArgs e)
+        {
+            if (File.Exists(JoinRoutePath_filepath.Text))
+            {
+                JObject jsonParams = new JObject(new JProperty("startFromIndex", -1), new JProperty("showOnly", false));
+                DriveHandler.LoadComputedRoute(JoinRoutePath_filepath.Text, jsonParams.ToString(), 0);
+            }
+            else
+            {
+                O("File:" + JoinRoutePath_filepath.Text + " doesn't exist.");
+            }            
+        }
     }
 }
