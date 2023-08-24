@@ -907,7 +907,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
 
         private void SwitchMapBtn_Click(object sender, EventArgs e)
         {
-            if (File.Exists(SwitchMap_strLoadPathCB.Text))
+            if (Directory.Exists(SwitchMap_strLoadPathCB.Text))
             {
                 SwitchMap_strLoadPathCB.Items.Add(SwitchMap_strLoadPathCB.Text);
                 WriteComboBoxesIntoIniFile();
