@@ -697,6 +697,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                 (int)StartNavigation_FlagsNum.Value,
                 StartNavigation_bShowApplicationChB.Checked,
                 StartNavigation_bSearchAddressChB.Checked,
+                StartNavigation_CustomAddress.Text,
                 (int)StartNavigation_MaxTimeNum.Value);
         }
 

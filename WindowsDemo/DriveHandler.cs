@@ -428,12 +428,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             outArr = arr;
         }
 
-        public static void StartNavigation(int inlX, int inlY, int inFlags, bool inbShowApplication, bool inbSearchAddress, int inMaxTime) 
+        public static void StartNavigation(int inlX, int inlY, int inFlags, bool inbShowApplication, bool inbSearchAddress, string strCustomAddress, int inMaxTime) 
         {
             LONGPOSITION lp = new LONGPOSITION(inlX, inlY);
             SWayPoint wp = new SWayPoint();
             wp.Location = lp;
-            int ret = CApplicationAPI.StartNavigation(out _mySError, ref wp, inFlags, inbShowApplication, inbSearchAddress, inMaxTime);
+            wp.SetCustomAddress(strCustomAddress);
+            int ret = CApplicationAPI.StartNavigation(out _mySError, ref wp, inFlags, inbShowApplication, false, inbSearchAddress, new SRouteComputeSettings(), inMaxTime);
             O("StartNavigation returns: " + ret.ToString() + ", errorcode: " + _mySError.nCode.ToString());
         }
 
