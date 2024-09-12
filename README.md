@@ -39,6 +39,7 @@ This demo is a good tool for testing purposes on platform Windows XP/Vista/7/8/8
 * GetPoiCategoryList
 * GetPoiList
 * GetRouteInfo
+* GetRouteStatus
 * GetUniqueDeviceId
 * Get/SetApplicationOptions
 * IsDriveRunning
@@ -56,5 +57,7 @@ This demo is a good tool for testing purposes on platform Windows XP/Vista/7/8/8
 * TripAddUserEvent
 * TripEnd
 * TripStart
+* UnloadGFFile
+* UpdatePois
 
 … and many more

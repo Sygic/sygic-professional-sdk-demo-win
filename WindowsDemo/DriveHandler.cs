@@ -347,6 +347,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             O("RouteInfo.TotalDistance: " + RouteInfo.TotalDistance.ToString());
             O("RouteInfo.TotalTime: " + RouteInfo.TotalTime.ToString());
         }
+        public static void GetRouteStatus(int inMaxTime)
+        {
+            string RouteStatus = "";
+            int ret = CApplicationAPI.GetRouteStatus(out _mySError, out RouteStatus, inMaxTime);
+
+            O("GetRouteStatus returns: " + ret.ToString());
+            O("\n" + RouteStatus);
+        }
         public static string GetRouteInfoTest(string inItineraryName, int inMaxTime)
         {
             SRouteInfo RouteInfo = new SRouteInfo();
@@ -944,6 +952,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         {
             int ret = CApplicationAPI.UnloadGeoFile(out _mySError, inMaxValue);
             O("UnloadGeoFiles returns: " + ret);
+        }
+        public static void UpdatePois(string data, int inMaxValue)
+        {
+            int format = 0;
+            string result;
+            int ret = CApplicationAPI.UpdatePois(out _mySError, data, format, out result, inMaxValue);
+            O("UpdatePois returns: " + ret + "\n" + result);
         }
 
         #endregion
