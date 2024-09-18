@@ -1164,6 +1164,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             DriveHandler.GetRouteInfo(0);
         }
 
+        private void getRouteStatusToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DriveHandler.GetRouteStatus(0);
+        }
+
         private void getUniqueDeviceIdToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DriveHandler.GetUniqueDeviceId();
@@ -1628,6 +1633,16 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             {
                 O("File:" + JoinRoutePath_filepath.Text + " doesn't exist.");
             }            
+        }
+
+        private void updatePoisEvensToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TC.SelectedTab = T42;
+        }
+
+        private void UpdatePois_btn_Click(object sender, EventArgs e)
+        {
+            DriveHandler.UpdatePois(updatePois_TB.Text, 0);
         }
     }
 }

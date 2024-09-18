@@ -595,6 +595,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.path_label = new System.Windows.Forms.Label();
             this.JoinRouteBtn = new System.Windows.Forms.Button();
             this.JoinRoutePath_filepath = new System.Windows.Forms.ComboBox();
+            this.T42 = new System.Windows.Forms.TabPage();
+            this.updatePois_layoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.updatePois_label = new System.Windows.Forms.Label();
+            this.updatePois_TB = new System.Windows.Forms.TextBox();
+            this.updatePois_btn = new System.Windows.Forms.Button();
+            this.updatePoisEvensToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.P = new System.Windows.Forms.Panel();
             this.OutputRTB = new System.Windows.Forms.RichTextBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
@@ -637,6 +643,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.getPoiListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getPoiOnRouteMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getRouteInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.getRouteStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getSDKversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getUniqueDeviceIdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.highlightPoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -939,6 +946,8 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T41.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tableLayoutPanel24.SuspendLayout();
+            this.T42.SuspendLayout();
+            this.updatePois_layoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_FlagsNum)).BeginInit();
             this.menuStrip.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
@@ -992,6 +1001,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.TC.Controls.Add(this.T39);
             this.TC.Controls.Add(this.T40);
             this.TC.Controls.Add(this.T41);
+            this.TC.Controls.Add(this.T42);
             this.TC.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.TC.ItemSize = new System.Drawing.Size(30, 15);
             this.TC.Location = new System.Drawing.Point(0, 26);
@@ -3902,7 +3912,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GpsLogStartStopTlp.ColumnCount = 3;
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.87719F));
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.12281F));
-            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 454F));
+            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 455F));
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStartBtn, 0, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStopBtn, 2, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogPauseBtn, 1, 0);
@@ -7960,6 +7970,61 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.JoinRoutePath_filepath.Size = new System.Drawing.Size(396, 21);
             this.JoinRoutePath_filepath.TabIndex = 4;
             // 
+            // T42
+            // 
+            this.T42.Controls.Add(this.updatePois_layoutPanel);
+            this.T42.Location = new System.Drawing.Point(4, 19);
+            this.T42.Name = "T42";
+            this.T42.Padding = new System.Windows.Forms.Padding(3);
+            this.T42.Size = new System.Drawing.Size(564, 498);
+            this.T42.TabIndex = 45;
+            this.T42.Text = "T42";
+            this.T42.UseVisualStyleBackColor = true;
+            // 
+            // updatePois_layoutPanel
+            // 
+            this.updatePois_layoutPanel.ColumnCount = 2;
+            this.updatePois_layoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.63636F));
+            this.updatePois_layoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.36364F));
+            this.updatePois_layoutPanel.Controls.Add(this.updatePois_label, 0, 0);
+            this.updatePois_layoutPanel.Controls.Add(this.updatePois_TB, 1, 0);
+            this.updatePois_layoutPanel.Controls.Add(this.updatePois_btn, 1, 1);
+            this.updatePois_layoutPanel.Location = new System.Drawing.Point(8, 6);
+            this.updatePois_layoutPanel.Name = "updatePois_layoutPanel";
+            this.updatePois_layoutPanel.RowCount = 2;
+            this.updatePois_layoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 68.02139F));
+            this.updatePois_layoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.97861F));
+            this.updatePois_layoutPanel.Size = new System.Drawing.Size(550, 486);
+            this.updatePois_layoutPanel.TabIndex = 0;
+            // 
+            // updatePois_label
+            // 
+            this.updatePois_label.AutoSize = true;
+            this.updatePois_label.Location = new System.Drawing.Point(3, 0);
+            this.updatePois_label.Name = "updatePois_label";
+            this.updatePois_label.Size = new System.Drawing.Size(62, 13);
+            this.updatePois_label.TabIndex = 0;
+            this.updatePois_label.Text = "UpdatePois";
+            // 
+            // updatePois_TB
+            // 
+            this.updatePois_TB.Location = new System.Drawing.Point(3, 29);
+            this.updatePois_TB.Multiline = true;
+            this.updatePois_TB.Name = "updatePois_TB";
+            this.updatePois_TB.Size = new System.Drawing.Size(392, 315);
+            this.updatePois_TB.TabIndex = 1;
+            this.updatePois_TB.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            // 
+            // updatePois_btn
+            // 
+            this.updatePois_btn.Location = new System.Drawing.Point(154, 190);
+            this.updatePois_btn.Name = "updatePois_btn";
+            this.updatePois_btn.Size = new System.Drawing.Size(392, 28);
+            this.updatePois_btn.TabIndex = 2;
+            this.updatePois_btn.Text = "UpdatePois";
+            this.updatePois_btn.UseVisualStyleBackColor = true;
+            this.updatePois_btn.Click += new System.EventHandler(this.UpdatePois_btn_Click);
+            // 
             // P
             // 
             this.P.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -8111,6 +8176,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.getPoiListToolStripMenuItem,
             this.getPoiOnRouteMenuItem,
             this.getRouteInfoToolStripMenuItem,
+            this.getRouteStatusToolStripMenuItem,
             this.getSDKversionToolStripMenuItem,
             this.getUniqueDeviceIdToolStripMenuItem,
             this.highlightPoiToolStripMenuItem,
@@ -8312,6 +8378,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.getRouteInfoToolStripMenuItem.Text = "GetRouteInfo";
             this.getRouteInfoToolStripMenuItem.Click += new System.EventHandler(this.getRouteInfoToolStripMenuItem_Click);
             // 
+            // getRouteStatusToolStripMenuItem
+            // 
+            this.getRouteStatusToolStripMenuItem.Name = "getRouteStatusToolStripMenuItem";
+            this.getRouteStatusToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.getRouteStatusToolStripMenuItem.Text = "GetRouteStatus";
+            this.getRouteStatusToolStripMenuItem.Click += new System.EventHandler(this.getRouteStatusToolStripMenuItem_Click);
+            // 
             // getSDKversionToolStripMenuItem
             // 
             this.getSDKversionToolStripMenuItem.Name = "getSDKversionToolStripMenuItem";
@@ -8354,6 +8427,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.initApiToolStripMenuItem.Text = "InitApi";
             this.initApiToolStripMenuItem.Click += new System.EventHandler(this.initApiToolStripMenuItem_Click);
             // 
+            // updatePoisEvensToolStripMenuItem
+            // 
+            this.updatePoisEvensToolStripMenuItem.Name = "updatePoisEvensToolStripMenuItem";
+            this.updatePoisEvensToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.updatePoisEvensToolStripMenuItem.Text = "UpdatePois";
+            this.updatePoisEvensToolStripMenuItem.Click += new System.EventHandler(this.updatePoisEvensToolStripMenuItem_Click);
+            // 
             // ApiJZ_ToolStripMenuItem
             // 
             this.ApiJZ_ToolStripMenuItem.AutoSize = false;
@@ -8382,7 +8462,8 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tripAddUserEventToolStripMenuItem,
             this.tripEndToolStripMenuItem,
             this.tripStartToolStripMenuItem,
-            this.unloadGFFileToolStripMenuItem});
+            this.unloadGFFileToolStripMenuItem,
+            this.updatePoisEvensToolStripMenuItem});
             this.ApiJZ_ToolStripMenuItem.Name = "ApiJZ_ToolStripMenuItem";
             this.ApiJZ_ToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.ApiJZ_ToolStripMenuItem.Text = "API(i-z)";
@@ -8954,7 +9035,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.MainMenuStrip = this.menuStrip;
             this.Name = "MainFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "SDK demo v. 2017-10-19";
+            this.Text = "SDK demo v. 2024-09-12";
             this.Load += new System.EventHandler(this.MainFrm_Load);
             this.TC.ResumeLayout(false);
             this.T1.ResumeLayout(false);
@@ -9246,6 +9327,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.groupBox4.ResumeLayout(false);
             this.tableLayoutPanel24.ResumeLayout(false);
             this.tableLayoutPanel24.PerformLayout();
+            this.T42.ResumeLayout(false);
+            this.updatePois_layoutPanel.ResumeLayout(false);
+            this.updatePois_layoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_FlagsNum)).EndInit();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
@@ -9794,6 +9878,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.ToolStripMenuItem getPoiCategoryListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem getPoiListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem getRouteInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem getRouteStatusToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem getSDKversionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem getUniqueDeviceIdToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changeAppRectangleToolStripMenuItem;
@@ -9940,6 +10025,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.ComboBox JoinRoutePath_filepath;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.TextBox StartNavigation_CustomAddress;
+        private System.Windows.Forms.TabPage T42;
+        private System.Windows.Forms.TableLayoutPanel updatePois_layoutPanel; //tableLayoutPanel25
+        private System.Windows.Forms.Label updatePois_label;
+        private System.Windows.Forms.TextBox updatePois_TB;
+        private System.Windows.Forms.Button updatePois_btn;
+        private System.Windows.Forms.ToolStripMenuItem updatePoisEvensToolStripMenuItem;
     }
 }
 
