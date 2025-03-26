@@ -252,20 +252,24 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                         if (EventsChLB.GetItemChecked(9))
                             O("EVENT_CUSTOM_MENU has been invoked.");
                         break;
-                    case ApplicationEvents.EVENT_CHANGE_LANGUAGE:
+                    case ApplicationEvents.EVENT_ENTER_MENU:
                         if (EventsChLB.GetItemChecked(10))
+                            O("EVENT_ENTER_MENU has been invoked.");
+                        break;
+                    case ApplicationEvents.EVENT_CHANGE_LANGUAGE:
+                        if (EventsChLB.GetItemChecked(11))
                             O("EVENT_CHANGE_LANGUAGE has been invoked.");
                         break;
                     case ApplicationEvents.EVENT_CHANGE_ORIENTATION:
-                        if (EventsChLB.GetItemChecked(11))
+                        if (EventsChLB.GetItemChecked(12))
                             O("EVENT_CHANGE_ORIENTATION has been invoked.");
                         break;
                     case ApplicationEvents.EVENT_RADAR_WARNING:
-                        if (EventsChLB.GetItemChecked(12))
+                        if (EventsChLB.GetItemChecked(13))
                             O("EVENT_RADAR_WARNING has been invoked.");
                         break;
                     case ApplicationEvents.EVENT_POI_WARNING:
-                        if (EventsChLB.GetItemChecked(13))
+                        if (EventsChLB.GetItemChecked(14))
                         {
                             O("EVENT_POI_WARNING has been invoked.");
                             StringBuilder[] arr2 = parse3(strData);
@@ -273,7 +277,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                         }
                         break;
                     case ApplicationEvents.EVENT_GEOFENCE:
-                        if (EventsChLB.GetItemChecked(14))
+                        if (EventsChLB.GetItemChecked(15))
                         {
                             O("EVENT_GEOFENCE has been invoked.");
                             string s = parse2(strData);
@@ -281,19 +285,19 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                         }
                         break;
                     case ApplicationEvents.EVENT_RESTRICTED_ROAD:
-                        if (EventsChLB.GetItemChecked(15))
+                        if (EventsChLB.GetItemChecked(16))
                             O("EVENT_RESTRICTED_ROAD has been invoked.");
                         break;
                     case ApplicationEvents.EVENT_BORDER_CROSSING:
-                        if (EventsChLB.GetItemChecked(16))
+                        if (EventsChLB.GetItemChecked(17))
                             O("EVENT_BORDER_CROSSING has been invoked.");
                         break;
                     case ApplicationEvents.EVENT_SPEED_EXCEEDING:
-                        if (EventsChLB.GetItemChecked(17))
+                        if (EventsChLB.GetItemChecked(18))
                             O("EVENT_SPEED_EXCEEDING has been invoked.");
                         break;
                     case ApplicationEvents.EVENT_SPEED_LIMIT_CHANGED:
-                        if (EventsChLB.GetItemChecked(18))
+                        if (EventsChLB.GetItemChecked(19))
                         {
                             O("EVENT_SPEED_LIMIT_CHANGED has been invoked.");
                             string s = parse2(strData);
@@ -301,7 +305,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                         }
                     break;
                     case ApplicationEvents.EVENT_BITMAP_CLICK:
-                        if (EventsChLB.GetItemChecked(19))
+                        if (EventsChLB.GetItemChecked(20))
                         {
                             O("EVENT_BITMAP_CLICK has been invoked.");
                             string s = parse2(strData);
@@ -309,7 +313,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                         }
                         break;
                     case ApplicationEvents.EVENT_POI_CLICK:
-                        if (EventsChLB.GetItemChecked(20))
+                        if (EventsChLB.GetItemChecked(21))
                         {
                             O("EVENT_POI_CLICK has been invoked.");
                             StringBuilder[] arr = parse3(strData);
@@ -317,7 +321,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                         }
                         break;
                     case ApplicationEvents.EVENT_WAYPOINT_CLICKED:
-                        if (EventsChLB.GetItemChecked(21))
+                        if (EventsChLB.GetItemChecked(22))
                         {
                             O("EVENT_WAYPOINT_CLICKED has been invoked.");
                             StringBuilder[] arr = parse3(strData);                            
@@ -325,7 +329,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                         }
                         break;
                     case ApplicationEvents.EVENT_SHARE_POSITION:                      
-                        if (EventsChLB.GetItemChecked(22))
+                        if (EventsChLB.GetItemChecked(23))
                         {                            
                             StringBuilder[] arr = parse3(strData);                            
                             O("EVENT_SHARE_POSITION has been invoked: " + arr[0] + ", " + arr[1]);

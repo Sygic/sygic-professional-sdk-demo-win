@@ -4905,6 +4905,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             "EVENT_CONTEXT_MENU",
             "EVENT_EXIT_MENU",
             "EVENT_CUSTOM_MENU",
+            "EVENT_ENTER_MENU",
             "EVENT_CHANGE_LANGUAGE",
             "EVENT_CHANGE_ORIENTATION",
             "EVENT_RADAR_WARNING",
