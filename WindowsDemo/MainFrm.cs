@@ -1163,6 +1163,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             TC.SelectedTab = T17;
         }
 
+        private void getRouteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TC.SelectedTab = T43;
+        }
+
         private void getRouteInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DriveHandler.GetRouteInfo(0);
@@ -1647,6 +1652,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private void UpdatePois_btn_Click(object sender, EventArgs e)
         {
             DriveHandler.UpdatePois(updatePois_TB.Text, 0);
+        }
+
+        private void GetRouteBtn_Click(object sender, EventArgs e)
+        {
+            DriveHandler.GetRoute(
+                (int)GetRoute_nFormatNum.Value,
+                0,
+                (int)GetRoute_MaxTimeNum.Value);
         }
     }
 }

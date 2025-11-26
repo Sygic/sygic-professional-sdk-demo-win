@@ -317,6 +317,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             ret = CApplicationAPI.AddPoi(out _mySError, ref p, inMaxTime);
             O("AddPoi returns: " + ret.ToString());
         }
+        public static void GetRoute(int inFormat, int inDetail, int inMaxTime)
+        {
+            string Route = "";
+            int ret = CApplicationAPI.GetRoute(out _mySError, inFormat, inDetail, out Route, inMaxTime);
+
+            O("GetRoute returns: " + ret.ToString());
+            O("\n" + Route);
+        }
         public static void GetRouteInfo(int inMaxTime) 
         {
             SRouteInfo RouteInfo = new SRouteInfo();
