@@ -597,6 +597,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                 O("The itinerary containing two waypoints has been added into the navigation sucessfully.");
         }
 
+        public static void AddItinerary(string inStrName, string inStrJson)
+        {
+            int ret = CApplicationAPI.AddItinerary(out _mySError, inStrJson, inStrName, 0);
+            O("AddItinerary returns: " + ret.ToString());
+        }
+
         public static void AddItinerary(string inStrName, SStopOffPoint[] points)
         {
             int ret = CApplicationAPI.AddItinerary(out _mySError, points, inStrName, 0);

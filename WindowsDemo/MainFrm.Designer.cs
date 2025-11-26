@@ -525,9 +525,17 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LoadGFFile_PathTBox = new System.Windows.Forms.TextBox();
             this.LoadGFFile_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
             this.T35 = new System.Windows.Forms.TabPage();
-            this.AddItineraryGB = new System.Windows.Forms.GroupBox();
+            this.AddItineraryFromJsonGB = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel27 = new System.Windows.Forms.TableLayoutPanel();
+            this.AddItineraryFromJson_TB = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel28 = new System.Windows.Forms.TableLayoutPanel();
+            this.label52 = new System.Windows.Forms.Label();
+            this.AddItineraryFromJson_strItineraryNameTBox = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel29 = new System.Windows.Forms.TableLayoutPanel();
+            this.AddItineraryFromJson_Btn = new System.Windows.Forms.Button();
+            this.AddItineraryFromPointsGB = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.AddItineraryDGW = new System.Windows.Forms.DataGridView();
+            this.AddItineraryFromPointsDGW = new System.Windows.Forms.DataGridView();
             this.lXCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lYCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nPointTypeCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -536,9 +544,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.CaptionCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AddItinerary2Tlp = new System.Windows.Forms.TableLayoutPanel();
             this.label93 = new System.Windows.Forms.Label();
-            this.AddItinerary_strItineraryNameTBox = new System.Windows.Forms.TextBox();
+            this.AddItineraryFromPoints_strItineraryNameTBox = new System.Windows.Forms.TextBox();
             this.AddItinerary3Tlp = new System.Windows.Forms.TableLayoutPanel();
-            this.AddItinerary_Btn = new System.Windows.Forms.Button();
+            this.AddItineraryFromPoints_Btn = new System.Windows.Forms.Button();
             this.T36 = new System.Windows.Forms.TabPage();
             this.DeviceItineraryGB = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
@@ -605,6 +613,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T43 = new System.Windows.Forms.TabPage();
             this.GetRouteGB = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
+            this.GetRoute_nFormatNum = new System.Windows.Forms.NumericUpDown();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.GetRoute_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
@@ -720,7 +729,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SetRoute_MaxTimeNum = new System.Windows.Forms.NumericUpDown();
             this.SetRouteBtn = new System.Windows.Forms.Button();
             this.openGpsDataDlg = new System.Windows.Forms.OpenFileDialog();
-            this.GetRoute_nFormatNum = new System.Windows.Forms.NumericUpDown();
             this.TC.SuspendLayout();
             this.T1.SuspendLayout();
             this.ScreenResolutionGB.SuspendLayout();
@@ -927,9 +935,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LoadGFFileTlp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoadGFFile_MaxTimeNum)).BeginInit();
             this.T35.SuspendLayout();
-            this.AddItineraryGB.SuspendLayout();
+            this.AddItineraryFromJsonGB.SuspendLayout();
+            this.tableLayoutPanel27.SuspendLayout();
+            this.tableLayoutPanel28.SuspendLayout();
+            this.tableLayoutPanel29.SuspendLayout();
+            this.AddItineraryFromPointsGB.SuspendLayout();
             this.tableLayoutPanel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AddItineraryDGW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AddItineraryFromPointsDGW)).BeginInit();
             this.AddItinerary2Tlp.SuspendLayout();
             this.AddItinerary3Tlp.SuspendLayout();
             this.T36.SuspendLayout();
@@ -960,6 +972,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T43.SuspendLayout();
             this.GetRouteGB.SuspendLayout();
             this.tableLayoutPanel26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GetRoute_nFormatNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GetRoute_MaxTimeNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_FlagsNum)).BeginInit();
             this.menuStrip.SuspendLayout();
@@ -969,7 +982,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             ((System.ComponentModel.ISupportInitialize)(this.ShowMessage_maxTimeNum)).BeginInit();
             this.SetRouteTlp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_MaxTimeNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GetRoute_nFormatNum)).BeginInit();
             this.SuspendLayout();
             // 
             // TC
@@ -4164,7 +4176,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GpsLogStartStopTlp.ColumnCount = 3;
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.87719F));
             this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.12281F));
-            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 609F));
+            this.GpsLogStartStopTlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 614F));
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStartBtn, 0, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogStopBtn, 2, 0);
             this.GpsLogStartStopTlp.Controls.Add(this.PlayGpsLogPauseBtn, 1, 0);
@@ -4182,7 +4194,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.PlayGpsLogStartBtn.Location = new System.Drawing.Point(4, 4);
             this.PlayGpsLogStartBtn.Margin = new System.Windows.Forms.Padding(4);
             this.PlayGpsLogStartBtn.Name = "PlayGpsLogStartBtn";
-            this.PlayGpsLogStartBtn.Size = new System.Drawing.Size(40, 55);
+            this.PlayGpsLogStartBtn.Size = new System.Drawing.Size(38, 55);
             this.PlayGpsLogStartBtn.TabIndex = 2;
             this.PlayGpsLogStartBtn.UseVisualStyleBackColor = true;
             this.PlayGpsLogStartBtn.Click += new System.EventHandler(this.PlayGpsLogStartBtn_Click);
@@ -4190,7 +4202,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLogStopBtn
             // 
             this.PlayGpsLogStopBtn.Image = global::WindowsDemo.Properties.Resources.Button_Stop_icon;
-            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(99, 4);
+            this.PlayGpsLogStopBtn.Location = new System.Drawing.Point(94, 4);
             this.PlayGpsLogStopBtn.Margin = new System.Windows.Forms.Padding(4);
             this.PlayGpsLogStopBtn.Name = "PlayGpsLogStopBtn";
             this.PlayGpsLogStopBtn.Size = new System.Drawing.Size(60, 55);
@@ -4201,10 +4213,10 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // PlayGpsLogPauseBtn
             // 
             this.PlayGpsLogPauseBtn.Image = global::WindowsDemo.Properties.Resources.Button_Pause_icon;
-            this.PlayGpsLogPauseBtn.Location = new System.Drawing.Point(52, 4);
+            this.PlayGpsLogPauseBtn.Location = new System.Drawing.Point(50, 4);
             this.PlayGpsLogPauseBtn.Margin = new System.Windows.Forms.Padding(4);
             this.PlayGpsLogPauseBtn.Name = "PlayGpsLogPauseBtn";
-            this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(39, 55);
+            this.PlayGpsLogPauseBtn.Size = new System.Drawing.Size(36, 55);
             this.PlayGpsLogPauseBtn.TabIndex = 4;
             this.PlayGpsLogPauseBtn.UseVisualStyleBackColor = true;
             this.PlayGpsLogPauseBtn.Click += new System.EventHandler(this.PlayGpsLogPauseBtn_Click);
@@ -7706,7 +7718,8 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // T35
             // 
-            this.T35.Controls.Add(this.AddItineraryGB);
+            this.T35.Controls.Add(this.AddItineraryFromJsonGB);
+            this.T35.Controls.Add(this.AddItineraryFromPointsGB);
             this.T35.Location = new System.Drawing.Point(4, 19);
             this.T35.Margin = new System.Windows.Forms.Padding(4);
             this.T35.Name = "T35";
@@ -7716,55 +7729,165 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.T35.Text = "T35";
             this.T35.UseVisualStyleBackColor = true;
             // 
-            // AddItineraryGB
+            // AddItineraryFromJsonGB
             // 
-            this.AddItineraryGB.Controls.Add(this.tableLayoutPanel15);
-            this.AddItineraryGB.Location = new System.Drawing.Point(11, 6);
-            this.AddItineraryGB.Margin = new System.Windows.Forms.Padding(4);
-            this.AddItineraryGB.Name = "AddItineraryGB";
-            this.AddItineraryGB.Padding = new System.Windows.Forms.Padding(4);
-            this.AddItineraryGB.Size = new System.Drawing.Size(733, 599);
-            this.AddItineraryGB.TabIndex = 1;
-            this.AddItineraryGB.TabStop = false;
-            this.AddItineraryGB.Text = "AddItinerary";
+            this.AddItineraryFromJsonGB.Controls.Add(this.tableLayoutPanel27);
+            this.AddItineraryFromJsonGB.Location = new System.Drawing.Point(11, 311);
+            this.AddItineraryFromJsonGB.Margin = new System.Windows.Forms.Padding(4);
+            this.AddItineraryFromJsonGB.Name = "AddItineraryFromJsonGB";
+            this.AddItineraryFromJsonGB.Padding = new System.Windows.Forms.Padding(4);
+            this.AddItineraryFromJsonGB.Size = new System.Drawing.Size(733, 307);
+            this.AddItineraryFromJsonGB.TabIndex = 2;
+            this.AddItineraryFromJsonGB.TabStop = false;
+            this.AddItineraryFromJsonGB.Text = "AddItinerary (from json)";
+            // 
+            // tableLayoutPanel27
+            // 
+            this.tableLayoutPanel27.ColumnCount = 1;
+            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel27.Controls.Add(this.AddItineraryFromJson_TB, 0, 0);
+            this.tableLayoutPanel27.Controls.Add(this.tableLayoutPanel28, 0, 1);
+            this.tableLayoutPanel27.Controls.Add(this.tableLayoutPanel29, 0, 2);
+            this.tableLayoutPanel27.Location = new System.Drawing.Point(8, 23);
+            this.tableLayoutPanel27.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel27.Name = "tableLayoutPanel27";
+            this.tableLayoutPanel27.RowCount = 3;
+            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.47108F));
+            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.52892F));
+            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
+            this.tableLayoutPanel27.Size = new System.Drawing.Size(717, 280);
+            this.tableLayoutPanel27.TabIndex = 0;
+            // 
+            // AddItineraryFromJson_TB
+            // 
+            this.AddItineraryFromJson_TB.Location = new System.Drawing.Point(4, 4);
+            this.AddItineraryFromJson_TB.Margin = new System.Windows.Forms.Padding(4);
+            this.AddItineraryFromJson_TB.Multiline = true;
+            this.AddItineraryFromJson_TB.Name = "AddItineraryFromJson_TB";
+            this.AddItineraryFromJson_TB.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.AddItineraryFromJson_TB.Size = new System.Drawing.Size(709, 169);
+            this.AddItineraryFromJson_TB.TabIndex = 11;
+            // 
+            // tableLayoutPanel28
+            // 
+            this.tableLayoutPanel28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel28.ColumnCount = 2;
+            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.48872F));
+            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.51128F));
+            this.tableLayoutPanel28.Controls.Add(this.label52, 0, 0);
+            this.tableLayoutPanel28.Controls.Add(this.AddItineraryFromJson_strItineraryNameTBox, 1, 0);
+            this.tableLayoutPanel28.Location = new System.Drawing.Point(4, 194);
+            this.tableLayoutPanel28.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel28.Name = "tableLayoutPanel28";
+            this.tableLayoutPanel28.RowCount = 1;
+            this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel28.Size = new System.Drawing.Size(709, 29);
+            this.tableLayoutPanel28.TabIndex = 4;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(4, 0);
+            this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label52.Name = "label52";
+            this.label52.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label52.Size = new System.Drawing.Size(105, 21);
+            this.label52.TabIndex = 1;
+            this.label52.Text = "strItineraryName";
+            // 
+            // AddItineraryFromJson_strItineraryNameTBox
+            // 
+            this.AddItineraryFromJson_strItineraryNameTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddItineraryFromJson_strItineraryNameTBox.Location = new System.Drawing.Point(149, 4);
+            this.AddItineraryFromJson_strItineraryNameTBox.Margin = new System.Windows.Forms.Padding(4);
+            this.AddItineraryFromJson_strItineraryNameTBox.Name = "AddItineraryFromJson_strItineraryNameTBox";
+            this.AddItineraryFromJson_strItineraryNameTBox.Size = new System.Drawing.Size(556, 22);
+            this.AddItineraryFromJson_strItineraryNameTBox.TabIndex = 1;
+            // 
+            // tableLayoutPanel29
+            // 
+            this.tableLayoutPanel29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel29.ColumnCount = 2;
+            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.30075F));
+            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.69925F));
+            this.tableLayoutPanel29.Controls.Add(this.AddItineraryFromJson_Btn, 1, 0);
+            this.tableLayoutPanel29.Location = new System.Drawing.Point(4, 231);
+            this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel29.Name = "tableLayoutPanel29";
+            this.tableLayoutPanel29.RowCount = 1;
+            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel29.Size = new System.Drawing.Size(709, 45);
+            this.tableLayoutPanel29.TabIndex = 5;
+            // 
+            // AddItineraryFromJson_Btn
+            // 
+            this.AddItineraryFromJson_Btn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddItineraryFromJson_Btn.Location = new System.Drawing.Point(147, 4);
+            this.AddItineraryFromJson_Btn.Margin = new System.Windows.Forms.Padding(4);
+            this.AddItineraryFromJson_Btn.Name = "AddItineraryFromJson_Btn";
+            this.AddItineraryFromJson_Btn.Size = new System.Drawing.Size(558, 37);
+            this.AddItineraryFromJson_Btn.TabIndex = 2;
+            this.AddItineraryFromJson_Btn.Text = "AddItinerary";
+            this.AddItineraryFromJson_Btn.UseVisualStyleBackColor = true;
+            this.AddItineraryFromJson_Btn.Click += new System.EventHandler(this.AddItineraryFromJson_Btn_Click);
+            // 
+            // AddItineraryFromPointsGB
+            // 
+            this.AddItineraryFromPointsGB.Controls.Add(this.tableLayoutPanel15);
+            this.AddItineraryFromPointsGB.Location = new System.Drawing.Point(11, 6);
+            this.AddItineraryFromPointsGB.Margin = new System.Windows.Forms.Padding(4);
+            this.AddItineraryFromPointsGB.Name = "AddItineraryFromPointsGB";
+            this.AddItineraryFromPointsGB.Padding = new System.Windows.Forms.Padding(4);
+            this.AddItineraryFromPointsGB.Size = new System.Drawing.Size(733, 297);
+            this.AddItineraryFromPointsGB.TabIndex = 1;
+            this.AddItineraryFromPointsGB.TabStop = false;
+            this.AddItineraryFromPointsGB.Text = "AddItinerary (from points)";
             // 
             // tableLayoutPanel15
             // 
             this.tableLayoutPanel15.ColumnCount = 1;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel15.Controls.Add(this.AddItineraryDGW, 0, 0);
+            this.tableLayoutPanel15.Controls.Add(this.AddItineraryFromPointsDGW, 0, 0);
             this.tableLayoutPanel15.Controls.Add(this.AddItinerary2Tlp, 0, 1);
             this.tableLayoutPanel15.Controls.Add(this.AddItinerary3Tlp, 0, 2);
             this.tableLayoutPanel15.Location = new System.Drawing.Point(8, 23);
             this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 3;
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.53012F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.46988F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(717, 569);
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.47108F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.52892F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(717, 266);
             this.tableLayoutPanel15.TabIndex = 0;
             // 
-            // AddItineraryDGW
+            // AddItineraryFromPointsDGW
             // 
-            this.AddItineraryDGW.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.AddItineraryFromPointsDGW.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddItineraryDGW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.AddItineraryDGW.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AddItineraryFromPointsDGW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AddItineraryFromPointsDGW.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.lXCol,
             this.lYCol,
             this.nPointTypeCol,
             this.IdClm,
             this.bVisitedClm,
             this.CaptionCol});
-            this.AddItineraryDGW.Location = new System.Drawing.Point(4, 4);
-            this.AddItineraryDGW.Margin = new System.Windows.Forms.Padding(4);
-            this.AddItineraryDGW.Name = "AddItineraryDGW";
-            this.AddItineraryDGW.RowHeadersWidth = 51;
-            this.AddItineraryDGW.Size = new System.Drawing.Size(709, 465);
-            this.AddItineraryDGW.TabIndex = 3;
+            this.AddItineraryFromPointsDGW.Location = new System.Drawing.Point(4, 4);
+            this.AddItineraryFromPointsDGW.Margin = new System.Windows.Forms.Padding(4);
+            this.AddItineraryFromPointsDGW.Name = "AddItineraryFromPointsDGW";
+            this.AddItineraryFromPointsDGW.RowHeadersWidth = 51;
+            this.AddItineraryFromPointsDGW.Size = new System.Drawing.Size(709, 170);
+            this.AddItineraryFromPointsDGW.TabIndex = 3;
             // 
             // lXCol
             // 
@@ -7784,11 +7907,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // nPointTypeCol
             // 
-            this.nPointTypeCol.FillWeight = 70F;
+            this.nPointTypeCol.FillWeight = 80F;
             this.nPointTypeCol.HeaderText = "nPointType";
             this.nPointTypeCol.MinimumWidth = 6;
             this.nPointTypeCol.Name = "nPointTypeCol";
-            this.nPointTypeCol.Width = 70;
+            this.nPointTypeCol.Width = 80;
             // 
             // IdClm
             // 
@@ -7800,11 +7923,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // bVisitedClm
             // 
-            this.bVisitedClm.FillWeight = 55F;
+            this.bVisitedClm.FillWeight = 65F;
             this.bVisitedClm.HeaderText = "bVisited";
             this.bVisitedClm.MinimumWidth = 6;
             this.bVisitedClm.Name = "bVisitedClm";
-            this.bVisitedClm.Width = 55;
+            this.bVisitedClm.Width = 65;
             // 
             // CaptionCol
             // 
@@ -7823,13 +7946,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddItinerary2Tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.48872F));
             this.AddItinerary2Tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.51128F));
             this.AddItinerary2Tlp.Controls.Add(this.label93, 0, 0);
-            this.AddItinerary2Tlp.Controls.Add(this.AddItinerary_strItineraryNameTBox, 1, 0);
-            this.AddItinerary2Tlp.Location = new System.Drawing.Point(4, 477);
+            this.AddItinerary2Tlp.Controls.Add(this.AddItineraryFromPoints_strItineraryNameTBox, 1, 0);
+            this.AddItinerary2Tlp.Location = new System.Drawing.Point(4, 182);
             this.AddItinerary2Tlp.Margin = new System.Windows.Forms.Padding(4);
             this.AddItinerary2Tlp.Name = "AddItinerary2Tlp";
             this.AddItinerary2Tlp.RowCount = 1;
             this.AddItinerary2Tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddItinerary2Tlp.Size = new System.Drawing.Size(709, 30);
+            this.AddItinerary2Tlp.Size = new System.Drawing.Size(709, 27);
             this.AddItinerary2Tlp.TabIndex = 4;
             // 
             // label93
@@ -7843,15 +7966,15 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label93.TabIndex = 1;
             this.label93.Text = "strItineraryName";
             // 
-            // AddItinerary_strItineraryNameTBox
+            // AddItineraryFromPoints_strItineraryNameTBox
             // 
-            this.AddItinerary_strItineraryNameTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.AddItineraryFromPoints_strItineraryNameTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddItinerary_strItineraryNameTBox.Location = new System.Drawing.Point(149, 4);
-            this.AddItinerary_strItineraryNameTBox.Margin = new System.Windows.Forms.Padding(4);
-            this.AddItinerary_strItineraryNameTBox.Name = "AddItinerary_strItineraryNameTBox";
-            this.AddItinerary_strItineraryNameTBox.Size = new System.Drawing.Size(556, 22);
-            this.AddItinerary_strItineraryNameTBox.TabIndex = 1;
+            this.AddItineraryFromPoints_strItineraryNameTBox.Location = new System.Drawing.Point(149, 4);
+            this.AddItineraryFromPoints_strItineraryNameTBox.Margin = new System.Windows.Forms.Padding(4);
+            this.AddItineraryFromPoints_strItineraryNameTBox.Name = "AddItineraryFromPoints_strItineraryNameTBox";
+            this.AddItineraryFromPoints_strItineraryNameTBox.Size = new System.Drawing.Size(556, 22);
+            this.AddItineraryFromPoints_strItineraryNameTBox.TabIndex = 1;
             // 
             // AddItinerary3Tlp
             // 
@@ -7861,28 +7984,28 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.AddItinerary3Tlp.ColumnCount = 2;
             this.AddItinerary3Tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.30075F));
             this.AddItinerary3Tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.69925F));
-            this.AddItinerary3Tlp.Controls.Add(this.AddItinerary_Btn, 1, 0);
-            this.AddItinerary3Tlp.Location = new System.Drawing.Point(4, 515);
+            this.AddItinerary3Tlp.Controls.Add(this.AddItineraryFromPoints_Btn, 1, 0);
+            this.AddItinerary3Tlp.Location = new System.Drawing.Point(4, 217);
             this.AddItinerary3Tlp.Margin = new System.Windows.Forms.Padding(4);
             this.AddItinerary3Tlp.Name = "AddItinerary3Tlp";
             this.AddItinerary3Tlp.RowCount = 1;
             this.AddItinerary3Tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddItinerary3Tlp.Size = new System.Drawing.Size(709, 50);
+            this.AddItinerary3Tlp.Size = new System.Drawing.Size(709, 45);
             this.AddItinerary3Tlp.TabIndex = 5;
             // 
-            // AddItinerary_Btn
+            // AddItineraryFromPoints_Btn
             // 
-            this.AddItinerary_Btn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.AddItineraryFromPoints_Btn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddItinerary_Btn.Location = new System.Drawing.Point(147, 4);
-            this.AddItinerary_Btn.Margin = new System.Windows.Forms.Padding(4);
-            this.AddItinerary_Btn.Name = "AddItinerary_Btn";
-            this.AddItinerary_Btn.Size = new System.Drawing.Size(558, 42);
-            this.AddItinerary_Btn.TabIndex = 2;
-            this.AddItinerary_Btn.Text = "AddItinerary";
-            this.AddItinerary_Btn.UseVisualStyleBackColor = true;
-            this.AddItinerary_Btn.Click += new System.EventHandler(this.AddItineraryBtn_Click);
+            this.AddItineraryFromPoints_Btn.Location = new System.Drawing.Point(147, 4);
+            this.AddItineraryFromPoints_Btn.Margin = new System.Windows.Forms.Padding(4);
+            this.AddItineraryFromPoints_Btn.Name = "AddItineraryFromPoints_Btn";
+            this.AddItineraryFromPoints_Btn.Size = new System.Drawing.Size(558, 37);
+            this.AddItineraryFromPoints_Btn.TabIndex = 2;
+            this.AddItineraryFromPoints_Btn.Text = "AddItinerary";
+            this.AddItineraryFromPoints_Btn.UseVisualStyleBackColor = true;
+            this.AddItineraryFromPoints_Btn.Click += new System.EventHandler(this.AddItineraryFromPointsBtn_Click);
             // 
             // T36
             // 
@@ -8686,6 +8809,19 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel26.Size = new System.Drawing.Size(720, 124);
             this.tableLayoutPanel26.TabIndex = 0;
+            // 
+            // GetRoute_nFormatNum
+            // 
+            this.GetRoute_nFormatNum.Location = new System.Drawing.Point(157, 4);
+            this.GetRoute_nFormatNum.Margin = new System.Windows.Forms.Padding(4);
+            this.GetRoute_nFormatNum.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.GetRoute_nFormatNum.Name = "GetRoute_nFormatNum";
+            this.GetRoute_nFormatNum.Size = new System.Drawing.Size(160, 22);
+            this.GetRoute_nFormatNum.TabIndex = 2;
             // 
             // label50
             // 
@@ -9726,19 +9862,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.openGpsDataDlg.Title = "Please enter the path to the file with GPS (nmea) data:";
             this.openGpsDataDlg.FileOk += new System.ComponentModel.CancelEventHandler(this.openGpsDataDlg_FileOk);
             // 
-            // GetRoute_nFormatNum
-            // 
-            this.GetRoute_nFormatNum.Location = new System.Drawing.Point(157, 4);
-            this.GetRoute_nFormatNum.Margin = new System.Windows.Forms.Padding(4);
-            this.GetRoute_nFormatNum.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.GetRoute_nFormatNum.Name = "GetRoute_nFormatNum";
-            this.GetRoute_nFormatNum.Size = new System.Drawing.Size(160, 22);
-            this.GetRoute_nFormatNum.TabIndex = 2;
-            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -10007,9 +10130,15 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LoadGFFileTlp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoadGFFile_MaxTimeNum)).EndInit();
             this.T35.ResumeLayout(false);
-            this.AddItineraryGB.ResumeLayout(false);
+            this.AddItineraryFromJsonGB.ResumeLayout(false);
+            this.tableLayoutPanel27.ResumeLayout(false);
+            this.tableLayoutPanel27.PerformLayout();
+            this.tableLayoutPanel28.ResumeLayout(false);
+            this.tableLayoutPanel28.PerformLayout();
+            this.tableLayoutPanel29.ResumeLayout(false);
+            this.AddItineraryFromPointsGB.ResumeLayout(false);
             this.tableLayoutPanel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.AddItineraryDGW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AddItineraryFromPointsDGW)).EndInit();
             this.AddItinerary2Tlp.ResumeLayout(false);
             this.AddItinerary2Tlp.PerformLayout();
             this.AddItinerary3Tlp.ResumeLayout(false);
@@ -10051,6 +10180,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.GetRouteGB.ResumeLayout(false);
             this.tableLayoutPanel26.ResumeLayout(false);
             this.tableLayoutPanel26.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GetRoute_nFormatNum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GetRoute_MaxTimeNum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_FlagsNum)).EndInit();
             this.menuStrip.ResumeLayout(false);
@@ -10064,7 +10194,6 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.SetRouteTlp.ResumeLayout(false);
             this.SetRouteTlp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SetRoute_MaxTimeNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GetRoute_nFormatNum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -10639,17 +10768,11 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
         private System.Windows.Forms.ToolStripMenuItem cLEARToolStripMenuItem;
         private System.Windows.Forms.TabPage T35;
-        private System.Windows.Forms.GroupBox AddItineraryGB;
+        private System.Windows.Forms.GroupBox AddItineraryFromPointsGB;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
-        private System.Windows.Forms.TextBox AddItinerary_strItineraryNameTBox;
-        private System.Windows.Forms.Button AddItinerary_Btn;
-        private System.Windows.Forms.DataGridView AddItineraryDGW;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lXCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lYCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nPointTypeCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdClm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bVisitedClm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CaptionCol;
+        private System.Windows.Forms.TextBox AddItineraryFromPoints_strItineraryNameTBox;
+        private System.Windows.Forms.Button AddItineraryFromPoints_Btn;
+        private System.Windows.Forms.DataGridView AddItineraryFromPointsDGW;
         private System.Windows.Forms.TableLayoutPanel AddItinerary2Tlp;
         private System.Windows.Forms.TableLayoutPanel AddItinerary3Tlp;
         private System.Windows.Forms.Label label93;
@@ -10763,6 +10886,20 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.NumericUpDown GetRoute_MaxTimeNum;
         private System.Windows.Forms.Button GetRouteBtn;
         private System.Windows.Forms.NumericUpDown GetRoute_nFormatNum;
+        private System.Windows.Forms.GroupBox AddItineraryFromJsonGB;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel27;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel28;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.TextBox AddItineraryFromJson_strItineraryNameTBox;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel29;
+        private System.Windows.Forms.Button AddItineraryFromJson_Btn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lXCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lYCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nPointTypeCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdClm;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bVisitedClm;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CaptionCol;
+        private System.Windows.Forms.TextBox AddItineraryFromJson_TB;
     }
 }
 

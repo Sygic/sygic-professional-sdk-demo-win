@@ -432,8 +432,8 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         //fills the DataGridView with 2 waypoints by AddItinerary
         private void FillAddItineraryDGWWithDefaultValues() 
         {
-            AddItineraryDGW.Rows.Add("1712574", "4815034", "3", "0", "0", "Starting point");
-            AddItineraryDGW.Rows.Add("1714375", "4814980", "2", "1", "0", "Finish point");
+            AddItineraryFromPointsDGW.Rows.Add("1712574", "4815034", "3", "0", "0", "Starting point");
+            AddItineraryFromPointsDGW.Rows.Add("1714375", "4814980", "2", "1", "0", "Finish point");
         }
 
         private bool AddItineraryDGWRowCheck( DataGridViewRowCollection inCells) 
@@ -800,14 +800,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                 (int)GetPoiList_MaxTimeNum.Value);
         }
 
-        private void AddItineraryBtn_Click(object sender, EventArgs e)
+        private void AddItineraryFromPointsBtn_Click(object sender, EventArgs e)
         {
             //check if the data from grid are in the correct format and if so, then create waypoints and then itinerary
-            if (AddItineraryDGWRowCheck(AddItineraryDGW.Rows))
+            if (AddItineraryDGWRowCheck(AddItineraryFromPointsDGW.Rows))
             {
                 DriveHandler.AddItinerary(
-                    AddItinerary_strItineraryNameTBox.Text,
-                    CreateSstopofpointsFromAddItineraryDGW(AddItineraryDGW.Rows));
+                    AddItineraryFromPoints_strItineraryNameTBox.Text,
+                    CreateSstopofpointsFromAddItineraryDGW(AddItineraryFromPointsDGW.Rows));
             }
             else
                 O("The data are not in correct format.");
@@ -815,9 +815,9 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
 
         private void AddItinerary_Btn_Click(object sender, EventArgs e)
         {
-            DriveHandler.AddItinerary(AddItinerary_strItineraryNameTBox.Text);
-            AddEntryToItinerary_strItineraryNameCB.Items.Add(AddItinerary_strItineraryNameTBox.Text);
-            SetRoute_strItineraryNameCB.Items.Add(AddItinerary_strItineraryNameTBox.Text);
+            DriveHandler.AddItinerary(AddItineraryFromPoints_strItineraryNameTBox.Text);
+            AddEntryToItinerary_strItineraryNameCB.Items.Add(AddItineraryFromPoints_strItineraryNameTBox.Text);
+            SetRoute_strItineraryNameCB.Items.Add(AddItineraryFromPoints_strItineraryNameTBox.Text);
         }
 
         private void AddEntryToItineraryBtn_Click(object sender, EventArgs e)
@@ -1660,6 +1660,13 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
                 (int)GetRoute_nFormatNum.Value,
                 0,
                 (int)GetRoute_MaxTimeNum.Value);
+        }
+
+        private void AddItineraryFromJson_Btn_Click(object sender, EventArgs e)
+        {
+            DriveHandler.AddItinerary(
+                AddItineraryFromJson_strItineraryNameTBox.Text,
+                AddItineraryFromJson_TB.Text);
         }
     }
 }
