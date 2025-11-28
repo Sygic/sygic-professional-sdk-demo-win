@@ -317,6 +317,14 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             ret = CApplicationAPI.AddPoi(out _mySError, ref p, inMaxTime);
             O("AddPoi returns: " + ret.ToString());
         }
+        public static void GetRoute(int inFormat, int inDetail, int inMaxTime)
+        {
+            string Route = "";
+            int ret = CApplicationAPI.GetRoute(out _mySError, inFormat, inDetail, out Route, inMaxTime);
+
+            O("GetRoute returns: " + ret.ToString());
+            O("\n" + Route);
+        }
         public static void GetRouteInfo(int inMaxTime) 
         {
             SRouteInfo RouteInfo = new SRouteInfo();
@@ -587,6 +595,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             O("AddItinerary returns: " + ret.ToString());
             if (ret == 1)
                 O("The itinerary containing two waypoints has been added into the navigation sucessfully.");
+        }
+
+        public static void AddItinerary(string inStrName, string inStrJson)
+        {
+            int ret = CApplicationAPI.AddItinerary(out _mySError, inStrJson, inStrName, 0);
+            O("AddItinerary returns: " + ret.ToString());
         }
 
         public static void AddItinerary(string inStrName, SStopOffPoint[] points)
