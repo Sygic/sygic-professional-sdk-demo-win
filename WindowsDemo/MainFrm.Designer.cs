@@ -9875,7 +9875,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "SDK demo v. 2024-09-12";
+            this.Text = "SDK demo v. 2025-12-01";
             this.Load += new System.EventHandler(this.MainFrm_Load);
             this.TC.ResumeLayout(false);
             this.T1.ResumeLayout(false);
