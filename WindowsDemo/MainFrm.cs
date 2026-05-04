@@ -628,26 +628,16 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
 
         private void LoadComputedRouteBtn_Click(object sender, EventArgs e)
         {
-            string[] pathParts = LoadComputedRoute_Path.Text.Split('.');
-            string fileSufix = pathParts[pathParts.Length - 1];
-
-            if (fileSufix.Equals("ofg"))
-            {
-                string index = LoadComputedRoute_Index.Text;
-                bool showOnly = (bool)LoadComputedRoute_ShowOnly.Checked;
-                JObject jsonParams = new JObject(new JProperty("startFromIndex", index), new JProperty("showOnly", showOnly));
-                DriveHandler.LoadComputedRoute(
-                    LoadComputedRoute_Path.Text, jsonParams.ToString(),
-                    (int)LoadComputedRoute_MaxTime.Value);
-            }
-            else
-            {
-                DriveHandler.LoadComputedRoute(
-                    LoadComputedRoute_Path.Text,
-                    (int)LoadComputedRoute_MaxTime.Value);
-            }
+            string index = LoadComputedRoute_Index.Text;
+            bool showOnly = (bool)LoadComputedRoute_ShowOnly.Checked;
+            bool showRouteOverview = (bool)LoadComputedRoute_ShowRouteOverview.Checked;
+            JObject jsonParams = new JObject(new JProperty("startFromIndex", index),
+                new JProperty("showOnly", showOnly),
+                new JProperty("showRouteOverview", showRouteOverview));
+            DriveHandler.LoadComputedRoute(
+                LoadComputedRoute_Path.Text, jsonParams.ToString(),
+                (int)LoadComputedRoute_MaxTime.Value);
         }
-
 
         private void ShowChangeOptionBtn_Click(object sender, EventArgs e)
         {
