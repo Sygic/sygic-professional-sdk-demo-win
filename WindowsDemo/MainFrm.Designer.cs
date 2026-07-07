@@ -197,10 +197,12 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.label3 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
             this.LoadComputedRoute_Path = new System.Windows.Forms.TextBox();
             this.LoadComputedRoute_MaxTime = new System.Windows.Forms.NumericUpDown();
             this.LoadComputedRouteBtn = new System.Windows.Forms.Button();
             this.LoadComputedRoute_ShowOnly = new System.Windows.Forms.CheckBox();
+            this.LoadComputedRoute_ShowRouteOverview = new System.Windows.Forms.CheckBox();
             this.T10 = new System.Windows.Forms.TabPage();
             this.ShowChangeOptionGB = new System.Windows.Forms.GroupBox();
             this.ApplicationChangeOptionsTextbox = new System.Windows.Forms.TextBox();
@@ -3433,7 +3435,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LoadComputedRouteGB.Margin = new System.Windows.Forms.Padding(4);
             this.LoadComputedRouteGB.Name = "LoadComputedRouteGB";
             this.LoadComputedRouteGB.Padding = new System.Windows.Forms.Padding(4);
-            this.LoadComputedRouteGB.Size = new System.Drawing.Size(733, 222);
+            this.LoadComputedRouteGB.Size = new System.Drawing.Size(733, 257);
             this.LoadComputedRouteGB.TabIndex = 1;
             this.LoadComputedRouteGB.TabStop = false;
             this.LoadComputedRouteGB.Text = "LoadComputedRoute:";
@@ -3443,25 +3445,28 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.tableLayoutPanel8.ColumnCount = 2;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.67658F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.32342F));
-            this.tableLayoutPanel8.Controls.Add(this.label4, 0, 2);
-            this.tableLayoutPanel8.Controls.Add(this.LoadComputedRoute_Index, 1, 1);
-            this.tableLayoutPanel8.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel8.Controls.Add(this.label42, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.label43, 0, 3);
+            this.tableLayoutPanel8.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.label4, 0, 2);
+            this.tableLayoutPanel8.Controls.Add(this.label53, 0, 3);
+            this.tableLayoutPanel8.Controls.Add(this.label43, 0, 4);
             this.tableLayoutPanel8.Controls.Add(this.LoadComputedRoute_Path, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.LoadComputedRoute_MaxTime, 1, 3);
-            this.tableLayoutPanel8.Controls.Add(this.LoadComputedRouteBtn, 1, 4);
+            this.tableLayoutPanel8.Controls.Add(this.LoadComputedRoute_Index, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.LoadComputedRoute_ShowOnly, 1, 2);
+            this.tableLayoutPanel8.Controls.Add(this.LoadComputedRoute_ShowRouteOverview, 1, 3);
+            this.tableLayoutPanel8.Controls.Add(this.LoadComputedRoute_MaxTime, 1, 4);
+            this.tableLayoutPanel8.Controls.Add(this.LoadComputedRouteBtn, 1, 5);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(8, 23);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 5;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(717, 191);
+            this.tableLayoutPanel8.RowCount = 6;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(717, 226);
             this.tableLayoutPanel8.TabIndex = 0;
             // 
             // label4
@@ -3520,7 +3525,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(4, 114);
+            this.label43.Location = new System.Drawing.Point(4, 148);
             this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(66, 16);
@@ -3537,7 +3542,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // 
             // LoadComputedRoute_MaxTime
             // 
-            this.LoadComputedRoute_MaxTime.Location = new System.Drawing.Point(166, 118);
+            this.LoadComputedRoute_MaxTime.Location = new System.Drawing.Point(166, 152);
             this.LoadComputedRoute_MaxTime.Margin = new System.Windows.Forms.Padding(4);
             this.LoadComputedRoute_MaxTime.Maximum = new decimal(new int[] {
             1000000,
@@ -3553,10 +3558,10 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.LoadComputedRouteBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LoadComputedRouteBtn.Location = new System.Drawing.Point(166, 156);
+            this.LoadComputedRouteBtn.Location = new System.Drawing.Point(166, 189);
             this.LoadComputedRouteBtn.Margin = new System.Windows.Forms.Padding(4);
             this.LoadComputedRouteBtn.Name = "LoadComputedRouteBtn";
-            this.LoadComputedRouteBtn.Size = new System.Drawing.Size(547, 31);
+            this.LoadComputedRouteBtn.Size = new System.Drawing.Size(547, 33);
             this.LoadComputedRouteBtn.TabIndex = 4;
             this.LoadComputedRouteBtn.Text = "LoadComputedRoute";
             this.LoadComputedRouteBtn.UseVisualStyleBackColor = true;
@@ -3565,12 +3570,32 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             // LoadComputedRoute_ShowOnly
             // 
             this.LoadComputedRoute_ShowOnly.AutoSize = true;
-            this.LoadComputedRoute_ShowOnly.Location = new System.Drawing.Point(166, 80);
+            this.LoadComputedRoute_ShowOnly.Location = new System.Drawing.Point(166, 78);
             this.LoadComputedRoute_ShowOnly.Margin = new System.Windows.Forms.Padding(4);
             this.LoadComputedRoute_ShowOnly.Name = "LoadComputedRoute_ShowOnly";
             this.LoadComputedRoute_ShowOnly.Size = new System.Drawing.Size(18, 17);
             this.LoadComputedRoute_ShowOnly.TabIndex = 8;
             this.LoadComputedRoute_ShowOnly.UseVisualStyleBackColor = true;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(4, 111);
+            this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(138, 16);
+            this.label53.TabIndex = 9;
+            this.label53.Text = "Show Route Overview";
+            // 
+            // LoadComputedRoute_ShowRouteOverview
+            // 
+            this.LoadComputedRoute_ShowRouteOverview.AutoSize = true;
+            this.LoadComputedRoute_ShowRouteOverview.Location = new System.Drawing.Point(166, 115);
+            this.LoadComputedRoute_ShowRouteOverview.Margin = new System.Windows.Forms.Padding(4);
+            this.LoadComputedRoute_ShowRouteOverview.Name = "LoadComputedRoute_ShowRouteOverview";
+            this.LoadComputedRoute_ShowRouteOverview.Size = new System.Drawing.Size(18, 17);
+            this.LoadComputedRoute_ShowRouteOverview.TabIndex = 10;
+            this.LoadComputedRoute_ShowRouteOverview.UseVisualStyleBackColor = true;
             // 
             // T10
             // 
@@ -9875,7 +9900,7 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "SDK demo v. 2025-12-01";
+            this.Text = "SDK demo v. 2026-05-04";
             this.Load += new System.EventHandler(this.MainFrm_Load);
             this.TC.ResumeLayout(false);
             this.T1.ResumeLayout(false);
@@ -10900,6 +10925,8 @@ namespace SYGIC_PROFESSINAL_SDK_DEMO
         private System.Windows.Forms.DataGridViewTextBoxColumn bVisitedClm;
         private System.Windows.Forms.DataGridViewTextBoxColumn CaptionCol;
         private System.Windows.Forms.TextBox AddItineraryFromJson_TB;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.CheckBox LoadComputedRoute_ShowRouteOverview;
     }
 }
 
